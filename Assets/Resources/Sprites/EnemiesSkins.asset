@@ -1,0 +1,528 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: EnemiesSkins
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Abronchite Sprite Library Asset
+    m_Hash: 1797616302
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 21300000, guid: a7a2e44a246b27b4ab22c7b88359f974, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: 3441971496959591724, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 7266060551333637790, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 8541891025957735059, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 6696094153197309203, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 5258021042239969916, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 4278393075239750993, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 9132883947503215342, guid: b3feed4b05b6c7045912e4a2d263ad7a, type: 3}
+  - m_Name: Adeno Sprite Library Asset
+    m_Hash: 1927943530
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 5250812982129175450, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -2325782548873228949, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -5403186130676812551, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -4576181913964730855, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -1172619653758994002, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -9137072030286054828, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 4041360815079998942, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -1724577633918148807, guid: e0182a67e8100ba45b1755c76fc353ab, type: 3}
+  - m_Name: Bronchite Sprite Library Asset
+    m_Hash: -502314820
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 6066350227164343862, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -4569575947133257864, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -6319064360773752465, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -3955260774633441519, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 8680352967103359644, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 8739616232824865008, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 4538152125762265541, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 4978274937979823962, guid: 5d034d8c0b4119f49b9b92125bf6901f, type: 3}
+  - m_Name: Brunt Sprite Library Asset
+    m_Hash: -438956698
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 2178010478745027450, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -5075018326690348565, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -3370641241950414661, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 8496967231290773337, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 9004954323110740821, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -8239521002775177473, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -9014912152146430263, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 8061296581332495498, guid: b43966e49480ea747b32b5834bb24f38, type: 3}
+  - m_Name: Cocci Sprite Library Asset
+    m_Hash: 656178000
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -3733593021426705563, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -8474013062458653621, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -1701744621043570873, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -818252558505626672, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 1275315322501354150, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 404467991481571114, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 2586985846109543125, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -7833318105311862939, guid: 0f7433df82770cf41bdecd75dbe8eaa5, type: 3}
+  - m_Name: D-Stroy Sprite Library Asset
+    m_Hash: -1368319353
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -4702698100537915708, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -6381449837051605827, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 511046467599306382, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 1891611600845314074, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 9210381671292388701, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -6381449837051605827, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 1301723154242597975, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -5400762189164196816, guid: ec3e64f5d1060f64facd9032fc4cc11e, type: 3}
+  - m_Name: E-Bula Sprite Library Asset
+    m_Hash: -602227676
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 7321354062623004992, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -330816029731828816, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 2981835040296231655, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -1989428887662054914, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -4675896763731932146, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 621733783041722838, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -7630071323088534866, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 5174382595309641207, guid: 43242b74a9b477046b2d2613f1c56a40, type: 3}
+  - m_Name: Hendra Sprite Library Asset
+    m_Hash: -177116497
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -6210764883049453364, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: 3112870074066643491, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -550634731228479725, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 1934269637985175796, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 7989416441764556631, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -1373458638767617210, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -8161517478902303833, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -823636087481898027, guid: 71b9820f89b053b4cbab6f930d69fe9e, type: 3}
+  - m_Name: Imploder Sprite Library Asset
+    m_Hash: -556002375
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -7707899009653600706, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: 9162590602504190485, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -7707899009653600706, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 9162590602504190485, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -7707899009653600706, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 9162590602504190485, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -7707899009653600706, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 9162590602504190485, guid: 3924cf5e1af97364781599f9db63b917, type: 3}
+  - m_Name: Lebronchite Sprite Library Asset
+    m_Hash: -1060200116
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 6974750653407344373, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -1302963935569982046, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -711456313681734294, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 4365994634422721819, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 2924699856794992317, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -407080145739825022, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -5031889597853422808, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 1969960532033764507, guid: fb5226c3c5b45914587a5f7e3e5feef4, type: 3}
+  - m_Name: Mosaic Sprite Library Asset
+    m_Hash: 564714747
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 3046288655050377890, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -1038713493851548998, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 2312457709672052075, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -8734928165763425948, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -8766309015706170423, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 8706779527565404926, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 3673107046997797372, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 3876414362625569453, guid: 074176a5314f4414c84c5ea5d8c5da5e, type: 3}
+  - m_Name: Norov Sprite Library Asset
+    m_Hash: 880462859
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -3913959830933377526, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: 8054704528815598018, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -5981882240177291861, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 2866347446835726615, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 8912362267629017421, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -5220463514934473420, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 1079957410735179434, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 7191538954271102797, guid: a1d6b9ef2bb7ff043b2d1e20f887d616, type: 3}
+  - m_Name: Poxer Sprite Library Asset
+    m_Hash: 1315410944
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -5996963145830178975, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: 5775007721478573778, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 6031197856388769520, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 6031197856388769520, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 3011743748254323396, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 4836152553637696785, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -3775840359975910967, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -1565549503933789817, guid: abf2042da1e654c46945b9ab12639445, type: 3}
+  - m_Name: R-Nold Sprite Library Asset
+    m_Hash: -1193676553
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -160634537254485055, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -6638713081585039658, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -490413400776531998, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -8267780893088689426, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 196652047086672807, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 7488101090268481552, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -387642508254389288, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -9155981395742015295, guid: e5477ab5e7585fd4fbf43aff91fb2e8f, type: 3}
+  - m_Name: Staphy Sprite Library Asset
+    m_Hash: -1618791453
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -8988660044300987572, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -7021540680753933153, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -8102028773806058477, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -4015007002894536642, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 5956944032571704842, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 2497048821242903931, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 2571965629850102220, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -2084901488627653487, guid: fc91b2ddcdc052d48862876b8fdf47cf, type: 3}
+  - m_Name: Strepto Sprite Library Asset
+    m_Hash: 28931152
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 680914235069949838, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -5876689989474401347, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 3933000180064724578, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -4121066428480915391, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 3281190543597986725, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 1760684867048290191, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -5654063065773345384, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 2259528674098908888, guid: c7a0a3df8b4f5f349baedc366349d19e, type: 3}
+  - m_Name: Zoster Sprite Library Asset
+    m_Hash: -2072282791
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 3732448931875245000, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -1125954174470440872, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -4965736891697231549, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -421741216467034614, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -1450675114636330239, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -30344677170585751, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 621109381989460970, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -3446149832528206543, guid: c292573cbce56d944999b68fc6cf91e2, type: 3}
+  - m_Name: Canzr Sprite Library Asset
+    m_Hash: -376001224
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -8104113224454596034, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: -7378269908579389094, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -7444509314552739974, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 2210188462981315641, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -5718579528814581490, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -7547259521397487364, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -3453795610455966444, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -1357958805753511563, guid: 16e20677918de4049bd48d1e3278dc72, type: 3}
+  - m_Name: Hanzr Sprite Library Asset
+    m_Hash: 1323855228
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -1541246924289911970, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: UP
+      m_Hash: -310449638
+      m_Sprite: {fileID: 2409680470434254656, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -2135216439878231113, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 3867273475534768952, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -6683941616591976323, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -1523089052936279924, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 1057663028075780682, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -8127512526072308397, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
