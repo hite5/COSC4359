@@ -121,6 +121,7 @@ public class RememberLoadout : MonoBehaviour
 
     void Awake()
     {
+        gameObject.transform.parent = null;
         if (instance != null)
         {
             Destroy(gameObject);
