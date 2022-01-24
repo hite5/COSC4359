@@ -18,7 +18,7 @@ public class DustTrail : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (player != null)
+        if (player != null) 
         {
             transform.position = player.Stats.Position - new Vector2(0, 0.4f);
             if(player.Stats.Direction.magnitude != 0)

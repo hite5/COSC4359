@@ -53,17 +53,25 @@ public class PlayerIndicator : MonoBehaviour
             }
             //Debug.Log(Mathf.Tan(angle / Mathf.Rad2Deg));
 
-
+            Debug.Log(angle);
             if (cappedTargetScreenPosition.y <= BorderSize)
             {
                 cappedTargetScreenPosition.x -= (-BorderSize + cappedTargetScreenPosition.y) / Mathf.Tan(angle / Mathf.Rad2Deg);
+                Debug.Log(cappedTargetScreenPosition.x + " | " + cappedTargetScreenPosition.y);
                 cappedTargetScreenPosition.y = BorderSize;
             }
             if (cappedTargetScreenPosition.y >= Screen.height - BorderSize)
             {
                 cappedTargetScreenPosition.x += (- BorderSize + Screen.height - cappedTargetScreenPosition.y) / Mathf.Tan(angle / Mathf.Rad2Deg);
+                Debug.Log(cappedTargetScreenPosition.x);
                 cappedTargetScreenPosition.y = Screen.height - BorderSize;
             }
+            
+            if (double.IsInfinity(cappedTargetScreenPosition.sqrMagnitude))
+            {
+                cappedTargetScreenPosition = new Vector3(0, 0, 0);
+            }
+
             Vector3 pointerWorldPosition = uiCamera.ScreenToWorldPoint(cappedTargetScreenPosition);
             pointerRectTransform.position = pointerWorldPosition;
             pointerRectTransform.localPosition = new Vector3(pointerRectTransform.localPosition.x, pointerRectTransform.localPosition.y);

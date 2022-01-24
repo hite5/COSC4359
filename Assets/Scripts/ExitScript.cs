@@ -9,6 +9,7 @@ public class ExitScript : MonoBehaviour
 
     public EnemyManager enemyColony;
     public GameObject WinScreen;
+    public Transform PlayerDes;
     //public string NextScene;
     private SpriteRenderer sprite;
     private BoxCollider2D bxCol2D;
@@ -24,6 +25,7 @@ public class ExitScript : MonoBehaviour
         bxCol2D = GetComponent<BoxCollider2D>();
         plgCol2D = GetComponent<PolygonCollider2D>();
         img = GameObject.Find("FadeOut").GetComponent<RawImage>();
+        ///*
         if (SceneManager.GetActiveScene().name != "Tutorial")
         {
             img.enabled = false;
@@ -31,6 +33,7 @@ public class ExitScript : MonoBehaviour
             bxCol2D.enabled = false;
             plgCol2D.enabled = false;
         }
+        //*/
     }
     //center of the bcl (-35.83, 18.32)
     // Update is called once per frame
@@ -43,20 +46,20 @@ public class ExitScript : MonoBehaviour
             bxCol2D.enabled = true;
             plgCol2D.enabled = true;
         }
-        
-        Vector2 desPos = new Vector2(-35.83f, 18.32f);
-        player.Stats.Direction = new Vector2(desPos.x - player.Stats.Position.x, desPos.y - player.Stats.Position.y).normalized;
-        if (player != null)
-        {
-            if (player.Stats.Position != desPos)
-            {
-                player.Components.PlayerRidgitBody.velocity = new Vector2(player.Stats.Direction.x * player.Stats.Speed * Time.deltaTime, player.Stats.Direction.y * player.Stats.Speed * Time.deltaTime);
-            }
-        }
 
         
+        Debug.Log(GlobalPlayerVariables.EnablePlayerControl);
         if (reached)
         {
+            player.Stats.Direction = new Vector2(PlayerDes.position.x - player.Stats.Position.x, PlayerDes.position.y - player.Stats.Position.y).normalized;
+            if (player != null)
+            {
+                if (player.Stats.Position != new Vector2(PlayerDes.position.x, PlayerDes.position.y))
+                {
+                    //player.Components.PlayerRidgitBody.velocity = new Vector2(player.Stats.Direction.x * player.Stats.Speed * Time.deltaTime, player.Stats.Direction.y * player.Stats.Speed * Time.deltaTime);
+                    player.transform.position += new Vector3(player.Stats.Direction.x, player.Stats.Direction.y) * Time.deltaTime/10;
+                }
+            }
             Color imgCl = img.color;
             imgCl.a += Time.deltaTime/2;
             img.color = imgCl;
@@ -71,7 +74,7 @@ public class ExitScript : MonoBehaviour
         {
             GlobalPlayerVariables.EnablePlayerControl = false;
             GlobalPlayerVariables.EnableAI = false;
-            player.Components.PlayerRidgitBody.drag = 500;
+            player.Components.PlayerRidgitBody.mass = 500;
             Debug.Log("You Won!");
             reached = true;
             StartCoroutine(End());
