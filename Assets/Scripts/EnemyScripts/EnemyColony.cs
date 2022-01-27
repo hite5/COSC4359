@@ -61,6 +61,14 @@ public class EnemyColony : MonoBehaviour
     public string NameOfEnemy;
     public GameObject EnemyUI;
     public float DetectRange;
+
+    [Header("Individual HP Canvas")]
+    public Image IndivHealthBar;
+    public GameObject IndivEnemyUI;
+    public float secondsToShowUI;
+    private float UITimer = 0;
+
+
     //DEATH VARIABLE
     [HideInInspector]
     public bool isDead = false;
@@ -72,6 +80,8 @@ public class EnemyColony : MonoBehaviour
     private float MaxHP = 0;
     public float speed = 0;
     public int EXPWorth = 50;
+    public float individualHP = 1;
+    public float indivMaxHP;
 
     [Header("Movement Settings")]
     public float stoppingDistance = 0;
@@ -145,19 +155,33 @@ public class EnemyColony : MonoBehaviour
     public float recalcshortestDist = 3f;
     private float timer2reset;
 
+    public void getReferences()
+    {
+        BossName = transform.parent.GetComponent<RememberReference>().GetReference(0).GetComponent<Text>();
+        HealthBar = transform.parent.GetComponent<RememberReference>().GetReference(1).GetComponent<Image>();
+        EnemyUI = transform.parent.GetComponent<RememberReference>().GetReference(2);
 
+        BossName.text = NameOfEnemy;
+        enemyColony = transform.parent.GetComponent<EnemyManager>();
+
+        MaxHP = enemyColony.colonyHealth;
+        HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
+        EnemyUI.SetActive(false);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        BossName.text = NameOfEnemy;
-        enemyColony = transform.parent.GetComponent<EnemyManager>();
+
+
+
+
         //Debug.Log(enemyColony.colonyHealth);
-        MaxHP = enemyColony.colonyHealth;
+        //MaxHP = enemyColony.colonyHealth;
         //HealthBar = GameObject.Find("EnemyHP").GetComponent<Image>();
         //BossName = GameObject.Find("BossName").GetComponent<Text>();
         sprite = transform.Find("BossSprite").GetComponent<SpriteRenderer>();
-        HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
+        //HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
 
         rb = GetComponent<Rigidbody2D>();
         if (GlobalPlayerVariables.GameOver == false)
@@ -311,17 +335,28 @@ public class EnemyColony : MonoBehaviour
                 //knockback = false;
             }
 
-
-
+            /*
+            Debug.Log(distancefromplayer);
             if (distancefromplayer <= DetectRange && GlobalPlayerVariables.GameOver == false)
             {
                 if (hideing == false)
+                {
+                    Debug.Log("IN DISTANCE " + distancefromplayer);
+                    enemyColony.resetTimer();
                     EnemyUI.SetActive(true);
+                }
             }
             else if (distancefromplayer >= DetectRange)
             {
-                EnemyUI.SetActive(false);
+                Debug.Log("OUT OF DISTANCE");
+                if(enemyColony.enableEnemyUI == false)
+                    EnemyUI.SetActive(false);
             }
+            */
+            /*
+            if (enemyColony.enableEnemyUI == false)
+                EnemyUI.SetActive(false);
+            */
 
 
             knockbacktime -= Time.deltaTime;
@@ -405,6 +440,28 @@ public class EnemyColony : MonoBehaviour
 
         timer2reset -= Time.deltaTime;
 
+        /*
+        if (UITimer <= 0)
+        {
+            IndivEnemyUI.SetActive(false);
+        }
+        else
+        {
+            IndivEnemyUI.SetActive(true);
+        }
+        UITimer -= Time.deltaTime;
+        */
+        if (enemyColony.enableEnemyUI == false)
+        {
+            EnemyUI.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Activate boss ui");
+            EnemyUI.SetActive(true);
+        }
+        
+
     }
 
     
@@ -444,6 +501,7 @@ public class EnemyColony : MonoBehaviour
 
         if (col.CompareTag("Bullet"))
         {
+            UITimer = secondsToShowUI;
             Bullet collision = col.gameObject.GetComponent<Bullet>();
             float damage = collision.damage;
             float speed = collision.speed;
@@ -468,7 +526,6 @@ public class EnemyColony : MonoBehaviour
 
     public void takeDamage(float damage, Transform impact, float speed)
     {
-        //Debug.Log(damage);
         bool iscrit = false;
         float chance2crit = Random.Range(0f, 1f);
         if (chance2crit <= critRate)
@@ -476,12 +533,23 @@ public class EnemyColony : MonoBehaviour
             iscrit = true;
             damage *= critDMG;
         }
+        damage = Mathf.Round(damage);
+        if (individualHP - damage < 0)
+        {
+            enemyColony.colonyHealth -= individualHP;
+        }
+        else
+            enemyColony.colonyHealth -= damage;
+        individualHP -= damage;
+        //HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
+        BossName.text = NameOfEnemy;
+        HealthBar.fillAmount = individualHP / indivMaxHP;
+        enemyColony.resetTimer();
 
-        enemyColony.colonyHealth -= damage;
-        HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
+        //IndivHealthBar.fillAmount = individualHP / indivMaxHP;
         showDamage(damage, impact, speed, iscrit);
         StartCoroutine(FlashRed());
-        if (enemyColony.colonyHealth <= 0)
+        if (individualHP <= 0)
         {
             Die();
         }
@@ -565,7 +633,7 @@ public class EnemyColony : MonoBehaviour
     }
 
 
-
+    //private bool allBossesDead = false;
     void Die()
     {
         if (isDead == false)
@@ -580,6 +648,7 @@ public class EnemyColony : MonoBehaviour
             transform.position = this.transform.position;
             transform.Find("BossSprite").GetComponent<Animator>().SetBool("IsDead", isDead);
             GetComponent<PolygonCollider2D>().enabled = false;
+            enemyColony.checkBossCount();
             StartCoroutine(Dying());
             //GameObject.Destroy(gameObject);
         }
@@ -621,7 +690,10 @@ public class EnemyColony : MonoBehaviour
                 }
             }
         }
-        EnemyUI.SetActive(false);
+        if (enemyColony.colonyHealth <= 0)
+        {
+            EnemyUI.SetActive(false);
+        }
         Destroy(transform.gameObject);
     }
 

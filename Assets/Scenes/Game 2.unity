@@ -994,6 +994,22 @@ PrefabInstance:
       propertyPath: tbsDecreaseRate
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: indexOfSpawnPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].BossHP
+      value: 25000
+      objectReference: {fileID: 0}
     - target: {fileID: 3837925145041897061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.82

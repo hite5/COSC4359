@@ -19350,6 +19350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyColony: {fileID: 1769738117}
   WinScreen: {fileID: 1098059709}
+  PlayerDes: {fileID: 0}
 --- !u!61 &686973085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84648,6 +84649,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddd134675d1e6c43b612b1db403ee8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnInstantly: 1
+  BossSettingList: []
+  TimeToSpawn: 0
+  specificSpawnPoint: 0
+  indexOfSpawnPoint: 0
   colonyHealth: 0
   StaInd: {fileID: 0}
   Mcamera: {fileID: 0}
@@ -84671,6 +84677,8 @@ MonoBehaviour:
   SpawnPointAnim: []
   xPos: 0
   yPos: 0
+  enableEnemyUI: 0
+  showBigUI: 5
 --- !u!4 &1079025800
 Transform:
   m_ObjectHideFlags: 0
@@ -85991,6 +85999,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204599654}
   m_CullTransparentMesh: 1
+--- !u!1 &1209536375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2950618480692910413, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
+  m_PrefabInstance: {fileID: 2950618480759544787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1209536377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209536375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b431bf9cd21ad194db81b7265889c670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refList:
+  - {fileID: 1187752527}
+  - {fileID: 1887939817}
+  - {fileID: 1155049965}
 --- !u!1 &1218422358
 GameObject:
   m_ObjectHideFlags: 0
@@ -97042,7 +97071,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
   m_PrefabInstance: {fileID: 2950618480759544787}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1209536375}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ddd134675d1e6c43b612b1db403ee8b, type: 3}
@@ -100866,6 +100895,10 @@ PrefabInstance:
       value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
+      propertyPath: indexOfSpawnPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
       propertyPath: timeBetweenSpawns
       value: 5
       objectReference: {fileID: 0}
@@ -100878,12 +100911,20 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
+      propertyPath: specificSpawnPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
       propertyPath: chanceToSpawnR_Nold
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
       propertyPath: EnemyTypes.Array.size
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
+      propertyPath: BossSettingList.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
       propertyPath: EnemyTypes.Array.data[0].Enemies
@@ -100933,6 +100974,14 @@ PrefabInstance:
       propertyPath: EnemyTypes.Array.data[11].Enemies
       value: 
       objectReference: {fileID: 7674072803767978074, guid: eff576b4f636dd34390cdc4f8692fd93, type: 3}
+    - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
+      propertyPath: BossSettingList.Array.data[0].Boss
+      value: 
+      objectReference: {fileID: 4657044852027501985, guid: 576b3dee03aa1f74d8aea3646cb2fea8, type: 3}
+    - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
+      propertyPath: BossSettingList.Array.data[0].BossHP
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 2950618480692910412, guid: d2c2469d62c3239449184d9dd22a1817, type: 3}
       propertyPath: EnemyTypes.Array.data[0].EndSpawnRange
       value: 11

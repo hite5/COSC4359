@@ -14,6 +14,29 @@ public class EnemyManager : MonoBehaviour
         public float StartSpawnRange;
         public float EndSpawnRange;
     }
+    [Header("Bosses To Spawn")]
+    public bool SpawnInstantly = true;
+
+    [System.Serializable]
+    public struct BossSettings
+    {
+        public GameObject Boss;
+        public int BossHP;
+        public bool changeName;
+        public string newBossName;
+    }
+    private int BossesEliminated = 0;
+    public List<BossSettings> BossSettingList;
+    //public List<GameObject> BossList;
+    //public List<int> BossHP;
+
+
+
+    public float TimeToSpawn = 0f;
+    public bool specificSpawnPoint = false;
+    public int indexOfSpawnPoint = 0;
+
+    [Header("Colony Stats")]
 
     //public int enemiesFromColony;
     public float colonyHealth;
@@ -60,23 +83,115 @@ public class EnemyManager : MonoBehaviour
     public float xPos;
     public float yPos;
 
+    [Header("Big EnemyUI Settings")]
+    public bool enableEnemyUI = false;
+    private bool startUILogic = false;
+    public float showBigUI = 5;
+    private float BigUITimer = 0;
+
+
+    public void resetTimer()
+    {
+        //Debug.Log("ayo");
+        if (startUILogic == true)
+        {
+            enableEnemyUI = true;
+            BigUITimer = showBigUI;
+        }
+    }
+
+    private bool allBossesDead = false;
+    public void checkBossCount()
+    {
+        BossesEliminated++;
+        if (BossesEliminated == BossSettingList.Count)
+        {
+            //colonyHealth = 0;
+            allBossesDead = true;
+            //return true;
+        }
+        Debug.Log(BossesEliminated + " count " + BossSettingList.Count);
+        //return false;
+    }
+
+    private void linkBosses(GameObject go, int index, bool nameChange)
+    {
+        if (go.TryGetComponent<EnemyColony>(out EnemyColony EC))
+        {
+            EC.getReferences();
+            EC.individualHP = BossSettingList[index].BossHP;
+            EC.indivMaxHP = BossSettingList[index].BossHP;
+            if (nameChange == true)
+            {
+                EC.NameOfEnemy = BossSettingList[index].newBossName;
+            }
+        }
+        else if (go.TryGetComponent<EnemyColony2>(out EnemyColony2 EC2))
+        {
+
+        }
+    }
 
     private void Awake()
     {
         instance = this;
     }
 
+    WaitForSeconds shortWait = new WaitForSeconds(2.0f);
+    public IEnumerator startLogic()
+    {
+        yield return shortWait;
+        startUILogic = true;
+    }
+
     private void Start()
     {
+
+        colonyHealth = 0;
+        for (int i = 0; i < BossSettingList.Count; i++)
+        {
+            colonyHealth += BossSettingList[i].BossHP;
+        }
+
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             spawnPointDistances.Add(0f);
         }
 
+        if (SpawnInstantly)
+        {
+            if (specificSpawnPoint)
+            {
+                for (int i = 0; i < BossSettingList.Count; i++)
+                {
+                    //Instantiate()
+                    var go = Instantiate(BossSettingList[i].Boss, spawnPoints[indexOfSpawnPoint].transform.position, Quaternion.identity);
+                    go.transform.parent = this.transform;
+                    go.transform.localScale = Vector3.one;
+                    linkBosses(go, i, BossSettingList[i].changeName);
+                    
+                }
+            }
+            else
+            {
+                for (int i = 0; i < BossSettingList.Count; i++)
+                {
+
+                    int randomSpawn = Random.Range(0, spawnPoints.Count);
+                    var go = Instantiate(BossSettingList[i].Boss, spawnPoints[randomSpawn].transform.position, Quaternion.identity);
+                    go.transform.parent = this.transform;
+                    go.transform.localScale = Vector3.one;
+                    linkBosses(go, i, BossSettingList[i].changeName);
+                }
+            }
+        }
+
+
 
         //enemiesRemainingToSpawn = enemiesFromColony;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         timeBetweenSpawns = MaxTbs;
+        StartCoroutine(startLogic());
     }
 
     private void Update()
@@ -150,8 +265,9 @@ public class EnemyManager : MonoBehaviour
 
                 StartCoroutine(RemoveDeadMobs());
 
-                if (colonyHealth <= 0 && !bossDeath)
+                if (colonyHealth <= 0 && !bossDeath || allBossesDead == true && !bossDeath)
                 {
+                    colonyHealth = 0;
                     BossDeath();
                     bossDeath = true;
                     StartCoroutine(wait(5));
@@ -169,6 +285,11 @@ public class EnemyManager : MonoBehaviour
 
             }
             //Debug.Log(bossDeath);
+            if (BigUITimer <= 0)
+            {
+                enableEnemyUI = false;
+            }
+            BigUITimer -= Time.deltaTime;
         }
 
     }
