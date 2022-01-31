@@ -234,7 +234,10 @@ public class Enemy3 : MonoBehaviour
 
         if (retreatToBoss == true)
         {
-            BossObject = GameObject.FindGameObjectWithTag("Colony").transform;
+            //BossObject = GameObject.FindGameObjectWithTag("Colony").transform;
+            int randTransform = Random.Range(0, EnemyManager.instance.CurrentlyAlive.Count);
+            Debug.Log(randTransform + " BOSS INDEX PICKED");
+            BossObject = EnemyManager.instance.CurrentlyAlive[randTransform];
         }
 
         target = player;

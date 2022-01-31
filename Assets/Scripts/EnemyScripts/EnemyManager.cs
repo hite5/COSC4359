@@ -27,6 +27,7 @@ public class EnemyManager : MonoBehaviour
     }
     private int BossesEliminated = 0;
     public List<BossSettings> BossSettingList;
+    public List<Transform> CurrentlyAlive;
     //public List<GameObject> BossList;
     //public List<int> BossHP;
 
@@ -89,6 +90,17 @@ public class EnemyManager : MonoBehaviour
     public float showBigUI = 5;
     private float BigUITimer = 0;
 
+    public void cleanBossList()
+    {
+        Debug.Log("CLEANING UP BOSS LIST");
+        for (var i = CurrentlyAlive.Count - 1; i > -1; i--)
+        {
+            if (CurrentlyAlive[i] == null)
+            {
+                CurrentlyAlive.RemoveAt(i);
+            }
+        }
+    }
 
     public void resetTimer()
     {
@@ -111,6 +123,7 @@ public class EnemyManager : MonoBehaviour
             //return true;
         }
         Debug.Log(BossesEliminated + " count " + BossSettingList.Count);
+        StartCoroutine(startCleanUp());
         //return false;
     }
 
@@ -128,7 +141,13 @@ public class EnemyManager : MonoBehaviour
         }
         else if (go.TryGetComponent<EnemyColony2>(out EnemyColony2 EC2))
         {
-
+            EC2.getReferences();
+            EC2.individualHP = BossSettingList[index].BossHP;
+            EC2.indivMaxHP = BossSettingList[index].BossHP;
+            if (nameChange == true)
+            {
+                EC2.NameOfEnemy = BossSettingList[index].newBossName;
+            }
         }
     }
 
@@ -142,6 +161,14 @@ public class EnemyManager : MonoBehaviour
     {
         yield return shortWait;
         startUILogic = true;
+    }
+
+    WaitForSeconds shortWait2 = new WaitForSeconds(5.0f);
+    public IEnumerator startCleanUp()
+    {
+        yield return shortWait2;
+        Debug.Log("COROUTINE CLEAN UP");
+        cleanBossList();
     }
 
     private void Start()
@@ -169,6 +196,7 @@ public class EnemyManager : MonoBehaviour
                     go.transform.parent = this.transform;
                     go.transform.localScale = Vector3.one;
                     linkBosses(go, i, BossSettingList[i].changeName);
+                    CurrentlyAlive.Add(go.transform);
                     
                 }
             }
@@ -182,6 +210,7 @@ public class EnemyManager : MonoBehaviour
                     go.transform.parent = this.transform;
                     go.transform.localScale = Vector3.one;
                     linkBosses(go, i, BossSettingList[i].changeName);
+                    CurrentlyAlive.Add(go.transform);
                 }
             }
         }
