@@ -88,7 +88,8 @@ public class EnemyManager : MonoBehaviour
     public bool enableEnemyUI = false;
     private bool startUILogic = false;
     public float showBigUI = 5;
-    private float BigUITimer = 0;
+    [HideInInspector]
+    public float BigUITimer = 0;
 
     public void cleanBossList()
     {
@@ -102,13 +103,21 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    public void resetTimer()
+    private EnemyColony markedBoss;
+    private EnemyColony2 markedBoss2;
+    public void resetTimer(EnemyColony EC, EnemyColony2 EC2)
     {
         //Debug.Log("ayo");
         if (startUILogic == true)
         {
             enableEnemyUI = true;
             BigUITimer = showBigUI;
+
+            markedBoss = EC;
+            markedBoss2 = EC2;
+            
+
+
         }
     }
 
@@ -317,6 +326,17 @@ public class EnemyManager : MonoBehaviour
             if (BigUITimer <= 0)
             {
                 enableEnemyUI = false;
+            }
+            else
+            {
+                if (markedBoss != null)
+                {
+                    markedBoss.HealthBar.fillAmount = markedBoss.individualHP / markedBoss.indivMaxHP;
+                }
+                else if (markedBoss2 != null)
+                {
+                    markedBoss2.HealthBar.fillAmount = markedBoss2.individualHP / markedBoss2.indivMaxHP;
+                }
             }
             BigUITimer -= Time.deltaTime;
         }

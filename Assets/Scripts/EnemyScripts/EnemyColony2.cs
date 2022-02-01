@@ -747,6 +747,7 @@ public class EnemyColony2 : MonoBehaviour
         }
     }
 
+    private bool globinBullet = false;
     private void OnTriggerEnter2D(Collider2D col)
     {
 
@@ -762,6 +763,14 @@ public class EnemyColony2 : MonoBehaviour
             critRate = collision.critRate;
             critDMG = collision.critDMG;
             knockbackForce = collision.knockbackForce;
+            if (collision.forGlobin == true)
+            {
+                globinBullet = true;
+            }
+            else
+            {
+                globinBullet = false;
+            }
 
 
             takeDamage(damage, collision.transform, speed);
@@ -798,9 +807,12 @@ public class EnemyColony2 : MonoBehaviour
             enemyColony.colonyHealth -= damage;
         individualHP -= damage;
         //HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
-        BossName.text = NameOfEnemy;
-        HealthBar.fillAmount = individualHP / indivMaxHP;
-        enemyColony.resetTimer();
+        if (globinBullet == false)
+        {
+            BossName.text = NameOfEnemy;
+            //HealthBar.fillAmount = individualHP / indivMaxHP;
+            enemyColony.resetTimer(null, this);
+        }
 
 
         //enemyColony.colonyHealth -= damage;
