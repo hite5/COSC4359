@@ -315,6 +315,24 @@ MonoBehaviour:
     targetResolver: {fileID: 8693076160950319758}
     targetCategory: DefaultHemo
     playerParticleSystem: {fileID: 8089623419280815895}
+  utilities:
+    PlayerInputs:
+      UsePrimary: mouse 0
+      ADSOrSecondary: mouse 1
+      Sprint: left shift
+      Dash: space
+      UseItem: e
+      UseVaccine: q
+      Reload: r
+      Weapon1: 1
+      Weapon2: 2
+      Weapon3: 3
+      MeleeWeapon: 4
+      ThrowGrenade: g
+      SwitchGrenade: 5
+      Pause: escape
+      Interact: f
+      DualWieldToggle: t
   enemyManager: {fileID: 0}
   ArmorUpEff: {fileID: 382254069925517312, guid: 9f9f5a5683a9f754e9648717380e5a02, type: 3}
   ArmorDownEff: {fileID: 2402746949625836344, guid: c20cbefbda0c40a488b329f1bd483786, type: 3}
