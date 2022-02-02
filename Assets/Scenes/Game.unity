@@ -147328,6 +147328,74 @@ PrefabInstance:
       propertyPath: m_Name
       value: Essentials
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].BossHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].BossHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].BossHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].BossHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].newBossName
+      value: RIZK
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].newBossName
+      value: YUN (GOATED)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].newBossName
+      value: COLONY (BALLEN)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].newBossName
+      value: COLONY (GOING THROUGH IT)
+      objectReference: {fileID: 0}
     - target: {fileID: 3837925145335139452, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
       value: -2.6715012

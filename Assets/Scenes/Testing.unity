@@ -178,5 +178,133 @@ PrefabInstance:
       propertyPath: m_Name
       value: Essentials
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925144369751796, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -34.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925144369751796, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossHP.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossHP.Array.data[0]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossHP.Array.data[1]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossHP.Array.data[2]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossHP.Array.data[3]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossList.Array.data[0]
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossList.Array.data[1]
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossList.Array.data[2]
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossList.Array.data[3]
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: CurrentlyAlive.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].Boss
+      value: 
+      objectReference: {fileID: 5122931583132573474, guid: 3c9d55d55c5a5e146b9dcac51799aed0, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].Boss
+      value: 
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].BossHP
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].BossHP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].BossHP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].BossHP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].changeName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[0].newBossName
+      value: JIMMY
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[1].newBossName
+      value: TIMMY
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[2].newBossName
+      value: WUMBO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: BossSettingList.Array.data[3].newBossName
+      value: AYOOOOOO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: stats.HP
+      value: 5000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: stats.maxHP
+      value: 5000000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
