@@ -147428,6 +147428,102 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.Dash
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Dash
+      value: space
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.Sprint
+      value: left shift
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Pause
+      value: escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.UseItem
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Reload
+      value: r
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Sprint
+      value: left shift
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.UseItem
+      value: e
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Weapon1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Weapon2
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Weapon3
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.Interact
+      value: f
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.UsePrimary
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.UseVaccine
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.DualWield
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.UsePrimary
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.UseVaccine
+      value: q
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.ThrowGrenade
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.MeleeWeapon
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.ThrowGrenade
+      value: g
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInput.ADSOrSecondary
+      value: mouse 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.SwitchGrenade
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.ADSOrSecondary
+      value: mouse 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: utilities.PlayerInputs.DualWieldToggle
+      value: t
+      objectReference: {fileID: 0}
     - target: {fileID: 3837925145389731736, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.z
       value: -2
