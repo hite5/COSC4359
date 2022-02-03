@@ -7,6 +7,7 @@ public class Pause : MonoBehaviour
 {
     //[SerializeField] private CursorManager.CursorType cursorType;
 
+    private Player player;
 
     public CrossHairCursor crosshair;
     //public static bool GameisPaused = false;
@@ -67,13 +68,16 @@ public class Pause : MonoBehaviour
         //Debug.Log("Setting Cursor To ARROW PAUSE");
     }
 
-
+    private void Start()
+    {
+        player = FindObjectOfType<Player>();
+    }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && GlobalPlayerVariables.GameOver == false)
+        if (player.Utilities.EscapeButtonPressed && GlobalPlayerVariables.GameOver == false)
         {
             if (OptionSettings.GameisPaused == true)
                 resume();

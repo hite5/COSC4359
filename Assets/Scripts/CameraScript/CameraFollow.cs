@@ -94,7 +94,7 @@ public class CameraFollow : MonoBehaviour
         if (AutoADS && player.References.MousePosToPlayerNotNorm.magnitude > ADSTrigger)
             cameraFollowPosition = cameraFollowPosition + MP2P;
 
-        if (!AutoADS && Input.GetKey(KeyCode.Mouse1) && !player.Stats.IsDualWield)
+        if (!AutoADS && player.Utilities.ADSOrSecondaryPressed && !player.Stats.IsDualWield)
         {
             //New Ads, broken
             /*
@@ -124,7 +124,7 @@ public class CameraFollow : MonoBehaviour
             if (!moveHold)
                 cameraMoveSpeed = ADSSpeed;
         }
-        else if(!Input.GetKey(KeyCode.Mouse1))
+        else if(!player.Utilities.ADSOrSecondaryPressed)
         {
             if (!moveHold)
                 cameraMoveSpeed = DefaultCameraMoveSpeed;

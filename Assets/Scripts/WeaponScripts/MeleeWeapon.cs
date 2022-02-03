@@ -170,7 +170,7 @@ public class MeleeWeapon : MonoBehaviour
 
         if (OptionSettings.GameisPaused == false)
         {
-            if (Input.GetKey(KeyCode.Mouse0) && !Input.GetKey(KeyCode.Mouse1))
+            if (player.Utilities.UsePrimaryPressed && !player.Utilities.ADSOrSecondaryPressed)
             {
                 if (!abilityInUse)
                     currDmg = damage;
@@ -184,12 +184,12 @@ public class MeleeWeapon : MonoBehaviour
                     transform.Find("BladeTrail (" + i + ")").GetComponent<TrailRenderer>().enabled = true;
                 }
             }
-            else if(!Input.GetKey(KeyCode.Mouse0))
+            else if(!player.Utilities.UsePrimaryPressed)
             {
                 animCtrl.SetBool("StopSwing", true);
             }
 
-            if (Input.GetKey(KeyCode.Mouse1) && !Input.GetKey(KeyCode.Mouse0))
+            if (player.Utilities.ADSOrSecondaryPressed && !player.Utilities.UsePrimaryPressed)
             {
                 GlobalPlayerVariables.weaponWeight = weaponWeight * 5;
                 currDmg = damage / 5;
@@ -200,14 +200,14 @@ public class MeleeWeapon : MonoBehaviour
                     transform.Find("BladeTrail (" + i + ")").GetComponent<TrailRenderer>().enabled = true;
                 }
             }
-            else if(!Input.GetKey(KeyCode.Mouse1))
+            else if(!player.Utilities.ADSOrSecondaryPressed)
             {
                 GlobalPlayerVariables.weaponWeight = weaponWeight;
                 hitBox.edgeRadius = 0.2f;
                 animCtrl.SetBool("Blocking", false);
             }
             
-            if ((Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && firingDelay == 0)
+            if ((player.Utilities.MeleeButtonPressed || player.Utilities.Weapon1ButtonPressed || player.Utilities.Weapon2ButtonPressed || player.Utilities.Weapon3ButtonPressed) && firingDelay == 0)
             {
                 if (!abilityInUse)
                 {

@@ -25,11 +25,6 @@ public class Player : MonoBehaviour
 
     private PlayerActions actions;
     
-    
-    
-    
-
-
     private Image StaminaBar;
 
     private bool isRunning;
