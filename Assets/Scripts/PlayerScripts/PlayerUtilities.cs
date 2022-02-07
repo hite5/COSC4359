@@ -100,6 +100,7 @@ public class PlayerUtilities
         "u", "v", "w", "x", "y", "z", "numlock", "caps lock", "scroll lock", "right shift", "left shift", "right ctrl",
         "left ctrl", "right alt", "left alt")]
         public string Interact;
+        /*
         [StringInList("t", "mouse 0", "mouse 1", "tab", "space", "up", "down", "right", "left",
         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "escape",
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
@@ -112,6 +113,7 @@ public class PlayerUtilities
         "u", "v", "w", "x", "y", "z", "numlock", "caps lock", "scroll lock", "right shift", "left shift", "right ctrl",
         "left ctrl", "right alt", "left alt")]
         public string PickUpSecondary;
+        */
         [StringInList("mouse 2", "mouse 0", "mouse 1", "tab", "space", "up", "down", "right", "left",
         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "escape",
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
@@ -168,10 +170,10 @@ public class PlayerUtilities
         ReloadButtonPressed = Input.GetKeyDown(PlayerInputs.Reload.ToLower());
         EscapeButtonPressed = Input.GetKeyDown(PlayerInputs.Pause.ToLower());
         InteractButtonPressed = Input.GetKeyDown(PlayerInputs.Interact.ToLower());
-        DualWieldButtonPressed = Input.GetKeyDown(PlayerInputs.DualWieldToggle.ToLower());
+        //DualWieldButtonPressed = Input.GetKeyDown(PlayerInputs.DualWieldToggle.ToLower());
         ItemButtonPressed = Input.GetKeyDown(PlayerInputs.UseItem.ToLower());
         VaccineButtonPressed = Input.GetKeyDown(PlayerInputs.UseVaccine.ToLower());
-        PickUpSecondaryButtonPressed = Input.GetKeyDown(PlayerInputs.PickUpSecondary.ToLower());
-        GlobinRallyButtonPressed = Input.GetKeyDown(PlayerInputs.RallyGlobin.ToLower());
+        //PickUpSecondaryButtonPressed = Input.GetKeyDown(PlayerInputs.PickUpSecondary.ToLower());
+        GlobinRallyButtonPressed = Input.GetKeyDown(PlayerInputs.RallyGlobin.ToLower()) ? true : false;
     }
 }

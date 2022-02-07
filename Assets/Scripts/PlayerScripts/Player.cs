@@ -643,7 +643,6 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         actions.Move(transform);
         if (Utilities.SprintButtonPressed && stats.Stamina > 0)
         {

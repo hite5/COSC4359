@@ -337,8 +337,6 @@ public class GlobalPlayerVariables : MonoBehaviour
                     AttackMode.SetActive(true);
                     flagMarker.SetActive(true);
                     countdown = deactivateText;
-
-
                 }
                 else if (Defend == false)
                 {
