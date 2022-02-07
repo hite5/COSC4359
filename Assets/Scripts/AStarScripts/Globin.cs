@@ -13,6 +13,7 @@ public class Globin : MonoBehaviour
     public Transform EnemyTarget;
 
     public bool isVehicle;
+    public bool isHealer;
     public float nextWaypointDistance = 3f;
 
     Path path;
@@ -37,6 +38,7 @@ public class Globin : MonoBehaviour
 
     //public float contactDamage;
     public float HP = 100;
+    public float maxHP = 100;
     public float AR = 0;
     public float speed = 200f;
     //public float speed = 0;
@@ -59,7 +61,10 @@ public class Globin : MonoBehaviour
     //public float distancefromTarget;
     [HideInInspector]
     public bool canSeeEnemy = false;
-    bool closest = false;
+    [HideInInspector]
+    public bool canSeeGlobinOrAlly = false;
+    [HideInInspector]
+    public bool closest = false;
 
 
     //private float distToEnemy = 0;
@@ -130,11 +135,14 @@ public class Globin : MonoBehaviour
     //DEATH VARIABLE
     private bool isDead = false;
 
+    private GlobinHeal healScript;
 
+    private Player playerScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        //maxHP = HP;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
@@ -154,6 +162,12 @@ public class Globin : MonoBehaviour
         InvokeRepeating("UpdatePath", 0f, 0.5f);
         if(!isVehicle)
             currSprite = spriteLibrary.spriteLibraryAsset.GetCategoryLabelNames(targetCategory).ToArray();
+        if (isHealer == true)
+        {
+            healScript = transform.GetComponent<GlobinHeal>();
+            healScript.globinScript = this;
+            playerScript = Player.instance;
+        }
     }
 
     private void UpdatePath()
@@ -307,11 +321,18 @@ public class Globin : MonoBehaviour
     }
 
 
+    private float lowestHP = Mathf.Infinity;
+    private float tempHP = 0;
+    private Globin TempGlobin;
+    public bool ShowDebugShootRadius = false;
+    private void OnDrawGizmos()
+    {
+        if(ShowDebugShootRadius)
+            Gizmos.DrawWireSphere(transform.position, shootdistance);
+    }
 
-
-
-
-    Vector3 directionToTarget = Vector3.zero;
+    [HideInInspector]
+    public Vector3 directionToTarget = Vector3.zero;
     private void Update()
     {
         if (GlobalPlayerVariables.EnableAI)
@@ -338,7 +359,7 @@ public class Globin : MonoBehaviour
                 //var rayDirection = player.position - transform.position;
                 //Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
 
-                if (GlobalPlayerVariables.Defend == true)
+                if (GlobalPlayerVariables.Defend == true && hit.collider != null)
                 {
                     if (hit.collider.gameObject.CompareTag("Player"))
                     {
@@ -354,7 +375,7 @@ public class Globin : MonoBehaviour
                         //Debug.Log("Player is NOT Visable");
                     }
                 }
-                else if (GlobalPlayerVariables.Defend == false)
+                else if (GlobalPlayerVariables.Defend == false && hit.collider != null)
                 {
                     if (hit.collider.gameObject.CompareTag("DefendPos"))
                     {
@@ -383,64 +404,147 @@ public class Globin : MonoBehaviour
 
 
                 //working on clearing up globin vision
-                float closestDistanceSqr = Mathf.Infinity;
-                Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, shootdistance);
-                foreach (Collider2D collider2D in ColliderArray)
+                if (isHealer == false)
                 {
-                    if (collider2D.TryGetComponent<EnemyMarker>(out EnemyMarker marked))
+                    float closestDistanceSqr = Mathf.Infinity;
+                    Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, shootdistance);
+                    foreach (Collider2D collider2D in ColliderArray)
                     {
-                        if (collider2D.TryGetComponent<Transform>(out Transform enemy))
+                        if (collider2D.TryGetComponent<EnemyMarker>(out EnemyMarker marked))
                         {
-                            //CAN THEY SEE THEM
-
-                            //can probably optimize this later
-                            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-
-
-                            if (hit2.collider.gameObject.CompareTag("EnemyMelee") || hit2.collider.gameObject.CompareTag("Enemy") || hit2.collider.gameObject.CompareTag("Colony"))
+                            if (collider2D.TryGetComponent<Transform>(out Transform enemy))
                             {
-                                canSeeEnemy = true;
-                                directionToTarget = enemy.position - transform.position;
-                                float dSqrToTarget = directionToTarget.sqrMagnitude;
-                                if (dSqrToTarget < closestDistanceSqr)
+                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                                if (hit2.collider.gameObject.CompareTag("EnemyMelee") || hit2.collider.gameObject.CompareTag("Enemy") || hit2.collider.gameObject.CompareTag("Colony"))
                                 {
-                                    closestDistanceSqr = dSqrToTarget;
-                                    EnemyTarget = enemy;
-                                    closest = true;
-                                    //Debug.Log("Found target");
-
-                                    //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                    canSeeEnemy = true;
+                                    directionToTarget = enemy.position - transform.position;
+                                    float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                    if (dSqrToTarget < closestDistanceSqr)
+                                    {
+                                        closestDistanceSqr = dSqrToTarget;
+                                        EnemyTarget = enemy;
+                                        closest = true;
+                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                    }
                                 }
                             }
-
-
-                            //target = enemy;
                         }
                     }
-                }
-                /*
-                if (canSeeEnemy == false)
-                    Debug.DrawRay(transform.position, enemy.transform.position - transform.position, Color.white);
-                */
-
-
-
-                if (EnemyTarget != null)
-                {
-                    RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-                    if (hit3.collider.gameObject.CompareTag("EnemyMelee") || hit3.collider.gameObject.CompareTag("Enemy") || hit3.collider.gameObject.CompareTag("Colony"))
+                    /*
+                    if (canSeeEnemy == false)
+                        Debug.DrawRay(transform.position, enemy.transform.position - transform.position, Color.white);
+                    */
+                    if (EnemyTarget != null)
                     {
-                        canSeeEnemy = true;
-                        //Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.red);
+                        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                        if (hit3.collider.gameObject.CompareTag("EnemyMelee") || hit3.collider.gameObject.CompareTag("Enemy") || hit3.collider.gameObject.CompareTag("Colony"))
+                        {
+                            canSeeEnemy = true;
+                            //Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.red);
+                        }
+                        else
+                        {
+                            canSeeEnemy = false;
+                        }
                     }
                     else
                     {
                         canSeeEnemy = false;
                     }
                 }
-                else
-                {
-                    canSeeEnemy = false;
+                else 
+                {  
+
+
+
+                    //float closestDistanceSqr = Mathf.Infinity;
+                    tempHP = 0;
+                    //lowestHP = Mathf.Infinity;
+                    Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, shootdistance);
+                    foreach (Collider2D collider2D in ColliderArray)
+                    {
+                        if (collider2D.TryGetComponent<GoodGuyMarker>(out GoodGuyMarker marked))
+                        {
+                            if (collider2D.TryGetComponent<Transform>(out Transform GoodGuy))
+                            {
+                                //CAN THEY SEE THEM
+
+                                //can probably optimize this later
+
+                                if (collider2D.TryGetComponent<Globin>(out Globin glob))
+                                {
+                                    TempGlobin = glob;
+                                }
+                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, GoodGuy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+
+                                if (GoodGuy.transform != transform && hit2.collider != null && TempGlobin != EnemyTarget)
+                                {
+
+                                    if (hit2.collider.gameObject.CompareTag("Player"))
+                                    {
+                                        tempHP = playerScript.Stats.Health;
+                                        //globinScript.playerStash.
+                                    }
+                                    else if (hit2.collider.gameObject.CompareTag("Globin"))
+                                    {
+                                        tempHP = TempGlobin.HP;
+                                    }
+
+                                    Debug.Log("HP FOR HEAL CIRCLE " + tempHP + " LOWEST HP IS " + lowestHP);
+                                    //aim for lowest health?
+                                    //hemo priority?
+
+                                    //todo
+                                    //aoe
+                                    if (tempHP < lowestHP)
+                                    {
+                                        lowestHP = tempHP;
+                                        canSeeEnemy = true;
+                                        EnemyTarget = GoodGuy;
+                                        closest = true;
+                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        //}
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                        /*
+                        if (canSeeEnemy == false)
+                            Debug.DrawRay(transform.position, enemy.transform.position - transform.position, Color.white);
+                        */
+
+
+
+                    if (EnemyTarget != null)
+                    {
+                        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                        if (hit3.collider != null)
+                        {
+                            if (hit3.collider.transform == EnemyTarget) //hit3.collider.gameObject.CompareTag("Player") || hit3.collider.gameObject.CompareTag("Globin")
+                            {
+                                canSeeEnemy = true;
+                                Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.white);
+                            }
+                            else
+                            {
+                                canSeeEnemy = false;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        canSeeEnemy = false;
+                    }
+
+                    if (EnemyTarget == null)
+                    {
+                        Debug.Log("ENEMY TARGET NULL ====");
+                        lowestHP = Mathf.Infinity;
+                    }
+                    
                 }
 
 
@@ -449,7 +553,7 @@ public class Globin : MonoBehaviour
                 if (EnemyTarget != null && canSeeEnemy == true && closest == false)
                     Debug.DrawRay(transform.position, enemy.transform.position - transform.position, Color.black);
                 */
-                if (canSeeEnemy == true && GlobalPlayerVariables.GameOver == false)
+                if ((canSeeEnemy == true && GlobalPlayerVariables.GameOver == false))
                 {
 
                     if (timeBtwShots <= 0)
@@ -659,9 +763,65 @@ public class Globin : MonoBehaviour
     }
 
 
+    public void recieveHeal(float amountToGain)
+    {
+        if (amountToGain + HP >= maxHP)
+        {
+            //Debug.Log("Heal 1");
+            showHeal(Mathf.Abs(maxHP - HP), transform, 10);
+            if(HP < maxHP)
+                StartCoroutine(FlashGreen());
+            HP = maxHP;
+            
+           // Debug.Log(HP + " HPheal 1");
+        }
+        else
+        {
+            //Debug.Log("Heal 2");
+            HP += amountToGain;
+            showHeal(amountToGain, transform, 10);
+            StartCoroutine(FlashGreen());
+           // Debug.Log(HP + " HPHeal 2");
+        }
+
+    }
+
+
+    void showHeal(float heal, Transform impact, float speed)
+    {
+       // Debug.Log(heal + "SHOW 3");
+        if (heal >= 1)
+        {
+            heal = Mathf.Round(heal);
+            //Debug.Log("Heal 3");
+            Vector3 direction = (transform.position - impact.transform.position).normalized;
+            GameObject go = ObjectPool.instance.GetDamagePopUpFromPool();
+            go.GetComponent<Animator>().Play("DamagePopUp", -1, 0f);
+            go.transform.SetParent(null);
+            go.transform.position = impact.position;
+            go.transform.rotation = Quaternion.identity;
+
+            Color colorTop = Color.green;
+            Color colorBottom = Color.green;
+
+            go.GetComponent<TextMeshPro>().text = heal.ToString();
+            go.GetComponent<TextMeshPro>().colorGradient = new VertexGradient(colorTop, colorTop, colorBottom, colorBottom);
+            go.GetComponent<TextMeshPro>().fontSize = DamageText.GetComponent<TextMeshPro>().fontSize * 0.8f;
+
+            go.GetComponent<DestroyText>().spawnPos(direction.x, direction.y, speed / 5);
+        }
+    }
+
     public IEnumerator FlashRed()
     {
         sprite.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        sprite.color = Color.white;
+    }
+
+    public IEnumerator FlashGreen()
+    {
+        sprite.color = Color.green;
         yield return new WaitForSeconds(0.1f);
         sprite.color = Color.white;
     }
@@ -742,12 +902,5 @@ public class Globin : MonoBehaviour
             targetResolver.SetCategoryAndLabel(targetCategory, currSprite[7]);
         }
     }
-
-
-
-
-
-
-
 
 }

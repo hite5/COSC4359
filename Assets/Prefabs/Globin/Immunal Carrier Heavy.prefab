@@ -610,12 +610,14 @@ MonoBehaviour:
   target: {fileID: 3517825292825441637, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
   EnemyTarget: {fileID: 0}
   isVehicle: 1
+  isHealer: 0
   nextWaypointDistance: 3
   rb: {fileID: 0}
   DamageText: {fileID: 5578586631025405740, guid: 9f7757d3160d49940b41a53ce5fcba10, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
   HP: 1200
+  maxHP: 1200
   AR: 105
   speed: 8000
   stoppingDistance: 10
@@ -626,6 +628,8 @@ MonoBehaviour:
   shootdistance: 40
   distancefromplayer: 0
   canSeeEnemy: 0
+  canSeeGlobinOrAlly: 0
+  closest: 0
   circleRadius: 6
   timeTillNextMove: 13
   beginningrangetoshoot: 2
@@ -643,6 +647,8 @@ MonoBehaviour:
   targetResolver: {fileID: 0}
   targetCategory: 
   facing: 0
+  ShowDebugShootRadius: 0
+  directionToTarget: {x: 0, y: 0, z: 0}
 --- !u!114 &4800548710497325547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,12 +867,14 @@ MonoBehaviour:
   target: {fileID: 3517825292825441637, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
   EnemyTarget: {fileID: 0}
   isVehicle: 0
+  isHealer: 0
   nextWaypointDistance: 3
   rb: {fileID: 0}
   DamageText: {fileID: 1138736699864978853, guid: 7340a996cc5e41d49941f7248c03f3ff, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
   HP: 100
+  maxHP: 100
   AR: 0
   speed: 0
   stoppingDistance: 8
@@ -877,6 +885,8 @@ MonoBehaviour:
   shootdistance: 50
   distancefromplayer: 0
   canSeeEnemy: 0
+  canSeeGlobinOrAlly: 0
+  closest: 0
   circleRadius: 8
   timeTillNextMove: 3
   beginningrangetoshoot: 3
@@ -894,6 +904,8 @@ MonoBehaviour:
   targetResolver: {fileID: 0}
   targetCategory: 
   facing: 0
+  ShowDebugShootRadius: 0
+  directionToTarget: {x: 0, y: 0, z: 0}
 --- !u!212 &3023557367685933460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1104,12 +1116,14 @@ MonoBehaviour:
   target: {fileID: 3517825292825441637, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
   EnemyTarget: {fileID: 0}
   isVehicle: 0
+  isHealer: 0
   nextWaypointDistance: 3
   rb: {fileID: 0}
   DamageText: {fileID: 1138736699864978853, guid: 7340a996cc5e41d49941f7248c03f3ff, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
   HP: 100
+  maxHP: 100
   AR: 0
   speed: 0
   stoppingDistance: 8
@@ -1120,6 +1134,8 @@ MonoBehaviour:
   shootdistance: 30
   distancefromplayer: 0
   canSeeEnemy: 0
+  canSeeGlobinOrAlly: 0
+  closest: 0
   circleRadius: 8
   timeTillNextMove: 3
   beginningrangetoshoot: 1
@@ -1137,6 +1153,8 @@ MonoBehaviour:
   targetResolver: {fileID: 0}
   targetCategory: 
   facing: 0
+  ShowDebugShootRadius: 0
+  directionToTarget: {x: 0, y: 0, z: 0}
 --- !u!212 &7367193205810788500
 SpriteRenderer:
   m_ObjectHideFlags: 0

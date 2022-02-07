@@ -34962,7 +34962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: HEALER
 --- !u!1 &8035387256387518603
 GameObject:
   m_ObjectHideFlags: 0
@@ -40139,9 +40139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653fa6996ba04bb4db81a3b18c2852b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 1500
   levelReq: 0
-  ItemBeingSold: {fileID: 0}
+  ItemBeingSold: {fileID: 3303234073471645903, guid: 08b8e1c2f8657a94d966bf85a6927d3a, type: 3}
   owned: 0
   isWeapon: 0
   isGlobin: 1

@@ -953,6 +953,10 @@ public class Player : MonoBehaviour
                 {
                     RememberLoadout.Globin5Support++;
                 }
+                if (go.name.Contains("5 Healer"))
+                {
+                    RememberLoadout.Globin5Healer++;
+                }
 
 
                 //globin vehicles
@@ -1036,6 +1040,13 @@ public class Player : MonoBehaviour
             else if(go.name.Contains("5 Support"))
             {
                 for (int i = 0; i < RememberLoadout.Globin5Support; i++)
+                {
+                    var newGlobin = Instantiate(go, globinSpawn.position, Quaternion.identity);
+                }
+            }
+            else if (go.name.Contains("5 Healer"))
+            {
+                for (int i = 0; i < RememberLoadout.Globin5Healer; i++)
                 {
                     var newGlobin = Instantiate(go, globinSpawn.position, Quaternion.identity);
                 }
