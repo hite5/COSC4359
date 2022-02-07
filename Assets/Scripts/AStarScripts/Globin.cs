@@ -491,7 +491,7 @@ public class Globin : MonoBehaviour
                                         tempHP = TempGlobin.HP;
                                     }
 
-                                    Debug.Log("HP FOR HEAL CIRCLE " + tempHP + " LOWEST HP IS " + lowestHP);
+                                    //Debug.Log("HP FOR HEAL CIRCLE " + tempHP + " LOWEST HP IS " + lowestHP);
                                     //aim for lowest health?
                                     //hemo priority?
 
@@ -541,7 +541,7 @@ public class Globin : MonoBehaviour
 
                     if (EnemyTarget == null)
                     {
-                        Debug.Log("ENEMY TARGET NULL ====");
+                        //Debug.Log("ENEMY TARGET NULL ====");
                         lowestHP = Mathf.Infinity;
                     }
                     

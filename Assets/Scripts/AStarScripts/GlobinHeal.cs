@@ -21,12 +21,14 @@ public class GlobinHeal : MonoBehaviour
     public int amountOfTimesToPulse = 5;
 
     public Transform healTransform;
-    private List<Collider2D> alreadyPingedColliderList;
+    //private List<Collider2D> alreadyPingedColliderList;
+    private HashSet<Collider2D> alreadyPingedColliderList;
 
     private void Awake()
     {
         healTransform = transform.Find("healCircle");
-        alreadyPingedColliderList = new List<Collider2D>();
+        //alreadyPingedColliderList = new List<Collider2D>();
+        alreadyPingedColliderList = new HashSet<Collider2D>();
     }
     public int timesPulsed = 0;
     private void Update()
