@@ -102,12 +102,14 @@ MonoBehaviour:
   target: {fileID: 3517825292825441637, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
   EnemyTarget: {fileID: 0}
   isVehicle: 0
+  isHealer: 0
   nextWaypointDistance: 3
   rb: {fileID: 0}
   DamageText: {fileID: 5578586631025405740, guid: 9f7757d3160d49940b41a53ce5fcba10, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
   HP: 450
+  maxHP: 450
   AR: 18
   speed: 250
   stoppingDistance: 4
@@ -118,6 +120,8 @@ MonoBehaviour:
   shootdistance: 19
   distancefromplayer: 0
   canSeeEnemy: 0
+  canSeeGlobinOrAlly: 0
+  closest: 0
   circleRadius: 2
   timeTillNextMove: 0.5
   beginningrangetoshoot: 0.8
@@ -135,6 +139,8 @@ MonoBehaviour:
   targetResolver: {fileID: -2866866842205024693}
   targetCategory: GlobinDefault
   facing: 0
+  ShowDebugShootRadius: 0
+  directionToTarget: {x: 0, y: 0, z: 0}
 --- !u!114 &4651131086350033948
 MonoBehaviour:
   m_ObjectHideFlags: 0

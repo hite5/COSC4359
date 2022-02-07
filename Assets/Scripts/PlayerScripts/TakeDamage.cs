@@ -169,6 +169,57 @@ public class TakeDamage : MonoBehaviour
         AudioManager.instance.PlayMusic("Lose");
     }
 
+    public void recieveHeal(float amountToGain)
+    {
+        if (amountToGain + player.Stats.Health >= maxHP)
+        {
+            //Debug.Log("Heal 1");
+            showHeal(Mathf.Abs(maxHP - player.Stats.Health), transform, 10);
+            if (player.Stats.Health < maxHP)
+                StartCoroutine(FlashGreen());
+            player.Stats.Health = maxHP;
+            HealthBar.fillAmount = player.Stats.Health / maxHP;
+            // Debug.Log(HP + " HPheal 1");
+        }
+        else
+        {
+            //Debug.Log("Heal 2");
+            player.Stats.Health += amountToGain;
+            showHeal(amountToGain, transform, 10);
+            StartCoroutine(FlashGreen());
+            // Debug.Log(HP + " HPHeal 2");
+            HealthBar.fillAmount = player.Stats.Health / maxHP;
+        }
+
+    }
+
+
+    void showHeal(float heal, Transform impact, float speed)
+    {
+        // Debug.Log(heal + "SHOW 3");
+        if (heal >= 1)
+        {
+            heal = Mathf.Round(heal);
+            //Debug.Log("Heal 3");
+            Vector3 direction = (transform.position - impact.transform.position).normalized;
+            GameObject go = ObjectPool.instance.GetDamagePopUpFromPool();
+            go.GetComponent<Animator>().Play("DamagePopUp", -1, 0f);
+            go.transform.SetParent(null);
+            go.transform.position = impact.position;
+            go.transform.rotation = Quaternion.identity;
+
+            Color colorTop = Color.green;
+            Color colorBottom = Color.green;
+
+            go.GetComponent<TextMeshPro>().text = heal.ToString();
+            go.GetComponent<TextMeshPro>().colorGradient = new VertexGradient(colorTop, colorTop, colorBottom, colorBottom);
+            go.GetComponent<TextMeshPro>().fontSize = HealthDamageText.GetComponent<TextMeshPro>().fontSize * 0.8f;
+
+            go.GetComponent<DestroyText>().spawnPos(direction.x, direction.y, speed / 5);
+        }
+    }
+
+
     public void takeDamage(float damage, Transform impact, float speed)
     {
         //Debug.Log(damage);
@@ -277,6 +328,13 @@ public class TakeDamage : MonoBehaviour
     public IEnumerator FlashRed()
     {
         sprite.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        sprite.color = Color.white;
+    }
+
+    public IEnumerator FlashGreen()
+    {
+        sprite.color = Color.green;
         yield return new WaitForSeconds(0.1f);
         sprite.color = Color.white;
     }
