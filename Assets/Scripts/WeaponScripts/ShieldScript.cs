@@ -96,7 +96,7 @@ public class ShieldScript : MonoBehaviour
             }
             //Debug.Log(doneDeploy);
             animCtrl.SetFloat("DeploySpeed", deploySpeed);
-            if (Input.GetKeyDown(KeyCode.Alpha4) && firingDelay == 0)
+            if (player.Utilities.MeleeButtonPressed && firingDelay == 0)
             {
                 if (!deploy)
                 {

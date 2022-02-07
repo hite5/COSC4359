@@ -61,6 +61,7 @@ public class RememberLoadout : MonoBehaviour
     public static int Globin5Operator = 0;
     public static int Globin5Rocketeer = 0;
     public static int Globin5Support = 0;
+    public static int Globin5Healer = 0;
 
     public static int ImmunalCarrierLight = 0;
     public static int ImmunalCarrierMedium = 0;
@@ -100,6 +101,7 @@ public class RememberLoadout : MonoBehaviour
         Globin5Operator = 0;
         Globin5Rocketeer = 0;
         Globin5Support = 0;
+        Globin5Healer = 0;
 
         ImmunalCarrierLight = 0;
         ImmunalCarrierMedium = 0;

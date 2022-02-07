@@ -11,6 +11,8 @@ public class Chest : Interactable
         public int chanceOfDrop;
     }
 
+    private Player player;
+
     private Animator anim;
     public bool interacted = false;
     private Vector3 chestPosition;
@@ -23,6 +25,7 @@ public class Chest : Interactable
     // Start is called before the first frame update
     void Start()
     {
+        player = FindObjectOfType<Player>();
         anim = GetComponent<Animator>();
         for (int i = 0; i < droppables.Length; i++)
         {
@@ -41,8 +44,8 @@ public class Chest : Interactable
     {
         if (playerInRange && !interacted)
         {
-            // On 'e' press open up the object
-            if (Input.GetKeyDown(KeyCode.F))
+            // On 'f' press open up the object
+            if (player.Utilities.InteractButtonPressed)
             {
                 openChest();
             }

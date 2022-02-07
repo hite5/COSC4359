@@ -60,6 +60,9 @@ public class PlayerActions
 
     private float currSlot = 1;
 
+    private float input = 1;
+    private float currInput = 1;
+
     //private ArmorDown ArmorDownEff;
 
     //private bool isWaiting = false;
@@ -360,10 +363,13 @@ public class PlayerActions
     {
         //bool cond = false;
         float[] allowSlot = { 1, 2, 3, 4 };
-        float input = 1;
-
-        if((float.TryParse(Input.inputString, out input)))
+        input = player.Utilities.Weapon1ButtonPressed ? 1 :
+                player.Utilities.Weapon2ButtonPressed ? 2 :
+                player.Utilities.Weapon3ButtonPressed ? 3 : 
+                player.Utilities.MeleeButtonPressed ? 4 : input;
+        if (input != currInput)
         {
+            currInput = input;
             if (Array.Exists(allowSlot, x => x == input))
                 foreach (Transform rw in rightArm)
                 {
@@ -380,7 +386,7 @@ public class PlayerActions
                                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
                                 tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
                                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
-                                if(currSlot != input)
+                                if (currSlot != input)
                                     AudioManager.instance.PlayEffect("SwitchGun");
                                 currSlot = input;
                             }
@@ -431,20 +437,20 @@ public class PlayerActions
                             rw.gameObject.SetActive(false);
                         }
                     }
-                    
+
                     if (rw.GetComponent<ShieldScript>() != null)
                     {
                         //Debug.Log(rw.gameObject.activeSelf);
-                       
+
                         if (rw.GetComponent<ShieldScript>().Slot == input)
                         {
                             player.transform.Find("RightArm").transform.position = player.transform.position;
                             player.transform.Find("LeftArm").transform.position = player.transform.position;
                             //cond = true;
                             ShieldScript RWeapon = rw.GetComponent<ShieldScript>();
-                            
+
                             rw.gameObject.SetActive(true);
-                            
+
                             //rw.gameObject.SetActive(true);
                             if (rw.gameObject.activeSelf)
                             {
@@ -474,7 +480,7 @@ public class PlayerActions
                             ShieldScript RWeapon = rw.GetComponent<ShieldScript>();
                             RWeapon.transform.position = rightArm.transform.position;
                             RWeapon.transform.rotation = rightArm.transform.rotation;
-                            if(!RWeapon.deploy)
+                            if (!RWeapon.deploy)
                                 rw.gameObject.SetActive(false);
                         }
                     }

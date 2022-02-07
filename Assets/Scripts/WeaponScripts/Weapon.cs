@@ -254,7 +254,7 @@ public class Weapon : MonoBehaviour
         GlobalPlayerVariables.weaponWeight = weaponWeight;
         reloadBar.fillAmount = GlobalPlayerVariables.Reserves / GlobalPlayerVariables.MaxReserves;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (player.Utilities.UsePrimaryPressed)
         {
             //Debug.Log("Set variable");
             setDamage();
@@ -298,7 +298,7 @@ public class Weapon : MonoBehaviour
         }
 
 
-        if ((ammoCount <= 0 && Input.GetKey(KeyCode.Mouse0) || ammoCount < maxAmmoInClip && Input.GetKeyUp(KeyCode.R)) && firingDelay == 0)
+        if ((ammoCount <= 0 && player.Utilities.UsePrimaryPressed || ammoCount < maxAmmoInClip && player.Utilities.ReloadButtonPressed) && firingDelay == 0)
         {
             if (GlobalPlayerVariables.Reserves > 0)
             {
@@ -334,7 +334,7 @@ public class Weapon : MonoBehaviour
         {
             if (burstFire == false)
             {
-                if (Input.GetKey(KeyCode.Mouse0) && OptionSettings.GameisPaused == false && firingDelay == 0)
+                if (player.Utilities.UsePrimaryPressed && OptionSettings.GameisPaused == false && firingDelay == 0)
                 {
                     if (ammoCount > 0)
                     {
@@ -375,7 +375,7 @@ public class Weapon : MonoBehaviour
 
                     }
                 }
-                if (!Input.GetKey(KeyCode.Mouse0))
+                if (!player.Utilities.UsePrimaryPressed)
                 {
                     WeaponAnim.SetBool("IsShooting", false);
                     WeaponAnim.SetFloat("FireRate", 0);
@@ -391,7 +391,7 @@ public class Weapon : MonoBehaviour
             else
             {
 
-                if (Input.GetKeyDown(KeyCode.Mouse0) && OptionSettings.GameisPaused == false && firingDelay == 0)
+                if (player.Utilities.UsePrimaryPressed && OptionSettings.GameisPaused == false && firingDelay == 0)
                 {
                     if (ammoCount > 0)
                     {
@@ -504,7 +504,7 @@ public class Weapon : MonoBehaviour
 
 
 
-        if (ammoCount <= 0 && Input.GetButton("Fire2") || ammoCount < maxAmmoInClip && Input.GetKeyUp(KeyCode.R))
+        if (ammoCount <= 0 && player.Utilities.ADSOrSecondaryPressed || ammoCount < maxAmmoInClip && player.Utilities.ReloadButtonPressed)
         {
             if (reload == false && fired == false)
             {

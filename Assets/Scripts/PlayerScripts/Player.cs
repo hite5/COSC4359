@@ -9,20 +9,22 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private PlayerStats stats;
+    public PlayerStats Stats { get => stats; }
 
     [SerializeField]
     private PlayerComponents components;
+    public PlayerComponents Components { get => components; }
 
     [SerializeField]
     private PlayerReferences references;
-
-    private PlayerUtilities utilities;
-
-    private PlayerActions actions;
-    public PlayerComponents Components { get => components; }
-    public PlayerStats Stats { get => stats; }
     public PlayerReferences References { get => references; }
 
+    [SerializeField]
+    private PlayerUtilities utilities;
+    public PlayerUtilities Utilities { get => utilities; }
+
+    private PlayerActions actions;
+    
     private Image StaminaBar;
 
     private bool isRunning;
@@ -451,7 +453,7 @@ public class Player : MonoBehaviour
             utilities.HandleInput();
             stats.ArmorLevel = Mathf.CeilToInt(stats.Armorz / stats.ArmorPerArmorLevelz);
 
-            if (Input.GetKey(KeyCode.LeftShift) && stats.Direction != Vector2.zero)
+            if (Utilities.SprintButtonPressed && stats.Direction != Vector2.zero)
             {
                 if (stats.Stamina > 0)
                     stats.Stamina -= Time.deltaTime * (stats.StamDrainRate - stats.StaminaRegenRate);
@@ -471,9 +473,9 @@ public class Player : MonoBehaviour
 
             if (OptionSettings.GameisPaused == false)
             {
-                if (Input.GetKeyUp(KeyCode.T))
+                if (Utilities.DualWieldButtonPressed)
                     actions.ToggleDual();
-                if (Input.GetKeyUp(KeyCode.E) && RightSlotAvailableToUse)
+                if (Utilities.ItemButtonPressed && RightSlotAvailableToUse)
                 {
                     if (stats.NumofHeal > 0 && stats.Health < stats.MaxHealth)
                     {
@@ -483,7 +485,7 @@ public class Player : MonoBehaviour
                         StartCoroutine(RightSlotItemCooldown(stats.TylenolCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
                     }
                 }
-                if (Input.GetKeyDown(KeyCode.Alpha5))
+                if (Utilities.GrenadeSwitchButtonPressed)
                 {
                     nadeSelector += 1;
                     if (nadeSelector > NumOfTypesOfNade - 1)
@@ -506,7 +508,7 @@ public class Player : MonoBehaviour
                             break;
                     }
                 }
-                if (Input.GetKeyUp(KeyCode.G))
+                if (Utilities.GrenadeThrowButtonPressed)
                 {
                     switch (nadeSelector)
                     {
@@ -533,7 +535,7 @@ public class Player : MonoBehaviour
                             break;
                     }
                 }
-                if (Input.GetKeyUp(KeyCode.Q) && LeftSlotAvailableToUse && PhizerIsActive == false)
+                if (Utilities.VaccineButtonPressed && LeftSlotAvailableToUse && PhizerIsActive == false)
                 {
                     if (stats.NumofPhizer > 0)
                     {
@@ -641,9 +643,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         actions.Move(transform);
-        if (Input.GetKey(KeyCode.LeftShift) && stats.Stamina > 0)
+        if (Utilities.SprintButtonPressed && stats.Stamina > 0)
         {
             actions.Sprint();
             if (components.PlayerRidgitBody.velocity != Vector2.zero)
@@ -706,7 +707,7 @@ public class Player : MonoBehaviour
 
     private void DashProc()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && currDashCooldown == 0 && stats.Stamina >= stats.DashStamCost && stats.Direction.magnitude != 0 && !phaseOverWrite)
+        if (Utilities.DashButtonPressed && currDashCooldown == 0 && stats.Stamina >= stats.DashStamCost && stats.Direction.magnitude != 0 && !phaseOverWrite)
         {
             //Debug.Log("Dash");
             AudioManager.instance.PlayEffect(dashSound);
@@ -952,6 +953,10 @@ public class Player : MonoBehaviour
                 {
                     RememberLoadout.Globin5Support++;
                 }
+                if (go.name.Contains("5 Healer"))
+                {
+                    RememberLoadout.Globin5Healer++;
+                }
 
 
                 //globin vehicles
@@ -1035,6 +1040,13 @@ public class Player : MonoBehaviour
             else if(go.name.Contains("5 Support"))
             {
                 for (int i = 0; i < RememberLoadout.Globin5Support; i++)
+                {
+                    var newGlobin = Instantiate(go, globinSpawn.position, Quaternion.identity);
+                }
+            }
+            else if (go.name.Contains("5 Healer"))
+            {
+                for (int i = 0; i < RememberLoadout.Globin5Healer; i++)
                 {
                     var newGlobin = Instantiate(go, globinSpawn.position, Quaternion.identity);
                 }

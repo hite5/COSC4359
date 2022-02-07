@@ -172,6 +172,8 @@ public class GlobalPlayerVariables : MonoBehaviour
 
     public static float bulletLifeTime = 3f;
 
+    private Player player;
+
 
     private void Awake()
     {
@@ -182,6 +184,7 @@ public class GlobalPlayerVariables : MonoBehaviour
 
     private void Start()
     {
+        player = FindObjectOfType<Player>();
         if (SceneManager.GetActiveScene().name != "Title")
         {
             Debug.Log("RESET");
@@ -319,10 +322,8 @@ public class GlobalPlayerVariables : MonoBehaviour
             }
 
             
-            if (Input.GetKeyDown(KeyCode.Mouse2))
+            if (player.Utilities.GlobinRallyButtonPressed)
             {
-               
-
                 if (Defend == true)
                 {
                     Debug.Log("Follow Cursor");
@@ -336,8 +337,6 @@ public class GlobalPlayerVariables : MonoBehaviour
                     AttackMode.SetActive(true);
                     flagMarker.SetActive(true);
                     countdown = deactivateText;
-
-
                 }
                 else if (Defend == false)
                 {

@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
 
     //private Transform player;
     public bool forGlobin = false;
+    public bool isHealingBullet = false;
+    public float HealingAmount = 150f;
     public float speed = 20f;
     public Rigidbody2D rb;
     public float damage;
@@ -159,6 +161,22 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }              
         }
+
+        if (isHealingBullet == true)
+        {
+            if (hitInfo.CompareTag("Globin"))
+            {
+                hitInfo.TryGetComponent<Globin>(out Globin Obj);
+                Obj.recieveHeal(HealingAmount);
+
+            }
+            else if (hitInfo.CompareTag("Player"))
+            {
+                hitInfo.TryGetComponent<TakeDamage>(out TakeDamage Obj2);
+                Obj2.recieveHeal(HealingAmount);
+            }
+        }
+
     }
 
     private void OnTriggerExit(Collider other)

@@ -86,7 +86,7 @@ public class WeaponStandScript : MonoBehaviour
                 }
                 if (!isMeleeWeapon)
                 {
-                    if ((Input.GetKeyDown(KeyCode.Alpha1) && currSlot == 1) || (!isHoldingWeapon && !PrimaryWpSlot[0]))
+                    if ((player.GetComponent<Player>().Utilities.Weapon1ButtonPressed && currSlot == 1) || (!isHoldingWeapon && !PrimaryWpSlot[0]))
                     {
                         if (isHoldingWeapon)
                             DestroyWeaponInSlot();
@@ -96,7 +96,7 @@ public class WeaponStandScript : MonoBehaviour
                         newWeapon.name = DisplayedWeapon.name;
                         newWeapon.GetComponent<Weapon>().Slot = 1;
                     }
-                    else if ((Input.GetKeyDown(KeyCode.Alpha2) && currSlot == 2) || (!isHoldingWeapon && !PrimaryWpSlot[1]))
+                    else if ((player.GetComponent<Player>().Utilities.Weapon2ButtonPressed && currSlot == 2) || (!isHoldingWeapon && !PrimaryWpSlot[1]))
                     {
                         if (isHoldingWeapon)
                             DestroyWeaponInSlot();
@@ -106,7 +106,7 @@ public class WeaponStandScript : MonoBehaviour
                         newWeapon.name = DisplayedWeapon.name;
                         newWeapon.GetComponent<Weapon>().Slot = 2;
                     }
-                    else if ((Input.GetKeyDown(KeyCode.Alpha3) && currSlot == 3) || (!isHoldingWeapon && !PrimaryWpSlot[2]))
+                    else if ((player.GetComponent<Player>().Utilities.Weapon3ButtonPressed && currSlot == 3) || (!isHoldingWeapon && !PrimaryWpSlot[2]))
                     {
                         if (isHoldingWeapon)
                             DestroyWeaponInSlot();
@@ -116,7 +116,7 @@ public class WeaponStandScript : MonoBehaviour
                         newWeapon.name = DisplayedWeapon.name;
                         newWeapon.GetComponent<Weapon>().Slot = 3;
                     }
-                    else if (Input.GetKeyDown(KeyCode.Y) && LeftArm != null)
+                    else if (player.GetComponent<Player>().Utilities.PickUpSecondaryButtonPressed && LeftArm != null)
                     {
                         GameObject oldWeapon = null;
                         if (LeftArm.transform.childCount > 0)
@@ -132,7 +132,7 @@ public class WeaponStandScript : MonoBehaviour
                 {
                     Debug.Log("PickupMelee");
                     Debug.Log(haveMelee);
-                    if ((Input.GetKeyDown(KeyCode.Alpha4) && isHoldingMelee) || (!haveMelee))
+                    if ((player.GetComponent<Player>().Utilities.MeleeButtonPressed && isHoldingMelee) || (!haveMelee))
                     {
                         if (isHoldingMelee)
                             DestroyWeaponInSlot();
