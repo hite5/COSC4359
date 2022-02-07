@@ -54,7 +54,7 @@ public class GlobinHeal : MonoBehaviour
                     }
                     //healTransform.localScale = new Vector3(range, range);
                     healerPS.Play();
-                    psShape.radius = range;
+                    psShape.radius = range + 0.75f;
                     psEmission.rateOverTime = range * 200;
                     //try overlap sphere
                     Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, range);
