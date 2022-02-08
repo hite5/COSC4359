@@ -325,6 +325,7 @@ MonoBehaviour:
   PauseMenuUI: {fileID: 3837925145270015992}
   PlayerUI: {fileID: 0}
   uiToTurnOffOrOn: []
+  isButtonObject: 1
 --- !u!1 &3837925143699415699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,6 +2134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnInstantly: 1
   BossSettingList: []
+  CurrentlyAlive: []
   TimeToSpawn: 0
   specificSpawnPoint: 0
   indexOfSpawnPoint: 0
@@ -2161,6 +2163,7 @@ MonoBehaviour:
   yPos: 0
   enableEnemyUI: 0
   showBigUI: 5
+  BigUITimer: 0
 --- !u!1 &3837925143866995555
 GameObject:
   m_ObjectHideFlags: 0
@@ -6689,6 +6692,7 @@ MonoBehaviour:
   - {fileID: 3837925145411466170}
   - {fileID: 3837925145509870358}
   - {fileID: 3837925144853065076}
+  isButtonObject: 0
 --- !u!114 &3837925144499018854
 MonoBehaviour:
   m_ObjectHideFlags: 0
