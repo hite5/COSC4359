@@ -546,6 +546,16 @@ public class PlayerActions
         currSpriteCategory = "PhizerHemo";
     }
 
+    public void Morbida()
+    {
+
+    }
+
+    public void LnL()
+    {
+
+    }
+
     public void Heal()
     {
         //Debug.Log(player.References.numOfHeal);

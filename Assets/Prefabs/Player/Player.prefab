@@ -332,7 +332,7 @@ MonoBehaviour:
       SwitchGrenade: 5
       Pause: escape
       Interact: f
-      DualWieldToggle: t
+      RallyGlobin: mouse 2
   enemyManager: {fileID: 0}
   ArmorUpEff: {fileID: 382254069925517312, guid: 9f9f5a5683a9f754e9648717380e5a02, type: 3}
   ArmorDownEff: {fileID: 2402746949625836344, guid: c20cbefbda0c40a488b329f1bd483786, type: 3}
