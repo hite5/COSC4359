@@ -18,6 +18,8 @@ public class Pause : MonoBehaviour
     public GameObject PlayerUI;
 
     public GameObject[] uiToTurnOffOrOn;
+
+    public bool isButtonObject = false;
     //public GameObject StatusIndicator;
 
     /*
@@ -32,7 +34,8 @@ public class Pause : MonoBehaviour
     public void resume() 
     {
         Time.timeScale = 1f;
-        PlayerUI.SetActive(true);
+        if(PlayerUI != null)
+            PlayerUI.SetActive(true);
         OptionMenuUI.SetActive(false);
         PauseMenuUI.SetActive(false);
 
@@ -77,15 +80,17 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.Utilities.EscapeButtonPressed && GlobalPlayerVariables.GameOver == false)
+        if (isButtonObject == false)
         {
-            if (OptionSettings.GameisPaused == true)
-                resume();
-            else
-                pause();
+            if (player.Utilities.EscapeButtonPressed && GlobalPlayerVariables.GameOver == false)
+            {
+                if (OptionSettings.GameisPaused == true)
+                    resume();
+                else
+                    pause();
 
+            }
         }
-
 
     }
 }
