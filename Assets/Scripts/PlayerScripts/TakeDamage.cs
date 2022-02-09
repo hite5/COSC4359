@@ -278,6 +278,7 @@ public class TakeDamage : MonoBehaviour
 
         if (HP <= 0)
         {
+            player.turnOffVaccineWheel();
             player.transform.Find("LeftArm").gameObject.SetActive(true);
             //player.GetPlayerItemsAndArmorValues();
             FindObjectOfType<AudioManager>().PlayEffect(onDeathSound);

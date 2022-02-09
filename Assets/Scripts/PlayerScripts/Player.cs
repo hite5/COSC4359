@@ -177,6 +177,12 @@ public class Player : MonoBehaviour
     [Header("Animations upon spawning")]
     public float timetoblockanimation = 0.5f;
 
+    [Header("Wheel Settings")]
+    public float TimeToShowWheel = 0.1f;
+    private float wheelTimer = 0;
+    public GameObject wheelReference;
+    private bool tappedVaccineButton = false;
+
     private Transform shield = null;
 
     public static Player instance;
@@ -406,6 +412,13 @@ public class Player : MonoBehaviour
 
     }
 
+    public void turnOffVaccineWheel()
+    {
+        wheelTimer = 0;
+        if (wheelReference.activeSelf)
+            wheelReference.SetActive(false);
+        tappedVaccineButton = false;
+    }
 
     // Update is called once per frame
     private void Update()
@@ -540,8 +553,28 @@ public class Player : MonoBehaviour
                     }
                 }
 
-                if (Utilities.VaccineButtonPressed && LeftSlotAvailableToUse && VaccineIsActive == false)
+                if (Utilities.VaccineButtonPressed)
                 {
+                    wheelTimer += Time.deltaTime;
+                    Debug.Log("State 1");
+                    if (wheelTimer >= TimeToShowWheel)
+                    {
+                        wheelReference.SetActive(true);
+                        tappedVaccineButton = false;
+
+                        //do selection logic here
+
+
+                    }
+                    else
+                    {
+                        tappedVaccineButton = true;
+                    }
+                }
+                else if (LeftSlotAvailableToUse && VaccineIsActive == false && tappedVaccineButton == true)
+                {
+                    Debug.Log("State 2");
+                    tappedVaccineButton = false;
                     switch (vaccineSelector)
                     {
                         case 0:
@@ -554,7 +587,7 @@ public class Player : MonoBehaviour
                                 StartCoroutine(LeftSlotItemCooldown(stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
                             }
                             break;
-                        
+
                         case 1:
                             if (stats.NumofMorbida > 0)
                             {
@@ -585,7 +618,15 @@ public class Player : MonoBehaviour
                             Debug.LogWarning("Unknown Vaccine!");
                             break;
                     }
-                    
+
+                }
+                else
+                {
+                    Debug.Log("State 3");
+                    wheelTimer = 0;
+                    if (wheelReference.activeSelf)
+                        wheelReference.SetActive(false);
+                    tappedVaccineButton = false;
                 }
                 if (Input.GetKey(KeyCode.M))
                 {
@@ -606,6 +647,10 @@ public class Player : MonoBehaviour
                         DashProc();
                     }
                 }
+            }
+            else if(OptionSettings.GameisPaused == true)
+            {
+                turnOffVaccineWheel();
             }
             //Debug.Log(VaccineCooldownDisplay);
             if (resetPlayerStatsRequest && !inEffect)

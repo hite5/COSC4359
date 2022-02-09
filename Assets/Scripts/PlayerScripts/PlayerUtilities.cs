@@ -172,7 +172,7 @@ public class PlayerUtilities
         InteractButtonPressed = Input.GetKeyDown(PlayerInputs.Interact.ToLower());
         //DualWieldButtonPressed = Input.GetKeyDown(PlayerInputs.DualWieldToggle.ToLower());
         ItemButtonPressed = Input.GetKeyDown(PlayerInputs.UseItem.ToLower());
-        VaccineButtonPressed = Input.GetKeyDown(PlayerInputs.UseVaccine.ToLower());
+        VaccineButtonPressed = Input.GetKey(PlayerInputs.UseVaccine.ToLower());
         //PickUpSecondaryButtonPressed = Input.GetKeyDown(PlayerInputs.PickUpSecondary.ToLower());
         GlobinRallyButtonPressed = Input.GetKeyDown(PlayerInputs.RallyGlobin.ToLower() == "" ? "mouse 2" : PlayerInputs.RallyGlobin.ToLower());
     }
