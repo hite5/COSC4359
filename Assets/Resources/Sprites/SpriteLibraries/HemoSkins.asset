@@ -283,3 +283,273 @@ MonoBehaviour:
     - m_Name: BotRight
       m_Hash: 1358873647
       m_Sprite: {fileID: -4272296384519820776, guid: a12c6cd8122d4dd4d8c0a15253cfed4f, type: 3}
+  - m_Name: MorbidaHemo0
+    m_Hash: 86108831
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 4005589380576361945, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 1133214868447289172, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 891331876698071939, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -4896007036338490516, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -2401354073552604629, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -1498290739703910285, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 2607503605251498192, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -3170434944751846453, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+  - m_Name: MorbidaHemo1
+    m_Hash: 1915148809
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -1331016434404567129, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 5172092526882559203, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -8212212719317865158, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 3995967897321598501, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -1024497699368156287, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 3962538090845222511, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 1590859052226536156, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 2678485751347877735, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+  - m_Name: MorbidaHemo2
+    m_Hash: -349205581
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 4926056393556163014, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: -1841769010673908028, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 1122441314076223400, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 3195767542696091721, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 91299080108727489, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -3850914861929801505, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -8283137704363933429, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 7385279902779247704, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+  - m_Name: MorbidaHemo3
+    m_Hash: -1675052251
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -6176454234982263779, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: -7420443429544278120, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 226579627829473767, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -7538534095682871930, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 4562956681225374223, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 8745146600956001656, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 4430767153273356891, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 4643751727776877703, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+  - m_Name: MorbidaHemo4
+    m_Hash: 38547078
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 5512076513446098772, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: -6438585110234645634, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 8846892756396451783, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -4089335268585927152, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 5951884897443326935, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: 6604767743828411977, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -758916071411515077, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -3501271587017390744, guid: 0f99c4105b1780743856502426e385e3, type: 3}
+  - m_Name: LnLHemo0
+    m_Hash: 1489763946
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 93079718719964522, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 8967166047040810695, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -4733680196852641895, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 5815131400197704444, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 3138912691257470622, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -3622686834352633365, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -2852656356715167066, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -3780594609404663404, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+  - m_Name: LnLHemo1
+    m_Hash: 801951484
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -3973794400692600866, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: -6096340006194034032, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -1247532603069760211, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 627639530105412773, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 8023622412435831063, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -1581501388419152451, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 7137778208052020374, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 8146177071921484519, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+  - m_Name: LnLHemo2
+    m_Hash: -1228562618
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 2759083614953252207, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: -5273263401943990390, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 7461224196616399493, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -1056810212199350413, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 1254055018812284537, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -992736693694388510, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: 3962708904069726527, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -6463908443264604183, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+  - m_Name: LnLHemo3
+    m_Hash: -1044205616
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 793281595392870483, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 8693186268197237724, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: -1606801219443889326, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 643557710718838911, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 3296883285238945966, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -4800920080126767446, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -2230095461637423775, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 8032970477806900337, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+  - m_Name: LnLHemo4
+    m_Hash: 1604729459
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: -2985032320440181243, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: -6582257860023298968, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 763248863128347935, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 6552741878026661162, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: 1951548679829437678, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -730422643627439790, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -5193784712093032830, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: -8637752683207094458, guid: 2cfb45bc627654b409479095ea5a740f, type: 3}

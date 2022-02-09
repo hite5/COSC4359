@@ -4143,6 +4143,8 @@ GameObject:
   m_Component:
   - component: {fileID: 469828884}
   - component: {fileID: 469828885}
+  - component: {fileID: 469828887}
+  - component: {fileID: 469828886}
   m_Layer: 0
   m_Name: Wheel-export_6
   m_TagString: Untagged
@@ -4150,8 +4152,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &469828884
-Transform:
+--- !u!224 &469828884
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4164,6 +4166,11 @@ Transform:
   m_Father: {fileID: 806745249}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 4.56, y: 4.56}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &469828885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4215,6 +4222,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &469828886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469828883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &469828887
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469828883}
+  m_CullTransparentMesh: 1
 --- !u!1 &475386545
 GameObject:
   m_ObjectHideFlags: 0
@@ -9945,11 +9990,6 @@ MonoBehaviour:
     - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
     - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
     - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
-    - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
-    - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
-    - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
-    - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
-    - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
     - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
     - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
     - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
@@ -9960,6 +10000,17 @@ MonoBehaviour:
     - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
     - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
     - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
+    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
+    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
+    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
+    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
+    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
     chanceOfDrop: 100
 --- !u!111 &560763043
 Animation:
@@ -20393,7 +20444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &806745249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -102522,6 +102573,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1153897255}
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
+      propertyPath: stats.NumOfLnL
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: stats.cooldown
       value: 5
       objectReference: {fileID: 0}
@@ -102556,6 +102611,10 @@ PrefabInstance:
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: levelCapGrowthRate
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
+      propertyPath: stats.NumOfMorbida
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: stats.NumOfProtein

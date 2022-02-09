@@ -131,6 +131,34 @@ public class ItemPickup : MonoBehaviour
                     }
                     break;
 
+                case "Morbida":
+                    //Debug.Log(GlobalPlayerVariables.Reserves);
+                    if (player.Stats.NumofMorbida < 99)
+                    {
+                        Follow();
+                        if (distance <= PickUpRange)
+                        {
+                            player.Stats.NumofMorbida += 1;
+                            AudioManager.instance.PlayEffect("ItemPickup");
+                            Destroy(gameObject);
+                        }
+                    }
+                    break;
+
+                case "LnL":
+                    //Debug.Log(GlobalPlayerVariables.Reserves);
+                    if (player.Stats.NumofLnL < 99)
+                    {
+                        Follow();
+                        if (distance <= PickUpRange)
+                        {
+                            player.Stats.NumofLnL += 1;
+                            AudioManager.instance.PlayEffect("ItemPickup");
+                            Destroy(gameObject);
+                        }
+                    }
+                    break;
+
                 case "Molly":
                     //Debug.Log(GlobalPlayerVariables.Reserves);
                     if (player.Stats.NumofMolly < 9)

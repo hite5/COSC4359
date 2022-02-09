@@ -526,11 +526,11 @@ public class PlayerActions
             tempWI.gameObject.SetActive(false);
         }
     }
-    public void Phizer()
+    public void Phizer() //Add max health and max stamina and regen
     {
         player.Stats.NumofPhizer -= 1;
-        ParticleSystem.ColorOverLifetimeModule pSsettings = player.Components.PlayerParticleSystem.colorOverLifetime;
-        pSsettings.color = new ParticleSystem.MinMaxGradient(new Color(255, 255, 255), new Color(0, 78, 137));
+        ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 78 / 255f, 137 / 255f));
         player.Components.PlayerParticleSystem.Play();
         float tempMH = player.Stats.MaxHealth;
         float tempMS = player.Stats.MaxStamina;
@@ -546,14 +546,46 @@ public class PlayerActions
         currSpriteCategory = "PhizerHemo";
     }
 
-    public void Morbida()
+    public void Morbida() //Higher DPS and Movement speed
     {
-
+        player.Stats.NumofMorbida -= 1;
+        ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 94/255f, 97/255f));
+        player.Components.PlayerParticleSystem.Play();
+        
+        player.Components.PlayerTrailRenderer.endColor = new Color(0, 91 / 255f, 94 / 255f);
+        currSpriteCategory = "MorbidaHemo";
     }
 
-    public void LnL()
+    public void LnL() //Higher chance of Critical damage
     {
+        player.Stats.NumofLnL -= 1;
+        ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(175/255f, 22/255f, 133/255f));
+        player.Components.PlayerParticleSystem.Play();
+        
+        player.Components.PlayerTrailRenderer.endColor = new Color(172 / 255f, 19 / 255f, 130 / 255f);
+        currSpriteCategory = "LnLHemo";
+    }
 
+    private Gradient setGradient(Color color1, Color color2)
+    {
+        Gradient g;
+        GradientColorKey[] gck;
+        GradientAlphaKey[] gak;
+        g = new Gradient();
+        gck = new GradientColorKey[2];
+        gck[0].color = color1;
+        gck[0].time = 0.0F;
+        gck[1].color = color2;
+        gck[1].time = 1.0F;
+        gak = new GradientAlphaKey[2];
+        gak[0].alpha = 1.0F;
+        gak[0].time = 0.0F;
+        gak[1].alpha = 1.0F;
+        gak[1].time = 1.0F;
+        g.SetKeys(gck, gak);
+        return g;
     }
 
     public void Heal()
