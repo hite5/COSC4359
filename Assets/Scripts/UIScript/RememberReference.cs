@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RememberReference : MonoBehaviour
 {
@@ -10,15 +11,5 @@ public class RememberReference : MonoBehaviour
     {
         return refList[i];
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
