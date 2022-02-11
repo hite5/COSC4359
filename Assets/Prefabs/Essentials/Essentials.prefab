@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   WheelPartImage: {fileID: 5093939694084485205}
-  wheelPartGrow: 1.16
+  wheelPartGrow: 1.29
   growSpeed: 3
   growSpeedVec: {x: 0, y: 0, z: 0}
   DefaultSize: {x: 38.799812, y: 38.79981, z: 38.79981}
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   WheelPartImage: {fileID: 4138471520185368398}
-  wheelPartGrow: 1.16
+  wheelPartGrow: 1.29
   growSpeed: 3
   growSpeedVec: {x: 0, y: 0, z: 0}
   DefaultSize: {x: 38.799812, y: 38.79981, z: 38.79981}
@@ -18042,7 +18042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   WheelPartImage: {fileID: 3602129898933895787}
-  wheelPartGrow: 1.16
+  wheelPartGrow: 1.29
   growSpeed: 3
   growSpeedVec: {x: 0, y: 0, z: 0}
   DefaultSize: {x: 38.799812, y: 38.79981, z: 38.79981}
@@ -18447,7 +18447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   WheelPartImage: {fileID: 5613609424984524820}
-  wheelPartGrow: 1.16
+  wheelPartGrow: 1.29
   growSpeed: 3
   growSpeedVec: {x: 0, y: 0, z: 0}
   DefaultSize: {x: 38.799812, y: 38.79981, z: 38.79981}
