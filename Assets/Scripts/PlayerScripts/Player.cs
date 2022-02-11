@@ -180,7 +180,10 @@ public class Player : MonoBehaviour
     [Header("Wheel Settings")]
     public float TimeToShowWheel = 0.1f;
     private float wheelTimer = 0;
+    private float mouseAngle = 0;
+    public GameObject cursorRef;
     public GameObject wheelReference;
+    public WheelLogic VaccineWheelLogic;
     private bool tappedVaccineButton = false;
 
     private Transform shield = null;
@@ -561,6 +564,50 @@ public class Player : MonoBehaviour
                     {
                         wheelReference.SetActive(true);
                         tappedVaccineButton = false;
+                        
+
+
+
+                        mouseAngle = Stats.Angle;
+                        if (mouseAngle < 0)
+                            mouseAngle = mouseAngle + 360;
+
+                        if (mouseAngle <= 45 || mouseAngle > 315)
+                        {
+                            vaccineSelector = 0;
+                            VaccineWheelLogic.switchImageNText(0, "PHIZER");
+                            VaccineWheelLogic.selectWheel(3);
+                            Debug.Log("VACCINE 0 SELECTED");
+                        }
+                        else if (mouseAngle > 45 && mouseAngle <= 135)
+                        {
+                            vaccineSelector = 1;
+                            VaccineWheelLogic.switchImageNText(3, "UNKOWN");
+                            VaccineWheelLogic.selectWheel(0);
+                            Debug.Log("VACCINE 1 SELECTED");
+                        }
+                        else if (mouseAngle > 135 && mouseAngle <= 225)
+                        {
+                            vaccineSelector = 2;
+                            VaccineWheelLogic.switchImageNText(2, "LNL");
+                            VaccineWheelLogic.selectWheel(2);
+                            Debug.Log("VACCINE 2 SELECTED");
+                        }
+                        else if (mouseAngle > 225 && mouseAngle <= 315)
+                        {
+                            vaccineSelector = 3;
+                            VaccineWheelLogic.switchImageNText(1, "MORBIDA");
+                            VaccineWheelLogic.selectWheel(1);
+                            Debug.Log("VACCINE 3 SELECTED");
+                        }
+
+                        //Vector3 offset = new Vector3(0, 30, 60);
+                        //Vector3 mousePos = new Vector3(references.MousePosToPlayer.x, references.MousePosToPlayer.y, 0);
+                        
+                        Debug.DrawLine(transform.position, cursorRef.transform.position, Color.white);
+
+                        Debug.Log("AYO MOUSE " + mouseAngle);
+
 
                         //do selection logic here
 
@@ -703,6 +750,7 @@ public class Player : MonoBehaviour
             }
         }
     }
+
 
     private bool playWalkingSound = true;
     private bool walk1 = true;
