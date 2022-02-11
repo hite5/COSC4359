@@ -109,6 +109,8 @@ public class Player : MonoBehaviour
 
     private int vaccineSelector = 1;
 
+    public int currVaccineInEff = 0;
+
     public int NumOfTypesOfVaccine;
 
     public float easeRef;
@@ -575,6 +577,7 @@ public class Player : MonoBehaviour
                 {
                     Debug.Log("State 2");
                     tappedVaccineButton = false;
+                    currVaccineInEff = vaccineSelector;
                     switch (vaccineSelector)
                     {
                         case 0:

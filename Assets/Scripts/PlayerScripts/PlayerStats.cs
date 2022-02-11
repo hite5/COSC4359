@@ -52,13 +52,16 @@ public class PlayerStats
 
     public float VaccineDurationz { get; set; }
     public float VaccineCooldownz { get; set; }
+
+    //Phizer
     public float HPAddz { get; set; }
     public float HPRegenAddz { get; set; }
     public float StamAddz { get; set; }
     public float StamRegenAddz { get; set; }
 
-
-
+    //Morbida
+    public float MovementSpeedAddz { get; set; }
+    public float DamageAddz { get; set; }
 
     public float TylenolHealAmountz { get; set; }
     public float TylenoCooldownz { get; set; }
@@ -141,16 +144,12 @@ public class PlayerStats
     private float stamRegenAdd;
     //MORBIDA
     [Header("Morbida")]
-    [SerializeField]
-    private float Morbidaduration;
-    [SerializeField]
-    private float Morbidacooldown;
     [Tooltip("In Percentage")]
     [SerializeField]
-    private float MovementSpeedAdd;
+    private float movementSpeedAdd;
     [Tooltip("In Percentage")]
     [SerializeField]
-    private float DamageAdd;
+    private float damageAdd;
     //TYLENOL
     [Header("Tylenol")]
     [SerializeField]
@@ -206,10 +205,16 @@ public class PlayerStats
 
     public float VaccineDuration { get => Vaccineduration; }
     public float VaccineCooldown { get => Vaccinecooldown; }
+    
+    //Phizer
     public float HPAdd { get => hpAdd; }
     public float HPRegenAdd { get => hpRegenAdd; }
     public float StamAdd { get => stamAdd; }
     public float StamRegenAdd { get => stamRegenAdd; }
+
+    //Morbida
+    public float MovementSpeedAdd { get => movementSpeedAdd; }
+    public float DamageAdd { get => damageAdd; }
 
     public float TylenolHealAmount { get => Tylenolhealamount; }
     public float TylenolCooldown { get => Tylenolcooldown; }
