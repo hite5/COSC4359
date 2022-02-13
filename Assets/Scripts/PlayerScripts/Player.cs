@@ -107,7 +107,8 @@ public class Player : MonoBehaviour
 
     public int NumOfTypesOfNade;
 
-    private int vaccineSelector = 1;
+    [HideInInspector]
+    public int vaccineSelector = 1;
 
     public int currVaccineInEff = 0;
 
@@ -186,6 +187,7 @@ public class Player : MonoBehaviour
     public GameObject cursorRef;
     public GameObject wheelReference;
     public WheelLogic VaccineWheelLogic;
+    public Image VaccineIconInBox;
     private bool tappedVaccineButton = false;
 
     private Transform shield = null;
@@ -577,28 +579,28 @@ public class Player : MonoBehaviour
                         if (mouseAngle <= 45 || mouseAngle > 315)
                         {
                             vaccineSelector = 0;
-                            VaccineWheelLogic.switchImageNText(0, "PHIZER");
+                            VaccineWheelLogic.switchImageNText(0, "PHIZER", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(3);
                             Debug.Log("VACCINE 0 SELECTED");
                         }
                         else if (mouseAngle > 45 && mouseAngle <= 135)
                         {
-                            vaccineSelector = 1;
-                            VaccineWheelLogic.switchImageNText(3, "UNKOWN");
+                            vaccineSelector = 3;
+                            VaccineWheelLogic.switchImageNText(3, "UNKOWN", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(0);
                             Debug.Log("VACCINE 1 SELECTED");
                         }
                         else if (mouseAngle > 135 && mouseAngle <= 225)
                         {
                             vaccineSelector = 2;
-                            VaccineWheelLogic.switchImageNText(2, "LNL");
+                            VaccineWheelLogic.switchImageNText(2, "LNL", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(2);
                             Debug.Log("VACCINE 2 SELECTED");
                         }
                         else if (mouseAngle > 225 && mouseAngle <= 315)
                         {
-                            vaccineSelector = 3;
-                            VaccineWheelLogic.switchImageNText(1, "MORBIDA");
+                            vaccineSelector = 1;
+                            VaccineWheelLogic.switchImageNText(1, "MORBIDA", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(1);
                             Debug.Log("VACCINE 3 SELECTED");
                         }

@@ -18,7 +18,7 @@ public class WheelLogic : MonoBehaviour
         previouslySelected = null;
     }
 
-    public void switchImageNText(int i, string newName)
+    public void switchImageNText(int i, string newName, Image boxIcon)
     {
 
         //ListOfImage.GetReference(i).TryGetComponent<Image>(out Image referance);
@@ -36,6 +36,7 @@ public class WheelLogic : MonoBehaviour
         else
         {
             WheelImageDisplay.sprite = imageList[i].sprite;
+            boxIcon.sprite = imageList[i].sprite;
             WheelText.text = newName;
         }
     }

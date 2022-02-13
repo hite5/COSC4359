@@ -626,7 +626,38 @@ public class PlayerActions
     public void UpdateCountsUI()
     {
         HealCounts.text = player.Stats.NumofHeal.ToString();
-        VaccineCounts.text = player.Stats.NumofPhizer.ToString();
+
+
+        //VaccineCounts.text = player.Stats.NumofPhizer.ToString();
+
+        switch (player.vaccineSelector)
+        {
+            case 0:
+                VaccineCounts.text = player.Stats.NumofPhizer.ToString();
+                break;
+
+            case 1:
+                VaccineCounts.text = player.Stats.NumofMorbida.ToString();
+                break;
+
+            case 2:
+                VaccineCounts.text = player.Stats.NumofLnL.ToString();
+                break;
+
+            case 3:
+                Debug.LogWarning("Unknown Vaccine!");
+                VaccineCounts.text = "99";
+                break;
+
+            default:
+                Debug.LogWarning("Unknown Vaccine!");
+                break;
+        }
+
+
+
+
+
         MollyCounts.text = player.Stats.NumofMolly.ToString();
         StickyCounts.text = player.Stats.NumofSticky.ToString();
         HPNumber.text = ((int)player.Stats.Health).ToString() + "/" + ((int)player.Stats.MaxHealth).ToString();
