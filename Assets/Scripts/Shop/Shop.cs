@@ -12,6 +12,8 @@ public class Shop : MonoBehaviour
     bool loadOnce = false;
     [HideInInspector]
     public bool ThymusPresent = false;
+    public Player playerScript;
+    public bool inShopRange = false;
 
     /*
     void loadStats()
@@ -24,14 +26,32 @@ public class Shop : MonoBehaviour
         }
     }
     */
+    private void Update()
+    {
+        if (playerScript != null)
+        {
+            if (playerScript.Utilities.InteractButtonPressed && inShopRange == true)
+            {
+                if (!shop.activeSelf)
+                {
+                    shop.SetActive(true);
+                    CurrentlyInShop = true;
+                    Debug.Log("IN SHOP");
+                }
+            }
+        }
+    }
+
 
     void OnTriggerEnter2D(Collider2D other) {
         //Debug.Log("ENTER COLLIDER");
         if (other.CompareTag("Player") == true && !ThymusPresent) {
             //loadStats();
-            shop.SetActive(true);
-            CurrentlyInShop = true;
-            Debug.Log("IN SHOP");
+            if (playerScript == null)
+            {
+                playerScript = other.GetComponent<Player>();
+            }
+            inShopRange = true;
         }
     }
 
@@ -43,6 +63,7 @@ public class Shop : MonoBehaviour
             Debug.Log("LEAVING SHOP");
             shop.SetActive(false);
             CurrentlyInShop = false;
+            inShopRange = false;
         }
     }
 
@@ -61,9 +82,5 @@ public class Shop : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
