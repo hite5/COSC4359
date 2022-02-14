@@ -293,12 +293,16 @@ MonoBehaviour:
     NumOfPhizer: 2
     NumOfMolly: 6
     NumOfSticky: 6
-    Phizerduration: 10
-    Phizercooldown: 20
+    Vaccineduration: 10
+    Vaccinecooldown: 20
     hpAdd: 50
     hpRegenAdd: 30
     stamAdd: 50
     stamRegenAdd: 30
+    Morbidaduration: 0
+    Morbidacooldown: 0
+    MovementSpeedAdd: 0
+    DamageAdd: 0
     Tylenolhealamount: 50
     Tylenolcooldown: 1
   components:
@@ -332,7 +336,7 @@ MonoBehaviour:
       SwitchGrenade: 5
       Pause: escape
       Interact: f
-      DualWieldToggle: t
+      RallyGlobin: mouse 2
   enemyManager: {fileID: 0}
   ArmorUpEff: {fileID: 382254069925517312, guid: 9f9f5a5683a9f754e9648717380e5a02, type: 3}
   ArmorDownEff: {fileID: 2402746949625836344, guid: c20cbefbda0c40a488b329f1bd483786, type: 3}

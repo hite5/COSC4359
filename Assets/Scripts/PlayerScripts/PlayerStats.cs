@@ -43,20 +43,25 @@ public class PlayerStats
     public int NumofHeal { get; set; }
     public int NumofProtein { get; set; }
     public int NumofPhizer { get; set; }
+    public int NumofMorbida { get; set; }
+    public int NumofLnL { get; set; }
     public int NumofMolly { get; set; }
     public int NumofSticky { get; set; }
 
     public bool IsDualWield = false;
 
-    public float PhizerDurationz { get; set; }
-    public float PhizerCooldownz { get; set; }
+    public float VaccineDurationz { get; set; }
+    public float VaccineCooldownz { get; set; }
+
+    //Phizer
     public float HPAddz { get; set; }
     public float HPRegenAddz { get; set; }
     public float StamAddz { get; set; }
     public float StamRegenAddz { get; set; }
 
-
-
+    //Morbida
+    public float MovementSpeedAddz { get; set; }
+    public float DamageAddz { get; set; }
 
     public float TylenolHealAmountz { get; set; }
     public float TylenoCooldownz { get; set; }
@@ -102,6 +107,7 @@ public class PlayerStats
     public float staminaRegenRate;
     [SerializeField]
     private float TimeBfrStamRegen;
+    //START OUT INVENTORY
     [Header("Start out Inv")]
     [SerializeField]
     private int NumOfHeal;
@@ -110,14 +116,22 @@ public class PlayerStats
     [SerializeField]
     private int NumOfPhizer;
     [SerializeField]
+    private int NumOfMorbida;
+    [SerializeField]
+    private int NumOfLnL;
+    [SerializeField]
     private int NumOfMolly;
     [SerializeField]
     private int NumOfSticky;
+    //VACCINES GENERAL
+    [Header("Vaccines")]
+    [SerializeField]
+    private float Vaccineduration;
+    [SerializeField]
+    private float Vaccinecooldown;
+
+    //PHIZER
     [Header("Phizer")]
-    [SerializeField]
-    private float Phizerduration;
-    [SerializeField]
-    private float Phizercooldown;
     [Tooltip("In Percentage")]
     [SerializeField]
     private float hpAdd;
@@ -128,6 +142,15 @@ public class PlayerStats
     private float stamAdd;
     [SerializeField]
     private float stamRegenAdd;
+    //MORBIDA
+    [Header("Morbida")]
+    [Tooltip("In Percentage")]
+    [SerializeField]
+    private float movementSpeedAdd;
+    [Tooltip("In Percentage")]
+    [SerializeField]
+    private float damageAdd;
+    //TYLENOL
     [Header("Tylenol")]
     [SerializeField]
     private float Tylenolhealamount;
@@ -173,17 +196,25 @@ public class PlayerStats
     public int numofprotein { get => NumOfProtein; }
 
     public int numofphizer { get => NumOfPhizer; }
+    public int numofmorbida { get => NumOfMorbida; }
+    public int numoflnl { get => NumOfLnL; }
 
     public int numofmolly { get => NumOfMolly; }
 
     public int numofsticky { get => NumOfSticky; }
 
-    public float PhizerDuration { get => Phizerduration; }
-    public float PhizerCooldown { get => Phizercooldown; }
+    public float VaccineDuration { get => Vaccineduration; }
+    public float VaccineCooldown { get => Vaccinecooldown; }
+    
+    //Phizer
     public float HPAdd { get => hpAdd; }
     public float HPRegenAdd { get => hpRegenAdd; }
     public float StamAdd { get => stamAdd; }
     public float StamRegenAdd { get => stamRegenAdd; }
+
+    //Morbida
+    public float MovementSpeedAdd { get => movementSpeedAdd; }
+    public float DamageAdd { get => damageAdd; }
 
     public float TylenolHealAmount { get => Tylenolhealamount; }
     public float TylenolCooldown { get => Tylenolcooldown; }

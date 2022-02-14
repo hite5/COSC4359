@@ -107,6 +107,13 @@ public class Player : MonoBehaviour
 
     public int NumOfTypesOfNade;
 
+    [HideInInspector]
+    public int vaccineSelector = 1;
+
+    public int currVaccineInEff = 0;
+
+    public int NumOfTypesOfVaccine;
+
     public float easeRef;
 
     public string dashSound;
@@ -128,7 +135,7 @@ public class Player : MonoBehaviour
     public float levelThreshhold = 100;
     [HideInInspector]
     public float Currentlevel = 0;
-    private bool PhizerIsActive = false;
+    private bool VaccineIsActive = false;
 
 
     //growth rates
@@ -172,6 +179,16 @@ public class Player : MonoBehaviour
     public bool hideLevelUPAnimation = true;
     [Header("Animations upon spawning")]
     public float timetoblockanimation = 0.5f;
+
+    [Header("Wheel Settings")]
+    public float TimeToShowWheel = 0.1f;
+    private float wheelTimer = 0;
+    private float mouseAngle = 0;
+    public GameObject cursorRef;
+    public GameObject wheelReference;
+    public WheelLogic VaccineWheelLogic;
+    public Image VaccineIconInBox;
+    private bool tappedVaccineButton = false;
 
     private Transform shield = null;
 
@@ -249,9 +266,9 @@ public class Player : MonoBehaviour
         stats.NumofMolly = stats.numofmolly;
         stats.NumofSticky = stats.numofsticky;
 
-        stats.PhizerDurationz = stats.PhizerDuration;
-        stats.PhizerCooldownz = stats.PhizerCooldown;
-        GlobalPlayerVariables.baseItemUsageCoolDownPhizer = stats.PhizerCooldown;
+        stats.VaccineDurationz = stats.VaccineDuration;
+        stats.VaccineCooldownz = stats.VaccineCooldown;
+        GlobalPlayerVariables.baseItemUsageCoolDownPhizer = stats.VaccineCooldown;
 
 
         stats.HPRegenAddz = stats.HPRegenAdd;
@@ -306,9 +323,9 @@ public class Player : MonoBehaviour
 
 
         //HealthFunction
-        if (PhizerIsActive == false)
+        if (VaccineIsActive == false)
             stats.MaxHealth = healthGrowthRate * Currentlevel + GlobalPlayerVariables.baseMaxHealth;
-        else if (PhizerIsActive == true)
+        else if (VaccineIsActive == true)
             Stats.MaxHealth += healthGrowthRate;
         if (stats.Health + healthGrowthRate > stats.MaxHealth)
             stats.Health = stats.MaxHealth;
@@ -316,22 +333,22 @@ public class Player : MonoBehaviour
             stats.Health += healthGrowthRate;
 
         //HealthRegen Function
-        if (PhizerIsActive == false)
+        if (VaccineIsActive == false)
         {
             //Debug.Log(hpRegenGrowthRate);
             stats.HPRegen = hpRegenGrowthRate * Currentlevel + GlobalPlayerVariables.baseHealthRegen;
             //Debug.Log(stats.HPRegen + " growthrate " + hpRegenGrowthRate + " curr level " + Currentlevel);
         }
-        else if (PhizerIsActive == true)
+        else if (VaccineIsActive == true)
         {
             Stats.HPRegen += hpRegenGrowthRate;
             //Debug.Log(stats.HPRegen + " growthrate " + hpRegenGrowthRate + " curr level " + Currentlevel);
         }
 
         //MaxStamina function
-        if (PhizerIsActive == false)
+        if (VaccineIsActive == false)
             stats.MaxStamina = maxStaminaGrowthRate * Currentlevel + GlobalPlayerVariables.baseMaxStamina;
-        else if (PhizerIsActive == true)
+        else if (VaccineIsActive == true)
             stats.MaxStamina += maxStaminaGrowthRate;
         if (stats.Stamina + maxStaminaGrowthRate > stats.MaxStamina)
             stats.Stamina = stats.MaxStamina;
@@ -340,9 +357,9 @@ public class Player : MonoBehaviour
 
 
         //StaminaRegen function
-        if (PhizerIsActive == false)
+        if (VaccineIsActive == false)
             stats.StaminaRegenRate = staminaRegenGrowthRate * Currentlevel + GlobalPlayerVariables.baseStaminaRegen;
-        else if (PhizerIsActive == true)
+        else if (VaccineIsActive == true)
             stats.StaminaRegenRate += staminaRegenGrowthRate;
 
         //Speed functions
@@ -402,6 +419,13 @@ public class Player : MonoBehaviour
 
     }
 
+    public void turnOffVaccineWheel()
+    {
+        wheelTimer = 0;
+        if (wheelReference.activeSelf)
+            wheelReference.SetActive(false);
+        tappedVaccineButton = false;
+    }
 
     // Update is called once per frame
     private void Update()
@@ -535,16 +559,126 @@ public class Player : MonoBehaviour
                             break;
                     }
                 }
-                if (Utilities.VaccineButtonPressed && LeftSlotAvailableToUse && PhizerIsActive == false)
+
+                if (Utilities.VaccineButtonPressed)
                 {
-                    if (stats.NumofPhizer > 0)
+                    wheelTimer += Time.deltaTime;
+                    Debug.Log("State 1");
+                    if (wheelTimer >= TimeToShowWheel)
                     {
-                        actions.Phizer();
-                        AudioManager.instance.PlayEffect("Heal");
-                        LeftSlotCooldownDisplay = stats.PhizerCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown);
-                        StartCoroutine(ResetStats(stats.PhizerDuration));
-                        StartCoroutine(LeftSlotItemCooldown(stats.PhizerCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
+                        wheelReference.SetActive(true);
+                        tappedVaccineButton = false;
+                        
+
+
+
+                        mouseAngle = Stats.Angle;
+                        if (mouseAngle < 0)
+                            mouseAngle = mouseAngle + 360;
+
+                        if (mouseAngle <= 45 || mouseAngle > 315)
+                        {
+                            vaccineSelector = 0;
+                            VaccineWheelLogic.switchImageNText(0, "PHIZER", VaccineIconInBox);
+                            VaccineWheelLogic.selectWheel(3);
+                            Debug.Log("VACCINE 0 SELECTED");
+                        }
+                        else if (mouseAngle > 45 && mouseAngle <= 135)
+                        {
+                            vaccineSelector = 3;
+                            VaccineWheelLogic.switchImageNText(3, "UNKOWN", VaccineIconInBox);
+                            VaccineWheelLogic.selectWheel(0);
+                            Debug.Log("VACCINE 1 SELECTED");
+                        }
+                        else if (mouseAngle > 135 && mouseAngle <= 225)
+                        {
+                            vaccineSelector = 2;
+                            VaccineWheelLogic.switchImageNText(2, "LNL", VaccineIconInBox);
+                            VaccineWheelLogic.selectWheel(2);
+                            Debug.Log("VACCINE 2 SELECTED");
+                        }
+                        else if (mouseAngle > 225 && mouseAngle <= 315)
+                        {
+                            vaccineSelector = 1;
+                            VaccineWheelLogic.switchImageNText(1, "MORBIDA", VaccineIconInBox);
+                            VaccineWheelLogic.selectWheel(1);
+                            Debug.Log("VACCINE 3 SELECTED");
+                        }
+
+                        //Vector3 offset = new Vector3(0, 30, 60);
+                        //Vector3 mousePos = new Vector3(references.MousePosToPlayer.x, references.MousePosToPlayer.y, 0);
+                        
+                        Debug.DrawLine(transform.position, cursorRef.transform.position, Color.white);
+
+                        Debug.Log("AYO MOUSE " + mouseAngle);
+
+
+                        //do selection logic here
+
+
                     }
+                    else
+                    {
+                        tappedVaccineButton = true;
+                    }
+                }
+                else if (LeftSlotAvailableToUse && VaccineIsActive == false && tappedVaccineButton == true)
+                {
+                    Debug.Log("State 2");
+                    tappedVaccineButton = false;
+                    currVaccineInEff = vaccineSelector;
+                    switch (vaccineSelector)
+                    {
+                        case 0:
+                            if (stats.NumofPhizer > 0)
+                            {
+                                actions.Phizer();
+                                AudioManager.instance.PlayEffect("Heal");
+                                LeftSlotCooldownDisplay = stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown);
+                                StartCoroutine(ResetStats(stats.VaccineDuration));
+                                StartCoroutine(LeftSlotItemCooldown(stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
+                            }
+                            break;
+
+                        case 1:
+                            if (stats.NumofMorbida > 0)
+                            {
+                                actions.Morbida();
+                                AudioManager.instance.PlayEffect("Heal");
+                                LeftSlotCooldownDisplay = stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown);
+                                StartCoroutine(ResetStats(stats.VaccineDuration));
+                                StartCoroutine(LeftSlotItemCooldown(stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
+                            }
+                            break;
+
+                        case 2:
+                            if (stats.NumofLnL > 0)
+                            {
+                                actions.LnL();
+                                AudioManager.instance.PlayEffect("Heal");
+                                LeftSlotCooldownDisplay = stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown);
+                                StartCoroutine(ResetStats(stats.VaccineDuration));
+                                StartCoroutine(LeftSlotItemCooldown(stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
+                            }
+                            break;
+
+                        case 3:
+                            Debug.LogWarning("Unknown Vaccine!");
+                            break;
+
+                        default:
+                            Debug.LogWarning("Unknown Vaccine!");
+                            break;
+                    }
+
+                }
+                else
+                {
+                    Debug.Log("State 3");
+                    wheelTimer = 0;
+                    if (wheelReference.activeSelf)
+                        wheelReference.SetActive(false);
+                    tappedVaccineButton = false;
                 }
                 if (Input.GetKey(KeyCode.M))
                 {
@@ -566,6 +700,10 @@ public class Player : MonoBehaviour
                     }
                 }
             }
+            else if(OptionSettings.GameisPaused == true)
+            {
+                turnOffVaccineWheel();
+            }
             //Debug.Log(VaccineCooldownDisplay);
             if (resetPlayerStatsRequest && !inEffect)
             {
@@ -577,7 +715,7 @@ public class Player : MonoBehaviour
             if (LeftSlotCooldownDisplay > 0 || RightSlotCooldownDisplay > 0)
             {
                 LeftSlotCooldownDisplay -= Time.deltaTime;
-                actions.LeftSlotCooldownDisplayUpdate(LeftSlotCooldownDisplay / stats.PhizerCooldown);
+                actions.LeftSlotCooldownDisplayUpdate(LeftSlotCooldownDisplay / stats.VaccineCooldown);
             }
             else
             {
@@ -617,6 +755,7 @@ public class Player : MonoBehaviour
             }
         }
     }
+
 
     private bool playWalkingSound = true;
     private bool walk1 = true;
@@ -807,9 +946,9 @@ public class Player : MonoBehaviour
     {
         inEffect = true;
         resetPlayerStatsRequest = true;
-        PhizerIsActive = true; //might have to change this later to make it more general
+        VaccineIsActive = true; //might have to change this later to make it more general
         yield return new WaitForSeconds(AfterSeconds);
-        PhizerIsActive = false; //same with this one
+        VaccineIsActive = false; //same with this one
         inEffect = false;
     }
 

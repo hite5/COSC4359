@@ -48,7 +48,7 @@ public class ExitScript : MonoBehaviour
         }
 
         
-        Debug.Log(GlobalPlayerVariables.EnablePlayerControl);
+        //Debug.Log(GlobalPlayerVariables.EnablePlayerControl);
         if (reached)
         {
             player.Stats.Direction = new Vector2(PlayerDes.position.x - player.Stats.Position.x, PlayerDes.position.y - player.Stats.Position.y).normalized;

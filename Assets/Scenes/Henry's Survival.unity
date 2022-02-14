@@ -135311,9 +135311,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2369923047323700879, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+      propertyPath: survivalMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2369923047920020616, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369923047947352824, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+      propertyPath: stats.HP
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369923047947352824, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+      propertyPath: stats.maxHP
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 2369923048574241754, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
       propertyPath: m_Name

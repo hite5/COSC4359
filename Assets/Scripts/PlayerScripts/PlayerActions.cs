@@ -526,11 +526,11 @@ public class PlayerActions
             tempWI.gameObject.SetActive(false);
         }
     }
-    public void Phizer()
+    public void Phizer() //Add max health and max stamina and regen
     {
         player.Stats.NumofPhizer -= 1;
-        ParticleSystem.ColorOverLifetimeModule pSsettings = player.Components.PlayerParticleSystem.colorOverLifetime;
-        pSsettings.color = new ParticleSystem.MinMaxGradient(new Color(255, 255, 255), new Color(0, 78, 137));
+        ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 78 / 255f, 137 / 255f));
         player.Components.PlayerParticleSystem.Play();
         float tempMH = player.Stats.MaxHealth;
         float tempMS = player.Stats.MaxStamina;
@@ -544,6 +544,64 @@ public class PlayerActions
         player.Stats.StaminaRegenRate += player.Stats.StamRegenAdd;
         player.Components.PlayerTrailRenderer.endColor = new Color(0, 76 / 255f, 134 / 255f);
         currSpriteCategory = "PhizerHemo";
+    }
+
+    public void Morbida() //Higher DPS and Movement speed
+    {
+        player.Stats.NumofMorbida -= 1;
+        ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 94/255f, 97/255f));
+        player.Components.PlayerParticleSystem.Play();
+        foreach (Transform rw in rightArm)
+        {
+            //Debug.Log(rw.gameObject.GetType());
+            if (rw.gameObject.activeSelf)
+            {
+                if (rw.GetComponent<Weapon>() != null)
+                {
+                    float tempDmg = rw.GetComponent<Weapon>().bulletDamage;
+                    rw.GetComponent<Weapon>().bulletDamage = tempDmg * player.Stats.DamageAdd;
+                }
+                else if (rw.GetComponent<MeleeWeapon>() != null)
+                {
+                    float tempDmg = rw.GetComponent<MeleeWeapon>().BaseDamage;
+                    rw.GetComponent<MeleeWeapon>().BaseDamage = tempDmg * player.Stats.DamageAdd;
+                }
+            }
+        }
+        player.Components.PlayerTrailRenderer.endColor = new Color(0, 91 / 255f, 94 / 255f);
+        currSpriteCategory = "MorbidaHemo";
+    }
+
+    public void LnL() //Higher chance of Critical damage
+    {
+        player.Stats.NumofLnL -= 1;
+        ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(175/255f, 22/255f, 133/255f));
+        player.Components.PlayerParticleSystem.Play();
+        
+        player.Components.PlayerTrailRenderer.endColor = new Color(172 / 255f, 19 / 255f, 130 / 255f);
+        currSpriteCategory = "LnLHemo";
+    }
+
+    private Gradient setGradient(Color color1, Color color2)
+    {
+        Gradient g;
+        GradientColorKey[] gck;
+        GradientAlphaKey[] gak;
+        g = new Gradient();
+        gck = new GradientColorKey[2];
+        gck[0].color = color1;
+        gck[0].time = 0.0F;
+        gck[1].color = color2;
+        gck[1].time = 1.0F;
+        gak = new GradientAlphaKey[2];
+        gak[0].alpha = 1.0F;
+        gak[0].time = 0.0F;
+        gak[1].alpha = 1.0F;
+        gak[1].time = 1.0F;
+        g.SetKeys(gck, gak);
+        return g;
     }
 
     public void Heal()
@@ -568,7 +626,38 @@ public class PlayerActions
     public void UpdateCountsUI()
     {
         HealCounts.text = player.Stats.NumofHeal.ToString();
-        VaccineCounts.text = player.Stats.NumofPhizer.ToString();
+
+
+        //VaccineCounts.text = player.Stats.NumofPhizer.ToString();
+
+        switch (player.vaccineSelector)
+        {
+            case 0:
+                VaccineCounts.text = player.Stats.NumofPhizer.ToString();
+                break;
+
+            case 1:
+                VaccineCounts.text = player.Stats.NumofMorbida.ToString();
+                break;
+
+            case 2:
+                VaccineCounts.text = player.Stats.NumofLnL.ToString();
+                break;
+
+            case 3:
+                Debug.LogWarning("Unknown Vaccine!");
+                VaccineCounts.text = "99";
+                break;
+
+            default:
+                Debug.LogWarning("Unknown Vaccine!");
+                break;
+        }
+
+
+
+
+
         MollyCounts.text = player.Stats.NumofMolly.ToString();
         StickyCounts.text = player.Stats.NumofSticky.ToString();
         HPNumber.text = ((int)player.Stats.Health).ToString() + "/" + ((int)player.Stats.MaxHealth).ToString();
@@ -588,16 +677,16 @@ public class PlayerActions
         switch (player.Stats.ArmorLevel)
         {
             case 1:
-                ARBar.color = new Color(129 / 255f, 45 / 255f, 121 / 255f);
+                ARBar.color = Color.white;
                 break;
             case 2:
-                ARBar.color = new Color(129 / 255f, 45 / 255f, 121 / 255f);
+                ARBar.color = new Color(0, 156 / 255f, 231 / 255f); ;
                 break;
             case 3:
                 ARBar.color = new Color(129 / 255f, 45 / 255f, 121 / 255f);
                 break;
             case 4:
-                ARBar.color = new Color(129 / 255f, 45 / 255f, 121 / 255f);
+                ARBar.color = Color.yellow;
                 break;
                 /*
             case 5:
@@ -621,21 +710,53 @@ public class PlayerActions
     public void ResetPlayerStats()
     {
         player.Components.PlayerParticleSystem.Stop();
-        player.Stats.HPRegen -= player.Stats.HPRegenAdd; 
-        player.Stats.StaminaRegenRate -= player.Stats.StamRegenAdd; 
-        //HEALTH FUNCTION IMPLEMENTED HERE
-        player.Stats.MaxHealth = player.healthGrowthRate * player.Currentlevel + GlobalPlayerVariables.baseMaxHealth; //player.Stats.maxhp; 
-        if (player.Stats.Health > player.Stats.MaxHealth)
-            player.Stats.Health = player.Stats.MaxHealth;
-        //STAMINA FUNCTION NEEDS TO BE IMPLEMENTED HERE
-        player.Stats.MaxStamina = player.maxStaminaGrowthRate * player.Currentlevel + GlobalPlayerVariables.baseMaxStamina; //player.Stats.maxplayerstamina;
-        if (player.Stats.Stamina > player.Stats.MaxStamina)
-            player.Stats.Stamina = player.Stats.MaxStamina;
-
-
         player.Components.PlayerTrailRenderer.endColor = new Color(184 / 255f, 59 / 255f, 60 / 255f);
         player.Components.PlayerStatusIndicator.ChangeTransparency((player.Stats.MaxHealth - player.Stats.Health) / player.Stats.MaxHealth);
         currSpriteCategory = "DefaultHemo";
+        switch (player.currVaccineInEff)
+        {
+            case 0:
+                Debug.Log("Used Phizer");
+                player.Stats.HPRegen -= player.Stats.HPRegenAdd;
+                player.Stats.StaminaRegenRate -= player.Stats.StamRegenAdd;
+                //HEALTH FUNCTION IMPLEMENTED HERE
+                player.Stats.MaxHealth = player.healthGrowthRate * player.Currentlevel + GlobalPlayerVariables.baseMaxHealth; //player.Stats.maxhp; 
+                if (player.Stats.Health > player.Stats.MaxHealth)
+                    player.Stats.Health = player.Stats.MaxHealth;
+                //STAMINA FUNCTION NEEDS TO BE IMPLEMENTED HERE
+                player.Stats.MaxStamina = player.maxStaminaGrowthRate * player.Currentlevel + GlobalPlayerVariables.baseMaxStamina; //player.Stats.maxplayerstamina;
+                if (player.Stats.Stamina > player.Stats.MaxStamina)
+                    player.Stats.Stamina = player.Stats.MaxStamina;
+                break;
+            case 1:
+                Debug.Log("Used Morbida");
+                foreach (Transform rw in rightArm)
+                {
+                    //Debug.Log(rw.gameObject.GetType());
+                    if (rw.gameObject.activeSelf)
+                    {
+                        if (rw.GetComponent<Weapon>() != null)
+                        {
+                            float tempDmg = rw.GetComponent<Weapon>().bulletDamage;
+                            rw.GetComponent<Weapon>().bulletDamage = tempDmg * player.Stats.DamageAdd;
+                        }
+                        else if (rw.GetComponent<MeleeWeapon>() != null)
+                        {
+                            float tempDmg = rw.GetComponent<MeleeWeapon>().BaseDamage;
+                            rw.GetComponent<MeleeWeapon>().BaseDamage = tempDmg * player.Stats.DamageAdd;
+                        }
+                    }
+                }
+                break;
+            case 2:
+                Debug.Log("Used LnL");
+                break;
+            case 3:
+                break;
+            default:
+                Debug.Log("PlayerActions.cs: Unknown Vaccine");
+                break;
+        }
     }
 
     public void LeftSlotCooldownDisplayUpdate(float LeftSlotFillAmount)

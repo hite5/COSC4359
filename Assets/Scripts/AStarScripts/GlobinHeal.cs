@@ -6,6 +6,9 @@ public class GlobinHeal : MonoBehaviour
 {
     public Globin globinScript;
     public Player playerScript;
+    public ParticleSystem healerPS;
+    private ParticleSystem.ShapeModule psShape;
+    private ParticleSystem.EmissionModule psEmission;
 
     [Header("Heal Radius Settings")]
     public float healRadiusAmount = 50;
@@ -29,6 +32,9 @@ public class GlobinHeal : MonoBehaviour
         healTransform = transform.Find("healCircle");
         //alreadyPingedColliderList = new List<Collider2D>();
         alreadyPingedColliderList = new HashSet<Collider2D>();
+        healerPS.Stop();
+        psEmission = healerPS.emission;
+        psShape = healerPS.shape;
     }
     public int timesPulsed = 0;
     private void Update()
@@ -46,7 +52,10 @@ public class GlobinHeal : MonoBehaviour
                         alreadyPingedColliderList.Clear();
                         timesPulsed++;
                     }
-                    healTransform.localScale = new Vector3(range, range);
+                    //healTransform.localScale = new Vector3(range, range);
+                    healerPS.Play();
+                    psShape.radius = range + 0.75f;
+                    psEmission.rateOverTime = range * 200;
                     //try overlap sphere
                     Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, range);
                     foreach (Collider2D ping in ColliderArray)
@@ -89,6 +98,7 @@ public class GlobinHeal : MonoBehaviour
                 {
                     AoeCoolDownTimer = AoeCoolDown;
                     timesPulsed = 0;
+                    healerPS.Stop();
                 }
             }
             else

@@ -63,7 +63,6 @@ public class EnemyManager : MonoBehaviour
     private float nextDecrease;
     public List<GameObject> spawnPoints;
 
-
     public List<float> DistToSpawnFromPlayer;
     public List<float> spawnPointDistances;
 
@@ -90,6 +89,9 @@ public class EnemyManager : MonoBehaviour
     public float showBigUI = 5;
     [HideInInspector]
     public float BigUITimer = 0;
+
+    // Survival Mode variables
+    public bool survivalMode = false;
 
     public void cleanBossList()
     {
@@ -303,7 +305,7 @@ public class EnemyManager : MonoBehaviour
 
                 StartCoroutine(RemoveDeadMobs());
 
-                if (colonyHealth <= 0 && !bossDeath || allBossesDead == true && !bossDeath)
+                if (colonyHealth <= 0 && !bossDeath && !survivalMode || allBossesDead == true && !bossDeath && !survivalMode)
                 {
                     colonyHealth = 0;
                     BossDeath();
@@ -311,7 +313,7 @@ public class EnemyManager : MonoBehaviour
                     StartCoroutine(wait(5));
                 }
 
-                if (!isWaiting && bossDeath && !cutSceneFlag)
+                if (!isWaiting && bossDeath && !cutSceneFlag && !survivalMode)
                 {
                     //StartCoroutine(player.Phasing(4f));
                     StartCoroutine(CutScene(4f));
