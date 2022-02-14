@@ -107,7 +107,6 @@ public class Player : MonoBehaviour
 
     public int NumOfTypesOfNade;
 
-    [HideInInspector]
     public int vaccineSelector = 1;
 
     public int currVaccineInEff = 0;

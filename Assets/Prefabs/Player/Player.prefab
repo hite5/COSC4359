@@ -291,6 +291,8 @@ MonoBehaviour:
     NumOfHeal: 5
     NumOfProtein: 0
     NumOfPhizer: 2
+    NumOfMorbida: 0
+    NumOfLnL: 0
     NumOfMolly: 6
     NumOfSticky: 6
     Vaccineduration: 10
@@ -299,10 +301,8 @@ MonoBehaviour:
     hpRegenAdd: 30
     stamAdd: 50
     stamRegenAdd: 30
-    Morbidaduration: 0
-    Morbidacooldown: 0
-    MovementSpeedAdd: 0
-    DamageAdd: 0
+    movementSpeedAdd: 0
+    damageAdd: 0
     Tylenolhealamount: 50
     Tylenolcooldown: 1
   components:
@@ -347,6 +347,9 @@ MonoBehaviour:
   Molly: {fileID: 359814843918546931, guid: b7de69beb589f9b4395c5196638db2de, type: 3}
   Gre: {fileID: 3448305983176618688, guid: 103a9c628a9486b44af60b4f7fcc0ee8, type: 3}
   NumOfTypesOfNade: 2
+  vaccineSelector: 0
+  currVaccineInEff: 0
+  NumOfTypesOfVaccine: 0
   easeRef: 0
   dashSound: 
   levelText1: {fileID: 0}
@@ -372,6 +375,11 @@ MonoBehaviour:
   itemUsageGrowthRate: 0.0035
   hideLevelUPAnimation: 0
   timetoblockanimation: 5
+  TimeToShowWheel: 0.1
+  cursorRef: {fileID: 0}
+  wheelReference: {fileID: 0}
+  VaccineWheelLogic: {fileID: 0}
+  VaccineIconInBox: {fileID: 0}
   weaponTransforms: []
 --- !u!114 &3517825292825441646
 MonoBehaviour:
