@@ -147471,19 +147471,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].newBossName
-      value: RIZK
+      value: COLONY
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[1].newBossName
-      value: YUN (GOATED)
+      value: TEST 1
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[2].newBossName
-      value: COLONY (BALLEN)
+      value: TEST 2
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[3].newBossName
-      value: COLONY (GOING THROUGH IT)
+      value: YUN
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145335139452, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
