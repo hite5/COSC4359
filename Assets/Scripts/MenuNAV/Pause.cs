@@ -46,6 +46,7 @@ public class Pause : MonoBehaviour
 
 
         OptionSettings.GameisPaused = false;
+        //Cursor.visible = false;
 
         //CursorManager.Instance.SetActiveCursorType(CursorManager.CursorType.Target);
         //Debug.Log("Setting Cursor To Target RESUME");
@@ -82,7 +83,7 @@ public class Pause : MonoBehaviour
     {
         if (isButtonObject == false)
         {
-            if (player.Utilities.EscapeButtonPressed && GlobalPlayerVariables.GameOver == false)
+            if (player.Utilities.EscapeButtonPressed && GlobalPlayerVariables.GameOver == false && GlobalPlayerVariables.inActiveUI == false)
             {
                 if (OptionSettings.GameisPaused == true)
                     resume();

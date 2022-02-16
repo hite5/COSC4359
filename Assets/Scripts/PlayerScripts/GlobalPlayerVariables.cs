@@ -161,6 +161,7 @@ public class GlobalPlayerVariables : MonoBehaviour
 
 
     public static bool GameOver = false;
+    public static bool inActiveUI = false;
 
     public static bool Defend = true;
 
@@ -218,6 +219,7 @@ public class GlobalPlayerVariables : MonoBehaviour
         //Pause = false;
         OptionSettings.GameisPaused = false;
         GameOver = false;
+        inActiveUI = false;
 
         BaseCritRate = bcr1;
         BaseCritDamage = bcd1;
