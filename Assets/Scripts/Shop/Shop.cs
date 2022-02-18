@@ -36,7 +36,18 @@ public class Shop : MonoBehaviour
                 {
                     shop.SetActive(true);
                     CurrentlyInShop = true;
+                    GlobalPlayerVariables.inActiveUI = true;
                     Debug.Log("IN SHOP");
+                }
+            }
+            if (inShopRange == true && GlobalPlayerVariables.inActiveUI == true)
+            {
+                if (playerScript.Utilities.EscapeButtonPressed)
+                {
+                    shop.SetActive(false);
+                    CurrentlyInShop = false;
+                    GlobalPlayerVariables.inActiveUI = false;
+                   // Cursor.visible = false;
                 }
             }
         }
