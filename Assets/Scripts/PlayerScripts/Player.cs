@@ -562,7 +562,7 @@ public class Player : MonoBehaviour
                 if (Utilities.VaccineButtonPressed)
                 {
                     wheelTimer += Time.deltaTime;
-                    Debug.Log("State 1");
+                    //Debug.Log("State 1");
                     if (wheelTimer >= TimeToShowWheel)
                     {
                         wheelReference.SetActive(true);
@@ -623,7 +623,7 @@ public class Player : MonoBehaviour
                 }
                 else if (LeftSlotAvailableToUse && VaccineIsActive == false && tappedVaccineButton == true)
                 {
-                    Debug.Log("State 2");
+                    //Debug.Log("State 2");
                     tappedVaccineButton = false;
                     currVaccineInEff = vaccineSelector;
                     switch (vaccineSelector)
@@ -673,7 +673,7 @@ public class Player : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("State 3");
+                    //Debug.Log("State 3");
                     wheelTimer = 0;
                     if (wheelReference.activeSelf)
                         wheelReference.SetActive(false);

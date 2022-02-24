@@ -422,7 +422,10 @@ public class EnemyColony2 : MonoBehaviour
         else if (goForPlayer == true && lineofsight == true)
         {
             //newpos = new Vector3(randPos.x, randPos.y, 0);
-            direction = (target.position - transform.position).normalized;
+            if (playerStash != null)
+                direction = (target.position - transform.position).normalized;
+            else
+                direction = transform.position.normalized;
             //direction = (newpos - transform.position).normalized;
         }
         else if (lineofsight == false)
@@ -563,23 +566,25 @@ public class EnemyColony2 : MonoBehaviour
                             //can probably optimize this later
                             RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
 
-
-                            if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
+                            if (hit2)
                             {
-                                lineofsight = true;
-                                Vector3 directionToTarget = enemy.position - transform.position;
-                                float dSqrToTarget = directionToTarget.sqrMagnitude;
-                                if (dSqrToTarget < closestDistanceSqr)
+                                if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
                                 {
+                                    lineofsight = true;
+                                    Vector3 directionToTarget = enemy.position - transform.position;
+                                    float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                    if (dSqrToTarget < closestDistanceSqr)
+                                    {
 
-                                    closestDistanceSqr = dSqrToTarget;
-                                    target = enemy;
-                                    //EnemyTarget = enemy;
-                                    //Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.black);
-                                    //closest = true;
-                                    //Debug.Log("Found target");
+                                        closestDistanceSqr = dSqrToTarget;
+                                        target = enemy;
+                                        //EnemyTarget = enemy;
+                                        //Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.black);
+                                        //closest = true;
+                                        //Debug.Log("Found target");
 
-                                    //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                    }
                                 }
                             }
 

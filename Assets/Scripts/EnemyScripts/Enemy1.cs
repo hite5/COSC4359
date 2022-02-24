@@ -320,20 +320,22 @@ public class Enemy1 : MonoBehaviour
                             //can probably optimize this later
                             RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
 
-
-                            if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
+                            if (hit2)
                             {
-                                lineofsight = true;
-                                directionToTarget = enemy.position - transform.position;
-                                float dSqrToTarget = directionToTarget.sqrMagnitude;
-                                if (dSqrToTarget < closestDistanceSqr)
+                                if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
                                 {
-                                    closestDistanceSqr = dSqrToTarget;
-                                    player = enemy;
-                                    //closest = true;
-                                    //Debug.Log("Found target");
+                                    lineofsight = true;
+                                    directionToTarget = enemy.position - transform.position;
+                                    float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                    if (dSqrToTarget < closestDistanceSqr)
+                                    {
+                                        closestDistanceSqr = dSqrToTarget;
+                                        player = enemy;
+                                        //closest = true;
+                                        //Debug.Log("Found target");
 
-                                    //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                    }
                                 }
                             }
 
@@ -357,18 +359,21 @@ public class Enemy1 : MonoBehaviour
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
                 //var rayDirection = player.position - transform.position;
                 Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
-                if (hit.collider.gameObject.CompareTag("Player")|| hit.collider.gameObject.CompareTag("Globin"))
+                if (hit)
                 {
-                    lineofsight = true;
-                    //Debug.Log("Player is Visable");
-                    // enemy can see the player!
+                    if (hit.collider.gameObject.CompareTag("Player") || hit.collider.gameObject.CompareTag("Globin"))
+                    {
+                        lineofsight = true;
+                        //Debug.Log("Player is Visable");
+                        // enemy can see the player!
 
-                    //Debug.Log("Player is Visable");
-                }
-                else
-                {
-                    lineofsight = false;
-                    //Debug.Log("Player is NOT Visable");
+                        //Debug.Log("Player is Visable");
+                    }
+                    else
+                    {
+                        lineofsight = false;
+                        //Debug.Log("Player is NOT Visable");
+                    }
                 }
 
             }

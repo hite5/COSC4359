@@ -235,9 +235,16 @@ public class Enemy3 : MonoBehaviour
         if (retreatToBoss == true)
         {
             //BossObject = GameObject.FindGameObjectWithTag("Colony").transform;
-            int randTransform = Random.Range(0, EnemyManager.instance.CurrentlyAlive.Count);
-            Debug.Log(randTransform + " BOSS INDEX PICKED");
-            BossObject = EnemyManager.instance.CurrentlyAlive[randTransform];
+            if (EnemyManager.instance.CurrentlyAlive.Count > 0)
+            {
+                int randTransform = Random.Range(0, EnemyManager.instance.CurrentlyAlive.Count);
+                Debug.Log(randTransform + " BOSS INDEX PICKED");
+                BossObject = EnemyManager.instance.CurrentlyAlive[randTransform];
+            }
+            else
+            {
+                retreatToBoss = false;
+            }
         }
 
         target = player;
@@ -592,22 +599,24 @@ public class Enemy3 : MonoBehaviour
                             //can probably optimize this later
                             RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
 
-
-                            if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
+                            if (hit2)
                             {
-                                canSeeEnemy = true;
-                                directionToTarget = enemy.position - transform.position;
-                                float dSqrToTarget = directionToTarget.sqrMagnitude;
-                                if (dSqrToTarget < closestDistanceSqr)
+                                if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
                                 {
-                                    closestDistanceSqr = dSqrToTarget;
-                                    EnemyTarget = enemy;
-                                    if(retreatToBoss == false)
-                                        target = enemy;
-                                    closest = true;
-                                    //Debug.Log("Found target");
+                                    canSeeEnemy = true;
+                                    directionToTarget = enemy.position - transform.position;
+                                    float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                    if (dSqrToTarget < closestDistanceSqr)
+                                    {
+                                        closestDistanceSqr = dSqrToTarget;
+                                        EnemyTarget = enemy;
+                                        if (retreatToBoss == false)
+                                            target = enemy;
+                                        closest = true;
+                                        //Debug.Log("Found target");
 
-                                    //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                    }
                                 }
                             }
 
@@ -627,18 +636,21 @@ public class Enemy3 : MonoBehaviour
                 if (EnemyTarget != null)
                 {
                     RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-                    if (hit3.collider.gameObject.CompareTag("Globin") || hit3.collider.gameObject.CompareTag("Player"))
+                    if(hit3)
                     {
-                        lineofsight = true;
-                        canSeeEnemy = true;
-                        chaseInProgress = time2chase;
+                        if (hit3.collider.gameObject.CompareTag("Globin") || hit3.collider.gameObject.CompareTag("Player"))
+                        {
+                            lineofsight = true;
+                            canSeeEnemy = true;
+                            chaseInProgress = time2chase;
 
-                        Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.red);
-                    }
-                    else
-                    {
-                        lineofsight = false;
-                        canSeeEnemy = false;
+                            Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.red);
+                        }
+                        else
+                        {
+                            lineofsight = false;
+                            canSeeEnemy = false;
+                        }
                     }
                 }
                 else

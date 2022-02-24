@@ -415,17 +415,20 @@ public class Globin : MonoBehaviour
                             if (collider2D.TryGetComponent<Transform>(out Transform enemy))
                             {
                                 RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-                                if (hit2.collider.gameObject.CompareTag("EnemyMelee") || hit2.collider.gameObject.CompareTag("Enemy") || hit2.collider.gameObject.CompareTag("Colony"))
+                                if (hit2)
                                 {
-                                    canSeeEnemy = true;
-                                    directionToTarget = enemy.position - transform.position;
-                                    float dSqrToTarget = directionToTarget.sqrMagnitude;
-                                    if (dSqrToTarget < closestDistanceSqr)
+                                    if (hit2.collider.gameObject.CompareTag("EnemyMelee") || hit2.collider.gameObject.CompareTag("Enemy") || hit2.collider.gameObject.CompareTag("Colony"))
                                     {
-                                        closestDistanceSqr = dSqrToTarget;
-                                        EnemyTarget = enemy;
-                                        closest = true;
-                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        canSeeEnemy = true;
+                                        directionToTarget = enemy.position - transform.position;
+                                        float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                        if (dSqrToTarget < closestDistanceSqr)
+                                        {
+                                            closestDistanceSqr = dSqrToTarget;
+                                            EnemyTarget = enemy;
+                                            closest = true;
+                                            //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        }
                                     }
                                 }
                             }
@@ -438,14 +441,17 @@ public class Globin : MonoBehaviour
                     if (EnemyTarget != null)
                     {
                         RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-                        if (hit3.collider.gameObject.CompareTag("EnemyMelee") || hit3.collider.gameObject.CompareTag("Enemy") || hit3.collider.gameObject.CompareTag("Colony"))
+                        if (hit3)
                         {
-                            canSeeEnemy = true;
-                            //Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.red);
-                        }
-                        else
-                        {
-                            canSeeEnemy = false;
+                            if (hit3.collider.gameObject.CompareTag("EnemyMelee") || hit3.collider.gameObject.CompareTag("Enemy") || hit3.collider.gameObject.CompareTag("Colony"))
+                            {
+                                canSeeEnemy = true;
+                                //Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.red);
+                            }
+                            else
+                            {
+                                canSeeEnemy = false;
+                            }
                         }
                     }
                     else

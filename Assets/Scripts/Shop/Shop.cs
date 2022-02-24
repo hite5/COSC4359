@@ -30,7 +30,7 @@ public class Shop : MonoBehaviour
     {
         if (playerScript != null)
         {
-            if (playerScript.Utilities.InteractButtonPressed && inShopRange == true)
+            if (playerScript.Utilities.InteractButtonPressed && inShopRange == true && OptionSettings.GameisPaused == false)
             {
                 if (!shop.activeSelf)
                 {
@@ -75,6 +75,7 @@ public class Shop : MonoBehaviour
             shop.SetActive(false);
             CurrentlyInShop = false;
             inShopRange = false;
+            GlobalPlayerVariables.inActiveUI = false;
         }
     }
 
