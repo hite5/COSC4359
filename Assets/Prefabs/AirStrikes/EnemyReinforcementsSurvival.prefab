@@ -259,16 +259,16 @@ MonoBehaviour:
   Spawnlist:
   - Guardian: {fileID: 2666951384714126294, guid: 0456d0b67387f0c45b18fa2ee21fc077, type: 3}
     keepDefaultHP: 0
-    GuardianHP: 625
+    GuardianHP: 100
   - Guardian: {fileID: 8299276445152824113, guid: 460555935c6e46f4a9ed278ba8f23985, type: 3}
     keepDefaultHP: 0
-    GuardianHP: 625
+    GuardianHP: 100
   - Guardian: {fileID: 7865572295491388704, guid: 128e377a84d2ebb4e8a0558bf7135425, type: 3}
     keepDefaultHP: 0
-    GuardianHP: 625
+    GuardianHP: 100
   - Guardian: {fileID: 257568515384690895, guid: 6e782294ef35e414085517be255452fa, type: 3}
     keepDefaultHP: 0
-    GuardianHP: 625
+    GuardianHP: 100
   startTimerRangeForStrikes: 5
   endTimerRangeForStrikes: 7
   strikeTimer: 0

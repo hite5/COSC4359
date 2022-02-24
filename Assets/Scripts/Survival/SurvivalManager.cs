@@ -26,7 +26,7 @@ public class SurvivalManager : MonoBehaviour
     public int bossRoundEveryXWave = 3;
 
     public float spawnCapBase = 1;
-    public float spawnCapGrowth = 0.1f;
+    public int spawnCapGrowth = 10;
 
     public int totalSpawned = 0;
     public int baseEnemiesToSpawnEachRound = 50;
@@ -36,6 +36,7 @@ public class SurvivalManager : MonoBehaviour
     private float survivalTimer = 0f;
     public bool roundOver = false;
 
+    [SerializeField]
     AirStrikeProjectile GuardianStats;
 
     private void Awake()
@@ -106,7 +107,10 @@ public class SurvivalManager : MonoBehaviour
         for (int i = 0; i < GuardianStats.Spawnlist.Count; i++)
         {
             var go = GuardianStats.Spawnlist[i];
-            go.GuardianHP = (int)(baseGrowth * go.GuardianHP);
+            // float temp = go.GuardianHP * baseGrowth;
+            // go.GuardianHP = (int)temp + go.GuardianHP;
+            Debug.Log("****Guardian HP = " + go.GuardianHP);
+            Debug.Log("****Guardian Base Growth = " + baseGrowth);
             GuardianStats.Spawnlist[i] = go;
         }
     }
@@ -145,8 +149,8 @@ public class SurvivalManager : MonoBehaviour
             }
         }
         bossRound = isBossRound;
-        spawnCapBase += spawnCapGrowth;
-        baseEnemiesToSpawnEachRound = (int)(baseEnemiesToSpawnEachRound * spawnCapBase);
+        // spawnCapBase += spawnCapGrowth;
+        baseEnemiesToSpawnEachRound += spawnCapGrowth; // (int)(baseEnemiesToSpawnEachRound * spawnCapBase);
         updateGuardianList();
         EManager.resetEnemyManager();
         
