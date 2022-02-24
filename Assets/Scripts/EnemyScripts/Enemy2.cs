@@ -310,20 +310,22 @@ public class Enemy2 : MonoBehaviour
                         //can probably optimize this later
                         RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
 
-
-                        if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
+                        if (hit2)
                         {
-                            LineOfSight = true;
-                            directionToTarget = enemy.position - transform.position;
-                            float dSqrToTarget = directionToTarget.sqrMagnitude;
-                            if (dSqrToTarget < closestDistanceSqr)
+                            if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
                             {
-                                closestDistanceSqr = dSqrToTarget;
-                                player = enemy;
-                                //closest = true;
-                                //Debug.Log("Found target");
+                                LineOfSight = true;
+                                directionToTarget = enemy.position - transform.position;
+                                float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                if (dSqrToTarget < closestDistanceSqr)
+                                {
+                                    closestDistanceSqr = dSqrToTarget;
+                                    player = enemy;
+                                    //closest = true;
+                                    //Debug.Log("Found target");
 
-                                //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                    //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                }
                             }
                         }
 

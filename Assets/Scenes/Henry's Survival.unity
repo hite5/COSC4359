@@ -135377,6 +135377,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+--- !u!1 &1115127579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2369923047323700878, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+  m_PrefabInstance: {fileID: 1115127578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1115127580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115127579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbe7aabaaca71e41b8c9e31b1c886cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EManager: {fileID: 1115127583}
+  timeBeforeNextWave: 25
+  skipWait: 0
+  BossesInRotation:
+  - Boss: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    BossHP: 2500
+    changeName: 0
+    newBossName: 
+  - Boss: {fileID: 5122931583132573474, guid: 3c9d55d55c5a5e146b9dcac51799aed0, type: 3}
+    BossHP: 1250
+    changeName: 0
+    newBossName: 
+  - Boss: {fileID: 4657044852027501985, guid: 576b3dee03aa1f74d8aea3646cb2fea8, type: 3}
+    BossHP: 2500
+    changeName: 1
+    newBossName: COLONY VARIANT (TRIPLE SHOT)
+  MiniBossReinforcements: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
+  bossRound: 0
+  healthGrowthRate: 0.1
+  currentWave: 0
+  baseAmountOfBosses: 1
+  bossIncrease: 1
+  increaseBossCountEveryXWave: 7
+  bossRoundEveryXWave: 3
+  spawnCapBase: 1
+  spawnCapGrowth: 5
+  totalSpawned: 0
+  baseEnemiesToSpawnEachRound: 50
+  enemyGrowth: 0.1
+  surviveTimeLimit: 15
+  roundOver: 0
+--- !u!114 &1115127583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2369923047323700879, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+  m_PrefabInstance: {fileID: 1115127578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115127579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddd134675d1e6c43b612b1db403ee8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1308734624
 GameObject:
   m_ObjectHideFlags: 0

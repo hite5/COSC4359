@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BossCustomization;
 
 public class AirStrikeProjectile : MonoBehaviour
 {
     public float distanceToTarget;
     public Transform landingPad;
     public GameObject explosion;
-    public GameObject[] Spawnlist;
+    public List<GuardianSetup> Spawnlist;
+    //public GameObject[] Spawnlist;
     //public float projectileSpeed;
     //public float secondsToland;
     float t;
@@ -84,8 +86,19 @@ public class AirStrikeProjectile : MonoBehaviour
             {
                 for (int i = 0; i < howManyToSpawn; i++)
                 {
-                    int whatToSpawn = Random.Range(0, Spawnlist.Length - 1);
-                    Instantiate(Spawnlist[whatToSpawn], offset, Quaternion.Euler(0, 0, 0));
+                    int whatToSpawn = Random.Range(0, Spawnlist.Count - 1);
+                    var go = Instantiate(Spawnlist[whatToSpawn].Guardian, offset, Quaternion.Euler(0, 0, 0));
+                    if (go.TryGetComponent<Enemy3>(out Enemy3 EM3))
+                    {
+                        if (Spawnlist[whatToSpawn].keepDefaultHP == false)
+                        {
+                            EM3.maxHP = Spawnlist[whatToSpawn].GuardianHP;
+                            EM3.HP = Spawnlist[whatToSpawn].GuardianHP;
+                        }
+                    }
+
+
+
                 }
             }
             Destroy(gameObject.transform.parent.gameObject);

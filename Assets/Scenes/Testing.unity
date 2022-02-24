@@ -188,19 +188,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713284, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1638
+      value: 1897
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713284, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 460
+      value: 571
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: MaxTbs
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: MinTbs
-      value: 15
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: survivalMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: tbsDecreaseRate
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossHP.Array.size
@@ -253,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].Boss
       value: 
-      objectReference: {fileID: 5122931583132573474, guid: 3c9d55d55c5a5e146b9dcac51799aed0, type: 3}
+      objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[1].Boss
       value: 
@@ -268,7 +276,7 @@ PrefabInstance:
       objectReference: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].BossHP
-      value: 250
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[1].BossHP
@@ -284,7 +292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].changeName
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[1].changeName
@@ -300,7 +308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].newBossName
-      value: JIMMY
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[1].newBossName
@@ -313,6 +321,14 @@ PrefabInstance:
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[3].newBossName
       value: AYOOOOOO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145041897061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -323.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145041897061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -95.42
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: angle1
@@ -358,12 +374,87 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6913990523596124121, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -319.81998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913990523596124121, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -98.990005
+      objectReference: {fileID: 0}
     - target: {fileID: 8817581040951973786, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9212100024642128687, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -316.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212100024642128687, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -94.670006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+--- !u!1 &125003426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3837925145008713339, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+  m_PrefabInstance: {fileID: 125003425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &125003427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+  m_PrefabInstance: {fileID: 125003425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125003426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddd134675d1e6c43b612b1db403ee8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &125003428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125003426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbe7aabaaca71e41b8c9e31b1c886cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EManager: {fileID: 125003427}
+  timeBeforeNextWave: 5
+  skipWait: 0
+  BossesInRotation:
+  - Boss: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
+    BossHP: 2500
+    changeName: 0
+    newBossName: 
+  - Boss: {fileID: 5122931583132573474, guid: 3c9d55d55c5a5e146b9dcac51799aed0, type: 3}
+    BossHP: 1250
+    changeName: 0
+    newBossName: 
+  - Boss: {fileID: 4657044852027501985, guid: 576b3dee03aa1f74d8aea3646cb2fea8, type: 3}
+    BossHP: 2500
+    changeName: 1
+    newBossName: COLONY VARIANT (TRIPLE SHOT)
+  MiniBossReinforcements: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
+  bossRound: 0
+  healthGrowthRate: 0.1
+  currentWave: 0
+  baseAmountOfBosses: 1
+  bossIncrease: 1
+  increaseBossCountEveryXWave: 7
+  bossRoundEveryXWave: 3
+  spawnCapBase: 1
+  spawnCapGrowth: 0.1
+  totalSpawned: 0
+  baseEnemiesToSpawnEachRound: 50
+  enemyGrowth: 0.1
+  surviveTimeLimit: 15
+  roundOver: 0
 --- !u!1001 &429169962
 PrefabInstance:
   m_ObjectHideFlags: 0
