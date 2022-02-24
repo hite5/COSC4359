@@ -301,8 +301,10 @@ MonoBehaviour:
     hpRegenAdd: 30
     stamAdd: 50
     stamRegenAdd: 30
-    movementSpeedAdd: 0
-    damageAdd: 0
+    movementSpeedAdd: 1.5
+    damageAdd: 1.5
+    critChanceAdd: 2
+    critDamageAdd: 1.5
     Tylenolhealamount: 50
     Tylenolcooldown: 1
   components:
@@ -348,7 +350,7 @@ MonoBehaviour:
   Gre: {fileID: 3448305983176618688, guid: 103a9c628a9486b44af60b4f7fcc0ee8, type: 3}
   NumOfTypesOfNade: 2
   vaccineSelector: 0
-  currVaccineInEff: 0
+  currVaccineInEff: -1
   NumOfTypesOfVaccine: 0
   easeRef: 0
   dashSound: 

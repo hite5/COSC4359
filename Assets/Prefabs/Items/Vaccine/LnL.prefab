@@ -318,7 +318,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 0.3803922, b: 0.38823533, a: 1}
+        key0: {r: 0.5686275, g: 0.09411766, b: 0.43921572, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -5072,7 +5072,7 @@ SpriteRenderer:
   m_SortingLayerID: -1518238841
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8033092973025764044, guid: 6b32e55d469970e488d16a6c5d0b1025, type: 3}
+  m_Sprite: {fileID: -488721925442295091, guid: 6b32e55d469970e488d16a6c5d0b1025, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5173,7 +5173,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0.43921572, b: 0.45098042, a: 1}
+      key0: {r: 0.5686275, g: 0.09411766, b: 0.43921572, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}

@@ -94,7 +94,6 @@ public class Bullet : MonoBehaviour
             bulletLife = GlobalPlayerVariables.bulletLifeTime;
 
         }
-
         
         BParticle = transform.Find("BulletParticle");
         BParticle.GetComponent<ParticleSystem>().Stop();
@@ -249,9 +248,7 @@ public class Bullet : MonoBehaviour
                 statusIndicator.StartShake(Mcamera, ShakeDuration, ShakeIntensity);
         }
         */
-
-
-
+        
         timebeforedrop += Time.deltaTime;
         if (timebeforedrop > timeToDropDmg)
         {
@@ -273,8 +270,6 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
-
     }
 
 

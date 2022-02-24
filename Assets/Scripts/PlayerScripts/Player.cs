@@ -109,7 +109,8 @@ public class Player : MonoBehaviour
 
     public int vaccineSelector = 1;
 
-    public int currVaccineInEff = 0;
+    public int currVaccineInEff = -1;
+    int whichVaccineToReset;
 
     public int NumOfTypesOfVaccine;
 
@@ -567,10 +568,6 @@ public class Player : MonoBehaviour
                     {
                         wheelReference.SetActive(true);
                         tappedVaccineButton = false;
-                        
-
-
-
                         mouseAngle = Stats.Angle;
                         if (mouseAngle < 0)
                             mouseAngle = mouseAngle + 360;
@@ -609,7 +606,7 @@ public class Player : MonoBehaviour
                         
                         Debug.DrawLine(transform.position, cursorRef.transform.position, Color.white);
 
-                        Debug.Log("AYO MOUSE " + mouseAngle);
+                        //Debug.Log("AYO MOUSE " + mouseAngle);
 
 
                         //do selection logic here
@@ -707,7 +704,7 @@ public class Player : MonoBehaviour
             if (resetPlayerStatsRequest && !inEffect)
             {
                 //Debug.Log("RequestReset");
-                actions.ResetPlayerStats();
+                actions.ResetPlayerStats(whichVaccineToReset);
                 resetPlayerStatsRequest = false;
             }
             //Debug.Log(stats.StaminaRegenRate);
@@ -947,6 +944,8 @@ public class Player : MonoBehaviour
         resetPlayerStatsRequest = true;
         VaccineIsActive = true; //might have to change this later to make it more general
         yield return new WaitForSeconds(AfterSeconds);
+        whichVaccineToReset = currVaccineInEff;
+        currVaccineInEff = -1;
         VaccineIsActive = false; //same with this one
         inEffect = false;
     }

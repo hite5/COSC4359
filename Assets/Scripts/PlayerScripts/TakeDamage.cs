@@ -173,6 +173,8 @@ public class TakeDamage : MonoBehaviour
     {
         if (amountToGain + player.Stats.Health >= maxHP)
         {
+            if (player.Stats.Health != maxHP)
+                player.Components.PlayerStatusIndicator.StartFlash(0.5f, 0.25f, Color.green, 0f, Color.red, 2);
             //Debug.Log("Heal 1");
             showHeal(Mathf.Abs(maxHP - player.Stats.Health), transform, 10);
             if (player.Stats.Health < maxHP)
@@ -189,8 +191,9 @@ public class TakeDamage : MonoBehaviour
             StartCoroutine(FlashGreen());
             // Debug.Log(HP + " HPHeal 2");
             HealthBar.fillAmount = player.Stats.Health / maxHP;
+            player.Components.PlayerStatusIndicator.StartFlash(0.25f, ((maxHP - player.Stats.Health) / maxHP), Color.green, ((maxHP - player.Stats.Health) / maxHP) / 2f, Color.red, 1);
         }
-
+        
     }
 
 

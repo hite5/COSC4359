@@ -552,23 +552,9 @@ public class PlayerActions
         ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
         pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 94/255f, 97/255f));
         player.Components.PlayerParticleSystem.Play();
-        foreach (Transform rw in rightArm)
-        {
-            //Debug.Log(rw.gameObject.GetType());
-            if (rw.gameObject.activeSelf)
-            {
-                if (rw.GetComponent<Weapon>() != null)
-                {
-                    float tempDmg = rw.GetComponent<Weapon>().bulletDamage;
-                    rw.GetComponent<Weapon>().bulletDamage = tempDmg * player.Stats.DamageAdd;
-                }
-                else if (rw.GetComponent<MeleeWeapon>() != null)
-                {
-                    float tempDmg = rw.GetComponent<MeleeWeapon>().BaseDamage;
-                    rw.GetComponent<MeleeWeapon>().BaseDamage = tempDmg * player.Stats.DamageAdd;
-                }
-            }
-        }
+        //Damage will be adjust in Bullet.cs
+        player.holdWalkSpeed *= player.Stats.MovementSpeedAdd;
+        player.holdSprintSpeed *= player.Stats.MovementSpeedAdd;
         player.Components.PlayerTrailRenderer.endColor = new Color(0, 91 / 255f, 94 / 255f);
         currSpriteCategory = "MorbidaHemo";
     }
@@ -579,7 +565,7 @@ public class PlayerActions
         ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
         pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(175/255f, 22/255f, 133/255f));
         player.Components.PlayerParticleSystem.Play();
-        
+        //Crits will be changed in Weapon.cs
         player.Components.PlayerTrailRenderer.endColor = new Color(172 / 255f, 19 / 255f, 130 / 255f);
         currSpriteCategory = "LnLHemo";
     }
@@ -707,13 +693,13 @@ public class PlayerActions
     }
 
     
-    public void ResetPlayerStats()
+    public void ResetPlayerStats(int vaccineEffect)
     {
         player.Components.PlayerParticleSystem.Stop();
         player.Components.PlayerTrailRenderer.endColor = new Color(184 / 255f, 59 / 255f, 60 / 255f);
         player.Components.PlayerStatusIndicator.ChangeTransparency((player.Stats.MaxHealth - player.Stats.Health) / player.Stats.MaxHealth);
         currSpriteCategory = "DefaultHemo";
-        switch (player.currVaccineInEff)
+        switch (vaccineEffect)
         {
             case 0:
                 Debug.Log("Used Phizer");
@@ -730,26 +716,13 @@ public class PlayerActions
                 break;
             case 1:
                 Debug.Log("Used Morbida");
-                foreach (Transform rw in rightArm)
-                {
-                    //Debug.Log(rw.gameObject.GetType());
-                    if (rw.gameObject.activeSelf)
-                    {
-                        if (rw.GetComponent<Weapon>() != null)
-                        {
-                            float tempDmg = rw.GetComponent<Weapon>().bulletDamage;
-                            rw.GetComponent<Weapon>().bulletDamage = tempDmg * player.Stats.DamageAdd;
-                        }
-                        else if (rw.GetComponent<MeleeWeapon>() != null)
-                        {
-                            float tempDmg = rw.GetComponent<MeleeWeapon>().BaseDamage;
-                            rw.GetComponent<MeleeWeapon>().BaseDamage = tempDmg * player.Stats.DamageAdd;
-                        }
-                    }
-                }
+                player.holdWalkSpeed /= player.Stats.MovementSpeedAdd;
+                player.holdSprintSpeed /= player.Stats.MovementSpeedAdd;
+                //Damage will be changed in Weapon.cs
                 break;
             case 2:
                 Debug.Log("Used LnL");
+                //Crits will be changed in Weapon.cs
                 break;
             case 3:
                 break;

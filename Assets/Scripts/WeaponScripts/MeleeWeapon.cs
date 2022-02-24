@@ -272,7 +272,10 @@ public class MeleeWeapon : MonoBehaviour
                 }
             }
 
-
+            if(player.currVaccineInEff == 1)
+            {
+                currDmg *= player.Stats.DamageAdd;
+            }
             /*
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {

@@ -63,6 +63,10 @@ public class PlayerStats
     public float MovementSpeedAddz { get; set; }
     public float DamageAddz { get; set; }
 
+    //LnL
+    public float CritChanceAddz { get; set; }
+    public float CritDamageAddz { get; set; }
+
     public float TylenolHealAmountz { get; set; }
     public float TylenoCooldownz { get; set; }
 
@@ -150,6 +154,14 @@ public class PlayerStats
     [Tooltip("In Percentage")]
     [SerializeField]
     private float damageAdd;
+    //LnL
+    [Header("LnL")]
+    [Tooltip("In Percentage")]
+    [SerializeField]
+    private float critChanceAdd;
+    [Tooltip("In Percentage")]
+    [SerializeField]
+    private float critDamageAdd;
     //TYLENOL
     [Header("Tylenol")]
     [SerializeField]
@@ -215,6 +227,10 @@ public class PlayerStats
     //Morbida
     public float MovementSpeedAdd { get => movementSpeedAdd; }
     public float DamageAdd { get => damageAdd; }
+
+    //LnL
+    public float CritChanceAdd { get => critChanceAdd; }
+    public float CritDamageAdd { get => critDamageAdd; }
 
     public float TylenolHealAmount { get => Tylenolhealamount; }
     public float TylenolCooldown { get => Tylenolcooldown; }

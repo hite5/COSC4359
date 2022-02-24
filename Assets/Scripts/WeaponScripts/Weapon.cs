@@ -196,22 +196,24 @@ public class Weapon : MonoBehaviour
             GlobalPlayerVariables.damageDropOff = dropOffPerTarget;
             GlobalPlayerVariables.bulletDamageDropOff = bulletDamageDropOff;
             GlobalPlayerVariables.timeToDropDmg = timeToDropDmg;
-
-            switch (player.currVaccineInEff) {
-                case 1:
-                    Debug.Log("Weapon.cs : Morbida Bullet Effects");
-                    break;
-                case 2:
-                    Debug.Log("Weapon.cs : LnL Bullet Effect");
-                    break;
-                case 3:
-                    Debug.Log("Weapon.cs : Unknown Bullet Effect");
-                    break;
-                default:
-                    break;
-
-            }
-
+            if (player.currVaccineInEff != -1)
+                switch (player.currVaccineInEff)
+                {
+                    case 1:
+                        Debug.Log("Weapon.cs : Morbida Bullet Effects");
+                        GlobalPlayerVariables.bulletDamage *= player.Stats.DamageAdd;
+                        break;
+                    case 2:
+                        Debug.Log("Weapon.cs : LnL Bullet Effect");
+                        GlobalPlayerVariables.critRate = GlobalPlayerVariables.critRate * player.Stats.CritDamageAdd <= 1 ? GlobalPlayerVariables.critRate * player.Stats.CritDamageAdd : 1;
+                        GlobalPlayerVariables.critDmg *= player.Stats.CritDamageAdd;
+                        break;
+                    case 3:
+                        Debug.Log("Weapon.cs : Unknown Bullet Effect");
+                        break;
+                    default:
+                        break;
+                }
         }
         else
         {

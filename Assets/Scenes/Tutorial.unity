@@ -85609,6 +85609,7 @@ MonoBehaviour:
   enableEnemyUI: 0
   showBigUI: 5
   BigUITimer: 0
+  survivalMode: 0
 --- !u!4 &1079025800
 Transform:
   m_ObjectHideFlags: 0
@@ -103509,6 +103510,10 @@ PrefabInstance:
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: staminaRegenGrowthRate
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
+      propertyPath: stats.movementSpeedAdd
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: components.playerStatusIndicator
