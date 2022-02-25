@@ -9,12 +9,14 @@ public class SurvivalManager : MonoBehaviour
     public EnemyManager EManager;
     
     public float timeBeforeNextWave = 30f;
-    private float timerStart = 0;
+    [HideInInspector]
+    public float timerStart = 0;
     public bool skipWait = false;
 
     public List<BossSettings> BossesInRotation;
     public List<GuardianSetup> GuardianSpawnlist;
-    //public GameObject MiniBossReinforcements;
+    public List<DebugCircle> RandomSpawnPosForEvents;
+    public GameObject MiniBossReinforcements;
     public bool bossRound = false;
 
     float baseGrowth = 1;
@@ -34,7 +36,8 @@ public class SurvivalManager : MonoBehaviour
     public float enemyGrowth = 0.1f;
 
     public float surviveTimeLimit = 60f;
-    private float survivalTimer = 0f;
+    [HideInInspector]
+    public float survivalTimer = 0f;
     public bool roundOver = false;
 
     private void Awake()
@@ -44,6 +47,7 @@ public class SurvivalManager : MonoBehaviour
     private void Start()
     {
         FirstRound();
+        RememberLoadout.penalty = false;
     }
 
     private void Update()
@@ -148,7 +152,19 @@ public class SurvivalManager : MonoBehaviour
         baseEnemiesToSpawnEachRound += spawnCapGrowth; // (int)(baseEnemiesToSpawnEachRound * spawnCapBase);
         updateGuardianList();
         EManager.resetEnemyManager();
-        
+
+        if (currentWave > 3)
+        {
+            for (int i = 0; i < baseAmountOfBosses; i++)
+            {
+                int temp = Random.Range(0, RandomSpawnPosForEvents.Count);
+                Vector2 SpawnOffSet = Vector2.zero;
+                SpawnOffSet = RandomSpawnPosForEvents[temp].transform.position;
+                SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
+                Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
+                Instantiate(MiniBossReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+            }
+        }
     }
 
     

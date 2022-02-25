@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game 3.unity
     guid: d820dfba2ae760146a2d5d2d0ec37632
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen/Survival1LoadingScreen.unity
+    guid: e6506b15c31a9f34280ca39447af303b
   m_configObjects: {}
