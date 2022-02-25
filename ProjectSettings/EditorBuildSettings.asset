@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadingScreen/Survival1LoadingScreen.unity
     guid: e6506b15c31a9f34280ca39447af303b
+  - enabled: 1
+    path: Assets/Scenes/Henry's Survival.unity
+    guid: fa698d64b27729e43bf8967e48e30ca2
   m_configObjects: {}
