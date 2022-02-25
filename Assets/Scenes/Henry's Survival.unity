@@ -135375,6 +135375,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2369923048627774371, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369923048627774371, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
 --- !u!1 &1115127579 stripped
@@ -135402,7 +135410,7 @@ MonoBehaviour:
     BossHP: 2500
     changeName: 0
     newBossName: 
-  - Boss: {fileID: 5122931583132573474, guid: 3c9d55d55c5a5e146b9dcac51799aed0, type: 3}
+  - Boss: {fileID: 4365177000091811207, guid: 848a82b313076844b9b19c2e2fc9890a, type: 3}
     BossHP: 1250
     changeName: 0
     newBossName: 
@@ -135410,7 +135418,19 @@ MonoBehaviour:
     BossHP: 2500
     changeName: 1
     newBossName: COLONY VARIANT (TRIPLE SHOT)
-  MiniBossReinforcements: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
+  GuardianSpawnlist:
+  - Guardian: {fileID: 2666951384714126294, guid: 0456d0b67387f0c45b18fa2ee21fc077, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 100
+  - Guardian: {fileID: 8299276445152824113, guid: 460555935c6e46f4a9ed278ba8f23985, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 100
+  - Guardian: {fileID: 7865572295491388704, guid: 128e377a84d2ebb4e8a0558bf7135425, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 100
+  - Guardian: {fileID: 257568515384690895, guid: 6e782294ef35e414085517be255452fa, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 100
   bossRound: 0
   healthGrowthRate: 0.1
   currentWave: 0

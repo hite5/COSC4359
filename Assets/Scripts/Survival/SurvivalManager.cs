@@ -13,7 +13,8 @@ public class SurvivalManager : MonoBehaviour
     public bool skipWait = false;
 
     public List<BossSettings> BossesInRotation;
-    public GameObject MiniBossReinforcements;
+    public List<GuardianSetup> GuardianSpawnlist;
+    //public GameObject MiniBossReinforcements;
     public bool bossRound = false;
 
     float baseGrowth = 1;
@@ -36,9 +37,6 @@ public class SurvivalManager : MonoBehaviour
     private float survivalTimer = 0f;
     public bool roundOver = false;
 
-    [SerializeField]
-    AirStrikeProjectile GuardianStats;
-
     private void Awake()
     {
         instance = this;
@@ -46,10 +44,6 @@ public class SurvivalManager : MonoBehaviour
     private void Start()
     {
         FirstRound();
-        if (GuardianStats == null)
-        {
-            GuardianStats = MiniBossReinforcements.transform.Find("AirStrikeProjectile").GetComponent<AirStrikeProjectile>();
-        }
     }
 
     private void Update()
@@ -104,14 +98,15 @@ public class SurvivalManager : MonoBehaviour
 
     public void updateGuardianList()
     {
-        for (int i = 0; i < GuardianStats.Spawnlist.Count; i++)
+        for (int i = 0; i < GuardianSpawnlist.Count; i++)
         {
-            var go = GuardianStats.Spawnlist[i];
-            // float temp = go.GuardianHP * baseGrowth;
-            // go.GuardianHP = (int)temp + go.GuardianHP;
+            var go = GuardianSpawnlist[i];
+            go.GuardianHP = (int)(baseGrowth * go.GuardianHP);
+            /*
             Debug.Log("****Guardian HP = " + go.GuardianHP);
             Debug.Log("****Guardian Base Growth = " + baseGrowth);
-            GuardianStats.Spawnlist[i] = go;
+            */
+            GuardianSpawnlist[i] = go;
         }
     }
 

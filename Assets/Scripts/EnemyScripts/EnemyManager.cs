@@ -183,10 +183,6 @@ public class EnemyManager : MonoBehaviour
         else if (go.TryGetComponent<EnemyColony2>(out EnemyColony2 EC2))
         {
             EC2.getReferences();
-            if (survivalMode)
-            {
-                EC2.AirStrike = SurvivalManager.instance.MiniBossReinforcements;
-            }
             EC2.individualHP = BossSettingList[index].BossHP;
             EC2.indivMaxHP = BossSettingList[index].BossHP;
             if (nameChange == true)

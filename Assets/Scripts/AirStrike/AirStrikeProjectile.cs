@@ -24,11 +24,17 @@ public class AirStrikeProjectile : MonoBehaviour
     public bool spawnEnemy = false;
     public int howManyToSpawn;
 
+    [Header("Survival Mode")]
+    public bool forSurvivalMode = false;
 
     // Start is called before the first frame update
     void Start()
     {
         startPosition = target = transform.position;
+        if(forSurvivalMode)
+        {
+            Spawnlist = SurvivalManager.instance.GuardianSpawnlist;
+        }
 
 
         strikeTimer = Random.Range(startTimerRangeForStrikes, endTimerRangeForStrikes);
@@ -96,6 +102,8 @@ public class AirStrikeProjectile : MonoBehaviour
                             EM3.HP = Spawnlist[whatToSpawn].GuardianHP;
                         }
                     }
+
+
 
 
 

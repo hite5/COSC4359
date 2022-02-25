@@ -274,6 +274,7 @@ MonoBehaviour:
   strikeTimer: 0
   spawnEnemy: 1
   howManyToSpawn: 3
+  forSurvivalMode: 1
 --- !u!1 &4582331101123070465
 GameObject:
   m_ObjectHideFlags: 0
