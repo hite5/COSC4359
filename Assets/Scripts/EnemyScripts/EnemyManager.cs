@@ -1,6 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BossCustomization;
+
+namespace BossCustomization
+{
+    [System.Serializable]
+    public struct BossSettings
+    {
+        public GameObject Boss;
+        public int BossHP;
+        public bool changeName;
+        public string newBossName;
+    }
+
+    [System.Serializable]
+    public struct GuardianSetup
+    {
+        public GameObject Guardian;
+        public bool keepDefaultHP;
+        public int GuardianHP;
+        /*
+        public bool changeName;
+        public string newBossName;
+        */
+    }
+
+}
+
 
 public class EnemyManager : MonoBehaviour
 {
@@ -17,6 +44,7 @@ public class EnemyManager : MonoBehaviour
     [Header("Bosses To Spawn")]
     public bool SpawnInstantly = true;
 
+    /*
     [System.Serializable]
     public struct BossSettings
     {
@@ -25,6 +53,7 @@ public class EnemyManager : MonoBehaviour
         public bool changeName;
         public string newBossName;
     }
+    */
     private int BossesEliminated = 0;
     public List<BossSettings> BossSettingList;
     public List<Transform> CurrentlyAlive;
@@ -117,13 +146,14 @@ public class EnemyManager : MonoBehaviour
 
             markedBoss = EC;
             markedBoss2 = EC2;
-            
+
 
 
         }
     }
 
-    private bool allBossesDead = false;
+    [HideInInspector]
+    public bool allBossesDead = false;
     public void checkBossCount()
     {
         BossesEliminated++;
@@ -153,6 +183,10 @@ public class EnemyManager : MonoBehaviour
         else if (go.TryGetComponent<EnemyColony2>(out EnemyColony2 EC2))
         {
             EC2.getReferences();
+            if (survivalMode)
+            {
+                EC2.AirStrike = SurvivalManager.instance.MiniBossReinforcements;
+            }
             EC2.individualHP = BossSettingList[index].BossHP;
             EC2.indivMaxHP = BossSettingList[index].BossHP;
             if (nameChange == true)
@@ -182,15 +216,25 @@ public class EnemyManager : MonoBehaviour
         cleanBossList();
     }
 
-    private void Start()
+    public void resetEnemyManager()
     {
-
         colonyHealth = 0;
+        allBossesDead = false;
+        bossDeath = false;
+        BossesEliminated = 0;
+        /*
+        if (survivalMode)
+        {
+            SurvivalManager.instance.totalSpawned = 0;
+            SurvivalManager.instance.roundOver = false;
+        }
+        */
+
         for (int i = 0; i < BossSettingList.Count; i++)
         {
             colonyHealth += BossSettingList[i].BossHP;
         }
-
+        spawnPointDistances.Clear();
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             spawnPointDistances.Add(0f);
@@ -208,7 +252,7 @@ public class EnemyManager : MonoBehaviour
                     go.transform.localScale = Vector3.one;
                     linkBosses(go, i, BossSettingList[i].changeName);
                     CurrentlyAlive.Add(go.transform);
-                    
+
                 }
             }
             else
@@ -225,13 +269,22 @@ public class EnemyManager : MonoBehaviour
                 }
             }
         }
+    }
 
 
+    private void Start()
+    {
 
+
+        resetEnemyManager();
         //enemiesRemainingToSpawn = enemiesFromColony;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         timeBetweenSpawns = MaxTbs;
         StartCoroutine(startLogic());
+        if (survivalMode)
+        {
+            GetComponent<RememberReference>().GetReference(2).SetActive(false);
+        }
     }
 
     private void Update()
@@ -240,88 +293,185 @@ public class EnemyManager : MonoBehaviour
         {
             if (player != null)
             {
+                if (survivalMode)
+                {
+
+                    /*
+                        Figure out how to limit the number of spawns per wave.
+                        Increment the wave and the number of enemies spawned.
+                        Figure out how to spawn a boss in every 3rd or 5th round.
+                        Figure out how to add a different enemy types on different waves
+                    */
+
+                    if (SurvivalManager.instance.roundOver == false)
+                    {
+                        for (int i = 0; i < spawnPoints.Count; i++)
+                        {
+                            float temp = Vector2.Distance(spawnPoints[i].transform.position, player.transform.position);
+                            spawnPointDistances[i] = temp;
+                        }
+                        if (timeBetweenSpawns > 0 && Time.time > nextDecrease && (timeBetweenSpawns > MinTbs || timeBetweenSpawns < MaxTbs))
+                        {
+                            nextDecrease = Time.time + DecreaseAfter;
+                            timeBetweenSpawns -= tbsDecreaseRate;
+                            if (timeBetweenSpawns < MinTbs)
+                            {
+                                timeBetweenSpawns = MinTbs;
+                            }
+                            if (timeBetweenSpawns > MaxTbs)
+                            {
+                                timeBetweenSpawns = 1000000;
+                            }
+
+                        }
+
+                        if (timeBetweenSpawns > MaxTbs)
+                        {
+                            tbsDecreaseRate = 0;
+                            timeBetweenSpawns = 1000000;
+                        }
+                        int randomSpawn = Random.Range(0, spawnPoints.Count);
+
+
+                        if (spawnPointDistances[randomSpawn] <= DistToSpawnFromPlayer[randomSpawn])
+                        {
+                            if (SPAnimReset)
+                            {
+                                ChosenSP = randomSpawn;
+                                SpawnPointAnim[randomSpawn].SetBool("WasChosen", true);
+                                SpawnPointAnim[randomSpawn].SetFloat("SpawnRate", 1 / timeBetweenSpawns);
+                                SPAnimReset = false;
+                            }
+                            //Debug.Log(timeBetweenSpawns);
+
+                            if (/*enemiesRemainingToSpawn > 0 &&  colonyHealth > 0 &&*/ Time.time > nextSpawnTime && SpawnedMobs.Count < SurvivalManager.instance.baseEnemiesToSpawnEachRound)
+                            {
+                                Debug.Log("SPAWNING");
+                                //enemiesRemainingToSpawn--;
+                                nextSpawnTime = Time.time + timeBetweenSpawns;
+
+                                //print("randomSpawn = " + randomSpawn);
+                                int randomEnemeies = Random.Range(0, 100);
+                                //Debug.Log(randomEnemeies);
+                                foreach (enemyType et in EnemyTypes)
+                                {
+                                    if (randomEnemeies >= et.StartSpawnRange && randomEnemeies <= et.EndSpawnRange)
+                                    {
+                                        SpawnedMobs.Add(Instantiate(et.Enemies, spawnPoints[ChosenSP].transform.position, Quaternion.identity));
+                                        SurvivalManager.instance.totalSpawned++;
+                                    }
+                                }
+                                //Debug.Log("Spawned");
+
+                                SpawnPointAnim[ChosenSP].SetBool("WasChosen", false);
+                                SPAnimReset = true;
+                                //spawnedEnemy.OnDeath += OnEnemyDeath;
+                            }
+                        }
+                    }
+
+                    if (SurvivalManager.instance.bossRound == true)
+                    {
+                        if (colonyHealth <= 0 && !bossDeath || allBossesDead == true && !bossDeath)
+                        {
+                            colonyHealth = 0;
+                            BossDeath();
+                            bossDeath = true;
+                            SurvivalManager.instance.roundOver = true;
+                        }
+                    }
+
+
+
+                    StartCoroutine(RemoveDeadMobs());
+                }
                 //float[] distances
                 //ListGameObject
-                for (int i = 0; i < spawnPoints.Count; i++)
+                else
                 {
-                    float temp = Vector2.Distance(spawnPoints[i].transform.position, player.transform.position);
-                    spawnPointDistances[i] = temp;
-                }
-
-                if (/*colonyHealth > 0 &&*/ timeBetweenSpawns > 0 && Time.time > nextDecrease && (timeBetweenSpawns > MinTbs || timeBetweenSpawns < MaxTbs))
-                {
-                    nextDecrease = Time.time + DecreaseAfter;
-                    timeBetweenSpawns -= tbsDecreaseRate;
-                    if (timeBetweenSpawns < MinTbs)
+                    for (int i = 0; i < spawnPoints.Count; i++)
                     {
-                        timeBetweenSpawns = MinTbs;
+                        float temp = Vector2.Distance(spawnPoints[i].transform.position, player.transform.position);
+                        spawnPointDistances[i] = temp;
                     }
+
+                    if (/*colonyHealth > 0 &&*/ timeBetweenSpawns > 0 && Time.time > nextDecrease && (timeBetweenSpawns > MinTbs || timeBetweenSpawns < MaxTbs))
+                    {
+                        nextDecrease = Time.time + DecreaseAfter;
+                        timeBetweenSpawns -= tbsDecreaseRate;
+                        if (timeBetweenSpawns < MinTbs)
+                        {
+                            timeBetweenSpawns = MinTbs;
+                        }
+                        if (timeBetweenSpawns > MaxTbs)
+                        {
+                            timeBetweenSpawns = 1000000;
+                        }
+
+                    }
+
                     if (timeBetweenSpawns > MaxTbs)
                     {
+                        tbsDecreaseRate = 0;
                         timeBetweenSpawns = 1000000;
                     }
-
-                }
-
-                if (timeBetweenSpawns > MaxTbs)
-                {
-                    tbsDecreaseRate = 0;
-                    timeBetweenSpawns = 1000000;
-                }
-                int randomSpawn = Random.Range(0, spawnPoints.Count);
+                    int randomSpawn = Random.Range(0, spawnPoints.Count);
 
 
-                if (spawnPointDistances[randomSpawn] <= DistToSpawnFromPlayer[randomSpawn])
-                {
-
-                    if (SPAnimReset)
+                    if (spawnPointDistances[randomSpawn] <= DistToSpawnFromPlayer[randomSpawn])
                     {
-                        ChosenSP = randomSpawn;
-                        SpawnPointAnim[randomSpawn].SetBool("WasChosen", true);
-                        SpawnPointAnim[randomSpawn].SetFloat("SpawnRate", 1 / timeBetweenSpawns);
-                        SPAnimReset = false;
-                    }
-                    //Debug.Log(timeBetweenSpawns);
-                    if (/*enemiesRemainingToSpawn > 0 &&  colonyHealth > 0 &&*/ Time.time > nextSpawnTime && SpawnedMobs.Count < SpawnCap)
-                    {
-                        //enemiesRemainingToSpawn--;
-                        nextSpawnTime = Time.time + timeBetweenSpawns;
 
-                        //print("randomSpawn = " + randomSpawn);
-                        int randomEnemeies = Random.Range(0, 100);
-                        //Debug.Log(randomEnemeies);
-                        foreach (enemyType et in EnemyTypes)
+                        if (SPAnimReset)
                         {
-                            if (randomEnemeies >= et.StartSpawnRange && randomEnemeies <= et.EndSpawnRange)
-                                SpawnedMobs.Add(Instantiate(et.Enemies, spawnPoints[ChosenSP].transform.position, Quaternion.identity));
+                            ChosenSP = randomSpawn;
+                            SpawnPointAnim[randomSpawn].SetBool("WasChosen", true);
+                            SpawnPointAnim[randomSpawn].SetFloat("SpawnRate", 1 / timeBetweenSpawns);
+                            SPAnimReset = false;
                         }
-                        //Debug.Log("Spawned");
+                        //Debug.Log(timeBetweenSpawns);
+                        if (/*enemiesRemainingToSpawn > 0 &&  colonyHealth > 0 &&*/ Time.time > nextSpawnTime && SpawnedMobs.Count < SpawnCap)
+                        {
+                            //enemiesRemainingToSpawn--;
+                            nextSpawnTime = Time.time + timeBetweenSpawns;
 
-                        SpawnPointAnim[ChosenSP].SetBool("WasChosen", false);
-                        SPAnimReset = true;
-                        //spawnedEnemy.OnDeath += OnEnemyDeath;
+                            //print("randomSpawn = " + randomSpawn);
+                            int randomEnemeies = Random.Range(0, 100);
+                            //Debug.Log(randomEnemeies);
+                            foreach (enemyType et in EnemyTypes)
+                            {
+                                if (randomEnemeies >= et.StartSpawnRange && randomEnemeies <= et.EndSpawnRange)
+                                    SpawnedMobs.Add(Instantiate(et.Enemies, spawnPoints[ChosenSP].transform.position, Quaternion.identity));
+                            }
+                            //Debug.Log("Spawned");
+
+                            SpawnPointAnim[ChosenSP].SetBool("WasChosen", false);
+                            SPAnimReset = true;
+                            //spawnedEnemy.OnDeath += OnEnemyDeath;
+                        }
+                    }
+
+                    StartCoroutine(RemoveDeadMobs());
+
+                    if (colonyHealth <= 0 && !bossDeath || allBossesDead == true && !bossDeath)
+                    {
+                        colonyHealth = 0;
+                        BossDeath();
+                        bossDeath = true;
+                        StartCoroutine(wait(5));
+                        //SurvivalManager.instance.startLogicForNextWave();
+                    }
+
+                    if (!isWaiting && bossDeath && !cutSceneFlag)
+                    {
+                        //StartCoroutine(player.Phasing(4f));
+                        StartCoroutine(CutScene(4f));
+                        //StartCoroutine(player.TakeOver(4f)); //in progress
+                        StartCoroutine(CamFollow.MoveTo(new Vector3(xPos, yPos, -1), 2.8f, 2f));
+                        StartCoroutine(CamFollow.ZoomTo(20, 1f));
+                        cutSceneFlag = true;
                     }
                 }
 
-                StartCoroutine(RemoveDeadMobs());
-
-                if (colonyHealth <= 0 && !bossDeath && !survivalMode || allBossesDead == true && !bossDeath && !survivalMode)
-                {
-                    colonyHealth = 0;
-                    BossDeath();
-                    bossDeath = true;
-                    StartCoroutine(wait(5));
-                }
-
-                if (!isWaiting && bossDeath && !cutSceneFlag && !survivalMode)
-                {
-                    //StartCoroutine(player.Phasing(4f));
-                    StartCoroutine(CutScene(4f));
-                    //StartCoroutine(player.TakeOver(4f)); //in progress
-                    StartCoroutine(CamFollow.MoveTo(new Vector3(xPos, yPos, -1), 2.8f, 2f));
-                    StartCoroutine(CamFollow.ZoomTo(20, 1f));
-                    cutSceneFlag = true;
-                }
 
             }
             //Debug.Log(bossDeath);
@@ -347,7 +497,10 @@ public class EnemyManager : MonoBehaviour
 
     private void BossDeath()
     {
-        tbsDecreaseRate = -3*tbsDecreaseRate;
+        if (survivalMode == false)
+        {
+            tbsDecreaseRate = -3 * tbsDecreaseRate;
+        }
         StaInd.StartShake(Mcamera, 1, 0.5f);
     }
 
@@ -359,7 +512,7 @@ public class EnemyManager : MonoBehaviour
         switch (type)
         {
             case 1:
-                if(timeBetweenSpawns < MaxTbs - Enemy1DieIncrease || timeBetweenSpawns > MinTbs + Enemy1DieIncrease)
+                if (timeBetweenSpawns < MaxTbs - Enemy1DieIncrease || timeBetweenSpawns > MinTbs + Enemy1DieIncrease)
                     timeBetweenSpawns += Enemy1DieIncrease;
                 break;
             case 2:
