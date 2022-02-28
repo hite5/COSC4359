@@ -17,6 +17,27 @@ public class SurvivalUI : MonoBehaviour
 
     private int counting = 0;
 
+    public List<GameObject> enableDuringGrace;
+
+
+    void turnOnOrOffDuringGrace(bool turnOn)
+    {
+        if (turnOn)
+        {
+            for (int i = 0; i < enableDuringGrace.Count; i++)
+            {
+                enableDuringGrace[i].SetActive(true);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < enableDuringGrace.Count; i++)
+            {
+                enableDuringGrace[i].SetActive(false);
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -26,7 +47,10 @@ public class SurvivalUI : MonoBehaviour
             if (GlobalPlayerVariables.TotalEnemiesAlive <= 0)
             {
                 if (!GracePeriod.activeSelf)
+                {
                     GracePeriod.SetActive(true);
+                    turnOnOrOffDuringGrace(true);
+                }
                 if (Survive.activeSelf)
                     Survive.SetActive(false);
                 if (EnemyRemaining.activeSelf)
@@ -35,6 +59,7 @@ public class SurvivalUI : MonoBehaviour
                     GraceTimer.text = SurvivalManager.instance.timerStart.ToString("F2");
                 else
                     GraceTimer.text = "0";
+
             }
             else
             {
@@ -42,7 +67,7 @@ public class SurvivalUI : MonoBehaviour
                 {
                     if (!EnemyRemaining.activeSelf)
                         EnemyRemaining.SetActive(true);
-                    RemainingCount.text = GlobalPlayerVariables.TotalEnemiesAlive.ToString();
+                    RemainingCount.text = "ENEMIES REMAINING " + GlobalPlayerVariables.TotalEnemiesAlive.ToString();
                     counting = GlobalPlayerVariables.TotalEnemiesAlive;
                 }
                 Debug.Log("COUNTING " + counting);
@@ -51,7 +76,10 @@ public class SurvivalUI : MonoBehaviour
         else
         {
             if (GracePeriod.activeSelf)
+            {
                 GracePeriod.SetActive(false);
+                turnOnOrOffDuringGrace(false);
+            }
             if (!Survive.activeSelf)
                 Survive.SetActive(true);
 

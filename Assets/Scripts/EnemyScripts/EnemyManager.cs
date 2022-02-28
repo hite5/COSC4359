@@ -373,7 +373,11 @@ public class EnemyManager : MonoBehaviour
                             colonyHealth = 0;
                             BossDeath();
                             bossDeath = true;
-                            SurvivalManager.instance.roundOver = true;
+
+                            //boss indicator thingy is needed for continous spawns
+
+
+                            //SurvivalManager.instance.roundOver = true;
                         }
                     }
 

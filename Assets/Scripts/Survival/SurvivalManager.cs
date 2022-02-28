@@ -86,11 +86,11 @@ public class SurvivalManager : MonoBehaviour
             }
         }
 
-        if (survivalTimer <= 0 && bossRound == false)
+        if (survivalTimer <= 0)
         {
             roundOver = true;
         }
-        else if(bossRound == false)
+        else
         {
             Debug.Log("SURVIVAL TIMER " + survivalTimer);
             survivalTimer -= Time.deltaTime;
