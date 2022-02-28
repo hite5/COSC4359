@@ -530,7 +530,13 @@ public class PlayerActions
     {
         player.Stats.NumofPhizer -= 1;
         ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        ParticleSystem.EmissionModule pSemission = player.Components.PlayerParticleSystem.emission;
+        ParticleSystem.ShapeModule pSshape = player.Components.PlayerParticleSystem.shape;
         pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 78 / 255f, 137 / 255f));
+        pSshape.radius = 0.5f;
+        pSsettings.gravityModifier = 0;
+        pSsettings.startSpeed = 1;
+        pSemission.rateOverTime = 10;
         player.Components.PlayerParticleSystem.Play();
         float tempMH = player.Stats.MaxHealth;
         float tempMS = player.Stats.MaxStamina;
@@ -550,7 +556,13 @@ public class PlayerActions
     {
         player.Stats.NumofMorbida -= 1;
         ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        ParticleSystem.EmissionModule pSemission = player.Components.PlayerParticleSystem.emission;
+        ParticleSystem.ShapeModule pSshape = player.Components.PlayerParticleSystem.shape;
         pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(0f, 94/255f, 97/255f));
+        pSshape.radius = 0.5f;
+        pSsettings.gravityModifier = -1;
+        pSsettings.startSpeed = 3;
+        pSemission.rateOverTime = 50;
         player.Components.PlayerParticleSystem.Play();
         //Damage will be adjust in Bullet.cs
         player.holdWalkSpeed *= player.Stats.MovementSpeedAdd;
@@ -563,7 +575,13 @@ public class PlayerActions
     {
         player.Stats.NumofLnL -= 1;
         ParticleSystem.MainModule pSsettings = player.Components.PlayerParticleSystem.main;
+        ParticleSystem.EmissionModule pSemission = player.Components.PlayerParticleSystem.emission;
+        ParticleSystem.ShapeModule pSshape = player.Components.PlayerParticleSystem.shape;
         pSsettings.startColor = setGradient(new Color(1, 1, 1), new Color(175/255f, 22/255f, 133/255f));
+        pSshape.radius = 1f;
+        pSsettings.gravityModifier = 0;
+        pSsettings.startSpeed = -1;
+        pSemission.rateOverTime = 20;
         player.Components.PlayerParticleSystem.Play();
         //Crits will be changed in Weapon.cs
         player.Components.PlayerTrailRenderer.endColor = new Color(172 / 255f, 19 / 255f, 130 / 255f);
