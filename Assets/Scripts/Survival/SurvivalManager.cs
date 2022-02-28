@@ -40,6 +40,9 @@ public class SurvivalManager : MonoBehaviour
     public float survivalTimer = 0f;
     public bool roundOver = false;
 
+    [Header("Events")]
+    public int roundToStartEvents = 3;
+
     private void Awake()
     {
         instance = this;
@@ -157,7 +160,7 @@ public class SurvivalManager : MonoBehaviour
         updateGuardianList();
         EManager.resetEnemyManager();
 
-        if (currentWave > 3)
+        if (currentWave >= roundToStartEvents)
         {
             for (int i = 0; i < baseAmountOfBosses; i++)
             {
