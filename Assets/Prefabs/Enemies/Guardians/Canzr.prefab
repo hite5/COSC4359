@@ -697,7 +697,7 @@ MonoBehaviour:
     - {fileID: 6662930850099418146, guid: 60e2807eca38f6748a71871b39003466, type: 3}
     - {fileID: 1218887535022631140, guid: a9fff5c94023816449f11c7055169929, type: 3}
     DropPercentage: 15
-    NumOfDrop: 500
+    NumOfDrop: 30
   - isCurrency: 0
     isAmmo: 0
     Drops:
@@ -729,6 +729,18 @@ MonoBehaviour:
     Drops:
     - {fileID: 2056935271745837854, guid: f6f4be9ac3368a74287b960666063ebb, type: 3}
     DropPercentage: 4
+    NumOfDrop: 1
+  - isCurrency: 0
+    isAmmo: 0
+    Drops:
+    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
+    DropPercentage: 3
+    NumOfDrop: 1
+  - isCurrency: 0
+    isAmmo: 0
+    Drops:
+    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
+    DropPercentage: 3
     NumOfDrop: 1
   target: {fileID: 0}
   EnemyTarget: {fileID: 0}
