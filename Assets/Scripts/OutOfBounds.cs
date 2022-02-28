@@ -7,6 +7,7 @@ public class OutOfBounds : MonoBehaviour
 
     public GameObject GoodGuyRespawn;
     public EnemyManager EManager;
+    int temp = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +22,8 @@ public class OutOfBounds : MonoBehaviour
         }
         else if (collision.CompareTag("Enemy") || collision.CompareTag("EnemyMelee") || collision.CompareTag("Colony"))
         {
-            int temp = Random.Range(0, EManager.spawnPoints.Count - 1);
+            temp = Random.Range(0, EManager.spawnPoints.Count - 1);
+            //Debug.Log("SPAWN POINT AYO " + temp);
             collision.transform.position = EManager.spawnPoints[temp].transform.position;
         }
     }
