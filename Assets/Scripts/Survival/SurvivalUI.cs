@@ -50,6 +50,7 @@ public class SurvivalUI : MonoBehaviour
                 {
                     GracePeriod.SetActive(true);
                     turnOnOrOffDuringGrace(true);
+                    counting = 0;
                 }
                 if (Survive.activeSelf)
                     Survive.SetActive(false);

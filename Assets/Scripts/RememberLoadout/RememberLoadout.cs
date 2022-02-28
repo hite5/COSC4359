@@ -49,6 +49,10 @@ public class RememberLoadout : MonoBehaviour
     public GameObject player;
     public static int numberOfheals = 0;
     public static int numberOfPhizerz = 0;
+    public static int numberOfMorbida = 0;
+    public static int numberOfLnL = 0;
+
+
     public static float armorRemaining = 0;
     public static int proteinCounter = 0;
     public static int stemCellAmount = 0;
@@ -89,6 +93,9 @@ public class RememberLoadout : MonoBehaviour
     {
         numberOfheals = 0;
         numberOfPhizerz = 0;
+        numberOfMorbida = 0;
+        numberOfLnL = 0;
+
         armorRemaining = 0;
         proteinCounter = 0;
         stemCellAmount = 0;
