@@ -55,27 +55,31 @@ public class SurvivalManager : MonoBehaviour
 
         if (roundOver == true)
         {
-            if (timerStart <= 0 || skipWait == true)
+            if (GlobalPlayerVariables.TotalEnemiesAlive <= 0)
             {
-                currentWave++;
-                skipWait = false;
-                timerStart = 0;
 
-                if (currentWave % bossRoundEveryXWave == 0)
+                if (timerStart <= 0 || skipWait == true)
                 {
-                    startLogicForNextWave();
-                    startNextWave(true);
+                    currentWave++;
+                    skipWait = false;
+                    timerStart = 0;
+
+                    if (currentWave % bossRoundEveryXWave == 0)
+                    {
+                        startLogicForNextWave();
+                        startNextWave(true);
+                    }
+                    else
+                    {
+                        startLogicForNextWave();
+                        startNextWave(false);
+                    }
                 }
                 else
                 {
-                    startLogicForNextWave();
-                    startNextWave(false);
+                    Debug.Log("GRACE PERIOD " + timerStart);
+                    timerStart -= Time.deltaTime;
                 }
-            }
-            else
-            {
-                Debug.Log("GRACE PERIOD " + timerStart);
-                timerStart -= Time.deltaTime;
             }
         }
 
