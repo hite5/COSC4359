@@ -206,7 +206,9 @@ public class Weapon : MonoBehaviour
                     case 2:
                         Debug.Log("Weapon.cs : LnL Bullet Effect");
                         GlobalPlayerVariables.critRate = GlobalPlayerVariables.critRate * player.Stats.CritDamageAdd <= 1 ? GlobalPlayerVariables.critRate * player.Stats.CritDamageAdd : 1;
+                        GlobalPlayerVariables.critRate = GlobalPlayerVariables.critRate * player.Stats.CritDamageAdd < 0.25f ? 0.25f : GlobalPlayerVariables.critRate;
                         GlobalPlayerVariables.critDmg *= player.Stats.CritDamageAdd;
+                        GlobalPlayerVariables.critDmg = GlobalPlayerVariables.critDmg == 0 ? 1.3f : GlobalPlayerVariables.critDmg;
                         break;
                     case 3:
                         Debug.Log("Weapon.cs : Unknown Bullet Effect");
