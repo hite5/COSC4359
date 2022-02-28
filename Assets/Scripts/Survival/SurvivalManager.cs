@@ -113,6 +113,8 @@ public class SurvivalManager : MonoBehaviour
         {
             var go = GuardianSpawnlist[i];
             go.GuardianHP = (int)(baseGrowth * go.GuardianHP);
+            if (go.GuardianHP > 2000)
+                go.GuardianHP = 2000;
             /*
             Debug.Log("****Guardian HP = " + go.GuardianHP);
             Debug.Log("****Guardian Base Growth = " + baseGrowth);
