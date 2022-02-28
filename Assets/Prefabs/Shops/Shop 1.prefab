@@ -3250,11 +3250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653fa6996ba04bb4db81a3b18c2852b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 250
   levelReq: 0
-  ItemBeingSold: {fileID: 0}
+  ItemBeingSold: {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
   owned: 0
-  isWeapon: 1
+  isWeapon: 0
   isGlobin: 0
   SM: {fileID: 0}
 --- !u!1 &8035387254701118086
@@ -10271,7 +10271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: MORBIDA
 --- !u!1 &8035387255005431105
 GameObject:
   m_ObjectHideFlags: 0
@@ -15350,7 +15350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: LNL
 --- !u!1 &8035387255277568702
 GameObject:
   m_ObjectHideFlags: 0
@@ -17040,12 +17040,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653fa6996ba04bb4db81a3b18c2852b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 250
   levelReq: 0
-  ItemBeingSold: {fileID: 0}
+  ItemBeingSold: {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
   owned: 0
   isWeapon: 0
-  isGlobin: 1
+  isGlobin: 0
   SM: {fileID: 0}
 --- !u!1 &8035387255397629294
 GameObject:

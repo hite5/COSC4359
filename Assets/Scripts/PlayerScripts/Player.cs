@@ -993,6 +993,9 @@ public class Player : MonoBehaviour
 
         RememberLoadout.numberOfheals = stats.NumofHeal;
         RememberLoadout.numberOfPhizerz = stats.NumofPhizer;
+        RememberLoadout.numberOfMorbida = stats.NumofMorbida;
+        RememberLoadout.numberOfLnL = stats.NumofLnL;
+
         RememberLoadout.armorRemaining = Stats.Armorz;
         RememberLoadout.proteinCounter = Stats.NumofProtein;
         //gitValues.stemCellAmount = Stats.;
@@ -1133,6 +1136,9 @@ public class Player : MonoBehaviour
 
         stats.NumofHeal = RememberLoadout.numberOfheals;
         stats.NumofPhizer = RememberLoadout.numberOfPhizerz;
+        stats.NumofMorbida = RememberLoadout.numberOfMorbida;
+        stats.NumofLnL = RememberLoadout.numberOfLnL;
+
         Stats.Armorz = RememberLoadout.armorRemaining;
         Stats.NumofProtein = RememberLoadout.proteinCounter;
 
