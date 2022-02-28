@@ -368,8 +368,8 @@ MonoBehaviour:
   dashAroundPlayerRadius: 10
   canDoAirStrike: 1
   AirStrike: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
-  beginningRangeToCallAirStrike: 5
-  endingRangeToCallAirStrike: 7
+  beginningRangeToCallAirStrike: 13
+  endingRangeToCallAirStrike: 15
   swingCoolDown: 1
   time2chase: 0
   lineofsight: 0

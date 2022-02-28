@@ -9,9 +9,13 @@ public class SurvivalUI : MonoBehaviour
     int currentWave = 0;
     public Text SurviveTimer;
     public Text GraceTimer;
+    public Text RemainingCount;
 
     public GameObject Survive;
     public GameObject GracePeriod;
+    public GameObject EnemyRemaining;
+
+    private int counting = 0;
 
     // Update is called once per frame
     void Update()
@@ -19,11 +23,30 @@ public class SurvivalUI : MonoBehaviour
         //link this to survival manager to remove update later after testing
         if (SurvivalManager.instance.roundOver == true)
         {
-            if(!GracePeriod.activeSelf)
-                GracePeriod.SetActive(true);
-            if (Survive.activeSelf)
-                Survive.SetActive(false);
-            GraceTimer.text = SurvivalManager.instance.timerStart.ToString("F2");
+            if (GlobalPlayerVariables.TotalEnemiesAlive <= 0)
+            {
+                if (!GracePeriod.activeSelf)
+                    GracePeriod.SetActive(true);
+                if (Survive.activeSelf)
+                    Survive.SetActive(false);
+                if (EnemyRemaining.activeSelf)
+                    EnemyRemaining.SetActive(false);
+                if (SurvivalManager.instance.timerStart > 0)
+                    GraceTimer.text = SurvivalManager.instance.timerStart.ToString("F2");
+                else
+                    GraceTimer.text = "0";
+            }
+            else
+            {
+                if (counting != GlobalPlayerVariables.TotalEnemiesAlive && GlobalPlayerVariables.TotalEnemiesAlive <= 10)
+                {
+                    if (!EnemyRemaining.activeSelf)
+                        EnemyRemaining.SetActive(true);
+                    RemainingCount.text = GlobalPlayerVariables.TotalEnemiesAlive.ToString();
+                    counting = GlobalPlayerVariables.TotalEnemiesAlive;
+                }
+                Debug.Log("COUNTING " + counting);
+            }
         }
         else
         {
@@ -40,7 +63,10 @@ public class SurvivalUI : MonoBehaviour
 
             if (SurvivalManager.instance.bossRound == false)
             {
-                SurviveTimer.text = SurvivalManager.instance.survivalTimer.ToString("F2");
+                if (SurvivalManager.instance.survivalTimer > 0)
+                    SurviveTimer.text = SurvivalManager.instance.survivalTimer.ToString("F2");
+                else
+                    SurviveTimer.text = "0";
             }
             else
             {
