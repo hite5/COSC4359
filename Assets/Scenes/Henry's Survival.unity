@@ -140632,6 +140632,7 @@ MonoBehaviour:
   Survive: {fileID: 1965617169}
   GracePeriod: {fileID: 1251158684}
   EnemyRemaining: {fileID: 399665826}
+  blinkerTime: 0
   enableDuringGrace:
   - {fileID: 749231263}
 --- !u!1 &798532100
@@ -140910,7 +140911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2369923048499004007, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -485.90005
+      value: -485.90002
       objectReference: {fileID: 0}
     - target: {fileID: 2369923048499004007, guid: 2709ae4310141cb4a9a4ba5a07a21c28, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -141156,8 +141157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -173.93344, y: -24.7}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 234, y: 215}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251158686
 MonoBehaviour:
@@ -141181,7 +141182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 676bf267952c3c14189cbbc1cc06baeb, type: 3}
-    m_FontSize: 18
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -141192,7 +141193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 25.00
+  m_Text: 'WAVE 2 BEGINS IN: 25.00'
 --- !u!222 &1251158687
 CanvasRenderer:
   m_ObjectHideFlags: 0
