@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class SurvivalUI : MonoBehaviour
 {
-    public Text WaveCount;
     int currentWave = 0;
     public Text SurviveTimer;
     public Text GraceTimer;
+    public Text WaveText;
+    public RectTransform GraceTimerBox;
     public Text RemainingCount;
 
     public GameObject Survive;
     public GameObject GracePeriod;
     public GameObject EnemyRemaining;
-
+    
+    public float blinkerTime = 0;
     private int counting = 0;
+    private bool colorChangeGate = false;
 
     public List<GameObject> enableDuringGrace;
 
@@ -57,10 +60,25 @@ public class SurvivalUI : MonoBehaviour
                 if (EnemyRemaining.activeSelf)
                     EnemyRemaining.SetActive(false);
                 if (SurvivalManager.instance.timerStart > 0)
-                    GraceTimer.text = SurvivalManager.instance.timerStart.ToString("F2");
+                {
+                    WaveText.text = "";
+                    GraceTimer.text = "WAVE " + (currentWave + 1).ToString() + " BEGINS IN: " + SurvivalManager.instance.timerStart.ToString("F2");
+                    if (SurvivalManager.instance.timerStart < 10)
+                    {
+                        blinkerTime += Time.deltaTime;
+                        if (blinkerTime <= 0.5)
+                            GraceTimer.color = Color.red;
+                        else if (blinkerTime < 1.0)
+                            GraceTimer.color = Color.white;
+                        else
+                            blinkerTime = 0;
+                        
+                    }
+                }
                 else
+                {
                     GraceTimer.text = "0";
-
+                }
             }
             else
             {
@@ -78,6 +96,8 @@ public class SurvivalUI : MonoBehaviour
         {
             if (GracePeriod.activeSelf)
             {
+                colorChangeGate = false;
+                GraceTimer.color = Color.white;
                 GracePeriod.SetActive(false);
                 turnOnOrOffDuringGrace(false);
             }
@@ -87,13 +107,14 @@ public class SurvivalUI : MonoBehaviour
             if (currentWave != SurvivalManager.instance.currentWave)
             {
                 currentWave = SurvivalManager.instance.currentWave;
-                WaveCount.text = currentWave.ToString();
+                WaveText.text = "WAVE: " + currentWave.ToString();
+
             }
 
             if (SurvivalManager.instance.bossRound == false)
             {
                 if (SurvivalManager.instance.survivalTimer > 0)
-                    SurviveTimer.text = SurvivalManager.instance.survivalTimer.ToString("F2");
+                    SurviveTimer.text = "SURVIVE: " + SurvivalManager.instance.survivalTimer.ToString("F2");
                 else
                     SurviveTimer.text = "0";
             }
