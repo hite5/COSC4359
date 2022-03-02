@@ -31,6 +31,7 @@ public class GlobalPlayerVariables : MonoBehaviour
         }
     }
     */
+    public static bool IsSurvival = false;
     public static bool EnableAI = false;
     public static bool EnablePlayerControl = true;
 
@@ -186,6 +187,7 @@ public class GlobalPlayerVariables : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        IsSurvival = SceneManager.GetActiveScene().name.Contains("Survival");
         if (SceneManager.GetActiveScene().name != "Title")
         {
             Debug.Log("RESET");

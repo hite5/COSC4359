@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Experimental.U2D.Animation;
 using System.Linq;
@@ -14,7 +15,9 @@ public class Enemy2 : MonoBehaviour
         public bool isAmmo;
         public GameObject[] Drops;
         public float DropPercentage;
+        public float SurvivalDropPercentage;
         public int NumOfDrop;
+        public float SurvivalNumOfDrop;
         public int[] convertProtein()
         {
             int numOfDigits;
@@ -605,13 +608,16 @@ public class Enemy2 : MonoBehaviour
             }
             foreach (ItemDrops id in Drops)
             {
-                if (Random.Range(0, 100) <= id.DropPercentage)
+                float drPctg = GlobalPlayerVariables.IsSurvival ? id.SurvivalDropPercentage : id.DropPercentage;
+                float numOdr = GlobalPlayerVariables.IsSurvival ? id.SurvivalNumOfDrop : id.NumOfDrop;
+
+                if (Random.Range(0, 100) <= drPctg)
                 {
                     if (id.isAmmo == false)
                     {
                         if (id.isCurrency == false)
                         {
-                            for (int i = 0; i < id.NumOfDrop; i++)
+                            for (int i = 0; i < numOdr; i++)
                                 Instantiate(id.Drops[0], transform.position, Quaternion.identity);
                         }
                         else if (id.isCurrency == true)

@@ -14,7 +14,9 @@ public class Enemy1 : MonoBehaviour
         public bool isAmmo;
         public GameObject[] Drops;
         public float DropPercentage;
+        public float SurvivalDropPercentage;
         public int NumOfDrop;
+        public float SurvivalNumOfDrop;
         public int[] convertProtein()
         {
             int numOfDigits;
@@ -642,6 +644,9 @@ public class Enemy1 : MonoBehaviour
             }
             foreach(ItemDrops id in Drops)
             {
+                float drPctg = GlobalPlayerVariables.IsSurvival ? id.SurvivalDropPercentage : id.DropPercentage;
+                float numOdr = GlobalPlayerVariables.IsSurvival ? id.SurvivalNumOfDrop : id.NumOfDrop;
+
                 if (Random.Range(0, 100) <= id.DropPercentage)
                 {
                     if (id.isAmmo == false)
