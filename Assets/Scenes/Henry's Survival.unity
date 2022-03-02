@@ -141292,8 +141292,8 @@ MonoBehaviour:
   currentWave: 0
   baseAmountOfBosses: 1
   bossIncrease: 1
-  increaseBossCountEveryXWave: 7
-  bossRoundEveryXWave: 3
+  increaseBossCountEveryXWave: 11
+  bossRoundEveryXWave: 5
   spawnCapBase: 1
   spawnCapGrowth: 5
   totalSpawned: 0
