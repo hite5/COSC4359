@@ -658,11 +658,39 @@ public class Enemy1 : MonoBehaviour
                         }
                         else if (id.isCurrency == true)
                         {
-                            int[] NumArr = id.convertProtein();
+                            var go = id;
+                            Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, 1);
+                            foreach (Collider2D collider2D in ColliderArray)
+                            {
+                                if (collider2D.TryGetComponent<ItemPickup>(out ItemPickup potentialProtein))
+                                {
+                                    if (potentialProtein.TypeOfItem == "Protein")
+                                    {
+                                        go.NumOfDrop += potentialProtein.getProteinAmount();
+                                        //Debug.Log("NUM OF DROP " + go.NumOfDrop);
+                                        Destroy(collider2D.gameObject);
+                                    }
+                                }
+                            }
+                                //id.num
+                            int[] NumArr = go.convertProtein();
                             for (int i = 0; i < NumArr.Length; i++)
                             {
+                                //Debug.Log("index of drops " + i);
+                                var remem = Instantiate(go.Drops[i], transform.position, Quaternion.identity);
+                                int temp = go.Drops[i].GetComponent<ItemPickup>().getProteinAmount() * NumArr[i];
+                                //Debug.Log("temp of drops " + temp);
+                                if (temp <= 0)
+                                    Destroy(remem);
+                                else
+                                    remem.GetComponent<ItemPickup>().setNewProteinAmount(temp);
+                                /*
                                 for (int j = 0; j < NumArr[i]; j++)
-                                    Instantiate(id.Drops[i], transform.position, Quaternion.identity);
+                                {
+                                    temp = go.Drops[i].GetComponent<ItemPickup>().getProteinAmount();
+                                }
+                                */
+
                             }
                         }
                     }
