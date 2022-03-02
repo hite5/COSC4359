@@ -277,7 +277,7 @@ MonoBehaviour:
     - {fileID: 2859806896499263471, guid: e786d9e05e544c342854ebaae6f330ec, type: 3}
     - {fileID: 8493335925642168428, guid: a7710005c5b967549a684aa3f7ff04f4, type: 3}
     - {fileID: 6945996946943777615, guid: e163425566a083b428b0bd23743d338d, type: 3}
-    DropPercentage: 15
+    DropPercentage: 100
     NumOfDrop: 10
   - isCurrency: 0
     isAmmo: 0
