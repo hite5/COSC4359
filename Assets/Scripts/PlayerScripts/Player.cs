@@ -575,7 +575,7 @@ public class Player : MonoBehaviour
                         if (mouseAngle <= 45 || mouseAngle > 315)
                         {
                             vaccineSelector = 0;
-                            VaccineWheelLogic.switchImageNText(0, "PHIZER", VaccineIconInBox);
+                            VaccineWheelLogic.switchImageNText(0, "PHIZER\n---------\nHP++, STAM++\nHPgen++, STAMgen++", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(3);
                             Debug.Log("VACCINE 0 SELECTED");
                         }
@@ -589,14 +589,14 @@ public class Player : MonoBehaviour
                         else if (mouseAngle > 135 && mouseAngle <= 225)
                         {
                             vaccineSelector = 2;
-                            VaccineWheelLogic.switchImageNText(2, "LNL", VaccineIconInBox);
+                            VaccineWheelLogic.switchImageNText(2, "LNL\n---------\nCRIT RATE++\nCRIT DAMAGE++", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(2);
                             Debug.Log("VACCINE 2 SELECTED");
                         }
                         else if (mouseAngle > 225 && mouseAngle <= 315)
                         {
                             vaccineSelector = 1;
-                            VaccineWheelLogic.switchImageNText(1, "MORBIDA", VaccineIconInBox);
+                            VaccineWheelLogic.switchImageNText(1, "MORBIDA\n---------\nDAMAGE+\nMOVEMENT SPEED+", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(1);
                             Debug.Log("VACCINE 3 SELECTED");
                         }

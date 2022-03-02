@@ -304,7 +304,7 @@ MonoBehaviour:
     movementSpeedAdd: 1.5
     damageAdd: 1.5
     critChanceAdd: 2
-    critDamageAdd: 1.5
+    critDamageAdd: 2
     Tylenolhealamount: 50
     Tylenolcooldown: 1
   components:
