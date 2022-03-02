@@ -647,13 +647,13 @@ public class Enemy1 : MonoBehaviour
                 float drPctg = GlobalPlayerVariables.IsSurvival ? id.SurvivalDropPercentage : id.DropPercentage;
                 float numOdr = GlobalPlayerVariables.IsSurvival ? id.SurvivalNumOfDrop : id.NumOfDrop;
 
-                if (Random.Range(0, 100) <= id.DropPercentage)
+                if (Random.Range(0, 100) <= drPctg)
                 {
                     if (id.isAmmo == false)
                     {
                         if (id.isCurrency == false)
                         {
-                            for (int i = 0; i < id.NumOfDrop; i++)
+                            for (int i = 0; i < numOdr; i++)
                                 Instantiate(id.Drops[0], transform.position, Quaternion.identity);
                         }
                         else if (id.isCurrency == true)
