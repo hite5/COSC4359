@@ -192,6 +192,11 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    public Transform playerCurrentPosition()
+    {
+        return player.transform;
+    }
+
     private void Awake()
     {
         instance = this;

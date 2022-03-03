@@ -17,6 +17,7 @@ public class SurvivalManager : MonoBehaviour
     public List<GuardianSetup> GuardianSpawnlist;
     public List<DebugCircle> RandomSpawnPosForEvents;
     public GameObject MiniBossReinforcements;
+    public GameObject NapalmStrike;
     public bool bossRound = false;
 
     float baseGrowth = 1;
@@ -42,6 +43,65 @@ public class SurvivalManager : MonoBehaviour
 
     [Header("Events")]
     public int roundToStartEvents = 3;
+    public int radiusTargetedTowardsPlayer = 5;
+
+    public void survivalEvents(int type)
+    {
+        switch (type)
+        {
+            case 1: //enemy reinforcements
+                for (int i = 0; i < baseAmountOfBosses; i++)
+                {
+                    int temp = Random.Range(0, RandomSpawnPosForEvents.Count);
+                    Vector2 SpawnOffSet = Vector2.zero;
+                    SpawnOffSet = RandomSpawnPosForEvents[temp].transform.position;
+                    SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
+                    //Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
+                    Instantiate(MiniBossReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+                }
+                break;
+            case 2: //napalm strike
+                for (int i = 0; i < baseAmountOfBosses; i++)
+                {
+                    if (i < 2)
+                    {
+                        for (int j = 0; j < RandomSpawnPosForEvents.Count; j++)
+                        {
+                            //int temp = Random.Range(0, RandomSpawnPosForEvents.Count);
+                            Vector2 SpawnOffSet = Vector2.zero;
+                            SpawnOffSet = RandomSpawnPosForEvents[j].transform.position;
+                            SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[j].radius;
+                            //Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
+                            Instantiate(NapalmStrike, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+                        }
+                    }
+                    Vector2 SpawnOffSet2 = Vector2.zero;
+                    SpawnOffSet2 = EManager.playerCurrentPosition().transform.position;
+                    SpawnOffSet2 += Random.insideUnitCircle * (radiusTargetedTowardsPlayer + i);
+                    Instantiate(NapalmStrike, SpawnOffSet2, Quaternion.Euler(0, 0, 0));
+                    if (currentWave > increaseBossCountEveryXWave * 2)
+                    {
+                        int temp = Random.Range(0, RandomSpawnPosForEvents.Count);
+                        Vector2 SpawnOffSet = Vector2.zero;
+                        SpawnOffSet = RandomSpawnPosForEvents[temp].transform.position;
+                        SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
+                        //Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
+                        Instantiate(MiniBossReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+                    }
+
+
+                }
+
+                break;
+            case 3: //
+                
+                break;
+            default:
+                Debug.Log("Unknown type");
+                break;
+        }
+    }
+
 
     private void Awake()
     {
@@ -164,15 +224,8 @@ public class SurvivalManager : MonoBehaviour
 
         if (currentWave >= roundToStartEvents)
         {
-            for (int i = 0; i < baseAmountOfBosses; i++)
-            {
-                int temp = Random.Range(0, RandomSpawnPosForEvents.Count);
-                Vector2 SpawnOffSet = Vector2.zero;
-                SpawnOffSet = RandomSpawnPosForEvents[temp].transform.position;
-                SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
-                Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
-                Instantiate(MiniBossReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
-            }
+            int temp = Random.Range(1, 3);
+            survivalEvents(temp);
         }
     }
 
