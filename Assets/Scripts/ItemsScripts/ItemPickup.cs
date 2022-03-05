@@ -38,6 +38,16 @@ public class ItemPickup : MonoBehaviour
     [HideInInspector]
     public bool ThymusSpawn = false;
 
+    public int getProteinAmount()
+    {
+        return ProteinAdd;
+    }
+
+    public void setNewProteinAmount(int newAmount)
+    {
+        ProteinAdd = newAmount;
+    }
+
     private void Start()
     {
         bcd = transform.GetComponent<BoxCollider2D>();

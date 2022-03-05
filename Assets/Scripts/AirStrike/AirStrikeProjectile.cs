@@ -92,7 +92,7 @@ public class AirStrikeProjectile : MonoBehaviour
             {
                 for (int i = 0; i < howManyToSpawn; i++)
                 {
-                    int whatToSpawn = Random.Range(0, Spawnlist.Count - 1);
+                    int whatToSpawn = Random.Range(0, Spawnlist.Count);
                     var go = Instantiate(Spawnlist[whatToSpawn].Guardian, offset, Quaternion.Euler(0, 0, 0));
                     if (go.TryGetComponent<Enemy3>(out Enemy3 EM3))
                     {
