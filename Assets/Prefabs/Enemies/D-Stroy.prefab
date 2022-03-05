@@ -299,6 +299,14 @@ MonoBehaviour:
     SurvivalDropPercentage: 5
     NumOfDrop: 1
     SurvivalNumOfDrop: 1
+  - isCurrency: 0
+    isAmmo: 0
+    Drops:
+    - {fileID: 2056935271745837854, guid: 864fb69f7f9a67549b1eb4799713b24d, type: 3}
+    DropPercentage: 5
+    SurvivalDropPercentage: 5
+    NumOfDrop: 1
+    SurvivalNumOfDrop: 1
   spriteLibrary: {fileID: 6705791291405109900}
   targetResolver: {fileID: 6076571106673511756}
   targetCategory: E-Bula Sprite Library Asset

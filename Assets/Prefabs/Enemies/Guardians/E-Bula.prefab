@@ -749,6 +749,12 @@ MonoBehaviour:
     - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
     DropPercentage: 3
     NumOfDrop: 1
+  - isCurrency: 0
+    isAmmo: 0
+    Drops:
+    - {fileID: 2056935271745837854, guid: 864fb69f7f9a67549b1eb4799713b24d, type: 3}
+    DropPercentage: 2
+    NumOfDrop: 1
   target: {fileID: 0}
   EnemyTarget: {fileID: 0}
   BossObject: {fileID: 0}

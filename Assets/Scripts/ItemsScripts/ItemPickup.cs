@@ -187,6 +187,20 @@ public class ItemPickup : MonoBehaviour
                     }
                     break;
 
+                case "ArmorPylon":
+                    //Debug.Log(GlobalPlayerVariables.Reserves);
+                    if (player.Stats.NumofAP < 9)
+                    {
+                        Follow();
+                        if (distance <= PickUpRange)
+                        {
+                            player.Stats.NumofAP += 1;
+                            AudioManager.instance.PlayEffect("ItemPickup");
+                            Destroy(gameObject);
+                        }
+                    }
+                    break;
+
                 default:
                     Follow();
                     Debug.Log("Unknow item!");

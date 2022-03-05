@@ -102,6 +102,8 @@ public class Player : MonoBehaviour
     private Molotov Molly;
     [SerializeField]
     private StickyGrenade Gre;
+    [SerializeField]
+    private GameObject ArmorPylon;
 
     private int nadeSelector = 0;
 
@@ -582,7 +584,7 @@ public class Player : MonoBehaviour
                         else if (mouseAngle > 45 && mouseAngle <= 135)
                         {
                             vaccineSelector = 3;
-                            VaccineWheelLogic.switchImageNText(3, "UNKOWN", VaccineIconInBox);
+                            VaccineWheelLogic.switchImageNText(3, "-------\n| BOOSTR |\n-------\nARMOR++", VaccineIconInBox);
                             VaccineWheelLogic.selectWheel(0);
                             Debug.Log("VACCINE 1 SELECTED");
                         }
@@ -659,7 +661,12 @@ public class Player : MonoBehaviour
                             break;
 
                         case 3:
-                            Debug.LogWarning("Unknown Vaccine!");
+                            if (stats.NumofAP > 0)
+                            {
+                                Instantiate(ArmorPylon, stats.Position + new Vector2(Mathf.Cos(stats.Angle * Mathf.Deg2Rad), Mathf.Sin(stats.Angle * Mathf.Deg2Rad)), Quaternion.identity);
+                                stats.NumofAP -= 1;
+                                AudioManager.instance.PlayEffect("Heal");
+                            }
                             break;
 
                         default:

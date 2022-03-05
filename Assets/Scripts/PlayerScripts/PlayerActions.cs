@@ -649,8 +649,7 @@ public class PlayerActions
                 break;
 
             case 3:
-                Debug.LogWarning("Unknown Vaccine!");
-                VaccineCounts.text = "99";
+                VaccineCounts.text = player.Stats.NumofAP.ToString();
                 break;
 
             default:

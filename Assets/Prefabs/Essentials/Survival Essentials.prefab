@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925143774128943, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_Name
-      value: Essentials
+      value: Survival Essentials
       objectReference: {fileID: 0}
     - target: {fileID: 3837925143865150563, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_IsActive
@@ -63,9 +63,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -21.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925144917833863, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -52.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925144917833863, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713284, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145454943770, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145454943770, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482629f0e44943e41815f0a18076bd65, type: 3}

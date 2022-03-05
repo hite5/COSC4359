@@ -531,6 +531,12 @@ MonoBehaviour:
     - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
     DropPercentage: 100
     NumOfDrop: 2
+  - isCurrency: 0
+    isAmmo: 0
+    Drops:
+    - {fileID: 2056935271745837854, guid: 864fb69f7f9a67549b1eb4799713b24d, type: 3}
+    DropPercentage: 100
+    NumOfDrop: 1
   recalcshortestDist: 3
 --- !u!114 &6347364164661946657
 MonoBehaviour:

@@ -45,6 +45,7 @@ public class PlayerStats
     public int NumofPhizer { get; set; }
     public int NumofMorbida { get; set; }
     public int NumofLnL { get; set; }
+    public int NumofAP { get; set; }
     public int NumofMolly { get; set; }
     public int NumofSticky { get; set; }
 
@@ -123,6 +124,8 @@ public class PlayerStats
     private int NumOfMorbida;
     [SerializeField]
     private int NumOfLnL;
+    [SerializeField]
+    private int NumOfAP;
     [SerializeField]
     private int NumOfMolly;
     [SerializeField]
@@ -210,7 +213,7 @@ public class PlayerStats
     public int numofphizer { get => NumOfPhizer; }
     public int numofmorbida { get => NumOfMorbida; }
     public int numoflnl { get => NumOfLnL; }
-
+    public int numofap { get => NumOfLnL; }
     public int numofmolly { get => NumOfMolly; }
 
     public int numofsticky { get => NumOfSticky; }

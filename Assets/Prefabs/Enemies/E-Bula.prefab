@@ -269,6 +269,14 @@ MonoBehaviour:
     SurvivalDropPercentage: 3
     NumOfDrop: 1
     SurvivalNumOfDrop: 1
+  - isCurrency: 0
+    isAmmo: 0
+    Drops:
+    - {fileID: 2056935271745837854, guid: 864fb69f7f9a67549b1eb4799713b24d, type: 3}
+    DropPercentage: 5
+    SurvivalDropPercentage: 5
+    NumOfDrop: 1
+    SurvivalNumOfDrop: 1
   spriteLibrary: {fileID: 6891381498398414047}
   targetResolver: {fileID: 4380224375861857463}
   targetCategory: D-Stroy Sprite Library Asset
