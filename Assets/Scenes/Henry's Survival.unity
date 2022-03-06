@@ -141399,7 +141399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EManager: {fileID: 1115127583}
-  timeBeforeNextWave: 25
+  timeBeforeNextWave: 60
   timerStart: 0
   skipWait: 0
   BossesInRotation:

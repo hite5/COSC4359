@@ -265,6 +265,11 @@ public class Player : MonoBehaviour
         stats.NumofHeal = stats.numofheal;
         stats.NumofProtein = stats.numofprotein;
         stats.NumofPhizer = stats.numofphizer;
+        stats.NumofMorbida = stats.numofmorbida;
+        stats.NumofLnL = stats.numoflnl;
+        stats.NumofAP = stats.numofap;
+
+
         stats.NumofMolly = stats.numofmolly;
         stats.NumofSticky = stats.numofsticky;
 
@@ -1002,6 +1007,7 @@ public class Player : MonoBehaviour
         RememberLoadout.numberOfPhizerz = stats.NumofPhizer;
         RememberLoadout.numberOfMorbida = stats.NumofMorbida;
         RememberLoadout.numberOfLnL = stats.NumofLnL;
+        RememberLoadout.numberOfBoostrs = stats.NumofAP;
 
         RememberLoadout.armorRemaining = Stats.Armorz;
         RememberLoadout.proteinCounter = Stats.NumofProtein;
@@ -1145,6 +1151,7 @@ public class Player : MonoBehaviour
         stats.NumofPhizer = RememberLoadout.numberOfPhizerz;
         stats.NumofMorbida = RememberLoadout.numberOfMorbida;
         stats.NumofLnL = RememberLoadout.numberOfLnL;
+        stats.NumofAP = RememberLoadout.numberOfBoostrs;
 
         Stats.Armorz = RememberLoadout.armorRemaining;
         Stats.NumofProtein = RememberLoadout.proteinCounter;
