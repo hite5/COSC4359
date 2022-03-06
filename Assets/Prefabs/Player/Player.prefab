@@ -297,7 +297,7 @@ MonoBehaviour:
     NumOfMolly: 6
     NumOfSticky: 6
     Vaccineduration: 10
-    Vaccinecooldown: 20
+    Vaccinecooldown: 12
     hpAdd: 50
     hpRegenAdd: 30
     stamAdd: 50

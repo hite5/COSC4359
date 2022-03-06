@@ -83640,6 +83640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArmorPylon
       objectReference: {fileID: 0}
+    - target: {fileID: 1249094508154529357, guid: 37bb742c9794e0b4082c8ebd09c08962, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37bb742c9794e0b4082c8ebd09c08962, type: 3}
 --- !u!1 &1292386041
@@ -98718,6 +98722,10 @@ PrefabInstance:
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: sprintSpeedGrowthRate
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
+      propertyPath: stats.Vaccinecooldown
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3517825292825441643, guid: 0d9b930441c21044991b016bc2748bd2, type: 3}
       propertyPath: staminaRegenGrowthRate

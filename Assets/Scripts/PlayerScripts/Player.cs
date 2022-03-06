@@ -666,6 +666,9 @@ public class Player : MonoBehaviour
                                 Instantiate(ArmorPylon, stats.Position + new Vector2(Mathf.Cos(stats.Angle * Mathf.Deg2Rad), Mathf.Sin(stats.Angle * Mathf.Deg2Rad)), Quaternion.identity);
                                 stats.NumofAP -= 1;
                                 AudioManager.instance.PlayEffect("Heal");
+                                LeftSlotCooldownDisplay = stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown);
+                                StartCoroutine(ResetStats(stats.VaccineDuration));
+                                StartCoroutine(LeftSlotItemCooldown(stats.VaccineCooldown * (1 - GlobalPlayerVariables.baseItemUsageCoolDown)));
                             }
                             break;
 

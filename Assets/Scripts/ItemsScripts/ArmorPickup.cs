@@ -44,15 +44,19 @@ public class ArmorPickup : MonoBehaviour
             distance = Vector2.Distance(player.Stats.Position, playerTracker.position);
             playerTracker.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(player.Stats.Position.y - playerTracker.position.y, player.Stats.Position.x - playerTracker.position.x) * Mathf.Rad2Deg);
         }
-        pSemission.rateOverTime = distance * 50;
-        pSshape.radius = distance;
+        pSemission.rateOverTime = distance * 20;
+        pSshape.radius = distance - 0.5f;
         if (Duration == 0)
+        {
             AnimController.SetBool("Undeploy", true);
+            if (pS.isPlaying)
+                pS.Stop();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && Duration <= initDur - 1 && Duration >= 1)
+        if (collision.tag == "Player" && Duration <= initDur - 1.5 && Duration >= 1)
         {
             player = collision.GetComponent<Player>();
             pS.Play();
@@ -66,7 +70,7 @@ public class ArmorPickup : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && Duration <= initDur - 1 && Duration >= 1 || PermaDuration)
+        if (collision.tag == "Player" && (Duration <= initDur - 1.5 && Duration >= 1 || PermaDuration))
         {
             player = null;
             pS.Stop();
@@ -75,7 +79,7 @@ public class ArmorPickup : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && Duration <= initDur - 1 && Duration >= 0.5 || PermaDuration)
+        if (collision.tag == "Player" && (Duration <= initDur - 1.5 && Duration >= 0.5 || PermaDuration))
         {
             player = collision.GetComponent<Player>();
             if (pS.isStopped)
@@ -86,7 +90,7 @@ public class ArmorPickup : MonoBehaviour
                 player.Stats.Armorz = 799;
             //Debug.Log(player.Stats.ArmorLevel + " " + player.Stats.Armorz);
         }
-        else if(Duration >= initDur - 1 || Duration <= 0.5)
+        else if(collision.tag == "Player" && (Duration > initDur - 1.5 || Duration < 0.5))
         {
             if (pS.isPlaying)
                 pS.Stop();
