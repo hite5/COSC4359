@@ -51,6 +51,7 @@ public class RememberLoadout : MonoBehaviour
     public static int numberOfPhizerz = 0;
     public static int numberOfMorbida = 0;
     public static int numberOfLnL = 0;
+    public static int numberOfBoostrs = 0;
 
 
     public static float armorRemaining = 0;
@@ -95,6 +96,7 @@ public class RememberLoadout : MonoBehaviour
         numberOfPhizerz = 0;
         numberOfMorbida = 0;
         numberOfLnL = 0;
+        numberOfBoostrs = 0;
 
         armorRemaining = 0;
         proteinCounter = 0;
