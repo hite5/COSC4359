@@ -140959,7 +140959,7 @@ MonoBehaviour:
   EnemyRemaining: {fileID: 399665826}
   blinkerTime: 0
   enableDuringGrace:
-  - {fileID: 0}
+  - {fileID: 937575885}
 --- !u!1 &798532100
 GameObject:
   m_ObjectHideFlags: 0
@@ -140999,6 +140999,11 @@ RectTransform:
   m_AnchoredPosition: {x: -107.399994, y: 0}
   m_SizeDelta: {x: -980, y: -500}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &937575885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 988894326568112781, guid: 37bb742c9794e0b4082c8ebd09c08962, type: 3}
+  m_PrefabInstance: {fileID: 1715473108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941962773
 GameObject:
   m_ObjectHideFlags: 0
