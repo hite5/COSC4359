@@ -82,12 +82,19 @@ public class ArmorPickup : MonoBehaviour
         if (collision.tag == "Player" && (Duration <= initDur - 1.5 && Duration >= 0.5 || PermaDuration))
         {
             player = collision.GetComponent<Player>();
-            if (pS.isStopped)
-                pS.Play();
+            if(player.Stats.Armorz < 799)
+            {
+                if (pS.isStopped)
+                    pS.Play();
+            }
             if (player.Stats.Armorz < 799 - ArmorGen)
                 player.Stats.Armorz += ArmorGen;
             else if (player.Stats.Armorz >= 799 - ArmorGen && player.Stats.Armorz < 799)
+            {
                 player.Stats.Armorz = 799;
+                if (pS.isPlaying)
+                    pS.Stop();
+            }
             //Debug.Log(player.Stats.ArmorLevel + " " + player.Stats.Armorz);
         }
         else if(collision.tag == "Player" && (Duration > initDur - 1.5 || Duration < 0.5))
