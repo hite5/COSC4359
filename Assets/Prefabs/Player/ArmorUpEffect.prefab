@@ -168,7 +168,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.35
+      scalar: 0.4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -221,7 +221,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -337,7 +337,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 0.15
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -719,7 +719,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 30}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -856,7 +856,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     arc:
-      value: 180
+      value: 120
       mode: 0
       spread: 0
       speed:
@@ -918,7 +918,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 40
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1043,8 +1043,17 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
+          time: 0.5007852
           value: 1
+          inSlope: 0.0000013075519
+          outSlope: 0.0000013075519
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.18205377
+          outWeight: 0.19488946
+        - serializedVersion: 3
+          time: 1
+          value: 0.5405407
           inSlope: -0.00000044352848
           outSlope: -0.00000044352848
           tangentMode: 0
@@ -4869,4 +4878,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c672c7a6461089e4dbfeaa3a6a4ce696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}

@@ -677,26 +677,31 @@ public class PlayerActions
 
         ARBar.fillAmount = player.Stats.Armorz / ((player.Stats.ArmorPerArmorLevelz * 4) - 1);
 
-        switch (player.Stats.ArmorLevel)
-        {
-            case 1:
-                ARBar.color = Color.white;
-                break;
-            case 2:
-                ARBar.color = new Color(0, 156 / 255f, 231 / 255f); ;
-                break;
-            case 3:
-                ARBar.color = new Color(129 / 255f, 45 / 255f, 121 / 255f);
-                break;
-            case 4:
-                ARBar.color = Color.yellow;
-                break;
-                /*
-            case 5:
-                ARBar.color = Color.green;
-                break;*/
-        }
-
+        //switch (player.Stats.ArmorLevel)
+        //{
+        //    case 1:
+        //        ARBar.color = Color.white;
+        //        break;
+        //    case 2:
+        //        ARBar.color = new Color(0, 156 / 255f, 231 / 255f);
+        //        break;
+        //    case 3:
+        //        ARBar.color = new Color(129 / 255f, 45 / 255f, 121 / 255f);
+        //        break;
+        //    case 4:
+        //        ARBar.color = Color.yellow;
+        //        break;
+        //        /*
+        //    case 5:
+        //        ARBar.color = Color.green;
+        //        break;*/
+        //}
+        //start at (77, 219, 255) end at (129, 45, 121)
+        ARBar.color = new Color(
+            (77 + 52 * (player.Stats.Armorz / 800)) / 255f, 
+            (219 - 174 * (player.Stats.Armorz / 800)) / 255f, 
+            (255 - 134 * (player.Stats.Armorz / 800)) / 255f);
+        Debug.Log(ARBar.color*255);
     }
 
     public void Regen()
