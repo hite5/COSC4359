@@ -59,7 +59,8 @@ public class ArmorPickup : MonoBehaviour
         if (collision.tag == "Player" && Duration <= initDur - 1.5 && Duration >= 1)
         {
             player = collision.GetComponent<Player>();
-            pS.Play();
+            if (player.Stats.Armorz < 800)
+                pS.Play();
             //if (player.Stats.Armorz < 700)
             //    player.Stats.Armorz += 100;
             //else if (player.Stats.Armorz >= 700 && player.Stats.Armorz < 799)

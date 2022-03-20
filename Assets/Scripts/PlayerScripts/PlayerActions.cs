@@ -701,7 +701,7 @@ public class PlayerActions
             (77 + 52 * (player.Stats.Armorz / 800)) / 255f, 
             (219 - 174 * (player.Stats.Armorz / 800)) / 255f, 
             (255 - 134 * (player.Stats.Armorz / 800)) / 255f);
-        Debug.Log(ARBar.color*255);
+        //Debug.Log(ARBar.color*255);
     }
 
     public void Regen()
