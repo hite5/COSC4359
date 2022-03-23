@@ -248,15 +248,16 @@ public class TakeDamage : MonoBehaviour
                 HealthDamagePop = damage - ArmorMitigation;
                 player.Stats.Armorz -= ArmorMitigation;
                 player.Stats.Health -= damage - ArmorMitigation;
-                showDamage(ArmorDamagePop, impact, speed, iscrit, ArmorDamageText);
+                // showDamage(ArmorDamagePop, impact, speed, iscrit, ArmorDamageText);
                 showDamage(HealthDamagePop, impact, speed, iscrit, HealthDamageText);
             }
             else
             {
                 ArmorDamagePop = damage;
                 player.Stats.Armorz -= damage;
-                showDamage(ArmorDamagePop, impact, speed, iscrit, ArmorDamageText);
+                // showDamage(ArmorDamagePop, impact, speed, iscrit, ArmorDamageText);
             }
+                showDamage(ArmorDamagePop, impact, speed, iscrit, ArmorDamageText);
             //Debug.Log("Armor: " + ArmorDamagePop + " " + "Health: " + HealthDamagePop);
         }
         else

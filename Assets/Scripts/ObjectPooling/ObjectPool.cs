@@ -179,6 +179,10 @@ public class ObjectPool : MonoBehaviour
     {
         DamagePopUpPool.Enqueue(popUp);
         popUp.SetActive(false);
+        //Added by Younus start
+        Destroy(popUp);
+        //Added by Younus end
+
     }
 
     public void ReturnHeartBeatToPool(GameObject hrtBeat)

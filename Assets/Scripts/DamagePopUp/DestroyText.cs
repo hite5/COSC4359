@@ -44,10 +44,15 @@ public class DestroyText : MonoBehaviour
         if (gameObject.activeSelf == true && gameObject.name == ("DamagePopup(Clone)") || gameObject.name == ("DamagePopup"))
         {
             //transform.SetParent(ObjectPool.instance.transform);
+            print("Deactivating");
             StartCoroutine("DestroyEffect");
         }
         else
+        {
+
+            print("Destroying");
             Destroy(gameObject, DestroyTime);
+        }
         //StartCoroutine("DestroyEffect");
         //movement.x = 
         //transform.localPosition += Offset;

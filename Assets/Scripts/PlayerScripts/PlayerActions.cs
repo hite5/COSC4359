@@ -99,44 +99,102 @@ public class PlayerActions
         HealCooldownDisplay = GameObject.Find("HealCoolDownIndicator").GetComponent<Image>();
         player.Components.PlayerTrailRenderer.endColor = new Color(184/255f, 59/255f, 60/255f); // new Color(184, 59, 60);
 
+
         foreach (Transform rw in rightArm)
         {
-            Debug.Log(rw.gameObject.GetType());
+
+            // Younus Code start
+            
             if (rw.gameObject.activeSelf)
             {
-                if (rw.GetComponent<Weapon>() != null)
+                Weapon weapon = rw.GetComponent<Weapon>();
+                MeleeWeapon meleeWeapon = rw.GetComponent<MeleeWeapon>();
+                ShieldScript shieldScript = rw.GetComponent<ShieldScript>();
+                Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+                Transform weaponLabel = RWeaponIcon.transform.Find("WeaponLabel");
+            
+                if (weapon != null)
                 {
-                    Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
-                    tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
-                    tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
-                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
+                    // we can make variables for sprite and text to increase the effeciency.
+                    tempWI.GetComponent<Image>().sprite = weapon.WeapnIcon;
+                    tempWI.localScale = new Vector3(weapon.IconScale, weapon.IconScale, 1);
+                    weaponLabel.GetComponent<Text>().text = weapon.WeaponLabel;
                 }
-                else if(rw.GetComponent<MeleeWeapon>() != null)
+                else if(meleeWeapon != null)
                 {
-                    Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
-                    tempWI.GetComponent<Image>().sprite = rw.GetComponent<MeleeWeapon>().WeapnIcon;
-                    tempWI.localScale = new Vector3(rw.GetComponent<MeleeWeapon>().IconScale, rw.GetComponent<MeleeWeapon>().IconScale, 1);
-                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<MeleeWeapon>().WeaponLabel;
+                    tempWI.GetComponent<Image>().sprite = meleeWeapon.WeapnIcon;
+                    tempWI.localScale = new Vector3(meleeWeapon.IconScale, meleeWeapon.IconScale, 1);
+                    weaponLabel.GetComponent<Text>().text =meleeWeapon.WeaponLabel;
                 }
                 else
                 {
-                    Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
-                    tempWI.GetComponent<Image>().sprite = rw.GetComponent<ShieldScript>().WeapnIcon;
-                    tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale, rw.GetComponent<ShieldScript>().IconScale, 1);
-                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<ShieldScript>().WeaponLabel;
+                    tempWI.GetComponent<Image>().sprite = shieldScript.WeapnIcon;
+                    tempWI.localScale = new Vector3(shieldScript.IconScale, shieldScript.IconScale, 1);
+                    weaponLabel.GetComponent<Text>().text = shieldScript.WeaponLabel;
                 }
             }
+
+            // Younus Code end
+
+
+            // Old code
+
+            // //       Debug.Log(rw.gameObject.GetType());
+            // if (rw.gameObject.activeSelf)
+            // {
+            //     if (rw.GetComponent<Weapon>() != null)
+            //     {
+            //         Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+            //         tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
+            //         tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
+            //         RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
+            //     }
+            //     else if(rw.GetComponent<MeleeWeapon>() != null)
+            //     {
+            //         Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+            //         tempWI.GetComponent<Image>().sprite = rw.GetComponent<MeleeWeapon>().WeapnIcon;
+            //         tempWI.localScale = new Vector3(rw.GetComponent<MeleeWeapon>().IconScale, rw.GetComponent<MeleeWeapon>().IconScale, 1);
+            //         RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<MeleeWeapon>().WeaponLabel;
+            //     }
+            //     else
+            //     {
+            //         Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+            //         tempWI.GetComponent<Image>().sprite = rw.GetComponent<ShieldScript>().WeapnIcon;
+            //         tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale, rw.GetComponent<ShieldScript>().IconScale, 1);
+            //         RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<ShieldScript>().WeaponLabel;
+            //     }
+            // }
+
+            // Old code
+
         }
         currSpriteCategory = player.Components.PlayerTargetCategory;
         CurrHemoSprite = player.Components.PlayerSpriteLibrary.spriteLibraryAsset.GetCategoryLabelNames(currSpriteCategory + (player.Stats.ArmorLevel).ToString()).ToArray();
-        if(player.transform.Find("RightArm").transform.Find("Shield") != null)
+        // Younus Code start
+
+        Transform rightArmTransform = player.transform.Find("RightArm").transform;
+        Transform leftArmTransform = player.transform.Find("LeftArm").transform;
+        if(rightArmTransform.Find("Shield") != null)
         {
-            if (player.transform.Find("RightArm").transform.Find("Shield").gameObject.activeSelf)
+            if (rightArmTransform.Find("Shield").gameObject.activeSelf)
             {
-                player.transform.Find("RightArm").transform.position = player.transform.position;
-                player.transform.Find("LeftArm").transform.position = player.transform.position;
+                rightArmTransform.position = player.transform.position;
+                leftArmTransform.position = player.transform.position;
             }
         }
+        // Younus Code ends
+
+
+        // Old Code
+        // if(player.transform.Find("RightArm").transform.Find("Shield") != null)
+        // {
+        //     if (player.transform.Find("RightArm").transform.Find("Shield").gameObject.activeSelf)
+        //     {
+        //         player.transform.Find("RightArm").transform.position = player.transform.position;
+        //         player.transform.Find("LeftArm").transform.position = player.transform.position;
+        //     }
+        // }
+        // Old Code
         
     }
 
@@ -190,16 +248,18 @@ public class PlayerActions
 
     public void Sprint()
     {
+        //Younus Code start
         if (player.Stats.Stamina >= 0)
         {
             player.Stats.Speed = player.holdSprintSpeed;
+            Transform shieldObject = rightArm.transform.Find("Shield");
             foreach (Transform wp in rightArm.transform)
             {
                 if (wp.gameObject.activeSelf)
                 {
-                    if (rightArm.transform.Find("Shield") != null)
+                    if (shieldObject != null)
                     {
-                        if (rightArm.transform.Find("Shield").GetComponent<ShieldScript>().deploy)
+                        if (shieldObject.GetComponent<ShieldScript>().deploy)
                             player.Stats.Speed = player.holdSprintSpeed * (GlobalPlayerVariables.BaseWeaponWeight - 1 + 0.001f);
                         else
                             player.Stats.Speed = player.holdSprintSpeed * (GlobalPlayerVariables.BaseWeaponWeight - GlobalPlayerVariables.weaponWeight + 0.001f);
@@ -214,6 +274,36 @@ public class PlayerActions
                 }
             }
         }
+        //Younus Code ends
+
+
+        //Old Code
+        //  if (player.Stats.Stamina >= 0)
+        // {
+        //     player.Stats.Speed = player.holdSprintSpeed;
+        //     foreach (Transform wp in rightArm.transform)
+        //     {
+        //         if (wp.gameObject.activeSelf)
+        //         {
+        //             if (rightArm.transform.Find("Shield") != null)
+        //             {
+        //                 if (rightArm.transform.Find("Shield").GetComponent<ShieldScript>().deploy)
+        //                     player.Stats.Speed = player.holdSprintSpeed * (GlobalPlayerVariables.BaseWeaponWeight - 1 + 0.001f);
+        //                 else
+        //                     player.Stats.Speed = player.holdSprintSpeed * (GlobalPlayerVariables.BaseWeaponWeight - GlobalPlayerVariables.weaponWeight + 0.001f);
+        //             }
+        //             else
+        //                 player.Stats.Speed = player.holdSprintSpeed * (GlobalPlayerVariables.BaseWeaponWeight - GlobalPlayerVariables.weaponWeight + 0.001f); //player.Stats.WalkSpeed
+        //             if (GlobalPlayerVariables.BaseWeaponWeight - GlobalPlayerVariables.weaponWeight <= 0)
+        //             {
+        //                 Debug.Log("Weapon too heavy!");
+        //             }
+        //             break;
+        //         }
+        //     }
+        // }
+        //Old Code
+
     }
 
     public void Walk()
@@ -359,6 +449,8 @@ public class PlayerActions
         }
     }
 
+    //Younus Code Start
+
     public void SwapWeapon()
     {
         //bool cond = false;
@@ -373,19 +465,20 @@ public class PlayerActions
             if (Array.Exists(allowSlot, x => x == input))
                 foreach (Transform rw in rightArm)
                 {
-                    if (rw.GetComponent<Weapon>() != null)
+                    Weapon weaponObj = rw.GetComponent<Weapon>();
+                    if (weaponObj != null)
                     {
                         //Debug.Log(rw.gameObject.activeSelf);
-                        if (rw.GetComponent<Weapon>().Slot == input)
+                        if (weaponObj.Slot == input)
                         {
                             //cond = true;
                             rw.gameObject.SetActive(true);
                             if (rw.gameObject.activeSelf)
                             {
                                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
-                                tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
-                                tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
-                                RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
+                                tempWI.GetComponent<Image>().sprite = weaponObj.WeapnIcon;
+                                tempWI.localScale = new Vector3(weaponObj.IconScale, weaponObj.IconScale, 1);
+                                RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = weaponObj.WeaponLabel;
                                 if (currSlot != input)
                                     AudioManager.instance.PlayEffect("SwitchGun");
                                 currSlot = input;
@@ -394,25 +487,25 @@ public class PlayerActions
                         }
                         else
                         {
-                            Weapon RWeapon = rw.GetComponent<Weapon>();
-                            RWeapon.transform.position = rightArm.transform.position;
-                            RWeapon.transform.rotation = rightArm.transform.rotation;
+                            weaponObj.transform.position = rightArm.transform.position;
+                            weaponObj.transform.rotation = rightArm.transform.rotation;
                             rw.gameObject.SetActive(false);
                         }
                     }
-                    if (rw.GetComponent<MeleeWeapon>() != null)
+                    MeleeWeapon meleeWeaponObj = rw.GetComponent<MeleeWeapon>();
+                    if (meleeWeaponObj != null)
                     {
                         //Debug.Log(rw.gameObject.activeSelf);
-                        if (rw.GetComponent<MeleeWeapon>().Slot == input)
+                        if (meleeWeaponObj.Slot == input)
                         {
                             //cond = true;
                             rw.gameObject.SetActive(true);
                             if (rw.gameObject.activeSelf)
                             {
                                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
-                                tempWI.GetComponent<Image>().sprite = rw.GetComponent<MeleeWeapon>().WeapnIcon;
-                                tempWI.localScale = new Vector3(rw.GetComponent<MeleeWeapon>().IconScale, rw.GetComponent<MeleeWeapon>().IconScale, 1);
-                                RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<MeleeWeapon>().WeaponLabel;
+                                tempWI.GetComponent<Image>().sprite = meleeWeaponObj.WeapnIcon;
+                                tempWI.localScale = new Vector3(meleeWeaponObj.IconScale, meleeWeaponObj.IconScale, 1);
+                                RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = meleeWeaponObj.WeaponLabel;
                                 if (currSlot != input)
                                     AudioManager.instance.PlayEffect("SwitchGun");
                                 currSlot = input;
@@ -431,23 +524,21 @@ public class PlayerActions
                                 leftArm.position = new Vector2(player.Stats.Position.x - 0.05f, player.Stats.Position.y - 0.15f);
                                 rightArm.position = new Vector2(player.Stats.Position.x + 0.05f, player.Stats.Position.y - 0.15f);
                             }
-                            MeleeWeapon RWeapon = rw.GetComponent<MeleeWeapon>();
-                            RWeapon.transform.position = rightArm.transform.position;
-                            RWeapon.transform.rotation = rightArm.transform.rotation;
+                            meleeWeaponObj.transform.position = rightArm.transform.position;
+                            meleeWeaponObj.transform.rotation = rightArm.transform.rotation;
                             rw.gameObject.SetActive(false);
                         }
                     }
-
-                    if (rw.GetComponent<ShieldScript>() != null)
+                    ShieldScript shieldScriptObj = rw.GetComponent<ShieldScript>();
+                    if (shieldScriptObj != null)
                     {
                         //Debug.Log(rw.gameObject.activeSelf);
 
-                        if (rw.GetComponent<ShieldScript>().Slot == input)
+                        if (shieldScriptObj.Slot == input)
                         {
                             player.transform.Find("RightArm").transform.position = player.transform.position;
                             player.transform.Find("LeftArm").transform.position = player.transform.position;
                             //cond = true;
-                            ShieldScript RWeapon = rw.GetComponent<ShieldScript>();
 
                             rw.gameObject.SetActive(true);
 
@@ -456,8 +547,8 @@ public class PlayerActions
                             {
                                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
                                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<ShieldScript>().WeapnIcon;
-                                tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale, rw.GetComponent<ShieldScript>().IconScale, 1);
-                                RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<ShieldScript>().WeaponLabel;
+                                tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale,shieldScriptObj.IconScale, 1);
+                                RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = shieldScriptObj.WeaponLabel;
                                 if (currSlot != input)
                                     AudioManager.instance.PlayEffect("SwitchGun");
                                 currSlot = input;
@@ -477,10 +568,9 @@ public class PlayerActions
                                 leftArm.position = new Vector2(player.Stats.Position.x - 0.05f, player.Stats.Position.y - 0.15f);
                                 rightArm.position = new Vector2(player.Stats.Position.x + 0.05f, player.Stats.Position.y - 0.15f);
                             }
-                            ShieldScript RWeapon = rw.GetComponent<ShieldScript>();
-                            RWeapon.transform.position = rightArm.transform.position;
-                            RWeapon.transform.rotation = rightArm.transform.rotation;
-                            if (!RWeapon.deploy)
+                            shieldScriptObj.transform.position = rightArm.transform.position;
+                            shieldScriptObj.transform.rotation = rightArm.transform.rotation;
+                            if (!shieldScriptObj.deploy)
                                 rw.gameObject.SetActive(false);
                         }
                     }
@@ -488,33 +578,172 @@ public class PlayerActions
         }
     }
 
+    //Younus Code End
+    //Old Code
+//  public void SwapWeapon()
+//     {
+//         //bool cond = false;
+//         float[] allowSlot = { 1, 2, 3, 4 };
+//         input = player.Utilities.Weapon1ButtonPressed ? 1 :
+//                 player.Utilities.Weapon2ButtonPressed ? 2 :
+//                 player.Utilities.Weapon3ButtonPressed ? 3 : 
+//                 player.Utilities.MeleeButtonPressed ? 4 : input;
+//         if (input != currInput)
+//         {
+//             currInput = input;
+//             if (Array.Exists(allowSlot, x => x == input))
+//                 foreach (Transform rw in rightArm)
+//                 {
+//                     if (rw.GetComponent<Weapon>() != null)
+//                     {
+//                         //Debug.Log(rw.gameObject.activeSelf);
+//                         if (rw.GetComponent<Weapon>().Slot == input)
+//                         {
+//                             //cond = true;
+//                             rw.gameObject.SetActive(true);
+//                             if (rw.gameObject.activeSelf)
+//                             {
+//                                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+//                                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
+//                                 tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
+//                                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
+//                                 if (currSlot != input)
+//                                     AudioManager.instance.PlayEffect("SwitchGun");
+//                                 currSlot = input;
+//                             }
+//                             //start swap counter???
+//                         }
+//                         else
+//                         {
+//                             Weapon RWeapon = rw.GetComponent<Weapon>();
+//                             RWeapon.transform.position = rightArm.transform.position;
+//                             RWeapon.transform.rotation = rightArm.transform.rotation;
+//                             rw.gameObject.SetActive(false);
+//                         }
+//                     }
+//                     if (rw.GetComponent<MeleeWeapon>() != null)
+//                     {
+//                         //Debug.Log(rw.gameObject.activeSelf);
+//                         if (rw.GetComponent<MeleeWeapon>().Slot == input)
+//                         {
+//                             //cond = true;
+//                             rw.gameObject.SetActive(true);
+//                             if (rw.gameObject.activeSelf)
+//                             {
+//                                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+//                                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<MeleeWeapon>().WeapnIcon;
+//                                 tempWI.localScale = new Vector3(rw.GetComponent<MeleeWeapon>().IconScale, rw.GetComponent<MeleeWeapon>().IconScale, 1);
+//                                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<MeleeWeapon>().WeaponLabel;
+//                                 if (currSlot != input)
+//                                     AudioManager.instance.PlayEffect("SwitchGun");
+//                                 currSlot = input;
+//                             }
+//                             //start swap counter???
+//                         }
+//                         else
+//                         {
+//                             if (player.Stats.Angle < 0)
+//                             {
+//                                 leftArm.position = new Vector2(player.Stats.Position.x + 0.05f, player.Stats.Position.y - 0.15f);
+//                                 rightArm.position = new Vector2(player.Stats.Position.x - 0.05f, player.Stats.Position.y - 0.15f);
+//                             }
+//                             else
+//                             {
+//                                 leftArm.position = new Vector2(player.Stats.Position.x - 0.05f, player.Stats.Position.y - 0.15f);
+//                                 rightArm.position = new Vector2(player.Stats.Position.x + 0.05f, player.Stats.Position.y - 0.15f);
+//                             }
+//                             MeleeWeapon RWeapon = rw.GetComponent<MeleeWeapon>();
+//                             RWeapon.transform.position = rightArm.transform.position;
+//                             RWeapon.transform.rotation = rightArm.transform.rotation;
+//                             rw.gameObject.SetActive(false);
+//                         }
+//                     }
+
+//                     if (rw.GetComponent<ShieldScript>() != null)
+//                     {
+//                         //Debug.Log(rw.gameObject.activeSelf);
+
+//                         if (rw.GetComponent<ShieldScript>().Slot == input)
+//                         {
+//                             player.transform.Find("RightArm").transform.position = player.transform.position;
+//                             player.transform.Find("LeftArm").transform.position = player.transform.position;
+//                             //cond = true;
+//                             ShieldScript RWeapon = rw.GetComponent<ShieldScript>();
+
+//                             rw.gameObject.SetActive(true);
+
+//                             //rw.gameObject.SetActive(true);
+//                             if (rw.gameObject.activeSelf)
+//                             {
+//                                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+//                                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<ShieldScript>().WeapnIcon;
+//                                 tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale, rw.GetComponent<ShieldScript>().IconScale, 1);
+//                                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<ShieldScript>().WeaponLabel;
+//                                 if (currSlot != input)
+//                                     AudioManager.instance.PlayEffect("SwitchGun");
+//                                 currSlot = input;
+//                             }
+//                             //start swap counter???
+
+//                         }
+//                         else
+//                         {
+//                             if (player.Stats.Angle < 0)
+//                             {
+//                                 leftArm.position = new Vector2(player.Stats.Position.x + 0.05f, player.Stats.Position.y - 0.15f);
+//                                 rightArm.position = new Vector2(player.Stats.Position.x - 0.05f, player.Stats.Position.y - 0.15f);
+//                             }
+//                             else
+//                             {
+//                                 leftArm.position = new Vector2(player.Stats.Position.x - 0.05f, player.Stats.Position.y - 0.15f);
+//                                 rightArm.position = new Vector2(player.Stats.Position.x + 0.05f, player.Stats.Position.y - 0.15f);
+//                             }
+//                             ShieldScript RWeapon = rw.GetComponent<ShieldScript>();
+//                             RWeapon.transform.position = rightArm.transform.position;
+//                             RWeapon.transform.rotation = rightArm.transform.rotation;
+//                             if (!RWeapon.deploy)
+//                                 rw.gameObject.SetActive(false);
+//                         }
+//                     }
+//                 }
+//         }
+//     }
+
+    //Old Code
+
+    //Younus Code Start
+
     public void updateWeaponIcon()
     {
         bool weaponActive = false;
         foreach (Transform rw in rightArm)
         {
+            Weapon weaponObj = rw.GetComponent<Weapon>();
+            MeleeWeapon meleeWeaponObj = rw.GetComponent<MeleeWeapon>();
+            ShieldScript shieldScriptObj = rw.GetComponent<ShieldScript>();
             //Debug.Log(rw.gameObject.GetType());
             if (rw.gameObject.activeSelf)
             {
                 Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
                 tempWI.gameObject.SetActive(true);
-                if (rw.GetComponent<Weapon>() != null)
+
+                if (weaponObj != null)
                 {
-                    tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
-                    tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
-                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
+                    tempWI.GetComponent<Image>().sprite = weaponObj.WeapnIcon;
+                    tempWI.localScale = new Vector3(weaponObj.IconScale, weaponObj.IconScale, 1);
+                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = weaponObj.WeaponLabel;
                 }
-                else if (rw.GetComponent<MeleeWeapon>() != null)
+                else if (meleeWeaponObj != null)
                 {
-                    tempWI.GetComponent<Image>().sprite = rw.GetComponent<MeleeWeapon>().WeapnIcon;
-                    tempWI.localScale = new Vector3(rw.GetComponent<MeleeWeapon>().IconScale, rw.GetComponent<MeleeWeapon>().IconScale, 1);
-                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<MeleeWeapon>().WeaponLabel;
+                    tempWI.GetComponent<Image>().sprite = meleeWeaponObj.WeapnIcon;
+                    tempWI.localScale = new Vector3(meleeWeaponObj.IconScale, meleeWeaponObj.IconScale, 1);
+                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = meleeWeaponObj.WeaponLabel;
                 }
                 else
                 {
-                    tempWI.GetComponent<Image>().sprite = rw.GetComponent<ShieldScript>().WeapnIcon;
-                    tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale, rw.GetComponent<ShieldScript>().IconScale, 1);
-                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<ShieldScript>().WeaponLabel;
+                    tempWI.GetComponent<Image>().sprite = shieldScriptObj.WeapnIcon;
+                    tempWI.localScale = new Vector3(shieldScriptObj.IconScale, shieldScriptObj.IconScale, 1);
+                    RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = shieldScriptObj.WeaponLabel;
                 }
                 weaponActive = true;
             }
@@ -526,6 +755,48 @@ public class PlayerActions
             tempWI.gameObject.SetActive(false);
         }
     }
+    //Younus Code End
+//Old Code
+    //   public void updateWeaponIcon()
+    // {
+    //     bool weaponActive = false;
+    //     foreach (Transform rw in rightArm)
+    //     {
+    //         //Debug.Log(rw.gameObject.GetType());
+    //         if (rw.gameObject.activeSelf)
+    //         {
+    //             Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+    //             tempWI.gameObject.SetActive(true);
+    //             if (rw.GetComponent<Weapon>() != null)
+    //             {
+    //                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<Weapon>().WeapnIcon;
+    //                 tempWI.localScale = new Vector3(rw.GetComponent<Weapon>().IconScale, rw.GetComponent<Weapon>().IconScale, 1);
+    //                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<Weapon>().WeaponLabel;
+    //             }
+    //             else if (rw.GetComponent<MeleeWeapon>() != null)
+    //             {
+    //                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<MeleeWeapon>().WeapnIcon;
+    //                 tempWI.localScale = new Vector3(rw.GetComponent<MeleeWeapon>().IconScale, rw.GetComponent<MeleeWeapon>().IconScale, 1);
+    //                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<MeleeWeapon>().WeaponLabel;
+    //             }
+    //             else
+    //             {
+    //                 tempWI.GetComponent<Image>().sprite = rw.GetComponent<ShieldScript>().WeapnIcon;
+    //                 tempWI.localScale = new Vector3(rw.GetComponent<ShieldScript>().IconScale, rw.GetComponent<ShieldScript>().IconScale, 1);
+    //                 RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = rw.GetComponent<ShieldScript>().WeaponLabel;
+    //             }
+    //             weaponActive = true;
+    //         }
+    //     }
+    //     if (!weaponActive)
+    //     {
+    //         RWeaponIcon.transform.Find("WeaponLabel").GetComponent<Text>().text = "N/A";
+    //         Transform tempWI = RWeaponIcon.transform.Find("WeaponIcon");
+    //         tempWI.gameObject.SetActive(false);
+    //     }
+    // }
+//Old Code
+    
     public void Phizer() //Add max health and max stamina and regen
     {
         player.Stats.NumofPhizer -= 1;
@@ -701,7 +972,7 @@ public class PlayerActions
             (77 + 52 * (player.Stats.Armorz / 800)) / 255f, 
             (219 - 174 * (player.Stats.Armorz / 800)) / 255f, 
             (255 - 134 * (player.Stats.Armorz / 800)) / 255f);
-        Debug.Log(ARBar.color*255);
+        // Debug.Log(ARBar.color*255);
     }
 
     public void Regen()

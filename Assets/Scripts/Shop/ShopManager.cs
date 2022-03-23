@@ -49,9 +49,15 @@ public class ShopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Old Code
+        // PlayerLoadOut = GameObject.FindGameObjectWithTag("Loadout");
+        // PlayerOwnedWeapons =PlayerLoadOut.GetComponent<RememberLoadout>().OwnedWeapons;
+        //Old Code
 
-        PlayerOwnedWeapons = GameObject.FindGameObjectWithTag("Loadout").GetComponent<RememberLoadout>().OwnedWeapons;
+        //Younus Code Start
         PlayerLoadOut = GameObject.FindGameObjectWithTag("Loadout");
+        PlayerOwnedWeapons =PlayerLoadOut.GetComponent<RememberLoadout>().OwnedWeapons;
+        //Younus Code end
 
         //ItemsToCheck = GameObject.FindGameObjectsWithTag("ItemSlot");
         player = GameObject.FindGameObjectWithTag("Player");

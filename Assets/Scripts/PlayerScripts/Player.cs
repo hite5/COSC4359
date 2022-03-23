@@ -775,16 +775,25 @@ public class Player : MonoBehaviour
         if (playWalkingSound == true)
         {
             playWalkingSound = false;
-            if (walk1 == true)
-            {
-                walk1 = false;
-                AudioManager.instance.PlayEffect("Walk1");
-            }
-            else
-            {
-                walk1 = true;
-                AudioManager.instance.PlayEffect("Walk2");
-            }
+            //Added by Younus start
+            //havent been tested so if doesnt work uncomment the old portion
+            string playEffect = walk1?"Walk1":"Walk2";
+            walk1 = !walk1;
+            AudioManager.instance.PlayEffect(playEffect);
+            //Added by Younus end
+            
+            //Old Code
+            
+            // if (walk1 == true)
+            // {
+            //     walk1 = false;
+            //     AudioManager.instance.PlayEffect("Walk1");
+            // }
+            // else
+            // {
+            //     walk1 = true;
+            //     AudioManager.instance.PlayEffect("Walk2");
+            // }
             yield return new WaitForSeconds(AfterSeconds);
             playWalkingSound = true;
         }
@@ -1168,7 +1177,7 @@ public class Player : MonoBehaviour
 
         foreach (GameObject go in gitValues.PossibleGlobins)
         {
-            Debug.Log("S P A W N");
+            // Debug.Log("S P A W N");
             if (go.name.Contains("5 Advisor"))
             {
                 for(int i = 0; i < RememberLoadout.Globin5Advisor; i++)
