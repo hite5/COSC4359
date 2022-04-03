@@ -1,0 +1,3648 @@
+fileFormatVersion: 2
+guid: 8ca3dd23930f3a544b0437e2d3911039
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8845599607158624646
+    second: NewSpriteHearst_0
+  - first:
+      213: -5890698601059274198
+    second: NewSpriteHearst_1
+  - first:
+      213: 2163838858461693919
+    second: NewSpriteHearst_2
+  - first:
+      213: 4765845126328936933
+    second: NewSpriteHearst_3
+  - first:
+      213: -1581713564032144943
+    second: NewSpriteHearst_4
+  - first:
+      213: 5973617310373736940
+    second: NewSpriteHearst_5
+  - first:
+      213: 8668008224669544297
+    second: NewSpriteHearst_6
+  - first:
+      213: -367042230410494363
+    second: NewSpriteHearst_7
+  - first:
+      213: 699477187900904658
+    second: NewSpriteHearst_8
+  - first:
+      213: -2990338874291805689
+    second: NewSpriteHearst_9
+  - first:
+      213: 5710193053448185968
+    second: NewSpriteHearst_10
+  - first:
+      213: -1447174282170704633
+    second: NewSpriteHearst_11
+  - first:
+      213: -4956596741438201293
+    second: NewSpriteHearst_12
+  - first:
+      213: 8242717969291667819
+    second: NewSpriteHearst_13
+  - first:
+      213: -5987079157021714885
+    second: NewSpriteHearst_14
+  - first:
+      213: 2529193958568495971
+    second: NewSpriteHearst_15
+  - first:
+      213: -7252774220757669711
+    second: NewSpriteHearst_16
+  - first:
+      213: -1298771497769234181
+    second: NewSpriteHearst_17
+  - first:
+      213: 1462531482399429694
+    second: NewSpriteHearst_18
+  - first:
+      213: 685632936576881159
+    second: NewSpriteHearst_19
+  - first:
+      213: 7813134010465378946
+    second: NewSpriteHearst_20
+  - first:
+      213: -1277382290133521219
+    second: NewSpriteHearst_21
+  - first:
+      213: -3977182736065830644
+    second: NewSpriteHearst_22
+  - first:
+      213: -102722931344566611
+    second: NewSpriteHearst_23
+  - first:
+      213: 443773677031677628
+    second: NewSpriteHearst_24
+  - first:
+      213: -5803760530392946640
+    second: NewSpriteHearst_25
+  - first:
+      213: 4788514732537149045
+    second: NewSpriteHearst_26
+  - first:
+      213: 3411336393985477393
+    second: NewSpriteHearst_27
+  - first:
+      213: 1951952941727610234
+    second: NewSpriteHearst_28
+  - first:
+      213: 5706555040264209669
+    second: NewSpriteHearst_29
+  - first:
+      213: -982216639229897382
+    second: NewSpriteHearst_30
+  - first:
+      213: -4710186860203912498
+    second: NewSpriteHearst_31
+  - first:
+      213: 3226791842794945970
+    second: NewSpriteHearst_32
+  - first:
+      213: -8251547718358865681
+    second: NewSpriteHearst_33
+  - first:
+      213: -8012268518942950503
+    second: NewSpriteHearst_34
+  - first:
+      213: 5151823717521780605
+    second: NewSpriteHearst_35
+  - first:
+      213: -6675901971626175569
+    second: NewSpriteHearst_36
+  - first:
+      213: -592608947182965067
+    second: NewSpriteHearst_37
+  - first:
+      213: -1794893307125167525
+    second: NewSpriteHearst_38
+  - first:
+      213: -74790894742554764
+    second: NewSpriteHearst_39
+  - first:
+      213: 3855247493375022316
+    second: NewSpriteHearst_40
+  - first:
+      213: -5063163378194985058
+    second: NewSpriteHearst_41
+  - first:
+      213: -5086406389113914048
+    second: NewSpriteHearst_42
+  - first:
+      213: -2228194348008333310
+    second: NewSpriteHearst_43
+  - first:
+      213: -8282363705621381714
+    second: NewSpriteHearst_44
+  - first:
+      213: -1604601555985640103
+    second: NewSpriteHearst_45
+  - first:
+      213: 6217387211485132878
+    second: NewSpriteHearst_46
+  - first:
+      213: 6900321736721375484
+    second: NewSpriteHearst_47
+  - first:
+      213: -2112388782798693485
+    second: NewSpriteHearst_48
+  - first:
+      213: -6727127227924708291
+    second: NewSpriteHearst_49
+  - first:
+      213: -8342347063720725043
+    second: NewSpriteHearst_50
+  - first:
+      213: 4473692173017708360
+    second: NewSpriteHearst_51
+  - first:
+      213: -7389707157100035808
+    second: NewSpriteHearst_52
+  - first:
+      213: 1944379314197469750
+    second: NewSpriteHearst_53
+  - first:
+      213: -5983460475246025049
+    second: NewSpriteHearst_54
+  - first:
+      213: 2373383310798613536
+    second: NewSpriteHearst_55
+  - first:
+      213: 6585133594342191414
+    second: NewSpriteHearst_56
+  - first:
+      213: 1260330725046685970
+    second: NewSpriteHearst_57
+  - first:
+      213: -8756523597166392770
+    second: NewSpriteHearst_58
+  - first:
+      213: 187614226403712763
+    second: NewSpriteHearst_59
+  - first:
+      213: 3675504469716180053
+    second: NewSpriteHearst_60
+  - first:
+      213: 3614915481166793613
+    second: NewSpriteHearst_61
+  - first:
+      213: 3457839677421937150
+    second: NewSpriteHearst_62
+  - first:
+      213: -7894647667406984221
+    second: NewSpriteHearst_63
+  - first:
+      213: 861555111764916604
+    second: NewSpriteHearst_64
+  - first:
+      213: 6937627429007334677
+    second: NewSpriteHearst_65
+  - first:
+      213: 5922445533052894862
+    second: NewSpriteHearst_66
+  - first:
+      213: -7742400821902164376
+    second: NewSpriteHearst_67
+  - first:
+      213: -7095643704895683643
+    second: NewSpriteHearst_68
+  - first:
+      213: 6403662912449949810
+    second: NewSpriteHearst_69
+  - first:
+      213: -3472011009603220596
+    second: NewSpriteHearst_70
+  - first:
+      213: 2360076316562933716
+    second: NewSpriteHearst_71
+  - first:
+      213: 1840174921405887672
+    second: NewSpriteHearst_72
+  - first:
+      213: 4173366816827697306
+    second: NewSpriteHearst_73
+  - first:
+      213: -4471883132545026227
+    second: NewSpriteHearst_74
+  - first:
+      213: -3948357291350937666
+    second: NewSpriteHearst_75
+  - first:
+      213: -2786188485573805990
+    second: NewSpriteHearst_76
+  - first:
+      213: -2647115614178132623
+    second: NewSpriteHearst_77
+  - first:
+      213: -749581243686545794
+    second: NewSpriteHearst_78
+  - first:
+      213: 7560324497672919160
+    second: NewSpriteHearst_79
+  - first:
+      213: -3330005773441814365
+    second: NewSpriteHearst_80
+  - first:
+      213: 5727161185651217134
+    second: NewSpriteHearst_81
+  - first:
+      213: -1579723633660538814
+    second: NewSpriteHearst_82
+  - first:
+      213: -201216540567628005
+    second: NewSpriteHearst_83
+  - first:
+      213: 472383219259217848
+    second: NewSpriteHearst_84
+  - first:
+      213: 1991211268864471709
+    second: NewSpriteHearst_85
+  - first:
+      213: 709661106829359471
+    second: NewSpriteHearst_86
+  - first:
+      213: -7097776678816508036
+    second: NewSpriteHearst_87
+  - first:
+      213: 4703544267773099315
+    second: NewSpriteHearst_88
+  - first:
+      213: 6712017037518020220
+    second: NewSpriteHearst_89
+  - first:
+      213: -3210204227300870666
+    second: NewSpriteHearst_90
+  - first:
+      213: -2251000347949887478
+    second: NewSpriteHearst_91
+  - first:
+      213: -4164701370173453013
+    second: NewSpriteHearst_92
+  - first:
+      213: -3088632702937594010
+    second: NewSpriteHearst_93
+  - first:
+      213: 9022971980487302810
+    second: NewSpriteHearst_94
+  - first:
+      213: -8956972616785334132
+    second: NewSpriteHearst_95
+  - first:
+      213: 8924377060218260654
+    second: NewSpriteHearst_96
+  - first:
+      213: 2942911250087846909
+    second: NewSpriteHearst_97
+  - first:
+      213: -4371494982071665928
+    second: NewSpriteHearst_98
+  - first:
+      213: -6002157855933095908
+    second: NewSpriteHearst_99
+  - first:
+      213: 8850534586927835789
+    second: NewSpriteHearst_100
+  - first:
+      213: -1398405271905330606
+    second: NewSpriteHearst_101
+  - first:
+      213: -5917228007390380989
+    second: NewSpriteHearst_102
+  - first:
+      213: 8132061633067876109
+    second: NewSpriteHearst_103
+  - first:
+      213: 7487485002990984377
+    second: NewSpriteHearst_104
+  - first:
+      213: -4117933908273077720
+    second: NewSpriteHearst_105
+  - first:
+      213: 3227727542769497671
+    second: NewSpriteHearst_106
+  - first:
+      213: 3199551943002419656
+    second: NewSpriteHearst_107
+  - first:
+      213: -7078347358281340794
+    second: NewSpriteHearst_108
+  - first:
+      213: 3654125405621699313
+    second: NewSpriteHearst_109
+  - first:
+      213: 6361535557339844368
+    second: NewSpriteHearst_110
+  - first:
+      213: -7311952832810167008
+    second: NewSpriteHearst_111
+  - first:
+      213: 8239205396115459581
+    second: NewSpriteHearst_112
+  - first:
+      213: 4731752802232243320
+    second: NewSpriteHearst_113
+  - first:
+      213: 7550679350564911979
+    second: NewSpriteHearst_114
+  - first:
+      213: -5512158096947306659
+    second: NewSpriteHearst_115
+  - first:
+      213: -3614464896282012674
+    second: NewSpriteHearst_116
+  - first:
+      213: -2554179581332271652
+    second: NewSpriteHearst_117
+  - first:
+      213: 7043085386273754443
+    second: NewSpriteHearst_118
+  - first:
+      213: 5141953782697127855
+    second: NewSpriteHearst_119
+  - first:
+      213: 3120768159788651808
+    second: NewSpriteHearst_120
+  - first:
+      213: -1464003221609110017
+    second: NewSpriteHearst_121
+  - first:
+      213: -4695466133409268950
+    second: NewSpriteHearst_122
+  - first:
+      213: 4441583317672104184
+    second: NewSpriteHearst_123
+  - first:
+      213: -4515304541544934752
+    second: NewSpriteHearst_124
+  - first:
+      213: 377340197592756824
+    second: NewSpriteHearst_125
+  - first:
+      213: 3707794287729575051
+    second: NewSpriteHearst_126
+  - first:
+      213: -3479700806075447850
+    second: NewSpriteHearst_127
+  - first:
+      213: -6016639368681435447
+    second: NewSpriteHearst_128
+  - first:
+      213: 5826467854781606392
+    second: NewSpriteHearst_129
+  - first:
+      213: 5286316195327939669
+    second: NewSpriteHearst_130
+  - first:
+      213: -4859617314630495583
+    second: NewSpriteHearst_131
+  - first:
+      213: 3647242125851181067
+    second: NewSpriteHearst_132
+  - first:
+      213: 7174912790378066052
+    second: NewSpriteHearst_133
+  - first:
+      213: 8977614849984329915
+    second: NewSpriteHearst_134
+  - first:
+      213: -7677215848351108976
+    second: NewSpriteHearst_135
+  - first:
+      213: -8078091880277535233
+    second: NewSpriteHearst_136
+  - first:
+      213: 1310437742225013732
+    second: NewSpriteHearst_137
+  - first:
+      213: -1804623483250313611
+    second: NewSpriteHearst_138
+  - first:
+      213: 2401418756780675493
+    second: NewSpriteHearst_139
+  - first:
+      213: 8258944486678138108
+    second: NewSpriteHearst_140
+  - first:
+      213: -3014410295505212022
+    second: NewSpriteHearst_141
+  - first:
+      213: 4470629185811364388
+    second: NewSpriteHearst_142
+  - first:
+      213: 1406881300934324250
+    second: NewSpriteHearst_143
+  - first:
+      213: 7507229504414590000
+    second: NewSpriteHearst_144
+  - first:
+      213: -3064942809100754509
+    second: NewSpriteHearst_145
+  - first:
+      213: 9212433876232601188
+    second: NewSpriteHearst_146
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NewSpriteHearst_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ea9f5f50e1e3580800000000000000
+      internalID: -8845599607158624646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b8f425d8004ea0800000000000000
+      internalID: -5890698601059274198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7cbcd2aff770e10800000000000000
+      internalID: 2163838858461693919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9ec5154eea32240800000000000000
+      internalID: 4765845126328936933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9627fc4ef9c0ae0800000000000000
+      internalID: -1581713564032144943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce173f05b4d86e250800000000000000
+      internalID: 5973617310373736940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fa7952e83fa4870800000000000000
+      internalID: 8668008224669544297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eb0de390108eaf0800000000000000
+      internalID: -367042230410494363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d49251ebca05b900800000000000000
+      internalID: 699477187900904658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702abc723ae2086d0800000000000000
+      internalID: -2990338874291805689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078aea5045eae3f40800000000000000
+      internalID: 5710193053448185968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d522768aa9aebe0800000000000000
+      internalID: -1447174282170704633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332a7bb5681a63bb0800000000000000
+      internalID: -4956596741438201293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69eb5f3254046270800000000000000
+      internalID: 8242717969291667819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3653934a3f99eca0800000000000000
+      internalID: -5987079157021714885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_15
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b0a8c4180891320800000000000000
+      internalID: 2529193958568495971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8e0a7e548f85b90800000000000000
+      internalID: -7252774220757669711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf010173436d9fde0800000000000000
+      internalID: -1298771497769234181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e345e3962a4fb4410800000000000000
+      internalID: 1462531482399429694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70219fee58bd38900800000000000000
+      internalID: 685632936576881159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282ef4c9cf3dd6c60800000000000000
+      internalID: 7813134010465378946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc67323393d54ee0800000000000000
+      internalID: -1277382290133521219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01eaf1af553ec8c0800000000000000
+      internalID: -3977182736065830644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da69be6c90e039ef0800000000000000
+      internalID: -102722931344566611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe542cdec9982600800000000000000
+      internalID: 443773677031677628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_25
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038ee781c86e47fa0800000000000000
+      internalID: -5803760530392946640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576f99257c8347240800000000000000
+      internalID: 4788514732537149045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bcdd45060875f20800000000000000
+      internalID: 3411336393985477393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75f3fdcbdab61b10800000000000000
+      internalID: 1951952941727610234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505c9221391c13f40800000000000000
+      internalID: 5706555040264209669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55593eab277e52f0800000000000000
+      internalID: -982216639229897382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_31
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec255db910e02aeb0800000000000000
+      internalID: -4710186860203912498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdbbe1b51ed7cc20800000000000000
+      internalID: 3226791842794945970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_33
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8e808911d9c7d80800000000000000
+      internalID: -8251547718358865681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b3c5b9b34bec090800000000000000
+      internalID: -8012268518942950503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f61542064fe7740800000000000000
+      internalID: 5151823717521780605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa354e9f68e6a53a0800000000000000
+      internalID: -6675901971626175569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bee0746d41a6c7f0800000000000000
+      internalID: -592608947182965067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a04130c024717e0800000000000000
+      internalID: -1794893307125167525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477bf66d31a46fef0800000000000000
+      internalID: -74790894742554764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce455d35b27908530800000000000000
+      internalID: 3855247493375022316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fcbeabbb70cb9b0800000000000000
+      internalID: -5063163378194985058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d769986547969b0800000000000000
+      internalID: -5086406389113914048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2002e64cb0dd311e0800000000000000
+      internalID: -2228194348008333310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead79d177122f0d80800000000000000
+      internalID: -8282363705621381714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955df69e26f4bb9e0800000000000000
+      internalID: -1604601555985640103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_46
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48b0ab4ab8984650800000000000000
+      internalID: 6217387211485132878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_47
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf02f216f0ed2cf50800000000000000
+      internalID: 6900321736721375484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b93cd08994fa2e0800000000000000
+      internalID: -2112388782798693485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_49
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3480b49d6174a2a0800000000000000
+      internalID: -6727127227924708291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc537e19b870a3c80800000000000000
+      internalID: -8342347063720725043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_51
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8477a27245fb51e30800000000000000
+      internalID: 4473692173017708360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02104e23e7c727990800000000000000
+      internalID: -7389707157100035808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a9b5b3fa2dbfa10800000000000000
+      internalID: 1944379314197469750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6ee55466a76fca0800000000000000
+      internalID: -5983460475246025049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_55
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cedf3eb83ffe020800000000000000
+      internalID: 2373383310798613536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_56
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631f1415d18136b50800000000000000
+      internalID: 6585133594342191414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_57
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2111beded189d7110800000000000000
+      internalID: 1260330725046685970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a4293be249a7680800000000000000
+      internalID: -8756523597166392770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe5a97152a8a9200800000000000000
+      internalID: 187614226403712763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c1bcf67d3020330800000000000000
+      internalID: 3675504469716180053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_61
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bc10c3a72ca2230800000000000000
+      internalID: 3614915481166793613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_62
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef16cfebdd6bcff20800000000000000
+      internalID: 3457839677421937150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_63
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb275d26c3907290800000000000000
+      internalID: -7894647667406984221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_64
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c797b273fcbd4fb00800000000000000
+      internalID: 861555111764916604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d1df9b367674060800000000000000
+      internalID: 6937627429007334677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e773775d0c03250800000000000000
+      internalID: 5922445533052894862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_67
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e34d539777d8490800000000000000
+      internalID: -7742400821902164376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3c4fc05a5378d90800000000000000
+      internalID: -7095643704895683643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_69
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2703ce5ad716ed850800000000000000
+      internalID: 6403662912449949810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_70
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 872
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bca5cd160f0dfc0800000000000000
+      internalID: -3472011009603220596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_71
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 872
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7cb8bd7eca0c020800000000000000
+      internalID: 2360076316562933716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_72
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 872
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4faf2675d998910800000000000000
+      internalID: 1840174921405887672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_73
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98ea6a2207cae930800000000000000
+      internalID: 4173366816827697306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47b797ebfda0f1c0800000000000000
+      internalID: -4471883132545026227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_75
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf24ba76fd9439c0800000000000000
+      internalID: -3948357291350937666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_76
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58f61095587559d0800000000000000
+      internalID: -2786188485573805990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_77
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17db589bf5e834bd0800000000000000
+      internalID: -2647115614178132623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7694cf84d3f895f0800000000000000
+      internalID: -749581243686545794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8785a76031babe860800000000000000
+      internalID: 7560324497672919160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_80
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a03006646179c1d0800000000000000
+      internalID: -3330005773441814365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_81
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2552a21c6fa7f40800000000000000
+      internalID: 5727161185651217134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240df5499b1b31ae0800000000000000
+      internalID: -1579723633660538814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_83
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1798885f92253df0800000000000000
+      internalID: -201216540567628005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_84
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b71dcdf80e3e8600800000000000000
+      internalID: 472383219259217848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_85
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92fb61691432ab10800000000000000
+      internalID: 1991211268864471709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_86
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f697977440939d900800000000000000
+      internalID: 709661106829359471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_87
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77171c57b1af7d90800000000000000
+      internalID: -7097776678816508036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_88
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33db0f15798564140800000000000000
+      internalID: 4703544267773099315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_89
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e91af0fefd52d50800000000000000
+      internalID: 6712017037518020220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5364f73401373d0800000000000000
+      internalID: -3210204227300870666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_91
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a009a2f1c17d2c0e0800000000000000
+      internalID: -2251000347949887478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_92
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d8a3b5b220436c0800000000000000
+      internalID: -4164701370173453013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66700c3cbe8f225d0800000000000000
+      internalID: -3088632702937594010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_94
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e9f33e539083d70800000000000000
+      internalID: 9022971980487302810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_95
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80fb917cd072b380800000000000000
+      internalID: -8956972616785334132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_96
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac44f327a1c9db70800000000000000
+      internalID: 8924377060218260654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_97
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3acf2903257d820800000000000000
+      internalID: 2942911250087846909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_98
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa373899745553c0800000000000000
+      internalID: -4371494982071665928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10a9471b3d04bca0800000000000000
+      internalID: -6002157855933095908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_100
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a642e805a63da70800000000000000
+      internalID: 8850534586927835789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_101
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a9c0470ddd79ce0800000000000000
+      internalID: -1398405271905330606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_102
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cf0846a78c1eda0800000000000000
+      internalID: -5917228007390380989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_103
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ff79248f2ead070800000000000000
+      internalID: 8132061633067876109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_104
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc975890f3e8e760800000000000000
+      internalID: 7487485002990984377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_105
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e8dc9de82ad6c0800000000000000
+      internalID: -4117933908273077720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_106
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746358259113bcc20800000000000000
+      internalID: 3227727542769497671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_107
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1f11b4a87176c20800000000000000
+      internalID: 3199551943002419656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_108
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688e0d09498a4cd90800000000000000
+      internalID: -7078347358281340794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_109
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2cfce22bf06b230800000000000000
+      internalID: 3654125405621699313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f024172e6b84850800000000000000
+      internalID: 6361535557339844368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_111
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02550f193a9b68a90800000000000000
+      internalID: -7311952832810167008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd81f297a9875270800000000000000
+      internalID: 8239205396115459581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874130e8a109aa140800000000000000
+      internalID: 4731752802232243320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_114
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b7c473dd669c860800000000000000
+      internalID: 7550679350564911979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_115
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f99ad5a61e083b0800000000000000
+      internalID: -5512158096947306659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_116
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3ddfbb357d6ddc0800000000000000
+      internalID: -3614464896282012674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_117
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd4222143bbd8cd0800000000000000
+      internalID: -2554179581332271652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d879bc7d01eb160800000000000000
+      internalID: 7043085386273754443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_119
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf632dd8b3eb5740800000000000000
+      internalID: 5141953782697127855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_120
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0255d865b123f4b20800000000000000
+      internalID: 3120768159788651808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_121
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff526f993d0deabe0800000000000000
+      internalID: -1464003221609110017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_122
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b7347ed6a56deb0800000000000000
+      internalID: -4695466133409268950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f09522be7ca3ad30800000000000000
+      internalID: 4441583317672104184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_124
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2918c417a6651c0800000000000000
+      internalID: -4515304541544934752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_125
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852fdf419e49c3500800000000000000
+      internalID: 377340197592756824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_126
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84085c824bb47330800000000000000
+      internalID: 3707794287729575051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_127
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d58b399d8e95bfc0800000000000000
+      internalID: -3479700806075447850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cecc182f5a908ca0800000000000000
+      internalID: -6016639368681435447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_129
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f96d7bd4a5cbd050800000000000000
+      internalID: 5826467854781606392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_130
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5549ae05294cc5940800000000000000
+      internalID: 5286316195327939669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_131
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a29c19bccb2f8cb0800000000000000
+      internalID: -4859617314630495583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_132
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b004339b36b9d9230800000000000000
+      internalID: 3647242125851181067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_133
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48034e42b29629360800000000000000
+      internalID: 7174912790378066052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8769ff325e69c70800000000000000
+      internalID: 8977614849984329915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_135
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090780f8cdc057590800000000000000
+      internalID: -7677215848351108976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_136
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff517150c3ad4ef80800000000000000
+      internalID: -8078091880277535233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_137
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb369dfe2c9f2210800000000000000
+      internalID: 1310437742225013732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_138
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5767987d080b4f6e0800000000000000
+      internalID: -1804623483250313611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_139
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a15fd2d2ad835120800000000000000
+      internalID: 2401418756780675493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_140
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc0f1cb04aad9270800000000000000
+      internalID: 8258944486678138108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8da129aec9aa26d0800000000000000
+      internalID: -3014410295505212022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_142
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ab7cede8dda0e30800000000000000
+      internalID: 4470629185811364388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a107457d61f368310800000000000000
+      internalID: 1406881300934324250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_144
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034a6f195790f2860800000000000000
+      internalID: 7507229504414590000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_145
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b169aef0c22775d0800000000000000
+      internalID: -3064942809100754509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewSpriteHearst_146
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e7e950dc329df70800000000000000
+      internalID: 9212433876232601188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

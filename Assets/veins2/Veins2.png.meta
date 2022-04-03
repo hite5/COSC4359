@@ -1,0 +1,7416 @@
+fileFormatVersion: 2
+guid: 69522b8badd7a504baef5a3d0fe4b668
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5230288898144071426
+    second: Veins2_0
+  - first:
+      213: 8077243798246901876
+    second: Veins2_1
+  - first:
+      213: 8971648383963786593
+    second: Veins2_2
+  - first:
+      213: -6638573772407370914
+    second: Veins2_3
+  - first:
+      213: -3334103071661439172
+    second: Veins2_4
+  - first:
+      213: -2603472652701272265
+    second: Veins2_5
+  - first:
+      213: -5930108224170045281
+    second: Veins2_6
+  - first:
+      213: 6750995697685048102
+    second: Veins2_7
+  - first:
+      213: -7928800736512356810
+    second: Veins2_8
+  - first:
+      213: 4345886205737212311
+    second: Veins2_9
+  - first:
+      213: 7405145287679373108
+    second: Veins2_10
+  - first:
+      213: 8341653099561854299
+    second: Veins2_11
+  - first:
+      213: -7329691678107641905
+    second: Veins2_12
+  - first:
+      213: -1683530961468025744
+    second: Veins2_13
+  - first:
+      213: -8327421288221548901
+    second: Veins2_14
+  - first:
+      213: 7789672014790014568
+    second: Veins2_15
+  - first:
+      213: -3953847181929687998
+    second: Veins2_16
+  - first:
+      213: -1911906623300487513
+    second: Veins2_17
+  - first:
+      213: 861394579187509186
+    second: Veins2_18
+  - first:
+      213: -5707207282348961492
+    second: Veins2_19
+  - first:
+      213: -2194367006271785206
+    second: Veins2_20
+  - first:
+      213: -5140894929313968989
+    second: Veins2_21
+  - first:
+      213: -7188883921566388861
+    second: Veins2_22
+  - first:
+      213: -7957079090104104157
+    second: Veins2_23
+  - first:
+      213: 6593104193254873471
+    second: Veins2_24
+  - first:
+      213: 3186613700103163444
+    second: Veins2_25
+  - first:
+      213: -7987311909007793276
+    second: Veins2_26
+  - first:
+      213: 6330872278453637682
+    second: Veins2_27
+  - first:
+      213: 7304475510781961526
+    second: Veins2_28
+  - first:
+      213: -4390389012727282131
+    second: Veins2_29
+  - first:
+      213: 1828370252818725261
+    second: Veins2_30
+  - first:
+      213: 3424574797857460508
+    second: Veins2_31
+  - first:
+      213: 6939396719854192617
+    second: Veins2_32
+  - first:
+      213: -353905943091510882
+    second: Veins2_33
+  - first:
+      213: 3006106645528826801
+    second: Veins2_34
+  - first:
+      213: 8710345889601179281
+    second: Veins2_35
+  - first:
+      213: -3570014593462725567
+    second: Veins2_36
+  - first:
+      213: -7213540801360658013
+    second: Veins2_37
+  - first:
+      213: 712237654978669400
+    second: Veins2_38
+  - first:
+      213: 3776502917126711350
+    second: Veins2_39
+  - first:
+      213: 6916771405698695252
+    second: Veins2_40
+  - first:
+      213: 6328644578409236603
+    second: Veins2_41
+  - first:
+      213: -3296515233989147813
+    second: Veins2_42
+  - first:
+      213: 4860621799944182530
+    second: Veins2_43
+  - first:
+      213: 7339829806944645279
+    second: Veins2_44
+  - first:
+      213: -202969636497165205
+    second: Veins2_45
+  - first:
+      213: 279712602552659341
+    second: Veins2_46
+  - first:
+      213: 3303287779709451614
+    second: Veins2_47
+  - first:
+      213: -5256378391742297382
+    second: Veins2_48
+  - first:
+      213: -9092759902473424961
+    second: Veins2_49
+  - first:
+      213: -429651782159044764
+    second: Veins2_50
+  - first:
+      213: -3481308114334630004
+    second: Veins2_51
+  - first:
+      213: -7178778133172673462
+    second: Veins2_52
+  - first:
+      213: -4721316044327997018
+    second: Veins2_53
+  - first:
+      213: -1162067777756434743
+    second: Veins2_54
+  - first:
+      213: 7562579229592811650
+    second: Veins2_55
+  - first:
+      213: 8745075846622769863
+    second: Veins2_56
+  - first:
+      213: 6623077201499132110
+    second: Veins2_57
+  - first:
+      213: -4425640917746474565
+    second: Veins2_58
+  - first:
+      213: -4734745098344451154
+    second: Veins2_59
+  - first:
+      213: -9041229010582100730
+    second: Veins2_60
+  - first:
+      213: 4569682268771121688
+    second: Veins2_61
+  - first:
+      213: -2696210532372082260
+    second: Veins2_62
+  - first:
+      213: -1282397521425573318
+    second: Veins2_63
+  - first:
+      213: -5247706244712415883
+    second: Veins2_64
+  - first:
+      213: 113716868647848587
+    second: Veins2_65
+  - first:
+      213: -7732564220970911701
+    second: Veins2_66
+  - first:
+      213: 3095001019594128274
+    second: Veins2_67
+  - first:
+      213: 5294663645295660725
+    second: Veins2_68
+  - first:
+      213: -5690455827048998208
+    second: Veins2_69
+  - first:
+      213: 3271563967931887890
+    second: Veins2_70
+  - first:
+      213: -6532392056511179206
+    second: Veins2_71
+  - first:
+      213: -8604088985851430648
+    second: Veins2_72
+  - first:
+      213: 4097090013039476647
+    second: Veins2_73
+  - first:
+      213: 9098191974117547180
+    second: Veins2_74
+  - first:
+      213: 5643178938739112879
+    second: Veins2_75
+  - first:
+      213: -6042333582092958692
+    second: Veins2_76
+  - first:
+      213: 6902750184227976263
+    second: Veins2_77
+  - first:
+      213: 1245763816298578052
+    second: Veins2_78
+  - first:
+      213: 612721391709382657
+    second: Veins2_79
+  - first:
+      213: 8435703467299392579
+    second: Veins2_80
+  - first:
+      213: -4146175409045050031
+    second: Veins2_81
+  - first:
+      213: 461267427218046805
+    second: Veins2_82
+  - first:
+      213: 3002622590421427440
+    second: Veins2_83
+  - first:
+      213: 5278130644608258799
+    second: Veins2_84
+  - first:
+      213: 1067451284354994549
+    second: Veins2_85
+  - first:
+      213: -1724689960176499952
+    second: Veins2_86
+  - first:
+      213: 8033859830617252507
+    second: Veins2_87
+  - first:
+      213: 5349578309317986542
+    second: Veins2_88
+  - first:
+      213: 3897862268439817477
+    second: Veins2_89
+  - first:
+      213: 6580790678993694330
+    second: Veins2_90
+  - first:
+      213: 5166946204430903455
+    second: Veins2_91
+  - first:
+      213: -2803879645714875595
+    second: Veins2_92
+  - first:
+      213: -5831647588908104318
+    second: Veins2_93
+  - first:
+      213: -4616908950460858800
+    second: Veins2_94
+  - first:
+      213: -4805170097190459618
+    second: Veins2_95
+  - first:
+      213: -7989636123921807086
+    second: Veins2_96
+  - first:
+      213: 2840507935327071517
+    second: Veins2_97
+  - first:
+      213: 2801634293671697626
+    second: Veins2_98
+  - first:
+      213: -6069840196689067893
+    second: Veins2_99
+  - first:
+      213: 6471897954946227208
+    second: Veins2_100
+  - first:
+      213: 7879183575089674375
+    second: Veins2_101
+  - first:
+      213: 6662034182436720625
+    second: Veins2_102
+  - first:
+      213: -8565208184054386072
+    second: Veins2_103
+  - first:
+      213: 2228483524623022447
+    second: Veins2_104
+  - first:
+      213: 3154463665708994698
+    second: Veins2_105
+  - first:
+      213: -8653548373426972211
+    second: Veins2_106
+  - first:
+      213: 5693309760073742503
+    second: Veins2_107
+  - first:
+      213: 8674859093545356654
+    second: Veins2_108
+  - first:
+      213: -6793541965989268236
+    second: Veins2_109
+  - first:
+      213: 4129794896690729838
+    second: Veins2_110
+  - first:
+      213: 4955164329531556591
+    second: Veins2_111
+  - first:
+      213: -1987825157080916693
+    second: Veins2_112
+  - first:
+      213: -115269483704695643
+    second: Veins2_113
+  - first:
+      213: 8665314110429455825
+    second: Veins2_114
+  - first:
+      213: 1982429678471625932
+    second: Veins2_115
+  - first:
+      213: 7146369952501406506
+    second: Veins2_116
+  - first:
+      213: 7228781328342683729
+    second: Veins2_117
+  - first:
+      213: -2611897059701267399
+    second: Veins2_118
+  - first:
+      213: -8563959903845157823
+    second: Veins2_119
+  - first:
+      213: -246128742811240817
+    second: Veins2_120
+  - first:
+      213: 2523004501177428683
+    second: Veins2_121
+  - first:
+      213: -1506623953115701571
+    second: Veins2_122
+  - first:
+      213: -3582026195527303318
+    second: Veins2_123
+  - first:
+      213: 8033297921493887589
+    second: Veins2_124
+  - first:
+      213: -8862962550986947832
+    second: Veins2_125
+  - first:
+      213: -754092482225555214
+    second: Veins2_126
+  - first:
+      213: 8489709518838386875
+    second: Veins2_127
+  - first:
+      213: 239401908150770494
+    second: Veins2_128
+  - first:
+      213: -2097579443026096605
+    second: Veins2_129
+  - first:
+      213: -6230590129647840495
+    second: Veins2_130
+  - first:
+      213: -6386666991700273771
+    second: Veins2_131
+  - first:
+      213: -4155224343650612209
+    second: Veins2_132
+  - first:
+      213: -5609195457873982662
+    second: Veins2_133
+  - first:
+      213: -3304156999774632883
+    second: Veins2_134
+  - first:
+      213: -3077173024872935343
+    second: Veins2_135
+  - first:
+      213: 6184877784663307781
+    second: Veins2_136
+  - first:
+      213: 8629322141270360318
+    second: Veins2_137
+  - first:
+      213: -4650299014217570505
+    second: Veins2_138
+  - first:
+      213: 4127578227469998649
+    second: Veins2_139
+  - first:
+      213: -1942498637332831594
+    second: Veins2_140
+  - first:
+      213: 2865605201187579334
+    second: Veins2_141
+  - first:
+      213: 6829266257574484329
+    second: Veins2_142
+  - first:
+      213: -3717771183351311943
+    second: Veins2_143
+  - first:
+      213: -142541830906206090
+    second: Veins2_144
+  - first:
+      213: -472135798560964180
+    second: Veins2_145
+  - first:
+      213: 1702315452313680820
+    second: Veins2_146
+  - first:
+      213: -2783142859308659738
+    second: Veins2_147
+  - first:
+      213: -3534213944688768916
+    second: Veins2_148
+  - first:
+      213: 5901014019478144735
+    second: Veins2_149
+  - first:
+      213: 8754453756361463027
+    second: Veins2_150
+  - first:
+      213: -9096350028456695251
+    second: Veins2_151
+  - first:
+      213: 2939620924554977282
+    second: Veins2_152
+  - first:
+      213: 445125568977685047
+    second: Veins2_153
+  - first:
+      213: 5911017683250115506
+    second: Veins2_154
+  - first:
+      213: 4060897396851717750
+    second: Veins2_155
+  - first:
+      213: 8311471157804391296
+    second: Veins2_156
+  - first:
+      213: 4969729166472968048
+    second: Veins2_157
+  - first:
+      213: 2299719137306766487
+    second: Veins2_158
+  - first:
+      213: -8729783660000314016
+    second: Veins2_159
+  - first:
+      213: 2628602159121822183
+    second: Veins2_160
+  - first:
+      213: -1327638590046223775
+    second: Veins2_161
+  - first:
+      213: -4018888000748428649
+    second: Veins2_162
+  - first:
+      213: -4236588976304979254
+    second: Veins2_163
+  - first:
+      213: 518668629729738683
+    second: Veins2_164
+  - first:
+      213: -7944155913123383885
+    second: Veins2_165
+  - first:
+      213: 7957331776782720432
+    second: Veins2_166
+  - first:
+      213: 8452672573779673241
+    second: Veins2_167
+  - first:
+      213: -7910399150422445552
+    second: Veins2_168
+  - first:
+      213: -1203868860984328541
+    second: Veins2_169
+  - first:
+      213: -6579165638801520029
+    second: Veins2_170
+  - first:
+      213: 6165513958204757958
+    second: Veins2_171
+  - first:
+      213: 295743524664596570
+    second: Veins2_172
+  - first:
+      213: -7213448253475515414
+    second: Veins2_173
+  - first:
+      213: 4068388089546190770
+    second: Veins2_174
+  - first:
+      213: -223039404022726522
+    second: Veins2_175
+  - first:
+      213: 6114983493133829652
+    second: Veins2_176
+  - first:
+      213: 6987482973053890972
+    second: Veins2_177
+  - first:
+      213: 6971284597607126802
+    second: Veins2_178
+  - first:
+      213: -7333324355699011390
+    second: Veins2_179
+  - first:
+      213: -8326483808502095001
+    second: Veins2_180
+  - first:
+      213: 3016128919462358796
+    second: Veins2_181
+  - first:
+      213: 2779738506664698642
+    second: Veins2_182
+  - first:
+      213: -7946659875594877970
+    second: Veins2_183
+  - first:
+      213: -3661070164989333039
+    second: Veins2_184
+  - first:
+      213: -3076567741369733234
+    second: Veins2_185
+  - first:
+      213: 7466679151947660843
+    second: Veins2_186
+  - first:
+      213: -1039348776749298464
+    second: Veins2_187
+  - first:
+      213: -1042861819088734239
+    second: Veins2_188
+  - first:
+      213: 5643314483952673903
+    second: Veins2_189
+  - first:
+      213: -4213428712414206590
+    second: Veins2_190
+  - first:
+      213: -2395555177630782699
+    second: Veins2_191
+  - first:
+      213: 5466742328611595642
+    second: Veins2_192
+  - first:
+      213: -2970925646647111823
+    second: Veins2_193
+  - first:
+      213: 2678558357970642043
+    second: Veins2_194
+  - first:
+      213: -1426676015087658322
+    second: Veins2_195
+  - first:
+      213: 1139273817439283218
+    second: Veins2_196
+  - first:
+      213: 1706094450749604015
+    second: Veins2_197
+  - first:
+      213: -6414970497739095236
+    second: Veins2_198
+  - first:
+      213: -3717324418066206481
+    second: Veins2_199
+  - first:
+      213: -6772447947795134368
+    second: Veins2_200
+  - first:
+      213: -7036405949258204135
+    second: Veins2_201
+  - first:
+      213: -2897424591960826502
+    second: Veins2_202
+  - first:
+      213: -7557999851322268834
+    second: Veins2_203
+  - first:
+      213: -5055567146349205587
+    second: Veins2_204
+  - first:
+      213: -8968843321230644782
+    second: Veins2_205
+  - first:
+      213: 4664479417891727177
+    second: Veins2_206
+  - first:
+      213: 5096630293523609825
+    second: Veins2_207
+  - first:
+      213: -442660341619031541
+    second: Veins2_208
+  - first:
+      213: 2061771712934782243
+    second: Veins2_209
+  - first:
+      213: -4454893414451697522
+    second: Veins2_210
+  - first:
+      213: -114077122911181890
+    second: Veins2_211
+  - first:
+      213: -1796401036369175967
+    second: Veins2_212
+  - first:
+      213: -8420298339301828755
+    second: Veins2_213
+  - first:
+      213: 4909963647998589708
+    second: Veins2_214
+  - first:
+      213: 2567385794650230686
+    second: Veins2_215
+  - first:
+      213: -4016253306609171866
+    second: Veins2_216
+  - first:
+      213: -4483628276520591514
+    second: Veins2_217
+  - first:
+      213: -2718776576165909370
+    second: Veins2_218
+  - first:
+      213: -6653515313482765429
+    second: Veins2_219
+  - first:
+      213: -2965714884600831505
+    second: Veins2_220
+  - first:
+      213: -8131384336635697931
+    second: Veins2_221
+  - first:
+      213: 8074833057545455293
+    second: Veins2_222
+  - first:
+      213: -7895674118357087996
+    second: Veins2_223
+  - first:
+      213: 8246954961110373883
+    second: Veins2_224
+  - first:
+      213: 5043257104630401918
+    second: Veins2_225
+  - first:
+      213: 3729546933961885005
+    second: Veins2_226
+  - first:
+      213: 5536839939847507276
+    second: Veins2_227
+  - first:
+      213: -5602879425968970764
+    second: Veins2_228
+  - first:
+      213: -8694292962534755833
+    second: Veins2_229
+  - first:
+      213: -4685211179116781926
+    second: Veins2_230
+  - first:
+      213: 6456009708260898062
+    second: Veins2_231
+  - first:
+      213: 7849076963120450548
+    second: Veins2_232
+  - first:
+      213: 8387242466044645125
+    second: Veins2_233
+  - first:
+      213: 2910207796939598781
+    second: Veins2_234
+  - first:
+      213: 5884023535497783927
+    second: Veins2_235
+  - first:
+      213: -5964773190662206952
+    second: Veins2_236
+  - first:
+      213: -8584731361862337228
+    second: Veins2_237
+  - first:
+      213: -3324543513054740403
+    second: Veins2_238
+  - first:
+      213: -3590353570499655018
+    second: Veins2_239
+  - first:
+      213: 6301975471998895204
+    second: Veins2_240
+  - first:
+      213: -6161365352350686579
+    second: Veins2_241
+  - first:
+      213: -6150563272216578445
+    second: Veins2_242
+  - first:
+      213: 9091599314807061687
+    second: Veins2_243
+  - first:
+      213: -8098930385965267274
+    second: Veins2_244
+  - first:
+      213: -7044871789612111385
+    second: Veins2_245
+  - first:
+      213: -3948845327087783960
+    second: Veins2_246
+  - first:
+      213: 1671214235646277202
+    second: Veins2_247
+  - first:
+      213: 6600930845086254301
+    second: Veins2_248
+  - first:
+      213: 4063500377483455719
+    second: Veins2_249
+  - first:
+      213: -9094278079634528389
+    second: Veins2_250
+  - first:
+      213: 2461900902375154951
+    second: Veins2_251
+  - first:
+      213: -8270153671884541315
+    second: Veins2_252
+  - first:
+      213: 7323780874590711803
+    second: Veins2_253
+  - first:
+      213: -7379353034001147540
+    second: Veins2_254
+  - first:
+      213: 8048874935472092465
+    second: Veins2_255
+  - first:
+      213: -8403039246210208575
+    second: Veins2_256
+  - first:
+      213: -259461623411805136
+    second: Veins2_257
+  - first:
+      213: 8061058192215190501
+    second: Veins2_258
+  - first:
+      213: 7243398813602076162
+    second: Veins2_259
+  - first:
+      213: -2113376227889114446
+    second: Veins2_260
+  - first:
+      213: -2189917719035103961
+    second: Veins2_261
+  - first:
+      213: 7779394899746357418
+    second: Veins2_262
+  - first:
+      213: -6763373226624462357
+    second: Veins2_263
+  - first:
+      213: -2638979896823470183
+    second: Veins2_264
+  - first:
+      213: 5558525481041533061
+    second: Veins2_265
+  - first:
+      213: -914019918168783696
+    second: Veins2_266
+  - first:
+      213: -6005456110803022900
+    second: Veins2_267
+  - first:
+      213: -7142184647841130092
+    second: Veins2_268
+  - first:
+      213: -4251654746403052720
+    second: Veins2_269
+  - first:
+      213: 7337264372355907516
+    second: Veins2_270
+  - first:
+      213: 8525377042844910091
+    second: Veins2_271
+  - first:
+      213: -2562440984603113982
+    second: Veins2_272
+  - first:
+      213: 4555699195036050717
+    second: Veins2_273
+  - first:
+      213: 1406007192228437826
+    second: Veins2_274
+  - first:
+      213: 5210025827851577438
+    second: Veins2_275
+  - first:
+      213: -1233990601053656020
+    second: Veins2_276
+  - first:
+      213: -7202619137999080361
+    second: Veins2_277
+  - first:
+      213: 2986227701456090473
+    second: Veins2_278
+  - first:
+      213: 6655329835977406940
+    second: Veins2_279
+  - first:
+      213: 2741515843905018516
+    second: Veins2_280
+  - first:
+      213: 394371312531356773
+    second: Veins2_281
+  - first:
+      213: -4138598045977542431
+    second: Veins2_282
+  - first:
+      213: -2514480472008673411
+    second: Veins2_283
+  - first:
+      213: -4977268127717661718
+    second: Veins2_284
+  - first:
+      213: -7287488198783559969
+    second: Veins2_285
+  - first:
+      213: -8609484096903336317
+    second: Veins2_286
+  - first:
+      213: 6427934282399859383
+    second: Veins2_287
+  - first:
+      213: -184068437373534678
+    second: Veins2_288
+  - first:
+      213: -6254197357604172886
+    second: Veins2_289
+  - first:
+      213: -2184804872645159158
+    second: Veins2_290
+  - first:
+      213: 7401975962524968527
+    second: Veins2_291
+  - first:
+      213: -8742779737455089047
+    second: Veins2_292
+  - first:
+      213: -3781128145454093400
+    second: Veins2_293
+  - first:
+      213: 7653277309705423550
+    second: Veins2_294
+  - first:
+      213: 1352210002807400766
+    second: Veins2_295
+  - first:
+      213: -2658458805525602734
+    second: Veins2_296
+  - first:
+      213: 8546133714865592298
+    second: Veins2_297
+  - first:
+      213: 4636685524263950236
+    second: Veins2_298
+  - first:
+      213: 6881747834047289447
+    second: Veins2_299
+  - first:
+      213: 8904702049428417240
+    second: Veins2_300
+  - first:
+      213: -324517298406222213
+    second: Veins2_301
+  - first:
+      213: -8880202799178317392
+    second: Veins2_302
+  - first:
+      213: 1508003137776822910
+    second: Veins2_303
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Veins2_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0147955f74a67b0800000000000000
+      internalID: -5230288898144071426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478cbbe7072281070800000000000000
+      internalID: 8077243798246901876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d6edfdba2b18c70800000000000000
+      internalID: 8971648383963786593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b0f60a35c0fd3a0800000000000000
+      internalID: -6638573772407370914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37c411dbe2eab1d0800000000000000
+      internalID: -3334103071661439172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737fb498a6b9edbd0800000000000000
+      internalID: -2603472652701272265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90d8ba3df504bda0800000000000000
+      internalID: -5930108224170045281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b25b891da50bd50800000000000000
+      internalID: 6750995697685048102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e435d1dbd37f190800000000000000
+      internalID: -7928800736512356810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7999c378a70bf4c30800000000000000
+      internalID: 4345886205737212311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f694ea76c54c660800000000000000
+      internalID: 7405145287679373108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_11
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55abee4c4183c370800000000000000
+      internalID: 8341653099561854299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7d14dc044b74a90800000000000000
+      internalID: -7329691678107641905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_13
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0749351a285e2a8e0800000000000000
+      internalID: -1683530961468025744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e578c757e0f6c80800000000000000
+      internalID: -8327421288221548901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8663c5e0d697a1c60800000000000000
+      internalID: 7789672014790014568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 984
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244d6e8bfec1129c0800000000000000
+      internalID: -3953847181929687998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6357a4e0b8775e0800000000000000
+      internalID: -1911906623300487513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c72bef4ec944fb00800000000000000
+      internalID: 861394579187509186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_19
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21511cf63debc0b0800000000000000
+      internalID: -5707207282348961492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_20
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07355485da0c81e0800000000000000
+      internalID: -2194367006271785206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac42a6ac4fd7a8b0800000000000000
+      internalID: -5140894929313968989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 968
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38da4836924fb3c90800000000000000
+      internalID: -7188883921566388861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b08a8d9b6c29190800000000000000
+      internalID: -7957079090104104157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_24
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79581ef4596f7b50800000000000000
+      internalID: 6593104193254873471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eca0fd640293c20800000000000000
+      internalID: 3186613700103163444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483e759232e572190800000000000000
+      internalID: -7987311909007793276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232d89b7bc6cbd750800000000000000
+      internalID: 6330872278453637682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_28
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635e2bab6c5be5560800000000000000
+      internalID: 7304475510781961526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26cc9644743213c0800000000000000
+      internalID: -4390389012727282131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89b62dce0daf5910800000000000000
+      internalID: 1828370252818725261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c119c0d62a8868f20800000000000000
+      internalID: 3424574797857460508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e78b6adc80bd4060800000000000000
+      internalID: 6939396719854192617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91812a7b6ca61bf0800000000000000
+      internalID: -353905943091510882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_34
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3dfab2116d7b920800000000000000
+      internalID: 3006106645528826801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_35
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e467cef6d51e870800000000000000
+      internalID: 8710345889601179281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_36
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14491b954a2c47ec0800000000000000
+      internalID: -3570014593462725567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a18c123cda54eb90800000000000000
+      internalID: -7213540801360658013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_38
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b29a4af5062e900800000000000000
+      internalID: 712237654978669400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_39
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6386094f465d86430800000000000000
+      internalID: 3776502917126711350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_40
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450004562fe4dff50800000000000000
+      internalID: 6916771405698695252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_41
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78c8c5a6bcd3d750800000000000000
+      internalID: 6328644578409236603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53c9614cdc6042d0800000000000000
+      internalID: -3296515233989147813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_43
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b513d36c5647340800000000000000
+      internalID: 4860621799944182530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_44
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9072c242505cd560800000000000000
+      internalID: 7339829806944645279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_45
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b647564e038ee2df0800000000000000
+      internalID: -202969636497165205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_46
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8de95a412db1e300800000000000000
+      internalID: 279712602552659341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_47
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d787cebb2a7dd20800000000000000
+      internalID: 3303287779709451614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_48
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada4923c3b79d07b0800000000000000
+      internalID: -5256378391742297382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_49
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfe7215b0700d180800000000000000
+      internalID: -9092759902473424961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_50
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46feb430bf1990af0800000000000000
+      internalID: -429651782159044764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_51
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f366bf6b8efafc0800000000000000
+      internalID: -3481308114334630004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_52
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44a6ea925bdf5c90800000000000000
+      internalID: -7178778133172673462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_53
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 936
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a13a7182148a7eb0800000000000000
+      internalID: -4721316044327997018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce66e553818fdfe0800000000000000
+      internalID: -1162067777756434743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28870a5bdbda3f860800000000000000
+      internalID: 7562579229592811650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c27ccb2620cc5970800000000000000
+      internalID: 8745075846622769863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0185bcf95e9eb50800000000000000
+      internalID: 6623077201499132110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1a94a8807f492c0800000000000000
+      internalID: -4425640917746474565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea338273b6eca4eb0800000000000000
+      internalID: -4734745098344451154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6052c4b0e1a178280800000000000000
+      internalID: -9041229010582100730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_61
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81af08eefc5ca6f30800000000000000
+      internalID: 4569682268771121688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca19b425ec2259ad0800000000000000
+      internalID: -2696210532372082260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a569aaf32043ee0800000000000000
+      internalID: -1282397521425573318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d315659f66c27b0800000000000000
+      internalID: -5247706244712415883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_65
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a89b8b3e0049100800000000000000
+      internalID: 113716868647848587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2832265fc960b490800000000000000
+      internalID: -7732564220970911701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b31608707a3fa20800000000000000
+      internalID: 3095001019594128274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_68
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bec507788c6a7940800000000000000
+      internalID: 5294663645295660725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_69
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca51ba13907701b0800000000000000
+      internalID: -5690455827048998208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_70
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2113c88681ee66d20800000000000000
+      internalID: 3271563967931887890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_71
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a365112e8084855a0800000000000000
+      internalID: -6532392056511179206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_72
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809797e57a2289880800000000000000
+      internalID: -8604088985851430648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_73
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afb408d8a9cbd830800000000000000
+      internalID: 4097090013039476647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_74
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac169b6565434e70800000000000000
+      internalID: 9098191974117547180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_75
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabb28f8859905e40800000000000000
+      internalID: 5643178938739112879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_76
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c148fe8ee91552ca0800000000000000
+      internalID: -6042333582092958692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_77
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744bb2068be7bcf50800000000000000
+      internalID: 6902750184227976263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_78
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48003803797d94110800000000000000
+      internalID: 1245763816298578052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_79
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108ee130cd2d08800800000000000000
+      internalID: 612721391709382657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c49e6fb93a11570800000000000000
+      internalID: 8435703467299392579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_81
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15de86fce63d576c0800000000000000
+      internalID: -4146175409045050031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_82
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f3ac9f740c66600800000000000000
+      internalID: 461267427218046805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_83
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4e1a066557ba920800000000000000
+      internalID: 3002622590421427440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_84
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe29af54bdfaf3940800000000000000
+      internalID: 5278130644608258799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_85
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571930b994950de00800000000000000
+      internalID: 1067451284354994549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_86
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0134ff77e9ba018e0800000000000000
+      internalID: -1724689960176499952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92a83363f00e7f60800000000000000
+      internalID: 8033859830617252507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_88
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8880901258d3a40800000000000000
+      internalID: 5349578309317986542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50de0c5d41df71630800000000000000
+      internalID: 3897862268439817477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7eee9a814aa35b50800000000000000
+      internalID: 6580790678993694330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_91
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9828a0823ea4b740800000000000000
+      internalID: 5166946204430903455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_92
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b773c515e9619d0800000000000000
+      internalID: -2803879645714875595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_93
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2858edf4a63d11fa0800000000000000
+      internalID: -5831647588908104318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_94
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e757f55c17defb0800000000000000
+      internalID: -4616908950460858800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1722a7614b905db0800000000000000
+      internalID: -4805170097190459618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_96
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2190305b64c1f1190800000000000000
+      internalID: -7989636123921807086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d29d2eae28b6720800000000000000
+      internalID: 2840507935327071517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_98
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc9ad0eb8761e620800000000000000
+      internalID: 2801634293671697626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8006f0208893cba0800000000000000
+      internalID: -6069840196689067893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_100
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c952386ecc0d950800000000000000
+      internalID: 6471897954946227208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788ff4147bb785d60800000000000000
+      internalID: 7879183575089674375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_102
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff86adbacc447c50800000000000000
+      internalID: 6662034182436720625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_103
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8627b2a7984422980800000000000000
+      internalID: -8565208184054386072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6937f865f92dee10800000000000000
+      internalID: 2228483524623022447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_105
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80167badf7e6cb20800000000000000
+      internalID: 3154463665708994698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_106
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9d9335a9b68e780800000000000000
+      internalID: -8653548373426972211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_107
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8b575ff03b20f40800000000000000
+      internalID: 5693309760073742503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_108
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d865b526a436870800000000000000
+      internalID: 8674859093545356654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_109
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4308e539d78b1a0800000000000000
+      internalID: -6793541965989268236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_110
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63d874f39aff4930800000000000000
+      internalID: 4129794896690729838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_111
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe24a6144b744c440800000000000000
+      internalID: 4955164329531556591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_112
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d5b943d83d964e0800000000000000
+      internalID: -1987825157080916693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_113
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4c65ae30b766ef0800000000000000
+      internalID: -115269483704695643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_114
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5e35bc541614870800000000000000
+      internalID: 8665314110429455825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_115
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc3e790a41038b10800000000000000
+      internalID: 1982429678471625932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_116
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 856
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b1f54db910d2360800000000000000
+      internalID: 7146369952501406506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_117
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15097d2815ac15460800000000000000
+      internalID: 7228781328342683729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_118
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9346e9e667da0cbd0800000000000000
+      internalID: -2611897059701267399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_119
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144fe9c57d3b62980800000000000000
+      internalID: -8563959903845157823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_120
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86f8b36633959cf0800000000000000
+      internalID: -246128742811240817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_121
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca6463f933830320800000000000000
+      internalID: 2523004501177428683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe91704f75671be0800000000000000
+      internalID: -1506623953115701571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_123
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f737f47261a4ec0800000000000000
+      internalID: -3582026195527303318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ae689b5e10c7f60800000000000000
+      internalID: 8033297921493887589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_125
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80345d2948e600580800000000000000
+      internalID: -8862962550986947832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_126
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8372df1ece885f0800000000000000
+      internalID: -754092482225555214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_127
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb05d94b3d181d570800000000000000
+      internalID: 8489709518838386875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b90ed54c6825300800000000000000
+      internalID: 239401908150770494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_129
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e844a2c96e3e2e0800000000000000
+      internalID: -2097579443026096605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_130
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1131945c94f7889a0800000000000000
+      internalID: -6230590129647840495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_131
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5951ef485300e57a0800000000000000
+      internalID: -6386666991700273771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_132
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 808
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c46aa897da556c0800000000000000
+      internalID: -4155224343650612209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bcfa923722822b0800000000000000
+      internalID: -5609195457873982662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_134
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44005207b64522d0800000000000000
+      internalID: -3304156999774632883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_135
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150d80cff6fab45d0800000000000000
+      internalID: -3077173024872935343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_136
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506bf06839915d550800000000000000
+      internalID: 6184877784663307781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_137
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef045d274c281c770800000000000000
+      internalID: 8629322141270360318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_138
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73766365fa1d67fb0800000000000000
+      internalID: -4650299014217570505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_139
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a5cfe678a184930800000000000000
+      internalID: 4127578227469998649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_140
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692a819f7cbda05e0800000000000000
+      internalID: -1942498637332831594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_141
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c52c437fbca4c720800000000000000
+      internalID: 2865605201187579334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_142
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969d94f6a7d66ce50800000000000000
+      internalID: 6829266257574484329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_143
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1592c6ec2d76cc0800000000000000
+      internalID: -3717771183351311943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_144
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678a333c5f6950ef0800000000000000
+      internalID: -142541830906206090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_145
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca147012ef2a279f0800000000000000
+      internalID: -472135798560964180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_146
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbb0d672e6df9710800000000000000
+      internalID: 1702315452313680820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_147
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb0ebfa05a4069d0800000000000000
+      internalID: -2783142859308659738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_148
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6808927423f3fec0800000000000000
+      internalID: -3534213944688768916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_149
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6489d5cfc94e150800000000000000
+      internalID: 5901014019478144735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_150
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4528eee411e7970800000000000000
+      internalID: 8754453756361463027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_151
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a6939f7d543c180800000000000000
+      internalID: -9096350028456695251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200a766f7a1abc820800000000000000
+      internalID: 2939620924554977282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_153
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73acb5bb8576d2600800000000000000
+      internalID: 445125568977685047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_154
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3fc27d347280250800000000000000
+      internalID: 5911017683250115506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_155
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676b7a8baa43b5830800000000000000
+      internalID: 4060897396851717750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_156
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bd5d16bf6485370800000000000000
+      internalID: 8311471157804391296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_157
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077f48d985608f440800000000000000
+      internalID: 4969729166472968048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_158
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c6656fe5e3aef10800000000000000
+      internalID: 2299719137306766487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_159
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dfbab730499d680800000000000000
+      internalID: -8729783660000314016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_160
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1f74e9cbbaa7420800000000000000
+      internalID: 2628602159121822183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_161
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162c13a8cb7439de0800000000000000
+      internalID: -1327638590046223775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_162
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7926f4308aa0a38c0800000000000000
+      internalID: -4018888000748428649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_163
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac28100c5cc9435c0800000000000000
+      internalID: -4236588976304979254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_164
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbffd27ee5ea23700800000000000000
+      internalID: 518668629729738683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_165
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b536f57940b0c190800000000000000
+      internalID: -7944155913123383885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_166
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bddf0b571f1e6e60800000000000000
+      internalID: 7957331776782720432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_167
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 776
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99003d2fbeced4570800000000000000
+      internalID: 8452672573779673241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012b48f32ed983290800000000000000
+      internalID: -7910399150422445552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_169
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aeffd836affa4fe0800000000000000
+      internalID: -1203868860984328541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_170
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a87cc95bb12b4a0800000000000000
+      internalID: -6579165638801520029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_171
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7d188574e409550800000000000000
+      internalID: 6165513958204757958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_172
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5851443b21ba1400800000000000000
+      internalID: 295743524664596570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_173
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae31eed280fa4eb90800000000000000
+      internalID: -7213448253475515414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_174
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfa4d58961d57830800000000000000
+      internalID: 4068388089546190770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_175
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6808f4008da97ecf0800000000000000
+      internalID: -223039404022726522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_176
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4168e93a619ccd450800000000000000
+      internalID: 6114983493133829652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_177
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91b7f22eb688f060800000000000000
+      internalID: 6987482973053890972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_178
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2175684f76afeb060800000000000000
+      internalID: 6971284597607126802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_179
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c017d32a5cca3a90800000000000000
+      internalID: -7333324355699011390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_180
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763e03e7713627c80800000000000000
+      internalID: -8326483808502095001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_181
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f2659a5417bd920800000000000000
+      internalID: 3016128919462358796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_182
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2136932b17d939620800000000000000
+      internalID: 2779738506664698642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_183
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3415442fac7b190800000000000000
+      internalID: -7946659875594877970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_184
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1b7060514413dc0800000000000000
+      internalID: -3661070164989333039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_185
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 744
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f2b3880f5dd45d0800000000000000
+      internalID: -3076567741369733234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_186
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2eb7a7e029fe9760800000000000000
+      internalID: 7466679151947660843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_187
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec0f145bcd7391f0800000000000000
+      internalID: -1039348776749298464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_188
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7f56b63b20781f0800000000000000
+      internalID: -1042861819088734239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_189
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64e0d3af94115e40800000000000000
+      internalID: 5643314483952673903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_190
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285ae16e8e4e685c0800000000000000
+      internalID: -4213428712414206590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_191
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b2875124741ced0800000000000000
+      internalID: -2395555177630782699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_192
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a756c7f0f25cddb40800000000000000
+      internalID: 5466742328611595642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_193
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f40817dd625c6d0800000000000000
+      internalID: -2970925646647111823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_194
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b746efc82a62c2520800000000000000
+      internalID: 2678558357970642043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_195
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa512f19bd633ce0800000000000000
+      internalID: -1426676015087658322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_196
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2182f5630838fcf00800000000000000
+      internalID: 1139273817439283218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_197
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0023a1dd34da710800000000000000
+      internalID: 1706094450749604015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_198
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3386adf15279f6a0800000000000000
+      internalID: -6414970497739095236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_199
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe037421329696cc0800000000000000
+      internalID: -3717324418066206481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_200
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06809d3397e6302a0800000000000000
+      internalID: -6772447947795134368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_201
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cf403d11aa95e90800000000000000
+      internalID: -7036405949258204135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_202
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d91b05fa74ac7d0800000000000000
+      internalID: -2897424591960826502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_203
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 728
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e532b71ed279c1790800000000000000
+      internalID: -7557999851322268834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_204
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da768b7477407d9b0800000000000000
+      internalID: -5055567146349205587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_205
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9a9efa484488380800000000000000
+      internalID: -8968843321230644782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_206
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947ae8d215f8bb040800000000000000
+      internalID: 4664479417891727177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_207
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e838f4bf3edab640800000000000000
+      internalID: 5096630293523609825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_208
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 712
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0205adb3ca5bd9f0800000000000000
+      internalID: -442660341619031541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_209
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3252d6df272ec9c10800000000000000
+      internalID: 2061771712934782243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_210
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e882167ea0a0d22c0800000000000000
+      internalID: -4454893414451697522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_211
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb361eb0677ba6ef0800000000000000
+      internalID: -114077122911181890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_212
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a521176c6e117e0800000000000000
+      internalID: -1796401036369175967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_213
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d675a17e547152b80800000000000000
+      internalID: -8420298339301828755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_214
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b790b7ce1b32440800000000000000
+      internalID: 4909963647998589708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_215
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fc28317cf21a320800000000000000
+      internalID: 2567385794650230686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_216
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662829b85e66348c0800000000000000
+      internalID: -4016253306609171866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_217
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fd71976d3f6c1c0800000000000000
+      internalID: -4483628276520591514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_218
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 696
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c6af1db17f44ad0800000000000000
+      internalID: -2718776576165909370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_219
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bec300317f9a3a0800000000000000
+      internalID: -6653515313482765429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_220
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe16746860aa7d6d0800000000000000
+      internalID: -2965714884600831505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_221
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f467aa1705872f80800000000000000
+      internalID: -8131384336635697931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_222
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6049f22e19f0070800000000000000
+      internalID: 8074833057545455293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_223
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4098411f83eec6290800000000000000
+      internalID: -7895674118357087996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_224
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf511a7c7d1137270800000000000000
+      internalID: 8246954961110373883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_225
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bc578cd9f3df540800000000000000
+      internalID: 5043257104630401918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_226
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 680
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4502fb2d2302c330800000000000000
+      internalID: 3729546933961885005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_227
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d4ec0079ec6dc40800000000000000
+      internalID: 5536839939847507276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_228
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f366cfe8d29e32b0800000000000000
+      internalID: -5602879425968970764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_229
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702ffea6d9aa75780800000000000000
+      internalID: -8694292962534755833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_230
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e1e038149cafeb0800000000000000
+      internalID: -4685211179116781926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_231
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e053d5fcf9a589950800000000000000
+      internalID: 6456009708260898062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_232
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb0f7969e58dec60800000000000000
+      internalID: 7849076963120450548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_233
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f89a9d598756470800000000000000
+      internalID: 8387242466044645125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_234
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb28278292236820800000000000000
+      internalID: 2910207796939598781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_235
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a226b0b3048a150800000000000000
+      internalID: 5884023535497783927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_236
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a4ec4c26ed83da0800000000000000
+      internalID: -5964773190662206952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_237
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d3a0c6f48ecd880800000000000000
+      internalID: -8584731361862337228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_238
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d400b000a49dcd1d0800000000000000
+      internalID: -3324543513054740403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_239
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a005c33708c2ec0800000000000000
+      internalID: -3590353570499655018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_240
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46408bf6d4d157750800000000000000
+      internalID: 6301975471998895204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_241
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82ecb93bde6e7aa0800000000000000
+      internalID: -6161365352350686579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_242
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37677fe7a4fc4aaa0800000000000000
+      internalID: -6150563272216578445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_243
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc724f4869db2e70800000000000000
+      internalID: 9091599314807061687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_244
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b64ce359b1da9f80800000000000000
+      internalID: -8098930385965267274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_245
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9eff3ce669b3e90800000000000000
+      internalID: -7044871789612111385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_246
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efa8fdc812e239c0800000000000000
+      internalID: -3948845327087783960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_247
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256b54b2e78513710800000000000000
+      internalID: 1671214235646277202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_248
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4094061a73b9b50800000000000000
+      internalID: 6600930845086254301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_249
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 648
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec21906014746830800000000000000
+      internalID: 4063500377483455719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_250
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7723c62542aac180800000000000000
+      internalID: -9094278079634528389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_251
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705e846b3dd6a2220800000000000000
+      internalID: 2461900902375154951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_252
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72fd657d038a3d80800000000000000
+      internalID: -8270153671884541315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_253
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff67c207eb43a560800000000000000
+      internalID: 7323780874590711803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_254
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6919285385479990800000000000000
+      internalID: -7379353034001147540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_255
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135fb5aeb1953bf60800000000000000
+      internalID: 8048874935472092465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_256
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc69f7a358626b80800000000000000
+      internalID: -8403039246210208575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_257
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03471b73705366cf0800000000000000
+      internalID: -259461623411805136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_258
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb2dbc67b1aedf60800000000000000
+      internalID: 8061058192215190501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_259
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206dc3308d8b58460800000000000000
+      internalID: 7243398813602076162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_260
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b21ae39487cba2e0800000000000000
+      internalID: -2113376227889114446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_261
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725349def69db91e0800000000000000
+      internalID: -2189917719035103961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_262
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa00edeb176f5fb60800000000000000
+      internalID: 7779394899746357418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_263
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be159af52eba322a0800000000000000
+      internalID: -6763373226624462357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_264
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997a07804c5706bd0800000000000000
+      internalID: -2638979896823470183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_265
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58810748979d32d40800000000000000
+      internalID: 5558525481041533061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_266
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 632
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b40be32abfb053f0800000000000000
+      internalID: -914019918168783696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_267
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb03694c7558aca0800000000000000
+      internalID: -6005456110803022900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_268
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4995e2957ecd1ec90800000000000000
+      internalID: -7142184647841130092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_269
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053ea0dc8861ff4c0800000000000000
+      internalID: -4251654746403052720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_270
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf3769721333d560800000000000000
+      internalID: 7337264372355907516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_271
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b028a074049305670800000000000000
+      internalID: 8525377042844910091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_272
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20644da3081607cd0800000000000000
+      internalID: -2562440984603113982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_273
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1528afd748193f30800000000000000
+      internalID: 4555699195036050717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_274
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f9b6c8714238310800000000000000
+      internalID: 1406007192228437826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_275
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5824b3f2eabd4840800000000000000
+      internalID: 5210025827851577438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_276
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 616
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ca608161cffdee0800000000000000
+      internalID: -1233990601053656020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_277
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754722b1e082b0c90800000000000000
+      internalID: -7202619137999080361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_278
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965b8b3d546317920800000000000000
+      internalID: 2986227701456090473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_279
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9fd70793b7c5c50800000000000000
+      internalID: 6655329835977406940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_280
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a50168222db0620800000000000000
+      internalID: 2741515843905018516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_281
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c39098e96197500800000000000000
+      internalID: 394371312531356773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_282
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e00261210fb096c0800000000000000
+      internalID: -4138598045977542431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_283
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 584
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77344f3555ca1dd0800000000000000
+      internalID: -2514480472008673411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_284
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 584
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3e38f22013deab0800000000000000
+      internalID: -4977268127717661718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_285
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 584
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd697ae0814adda90800000000000000
+      internalID: -7287488198783559969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_286
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 584
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ea3b034d7f48880800000000000000
+      internalID: -8609484096903336317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_287
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 584
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2cff55c2c943950800000000000000
+      internalID: 6427934282399859383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_288
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 584
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e3dff3bbe027df0800000000000000
+      internalID: -184068437373534678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_289
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab01d0b3a0a439a0800000000000000
+      internalID: -6254197357604172886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_290
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07517e3b830ea1e0800000000000000
+      internalID: -2184804872645159158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_291
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46e74aabe919b660800000000000000
+      internalID: 7401975962524968527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_292
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96aa18766286ba680800000000000000
+      internalID: -8742779737455089047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_293
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab2af72cfbb68bc0800000000000000
+      internalID: -3781128145454093400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_294
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba8c841a27e53a60800000000000000
+      internalID: 7653277309705423550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_295
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39a01f45d304c210800000000000000
+      internalID: 1352210002807400766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_296
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e13ae2dc14b1bd0800000000000000
+      internalID: -2658458805525602734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_297
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae79d859557f99670800000000000000
+      internalID: 8546133714865592298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_298
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97d2f80be0d85040800000000000000
+      internalID: 4636685524263950236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_299
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768d33aa131e08f50800000000000000
+      internalID: 6881747834047289447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_300
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daafd6b55bd39b70800000000000000
+      internalID: 8904702049428417240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_301
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7617098c351f7bf0800000000000000
+      internalID: -324517298406222213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_302
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b10c8d7a9e23c480800000000000000
+      internalID: -8880202799178317392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veins2_303
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 552
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aac533dd08de410800000000000000
+      internalID: 1508003137776822910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
