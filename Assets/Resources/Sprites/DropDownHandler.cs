@@ -42,10 +42,16 @@ public class DropDownHandler : MonoBehaviour
                     SurvivalCover.SetActive(false);
                     break;
                 case 2:
+                    CampaingCover.SetActive(true);
+                    TutorialCover.SetActive(false);
+                    SurvivalCover.SetActive(false);
+                    break;
+                case 3:
                     SurvivalCover.SetActive(true);
                     TutorialCover.SetActive(false);
                     CampaingCover.SetActive(false);
                     break;
+
             }
         }
     }

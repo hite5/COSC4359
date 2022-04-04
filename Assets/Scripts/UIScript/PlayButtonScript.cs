@@ -15,6 +15,7 @@ public class PlayButtonScript : MonoBehaviour
 
     public string CampaignLoadingScreenName;
     public string SurvivalLoadingScreenName;
+    public string CampaignChapter2LoadingScreenName;
 
     void Start()
     {
@@ -27,17 +28,21 @@ public class PlayButtonScript : MonoBehaviour
     void Update()
     {
         ModeSelection = ModeDropdown.options[ModeDropdown.value].text;
-        if(ModeSelection == "TUTORIAL")
+        if (ModeSelection == "TUTORIAL")
         {
             sceneName = "TutorialLoadingScreen";
         }
-        else if(ModeSelection == "CAMPAIGN")
+        else if (ModeSelection == "CAMPAIGN")
         {
             sceneName = CampaignLoadingScreenName; ;
         }
         else if (ModeSelection == "SURVIVAL")
         {
             sceneName = SurvivalLoadingScreenName;
+        }
+        else if (ModeSelection == "CAMPAIGN 2")
+        {
+            sceneName = CampaignChapter2LoadingScreenName;
         }
         //PlayButton.onClick.RemoveListener(ChangeScene);
     }

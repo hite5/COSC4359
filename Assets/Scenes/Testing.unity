@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Globin 5 Advisor
       objectReference: {fileID: 0}
+    - target: {fileID: 370946251004088095, guid: 22b0d12206ec09549b2f39685a7f2d2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22b0d12206ec09549b2f39685a7f2d2b, type: 3}
 --- !u!1001 &125003425
@@ -318,7 +322,7 @@ PrefabInstance:
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].Boss
       value: 
-      objectReference: {fileID: 1786060445416986928, guid: 4fdb1bf0ea1f580419a1d95829964b21, type: 3}
+      objectReference: {fileID: 4054260681276426224, guid: 6c3d3bccb69c8514da1db939fb1cc532, type: 3}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[1].Boss
       value: 
@@ -488,7 +492,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125003426}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cbe7aabaaca71e41b8c9e31b1c886cd, type: 3}
   m_Name: 
@@ -498,8 +502,8 @@ MonoBehaviour:
   timerStart: 0
   skipWait: 0
   BossesInRotation:
-  - Boss: {fileID: 6490549138286293558, guid: 6476f3eb3ee84cc489c088d59bfc595f, type: 3}
-    BossHP: 2500
+  - Boss: {fileID: 4054260681276426224, guid: 6c3d3bccb69c8514da1db939fb1cc532, type: 3}
+    BossHP: 500
     changeName: 0
     newBossName: 
   GuardianSpawnlist: []
@@ -57173,3 +57177,64 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &3838106652514923966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668168, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668174, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_Name
+      value: InfectionGroundUnit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839376281009668174, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}

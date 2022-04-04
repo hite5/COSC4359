@@ -136,6 +136,17 @@ public class EnemyManager : MonoBehaviour
 
     private EnemyColony markedBoss;
     private EnemyColony2 markedBoss2;
+
+    public void spawnMistObject(GameObject obj2Spawn, Transform pos2Spawn, GameObject selectedUnit, float startRange2Spawn, float endRange2Spawn)
+    {
+
+        var go = Instantiate(obj2Spawn, pos2Spawn.position, Quaternion.identity);
+        go.GetComponent<InfectedMist>().EnemyToSpawn = selectedUnit;
+        go.GetComponent<InfectedMist>().transformTimer = Random.Range(startRange2Spawn, endRange2Spawn);
+        go.GetComponent<InfectedMist>().commander = pos2Spawn.GetComponent<EnemyColony>();
+
+    }
+
     public void resetTimer(EnemyColony EC, EnemyColony2 EC2)
     {
         //Debug.Log("ayo");

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Pathfinding;
 
 public class EnemyColony : MonoBehaviour
 {
@@ -99,9 +100,13 @@ public class EnemyColony : MonoBehaviour
     [Header("Random Movement Settings")]
     public float circleRadius;
     public float timeTillNextMove;
-    private float NextMoveCoolDown;
-    private bool reachedDestination;
-    private Vector2 randPos;
+
+    [HideInInspector]
+    public float NextMoveCoolDown;
+    [HideInInspector]
+    public bool reachedDestination;
+    [HideInInspector]
+    public Vector2 randPos;
 
     private float knockbackForce = 0;
     [Header("KnockBack Settings")]
@@ -153,7 +158,14 @@ public class EnemyColony : MonoBehaviour
 
     [Header("Reset Check Setting")]
     public float recalcshortestDist = 3f;
-    private float timer2reset;
+    [HideInInspector]
+    public float timer2reset;
+
+    [Header("Boss Addition 1 Infected BloodCell")]
+    public bool bossAddition1 = false;
+  
+    public EMC1Addition1 addOn1;
+
 
     public void getReferences()
     {
@@ -188,6 +200,15 @@ public class EnemyColony : MonoBehaviour
         {
             //Debug.Log("SETTING PLAYER");
             player = GameObject.FindGameObjectWithTag("Player").transform;
+            if (bossAddition1)
+            {
+                
+                addOn1.seeker = GetComponent<Seeker>();
+                addOn1.setPlayerStash(player);
+                addOn1.EMC = this;
+                InvokeRepeating("UpdatePath", 0f, 0.5f);
+                //invoke doesn't work on subscripts have to make own timer
+            }
         }
         else
             player = this.transform;
@@ -197,6 +218,34 @@ public class EnemyColony : MonoBehaviour
         GlobalPlayerVariables.TotalEnemiesAlive += 1;
         variation();
 
+    }
+
+    //EMCADDITION
+    public Vector2 ReadRigidBody()
+    {
+        return rb.position;
+    }
+
+    public void updateDistanceFromTarget(float dist)
+    {
+        distancefromplayer = dist;
+    }
+
+    public void AddForceToRB(Vector2 force, bool impulseForce)
+    {
+        Debug.Log("adding FORCE TO COLONY");
+        if(impulseForce)
+            rb.AddForce(force, ForceMode2D.Impulse);
+        else
+            rb.AddForce(force);
+    }
+
+    private void UpdatePath()
+    {
+        
+        if (addOn1.seeker.IsDone() && addOn1.target != null)
+            addOn1.seeker.StartPath(rb.position, addOn1.target.position, addOn1.OnPathComplete);
+        
     }
 
     void variation()
@@ -210,49 +259,56 @@ public class EnemyColony : MonoBehaviour
     {
         if (GlobalPlayerVariables.EnableAI)
         {
-            if(player!=null)
-                distancefromplayer = Vector2.Distance(transform.position, player.position);
-            if (knockback == true)
+            if (!bossAddition1)
             {
-                transform.position = Vector2.MoveTowards(transform.position, randPos, -speed * Time.deltaTime);
-                getDirection(player);
+                if (player != null)
+                    distancefromplayer = Vector2.Distance(transform.position, player.position);
+                if (knockback == true)
+                {
+                    transform.position = Vector2.MoveTowards(transform.position, randPos, -speed * Time.deltaTime);
+                    getDirection(player);
 
+                }
+                else
+                {
+
+                    if (distancefromplayer >= stoppingDistance && followPlayer == true && lineofsight == true) //follow player
+                    {
+                        reachedDestination = true;
+                        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                        getDirection(player);
+                    }
+                    else if ((distancefromplayer >= retreatDistance) || GlobalPlayerVariables.GameOver == true) //stop /*(Vector2.Distance(transform.position, player.position) <= stoppingDistance && */ 
+                    {
+                        if (randomMovement == false)
+                            transform.position = this.transform.position;
+                        else //RANDOM MOVEMENT
+                        {
+                            if (reachedDestination == false)
+                                transform.position = Vector2.MoveTowards(transform.position, randPos, speed * Time.deltaTime);
+                            else
+                                transform.position = this.transform.position;
+
+                            if (transform.position.x == randPos.x && transform.position.y == randPos.y)
+                            {
+                                reachedDestination = true;
+                            }
+                            direction = randPos;
+                            a = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                        }
+                    }
+                    else if (distancefromplayer <= retreatDistance && retreat == true) //retreat
+                    {
+                        reachedDestination = true;
+                        transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+                        getDirection(player);
+                    }
+
+                }
             }
             else
             {
-
-                if (distancefromplayer >= stoppingDistance && followPlayer == true && lineofsight == true) //follow player
-                {
-                    reachedDestination = true;
-                    transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-                    getDirection(player);
-                }
-                else if ((distancefromplayer >= retreatDistance) || GlobalPlayerVariables.GameOver == true) //stop /*(Vector2.Distance(transform.position, player.position) <= stoppingDistance && */ 
-                {
-                    if (randomMovement == false)
-                        transform.position = this.transform.position;
-                    else //RANDOM MOVEMENT
-                    {
-                        if (reachedDestination == false)
-                            transform.position = Vector2.MoveTowards(transform.position, randPos, speed * Time.deltaTime);
-                        else
-                            transform.position = this.transform.position;
-
-                        if (transform.position.x == randPos.x && transform.position.y == randPos.y)
-                        {
-                            reachedDestination = true;
-                        }
-                        direction = randPos;
-                        a = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                    }
-                }
-                else if (distancefromplayer <= retreatDistance && retreat == true) //retreat
-                {
-                    reachedDestination = true;
-                    transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
-                    getDirection(player);
-                }
-
+                addOn1.fixUpdateMovementAStar();
             }
         }
     }
@@ -271,53 +327,60 @@ public class EnemyColony : MonoBehaviour
     {
         if (GlobalPlayerVariables.EnableAI)
         {
-            if (player == null)
-                player = playerStash;
-
-
-            //working on clearing up globin vision
-            if (timer2reset <= 0)
+            if (!bossAddition1)
             {
-                timer2reset = recalcshortestDist;
-                float closestDistanceSqr = Mathf.Infinity;
-                Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, shootdistance);
-                foreach (Collider2D collider2D in ColliderArray)
+                if (player == null)
+                    player = playerStash;
+
+
+                //working on clearing up globin vision
+                if (timer2reset <= 0)
                 {
-                    if (collider2D.TryGetComponent<GoodGuyMarker>(out GoodGuyMarker marked))
+                    timer2reset = recalcshortestDist;
+                    float closestDistanceSqr = Mathf.Infinity;
+                    Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, shootdistance);
+                    foreach (Collider2D collider2D in ColliderArray)
                     {
-                        if (collider2D.TryGetComponent<Transform>(out Transform enemy))
+                        if (collider2D.TryGetComponent<GoodGuyMarker>(out GoodGuyMarker marked))
                         {
-                            //Debug.Log("good guy detected");
-                            //CAN THEY SEE THEM
-
-                            //can probably optimize this later
-                            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-
-                            if (hit2)
+                            if (collider2D.TryGetComponent<Transform>(out Transform enemy))
                             {
-                                if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
-                                {
-                                    lineofsight = true;
-                                    Vector3 directionToTarget = enemy.position - transform.position;
-                                    float dSqrToTarget = directionToTarget.sqrMagnitude;
-                                    if (dSqrToTarget < closestDistanceSqr)
-                                    {
-                                        closestDistanceSqr = dSqrToTarget;
-                                        player = enemy;
-                                        //closest = true;
-                                        //Debug.Log("Found target");
+                                //Debug.Log("good guy detected");
+                                //CAN THEY SEE THEM
 
-                                        //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                //can probably optimize this later
+                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+
+                                if (hit2)
+                                {
+                                    if (hit2.collider.gameObject.CompareTag("Player") || hit2.collider.gameObject.CompareTag("Globin"))
+                                    {
+                                        lineofsight = true;
+                                        Vector3 directionToTarget = enemy.position - transform.position;
+                                        float dSqrToTarget = directionToTarget.sqrMagnitude;
+                                        if (dSqrToTarget < closestDistanceSqr)
+                                        {
+                                            closestDistanceSqr = dSqrToTarget;
+                                            player = enemy;
+                                            //closest = true;
+                                            //Debug.Log("Found target");
+
+                                            //if (EnemyTarget != null && canSeeEnemy == true && closest == true && EnemyTarget == enemy)
+                                        }
                                     }
                                 }
+
+
+                                //target = enemy;
                             }
-
-
-                            //target = enemy;
                         }
                     }
                 }
             }
+            else
+                addOn1.normalUpdate();
+
+            //might have to move up else to after the lineofsight stuff
 
 
 
@@ -367,28 +430,31 @@ public class EnemyColony : MonoBehaviour
                 knockbacktime = 0;
                 knockback = false;
             }
-            if (player != null && player != this.transform)
+            if (!bossAddition1)
             {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
-                //var rayDirection = player.position - transform.position;
-                Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
-                if (hit)
+                if (player != null && player != this.transform)
                 {
-                    if (hit.collider.gameObject.CompareTag("Player") || hit.collider.gameObject.CompareTag("Globin"))
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                    //var rayDirection = player.position - transform.position;
+                    Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
+                    if (hit)
                     {
-                        lineofsight = true;
-                        //Debug.Log("Player is Visable");
-                        // enemy can see the player!
+                        if (hit.collider.gameObject.CompareTag("Player") || hit.collider.gameObject.CompareTag("Globin"))
+                        {
+                            lineofsight = true;
+                            //Debug.Log("Player is Visable");
+                            // enemy can see the player!
 
-                        //Debug.Log("Player is Visable");
+                            //Debug.Log("Player is Visable");
+                        }
+                        else
+                        {
+                            lineofsight = false;
+                            //Debug.Log("Player is NOT Visable");
+                        }
                     }
-                    else
-                    {
-                        lineofsight = false;
-                        //Debug.Log("Player is NOT Visable");
-                    }
+
                 }
-
             }
 
             if (lineofsight == true && GlobalPlayerVariables.GameOver == false && isDead == false && distancefromplayer <= shootdistance)
@@ -426,7 +492,7 @@ public class EnemyColony : MonoBehaviour
                     timeBtwShots -= Time.deltaTime;
                 }
 
-                if (NextMoveCoolDown <= 0 && reachedDestination == true)
+                if (NextMoveCoolDown <= 0 || reachedDestination == true)
                 {
                     randomPos();
                 }

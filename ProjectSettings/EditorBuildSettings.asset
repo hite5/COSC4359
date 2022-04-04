@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Henry's Survival.unity
     guid: fa698d64b27729e43bf8967e48e30ca2
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen/Chapter 2 loading screens/Chapter2HeartLoadingScreen.unity
+    guid: fedaf0a805d1d8d40a16f6da88e8f243
+  - enabled: 1
+    path: Assets/Scenes/Heart.unity
+    guid: 96614a4e8909e904f9fce127e8321f8d
   m_configObjects: {}
