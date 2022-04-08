@@ -12,7 +12,7 @@ public class ResetStats : MonoBehaviour
         resetting = GameObject.Find("GameManager").GetComponent<GlobalPlayerVariables>();
         if (SceneManager.GetActiveScene().name != "Title")
         {
-            Debug.Log("RESET");
+            //Debug.Log("RESET");
             resetting.resetStats();
         }
     }

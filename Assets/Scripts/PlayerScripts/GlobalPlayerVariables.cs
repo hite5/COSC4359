@@ -190,7 +190,7 @@ public class GlobalPlayerVariables : MonoBehaviour
         IsSurvival = SceneManager.GetActiveScene().name.Contains("Survival");
         if (SceneManager.GetActiveScene().name != "Title")
         {
-            Debug.Log("RESET");
+            //Debug.Log("RESET");
             //resetObject = true;
             resetStats();
             resetObject = true;
@@ -304,7 +304,7 @@ public class GlobalPlayerVariables : MonoBehaviour
 
             if (resetObject == true)
             {
-                Debug.Log("RESETTING OBJECTS");
+                //Debug.Log("RESETTING OBJECTS");
                 DefendMode = GameObject.Find("Defend");
                 AttackMode = GameObject.Find("Attack");
                 if(DefendMode != null) 

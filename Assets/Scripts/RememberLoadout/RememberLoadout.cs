@@ -279,7 +279,7 @@ public class RememberLoadout : MonoBehaviour
 
         if ((loadPlayerStats == true || player == null) && !noLoadLoadoutScene.Contains(SceneManager.GetActiveScene().name) && !OptionSettings.GameisPaused)
         {
-            Debug.Log("Loading Loadout");
+            //Debug.Log("Loading Loadout");
             player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {

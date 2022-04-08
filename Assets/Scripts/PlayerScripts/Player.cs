@@ -1162,13 +1162,13 @@ public class Player : MonoBehaviour
         //gitValues.stemCellAmount = Stats.;
         Stats.NumofSticky = RememberLoadout.numberOfStickyNades;
         Stats.NumofMolly = RememberLoadout.numberOfMollys;
-        Debug.Log(stats.NumofHeal + " armor " + stats.Armorz + " protein " + stats.NumofProtein + " molly " + Stats.NumofMolly + "sticky " + Stats.NumofSticky);
+        //Debug.Log(stats.NumofHeal + " armor " + stats.Armorz + " protein " + stats.NumofProtein + " molly " + Stats.NumofMolly + "sticky " + Stats.NumofSticky);
 
         Transform globinSpawn = GameObject.FindGameObjectWithTag("GlobinSpawn").GetComponent<Transform>();
 
         foreach (GameObject go in gitValues.PossibleGlobins)
         {
-            Debug.Log("S P A W N");
+            //Debug.Log("S P A W N");
             if (go.name.Contains("5 Advisor"))
             {
                 for(int i = 0; i < RememberLoadout.Globin5Advisor; i++)

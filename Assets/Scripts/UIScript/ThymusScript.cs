@@ -51,6 +51,8 @@ public class ThymusScript : MonoBehaviour
 
     private Weapon currWeapon;
 
+    int tempCurrDialIdx = 0;
+
     [System.Serializable]
     public struct ThymusDialog
     {
@@ -142,8 +144,8 @@ public class ThymusScript : MonoBehaviour
             if (zoom > 0)
             {
                 zoom -= Time.deltaTime * zoomSpeed;
-                transform.localPosition = new Vector3(ThymusAppearPosX * (1 - zoom), ThymusAppearPosY * (1 - zoom), -1);
                 transform.localScale = new Vector3(zoom, zoom, 1);
+                transform.localPosition = new Vector3(ThymusAppearPosX * (1 - zoom), ThymusAppearPosY * (1 - zoom), -1);
             }
             else
             {
@@ -204,10 +206,9 @@ public class ThymusScript : MonoBehaviour
                 if (currDialogIdx == ThymusDialogSequence.Length && !textWriterSingle.IsActive())
                     dialogSequenceFinish = true;
 
-                if (timer > 0)
-                    timer -= Time.deltaTime;
+                timer = timer > 0 ? timer -= Time.deltaTime : timer != -1 ? 0 : -1;
 
-                if (textWriterSingle != null && timer <= 0 && waitNext)
+                if (textWriterSingle != null && timer == 0 && waitNext)
                     if (!textWriterSingle.IsActive())
                     {
                         timer = ThymusDialogSequence[currDialogIdx - 1].WaitTimeAfterFinish;
@@ -219,35 +220,35 @@ public class ThymusScript : MonoBehaviour
                     ThymusDialogPlay(ThymusDialogSequence[currDialogIdx]);
                     waitNext = true;
                 }
-                else if (!textWriterSingle.IsActive() && !dialogSequenceFinish && timer <= 0)
+                else if (!textWriterSingle.IsActive() && !dialogSequenceFinish && timer == 0)
                 {
                     ThymusDialogPlay(ThymusDialogSequence[currDialogIdx]);
                     waitNext = true;
                 }
 
-                if (dialogSequenceFinish && timer <= 0)
+                if (dialogSequenceFinish && timer == 0)
                     Appear = false;
 
                 //Debug.Log(timer);
                 //Debug.Log(currDialogIdx + " " + textWriterSingle.IsActive());
 
 
-                if (Input.GetKeyDown(KeyCode.Mouse0) && (!dialogSequenceFinish || timer > 0) && textWriterSingle != null)
-                {
-                    //Debug.Log("Push Button");
-                    if (textWriterSingle.IsActive() && waitNext)
-                    {
-                        textWriterSingle.WriteAllAndDestroy();
-                        timer = ThymusDialogSequence[currDialogIdx - 1].WaitTimeAfterFinish;
-                        waitNext = false;
-                    }
-                    else
-                    {
-                        timer = 0;
-                    }
-                    if (dialogSequenceFinish)
-                        Appear = false;
-                }
+                //if (Input.GetKeyDown(KeyCode.Mouse0) && (!dialogSequenceFinish || timer > 0) && textWriterSingle != null)
+                //{
+                //    //Debug.Log("Push Button");
+                //    if (textWriterSingle.IsActive() && waitNext)
+                //    {
+                //        textWriterSingle.WriteAllAndDestroy();
+                //        timer = ThymusDialogSequence[currDialogIdx - 1].WaitTimeAfterFinish;
+                //        waitNext = false;
+                //    }
+                //    else
+                //    {
+                //        timer = 0;
+                //    }
+                //    if (dialogSequenceFinish)
+                //        Appear = false;
+                //}
                 //Debug.Log("dialogSequenceFinish " + dialogSequenceFinish);
             }
         }
@@ -435,6 +436,7 @@ public class ThymusScript : MonoBehaviour
                 cameraCoroutine = StartCoroutine(Camera.MoveTo(moveTo, Dialog.HoldFor, Dialog.CameraSpeed));
             }
         }
+
         if (Dialog.zoomLevel != 1)
         {
             if (Dialog.HoldFor == -1)
@@ -504,5 +506,54 @@ public class ThymusScript : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void GoBackOneLine()
+    {
+        if(tempCurrDialIdx > 0 && !waitNext)
+        {
+            tempCurrDialIdx--;
+            if(tempCurrDialIdx == currDialogIdx-1)
+                tempCurrDialIdx--;
+            displayDialogueContent(tempCurrDialIdx);
+        }
+        else
+        {
+            skipWriter(false);
+        }
+        //Debug.Log(tempCurrDialIdx + " | " + currDialogIdx);
+    }
+    public void GoForwardOneLine()
+    {
+        if(tempCurrDialIdx < currDialogIdx - 1)
+        {
+            tempCurrDialIdx++;
+            displayDialogueContent(tempCurrDialIdx);
+        }
+        else
+        {
+            tempCurrDialIdx = currDialogIdx;
+            skipWriter(true);
+        }
+        //Debug.Log(tempCurrDialIdx + " | " + currDialogIdx);
+    }
+
+    void skipWriter(bool isForward)
+    {
+        if (textWriterSingle.IsActive() && waitNext)
+        {
+            textWriterSingle.WriteAllAndDestroy();
+            timer = ThymusDialogSequence[currDialogIdx - 1].WaitTimeAfterFinish;
+            waitNext = false;
+        }
+        else if (isForward)
+            timer = 0;
+    }
+
+    void displayDialogueContent(int dialogueIndex)
+    {
+        DialogText.text = ThymusDialogSequence[dialogueIndex].DialogContent.ToUpper();
+        DialogText.fontSize = (int)ThymusDialogSequence[dialogueIndex].FontSize;
+        
     }
 }
