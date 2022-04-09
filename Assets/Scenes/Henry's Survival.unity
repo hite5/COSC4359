@@ -141480,26 +141480,32 @@ MonoBehaviour:
     BossHP: 1500
     changeName: 0
     newBossName: 
+    dontNormalizeLocalScale: 0
   - Boss: {fileID: 4365177000091811207, guid: 848a82b313076844b9b19c2e2fc9890a, type: 3}
     BossHP: 750
     changeName: 0
     newBossName: 
+    dontNormalizeLocalScale: 0
   - Boss: {fileID: 4657044852027501985, guid: 576b3dee03aa1f74d8aea3646cb2fea8, type: 3}
     BossHP: 1500
     changeName: 1
     newBossName: COLONY VARIANT (TRIPLE SHOT)
+    dontNormalizeLocalScale: 0
   - Boss: {fileID: 4436185298630467683, guid: f848e17a67eeaf44aa0e2af2e20bda29, type: 3}
     BossHP: 750
     changeName: 1
     newBossName: DELTA VARIANT (TROJAN)
+    dontNormalizeLocalScale: 0
   - Boss: {fileID: 2202784856271980875, guid: 82b496c4bba34bc47a3411537f50c702, type: 3}
     BossHP: 750
     changeName: 1
     newBossName: DELTA VARIANT (FLAME TRAIL)
+    dontNormalizeLocalScale: 0
   - Boss: {fileID: 1786060445416986928, guid: 4fdb1bf0ea1f580419a1d95829964b21, type: 3}
     BossHP: 1500
     changeName: 1
     newBossName: COLONY VARIANT (SLOW MO)
+    dontNormalizeLocalScale: 0
   GuardianSpawnlist:
   - Guardian: {fileID: 2666951384714126294, guid: 0456d0b67387f0c45b18fa2ee21fc077, type: 3}
     keepDefaultHP: 0

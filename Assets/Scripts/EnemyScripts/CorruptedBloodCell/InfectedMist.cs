@@ -8,6 +8,7 @@ public class InfectedMist : MonoBehaviour
     public GameObject EnemyToSpawn;
     public EnemyColony commander;
 
+
     // Update is called once per frame
     void Update()
     {
@@ -16,7 +17,8 @@ public class InfectedMist : MonoBehaviour
         {
             var go = Instantiate(EnemyToSpawn, this.transform.position, Quaternion.identity);
             go.GetComponent<Enemy3AddOn>().Commander = commander;
-            Destroy(this.gameObject);
+            go.GetComponent<Enemy3>().hasCommander = true;
+            this.gameObject.GetComponent<Enemy3>().Die();
         }
         
     }

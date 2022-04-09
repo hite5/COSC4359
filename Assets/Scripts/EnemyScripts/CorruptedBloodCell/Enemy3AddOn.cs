@@ -16,8 +16,18 @@ public class Enemy3AddOn : MonoBehaviour
     void Update()
     {
         if (Commander != null)
-        { 
-            
+        {
+            if (Commander.addOn1.followFlag)
+            {
+                enemy3.target = Commander.addOn1.flag.transform;
+            }
+            else
+                enemy3.target = Commander.transform;
+        }
+        else
+        {
+            enemy3.hasCommander = false;
+            Destroy(this); //destroys script instance
         }
     }
 }

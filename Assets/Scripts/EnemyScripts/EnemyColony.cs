@@ -777,6 +777,9 @@ public class EnemyColony : MonoBehaviour
         {
             EnemyUI.SetActive(false);
         }
+        if (bossAddition1)
+            Destroy(addOn1.flag.gameObject);
+
         Destroy(transform.gameObject);
     }
 

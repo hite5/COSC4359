@@ -264,7 +264,7 @@ public class Globin : MonoBehaviour
                         rb.AddForce(force);
                         //transform.position = Vector2.MoveTowards(transform.position, randPos, speed * Time.deltaTime); //need to make it where it walks in that direction
                     }
-                    if (transform.position.x == randPos.x && transform.position.y == randPos.y)
+                    if (transform.position.x == randPos.x && transform.position.y == randPos.y || timeTillNextMove <= 0)
                     {
                         reachedDestination = true;
                     }

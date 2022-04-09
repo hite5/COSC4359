@@ -12,6 +12,7 @@ namespace BossCustomization
         public int BossHP;
         public bool changeName;
         public string newBossName;
+        public bool dontNormalizeLocalScale;
     }
 
     [System.Serializable]
@@ -146,6 +147,14 @@ public class EnemyManager : MonoBehaviour
         go.GetComponent<InfectedMist>().commander = pos2Spawn.GetComponent<EnemyColony>();
 
     }
+    public void spawnAntiAirMissle(GameObject obj2Spawn, Transform pos2Spawn, GameObject target)
+    {
+
+        var go = Instantiate(obj2Spawn, pos2Spawn.position, Quaternion.identity);
+        go.transform.Rotate(new Vector3(0, 0, Random.Range(-179,179)));
+        go.GetComponent<AntiAirMissle>().target = target;
+    }
+
 
     public void resetTimer(EnemyColony EC, EnemyColony2 EC2)
     {
@@ -261,7 +270,8 @@ public class EnemyManager : MonoBehaviour
                     //Instantiate()
                     var go = Instantiate(BossSettingList[i].Boss, spawnPoints[indexOfSpawnPoint].transform.position, Quaternion.identity);
                     go.transform.parent = this.transform;
-                    go.transform.localScale = Vector3.one;
+                    if(BossSettingList[i].dontNormalizeLocalScale == false)
+                        go.transform.localScale = Vector3.one;
                     linkBosses(go, i, BossSettingList[i].changeName);
                     CurrentlyAlive.Add(go.transform);
 
@@ -275,7 +285,8 @@ public class EnemyManager : MonoBehaviour
                     int randomSpawn = Random.Range(0, spawnPoints.Count);
                     var go = Instantiate(BossSettingList[i].Boss, spawnPoints[randomSpawn].transform.position, Quaternion.identity);
                     go.transform.parent = this.transform;
-                    go.transform.localScale = Vector3.one;
+                    if (BossSettingList[i].dontNormalizeLocalScale == false)
+                        go.transform.localScale = Vector3.one;
                     linkBosses(go, i, BossSettingList[i].changeName);
                     CurrentlyAlive.Add(go.transform);
                 }
@@ -558,6 +569,7 @@ public class EnemyManager : MonoBehaviour
         yield return 0;
 
         SpawnedMobs.RemoveAll(item => item == null);
+        //GlobalPlayerVariables.TotalEnemiesAlive = SpawnedMobs.Count;
 
     }
 

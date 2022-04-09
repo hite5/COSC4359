@@ -619,7 +619,7 @@ MonoBehaviour:
   HP: 1200
   maxHP: 1200
   AR: 105
-  speed: 8000
+  speed: 14000
   stoppingDistance: 10
   lineofsight: 0
   IgnoreMe:

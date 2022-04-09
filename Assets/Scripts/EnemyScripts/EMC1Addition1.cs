@@ -75,6 +75,15 @@ public class EMC1Addition1
     [Header("enemy flag")]
     public GameObject flag;
     public bool followFlag = false;
+    public float placeFlagEveryXAmount = 5f;
+    public float flagCoolDown = 0f;
+    public float callBackUnitsHPThreshold = 0.3f;
+
+    [Header("Anti Air Missle")]
+    public GameObject antiAirMissle;
+    public float timeToFireMissle = 5f;
+    private float missleTimer = 5f;
+
 
 
     public void setPlayerStash(Transform playerRef)
@@ -82,6 +91,7 @@ public class EMC1Addition1
         player = playerRef;
         target = playerRef;
         playerStash = playerRef;
+        flagCoolDown = placeFlagEveryXAmount;
     }
 
     public void Astar()
@@ -150,14 +160,14 @@ public class EMC1Addition1
 
 
 
-        if (distancefromtarget >= EMC.stoppingDistance || EMC.lineofsight == false)
+        if ((distancefromtarget >= EMC.stoppingDistance || EMC.lineofsight == false) && EMC.isDead == false)
         {
             Astar();
             //Debug.Log("Astar");
         }
         else //RANDOM MOVEMENT
         {
-            if (EMC.reachedDestination == false)
+            if (EMC.reachedDestination == false && EMC.isDead == false)
             {
                 Vector2 direction = (EMC.randPos - EMC.ReadRigidBody()).normalized;
                 Vector2 force = direction * EMC.speed * Time.deltaTime;
@@ -249,15 +259,62 @@ public class EMC1Addition1
 
     }
 
-
-    public void placeFlag()
-    { 
-        //similar 360 logic but with the player as the center
+    void flagPlacementManager()
+    {
+        if (EMC.individualHP / EMC.indivMaxHP > callBackUnitsHPThreshold)
+        {
+            if (flagCoolDown <= 0)
+            {
+                if (!flag.activeSelf)
+                {
+                    flag.SetActive(true);
+                }
+                followFlag = true;
+                flag.transform.position = target.position;
+                flagCoolDown = placeFlagEveryXAmount;
+            }
+            else
+                flagCoolDown -= Time.deltaTime;
+        }
+        else
+        {
+            followFlag = false;
+        }
+        
     }
 
-    public void antiAir()
-    { 
+    void unplaceFlag()
+    {
+        if (flagCoolDown < placeFlagEveryXAmount)
+            flagCoolDown += Time.deltaTime;
+        else
+        {
+            followFlag = false;
+            if (flag.activeSelf)
+            {
+                flag.SetActive(false);
+            }
+        }
+
+    }
+
+
+    public void antiAir(HelicopterMarker heloTarget)
+    {
+        //Debug.Log("anti AIR");
+        if (missleTimer <= 0)
+        {
+            missleTimer = timeToFireMissle;
+            for (int i = 0; i < 3; i++)
+            {
+                AudioManager.instance.PlayEffect("Cannon");
+                EnemyManager.instance.spawnAntiAirMissle(antiAirMissle, EMC.transform, heloTarget.transform.gameObject);
+            }
+        }
+        else
+            missleTimer -= Time.deltaTime;
         //finally getting rid of those helos ayo
+        //EnemyManager.instance.spawnAntiAirMissle();
     }
 
 
@@ -283,6 +340,7 @@ public class EMC1Addition1
             Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(EMC.transform.position, EMC.shootdistance);
             foreach (Collider2D collider2D in ColliderArray)
             {
+
                 if (collider2D.TryGetComponent<GoodGuyMarker>(out GoodGuyMarker marked))
                 {
                     if (collider2D.TryGetComponent<Transform>(out Transform enemy))
@@ -321,12 +379,29 @@ public class EMC1Addition1
                     }
                 }
             }
+
+
+
+
+
+        }
+
+        Collider2D[] ColliderArray2 = Physics2D.OverlapCircleAll(EMC.transform.position, EMC.shootdistance);
+        foreach (Collider2D collider2D in ColliderArray2)
+        {
+            //Debug.Log("getting somewhere hahahz");
+            if (collider2D.TryGetComponent<HelicopterMarker>(out HelicopterMarker Helo) && EMC.isDead == false)
+            {
+                //Debug.Log("can see helo ");
+                antiAir(Helo);
+            }
+
         }
 
 
         //PUT LINE OF SIGHT LOGIC HERE
 
-        if (player != null && player != EMC.transform && target != null)
+        if (player != null && player != EMC.transform && target != null && EMC.isDead == false)
         {
             RaycastHit2D hit = Physics2D.Raycast(EMC.transform.position, target.transform.position - EMC.transform.position, Mathf.Infinity, ~EMC.IgnoreMe);
             //var rayDirection = player.position - transform.position;
@@ -334,7 +409,8 @@ public class EMC1Addition1
             if (hit.collider.gameObject.CompareTag("Player") || hit.collider.gameObject.CompareTag("Globin"))
             {
                 EMC.lineofsight = true;
-                //Debug.Log("Player is Visable");
+                flagPlacementManager();
+                //Debug.Log("Player is Visable ADDON1");
                 // enemy can see the player!
 
                 //Debug.Log("Player is Visable");
@@ -342,13 +418,14 @@ public class EMC1Addition1
             else
             {
                 EMC.lineofsight = false;
-                //Debug.Log("Player is NOT Visable");
+                unplaceFlag();
+                //Debug.Log("Player is NOT Visable ADDON1");
             }
 
         }
 
         //call Summon function
-        if (SummonTimer <= 0)
+        if (SummonTimer <= 0 && GlobalPlayerVariables.TotalEnemiesAlive <= GlobalPlayerVariables.GlobinsAndPlayerAlive && EMC.isDead == false)
         {
             SummonTimer = Random.Range(startRangeToSummon, endRangeToSummon);
             summonComrades();
@@ -358,6 +435,8 @@ public class EMC1Addition1
         {
             SummonTimer -= Time.deltaTime;
         }
+
+        //place flag for units
 
 
 

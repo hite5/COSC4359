@@ -207,6 +207,7 @@ public class Enemy3 : MonoBehaviour
 
     private EnemyManager enemyManager = null;
 
+    public bool hasCommander = false;
 
     private void Awake()
     {
@@ -317,17 +318,22 @@ public class Enemy3 : MonoBehaviour
     {
         if (GlobalPlayerVariables.EnableAI)
         {
-            if (player != null)
+            if (player != null && hasCommander == false)
                 distancefromplayer = Vector2.Distance(rb.position, player.position);
+            else if (player != null && hasCommander && target != null)
+                distancefromplayer = Vector2.Distance(rb.position, target.position);
 
-            if (retreatToBoss == true && distancefromplayer <= retreatDist)
+            if (retreatToBoss == true && distancefromplayer <= retreatDist || hasCommander == true && distancefromplayer >= stoppingDistance)
             {
                 //need logic to make it where target system doesn't conflict
-                if(BossObject != null)
-                    target = BossObject;
-                else if (BossObject == null)
+                if(!hasCommander)
                 {
-                    target = playerStash;
+                    if (BossObject != null)
+                        target = BossObject;
+                    else if (BossObject == null)
+                    {
+                        target = playerStash;
+                    }
                 }
                 Astar();
             }
@@ -914,7 +920,7 @@ public class Enemy3 : MonoBehaviour
 
 
 
-    void Die()
+    public void Die()
     {
         if (isDead == false)
         {

@@ -218,67 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f2182659db478439057357e9266aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Drops:
-  - isCurrency: 1
-    isAmmo: 0
-    Drops:
-    - {fileID: 2859806896499263471, guid: e786d9e05e544c342854ebaae6f330ec, type: 3}
-    - {fileID: 8493335925642168428, guid: a7710005c5b967549a684aa3f7ff04f4, type: 3}
-    - {fileID: 6945996946943777615, guid: e163425566a083b428b0bd23743d338d, type: 3}
-    - {fileID: 6662930850099418146, guid: 60e2807eca38f6748a71871b39003466, type: 3}
-    - {fileID: 1218887535022631140, guid: a9fff5c94023816449f11c7055169929, type: 3}
-    DropPercentage: 15
-    NumOfDrop: 30
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: 9729f65a98d9dd14b86e888222ffbcbc, type: 3}
-    DropPercentage: 3
-    NumOfDrop: 1
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: da593d588006d8246b89463b4dabc544, type: 3}
-    DropPercentage: 7
-    NumOfDrop: 1
-  - isCurrency: 0
-    isAmmo: 1
-    Drops:
-    - {fileID: 2859806896499263471, guid: 0ba940e800e21e548af87cfccd47b4c4, type: 3}
-    - {fileID: 2859806896499263471, guid: 984f67430b7ad7440afb326ad75ab93b, type: 3}
-    - {fileID: 2859806896499263471, guid: bf31acb7f6eaf0041bd226f2abc114c6, type: 3}
-    DropPercentage: 7
-    NumOfDrop: 25
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: 953376de06b619b4898731a5bab67558, type: 3}
-    DropPercentage: 4
-    NumOfDrop: 1
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: f6f4be9ac3368a74287b960666063ebb, type: 3}
-    DropPercentage: 4
-    NumOfDrop: 1
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: b43bd11f8102e0d4ab26cd4640ff7623, type: 3}
-    DropPercentage: 3
-    NumOfDrop: 1
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: 4227ae53043e3cb4bbc35f4bf8489ccf, type: 3}
-    DropPercentage: 3
-    NumOfDrop: 1
-  - isCurrency: 0
-    isAmmo: 0
-    Drops:
-    - {fileID: 2056935271745837854, guid: 864fb69f7f9a67549b1eb4799713b24d, type: 3}
-    DropPercentage: 2
-    NumOfDrop: 1
+  Drops: []
   target: {fileID: 0}
   EnemyTarget: {fileID: 0}
   BossObject: {fileID: 0}
@@ -303,7 +243,7 @@ MonoBehaviour:
   AR: 10
   speed: 250
   contactDamage: 50
-  EXPWorth: 500
+  EXPWorth: 0
   time2chase: 6
   retreatToBoss: 0
   retreatDist: 10
@@ -335,6 +275,7 @@ MonoBehaviour:
   targetResolver: {fileID: 1731069206464815571}
   targetCategory: Hanzr Sprite Library Asset
   facing: 0
+  hasCommander: 0
 --- !u!114 &2839376281009668175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformTimer: 5
   EnemyToSpawn: {fileID: 0}
+  commander: {fileID: 0}
 --- !u!1 &2839376281820586520
 GameObject:
   m_ObjectHideFlags: 0
