@@ -76167,33 +76167,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1116932286}
-    - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: moveChest
-      objectReference: {fileID: 0}
-    - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: smallRedunDantScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8884210883677578689, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 9212100024642128687, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14

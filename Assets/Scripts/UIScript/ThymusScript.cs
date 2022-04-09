@@ -556,4 +556,10 @@ public class ThymusScript : MonoBehaviour
         DialogText.fontSize = (int)ThymusDialogSequence[dialogueIndex].FontSize;
         
     }
+
+    public void enableMovementAndAI()
+    {
+        GlobalPlayerVariables.EnablePlayerControl = true;
+        GlobalPlayerVariables.EnableAI = true;
+    }
 }
