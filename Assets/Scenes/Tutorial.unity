@@ -72070,6 +72070,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 8.58
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925145358146061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: components.statDisplayObject.DisplayDuration
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4569604203187264842, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_IsActive
       value: 0

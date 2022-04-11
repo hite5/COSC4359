@@ -453,12 +453,13 @@ public class Player : MonoBehaviour
         //Display stats changes
 
         UpdateStatsDisplay(components.StatDisplayObject.StatsDisplayText, checkUpdate(storePlayerStats, stats));
+
         if (runningCouroutine == null)
-            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, 2));
+            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, components.StatDisplayObject.DisplayDuration));
         else
         {
             StopCoroutine(runningCouroutine);
-            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, 2));
+            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, components.StatDisplayObject.DisplayDuration));
         }
             
     }

@@ -13,6 +13,7 @@ public class PlayerComponents
         public GameObject StatsDisplay;
         public TextMeshProUGUI StatsDisplayText;
         public Animator StatDisplayAnimator;
+        public float DisplayDuration;
     }
     [SerializeField]
     private Rigidbody2D playerRidgitBody;
