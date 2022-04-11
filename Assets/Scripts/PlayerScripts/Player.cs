@@ -144,7 +144,7 @@ public class Player : MonoBehaviour
 
     public int levelCapGrowthRate = 200;
 
-    public int healthGrowthRate = 8;
+    public float healthGrowthRate = 8;
 
     public float hpRegenGrowthRate = 0.19f;
 
@@ -322,7 +322,7 @@ public class Player : MonoBehaviour
 
     void UpdateStatsDisplay(TextMeshProUGUI TMPComponent, float[] updateValue)
     {
-        TMPComponent.text = string.Format("HP + {0}\nStam + {1}\nHP regen + {2:N2}\nStam regen + {3:N2}\nCrit chance + {4:N2}",
+        TMPComponent.text = string.Format("HP + {0:N0}\nStam + {1:N0}\nHP regen + {2:N2}\nStam regen + {3:N2}\nCrit chance + {4:N2}",
             updateValue[0], updateValue[1], updateValue[2], updateValue[3], updateValue[4]);
     }
 
@@ -347,6 +347,11 @@ public class Player : MonoBehaviour
         storePlayerStats[3] = stats.StaminaRegenRate;
         storePlayerStats[4] = GlobalPlayerVariables.BaseCritRate;
         Debug.Log(GlobalPlayerVariables.baseBulletCritRate);
+
+        healthGrowthRate += 0.1f;
+        maxStaminaGrowthRate += 0.1f;
+        staminaRegenGrowthRate += 0.01f;
+        hpRegenGrowthRate += 0.01f;
 
         stats.Experience -= levelThreshhold;
         Currentlevel += 1f;
@@ -453,15 +458,16 @@ public class Player : MonoBehaviour
         //Display stats changes
 
         UpdateStatsDisplay(components.StatDisplayObject.StatsDisplayText, checkUpdate(storePlayerStats, stats));
-
-        if (runningCouroutine == null)
-            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, components.StatDisplayObject.DisplayDuration));
-        else
+        if (!hideLevelUPAnimation)
         {
-            StopCoroutine(runningCouroutine);
-            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, components.StatDisplayObject.DisplayDuration));
+            if (runningCouroutine == null)
+                runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, components.StatDisplayObject.DisplayDuration));
+            else
+            {
+                StopCoroutine(runningCouroutine);
+                runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, components.StatDisplayObject.DisplayDuration));
+            }
         }
-            
     }
 
     IEnumerator ShowStatsDisplay(Animator DisplayAnimator, float dur)
