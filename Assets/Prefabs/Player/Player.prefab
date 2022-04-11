@@ -322,6 +322,7 @@ MonoBehaviour:
     targetResolver: {fileID: 8693076160950319758}
     targetCategory: DefaultHemo
     playerParticleSystem: {fileID: 8089623419280815895}
+    statsUpDisplay: {fileID: 0}
   utilities:
     PlayerInputs:
       UsePrimary: mouse 0

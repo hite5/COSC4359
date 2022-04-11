@@ -195,11 +195,13 @@ public class Player : MonoBehaviour
     private Transform shield = null;
 
     public static Player instance;
+
+    Coroutine runningCouroutine = null;
     private void Awake()
     {
         instance = this;
-        
-            
+
+
         /*
         public static float baseMaxHealth = 0; done
         public static float baseHealthRegen = 0; done
@@ -215,13 +217,13 @@ public class Player : MonoBehaviour
         public static float baseItemUsageCoolDownTylenol = 0; 
         */
 
-
+        components.StatDisplayObject.StatsDisplay.transform.localScale = new Vector3(1, 0, 1);
+        components.StatDisplayObject.StatsDisplay.transform.position = new Vector3(2, -28, 0);
+        components.StatDisplayObject.StatDisplayAnimator.SetBool("Open", false);
 
         Text1 = levelText1.GetComponent<Text>();
         Text2 = levelText10.GetComponent<Text>();
         Text3 = levelText100.GetComponent<Text>();
-
-
 
         Text1.text = "0";
         Text2.text = "0";
@@ -318,9 +320,34 @@ public class Player : MonoBehaviour
         StaminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
     }
 
+    void UpdateStatsDisplay(TextMeshProUGUI TMPComponent, float[] updateValue)
+    {
+        TMPComponent.text = string.Format("HP + {0}\nStam + {1}\nHP regen + {2:N2}\nStam regen + {3:N2}\nCrit chance + {4:N2}",
+            updateValue[0], updateValue[1], updateValue[2], updateValue[3], updateValue[4]);
+    }
+
+    float[] checkUpdate(float[] preUpdate, PlayerStats postUpdate)
+    {
+        float[] updatedValue = new float[5];
+        //updatedValue[0]: hp, updatedValue[1]: stam, updatedValue[2]: hp regen, updatedValue[3]: stam regen, updatedValue[4]: cooldown, 
+        updatedValue[0] = postUpdate.MaxHealth - preUpdate[0];
+        updatedValue[1] = postUpdate.MaxStamina - preUpdate[1];
+        updatedValue[2] = postUpdate.HPRegen - preUpdate[2];
+        updatedValue[3] = postUpdate.StaminaRegenRate - preUpdate[3];
+        updatedValue[4] = GlobalPlayerVariables.BaseCritRate - preUpdate[4];
+        return updatedValue;
+    }
 
     void levelUP()
     {
+        float[] storePlayerStats = new float[5];
+        storePlayerStats[0] = stats.MaxHealth;
+        storePlayerStats[1] = stats.MaxStamina;
+        storePlayerStats[2] = stats.HPRegen;
+        storePlayerStats[3] = stats.StaminaRegenRate;
+        storePlayerStats[4] = GlobalPlayerVariables.BaseCritRate;
+        Debug.Log(GlobalPlayerVariables.baseBulletCritRate);
+
         stats.Experience -= levelThreshhold;
         Currentlevel += 1f;
         //Debug.Log("LEVEL UP, Experience: " + stats.Experience + " Current level: " + Currentlevel);
@@ -420,10 +447,27 @@ public class Player : MonoBehaviour
     else
         stats.Health += healthGrowthRate;
     */
-
-
+        Debug.Log(GlobalPlayerVariables.baseBulletCritRate);
         expBar.fillAmount = stats.Experience / levelThreshhold;
 
+        //Display stats changes
+
+        UpdateStatsDisplay(components.StatDisplayObject.StatsDisplayText, checkUpdate(storePlayerStats, stats));
+        if (runningCouroutine == null)
+            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, 2));
+        else
+        {
+            StopCoroutine(runningCouroutine);
+            runningCouroutine = StartCoroutine(ShowStatsDisplay(components.StatDisplayObject.StatDisplayAnimator, 2));
+        }
+            
+    }
+
+    IEnumerator ShowStatsDisplay(Animator DisplayAnimator, float dur)
+    {
+        DisplayAnimator.SetBool("Open", true);
+        yield return new WaitForSeconds(dur);
+        DisplayAnimator.SetBool("Open", false);
     }
 
     public void turnOffVaccineWheel()

@@ -71938,6 +71938,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: enableAIandControl
       objectReference: {fileID: 0}
+    - target: {fileID: 3365311783579285773, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365311783579285773, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
     - target: {fileID: 3371624115819094878, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_Interactable
       value: 1
@@ -72002,6 +72010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Essentials
       objectReference: {fileID: 0}
+    - target: {fileID: 3837925144678109531, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: indexOfSpawnPoint
       value: 1
@@ -72045,6 +72057,10 @@ PrefabInstance:
     - target: {fileID: 3837925145335139455, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.y
       value: 20.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145350028005, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: TutorialLoadingScreen
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145358146051, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.x

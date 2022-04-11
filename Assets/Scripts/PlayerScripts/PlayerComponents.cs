@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.U2D.Animation;
 
 [System.Serializable]
 public class PlayerComponents
 {
+    [System.Serializable]
+    public struct StatDisplay
+    {
+        public GameObject StatsDisplay;
+        public TextMeshProUGUI StatsDisplayText;
+        public Animator StatDisplayAnimator;
+    }
     [SerializeField]
     private Rigidbody2D playerRidgitBody;
     [SerializeField]
@@ -28,6 +36,8 @@ public class PlayerComponents
     private string targetCategory = default;
     [SerializeField]
     private ParticleSystem playerParticleSystem;
+    [SerializeField]
+    private StatDisplay statDisplayObject;
 
 
     public Rigidbody2D PlayerRidgitBody
@@ -83,5 +93,10 @@ public class PlayerComponents
     public ParticleSystem PlayerParticleSystem
     {
         get => playerParticleSystem;
+    }
+
+    public StatDisplay StatDisplayObject
+    {
+        get => statDisplayObject;
     }
 }
