@@ -264,20 +264,7 @@ public class ThymusScript : MonoBehaviour
 
         if (dialogSequenceFinish)
         {
-            if (cameraCoroutine != null && zoomCoroutine != null)
-            {
-                StopCoroutine(cameraCoroutine);
-                cameraCoroutine = StartCoroutine(Camera.MoveTo(player.Stats.Position, 0.1f, 10));
-                cameraCoroutine = null;
-                StopCoroutine(zoomCoroutine);
-                cameraCoroutine = StartCoroutine(Camera.ZoomTo(7, 0.1f));
-                cameraCoroutine = null;
-            }
-            //player.holdWalkSpeed = oriWalkSpeed;
-            //player.holdSprintSpeed = oriSprintSpeed;
-            GlobalPlayerVariables.EnablePlayerControl = true;
-            GlobalPlayerVariables.EnableAI = true;
-            StartCoroutine(DisableThymus(1));
+            DismissThymus();
         }
     }
 
@@ -292,14 +279,9 @@ public class ThymusScript : MonoBehaviour
             Dialog.CameraSpeed = 10;
         }
 
-        if (!Dialog.keepPrevPos && cameraCoroutine != null && zoomCoroutine != null)
+        if (!Dialog.keepPrevPos)
         {
-            StopCoroutine(cameraCoroutine);
-            cameraCoroutine = StartCoroutine(Camera.MoveTo(player.Stats.Position, 0.1f, 10));
-            cameraCoroutine = null;
-            StopCoroutine(zoomCoroutine);
-            cameraCoroutine = StartCoroutine(Camera.ZoomTo(7, 0.1f));
-            cameraCoroutine = null;
+            resetCamera();
         }
 
         int tempEyesIdx = 0;
@@ -480,9 +462,13 @@ public class ThymusScript : MonoBehaviour
         Appear = true;
     }
 
-    private IEnumerator DisableThymus(float dur)
+    public IEnumerator DisableThymus(float dur)
     {
-        currWeapon.ThymusPresent = false;
+        if(currWeapon != null)
+            currWeapon.ThymusPresent = false;
+        resetCamera();
+        GlobalPlayerVariables.EnablePlayerControl = true;
+        GlobalPlayerVariables.EnableAI = true;
         GameObject.Find("Shop").GetComponent<Shop>().ThymusPresent = false;
         WeaponStandScript[] Stands = GameObject.FindObjectsOfType<WeaponStandScript>();
         foreach (WeaponStandScript ws in Stands)
@@ -557,9 +543,21 @@ public class ThymusScript : MonoBehaviour
         
     }
 
-    public void enableMovementAndAI()
+    public void DismissThymus()
     {
-        GlobalPlayerVariables.EnablePlayerControl = true;
-        GlobalPlayerVariables.EnableAI = true;
+        StartCoroutine(DisableThymus(0.2f));
+    }
+
+    public void resetCamera()
+    {
+        if (cameraCoroutine != null || zoomCoroutine != null)
+        {
+            StopCoroutine(cameraCoroutine);
+            cameraCoroutine = StartCoroutine(Camera.MoveTo(player.Stats.Position, 0.1f, 10));
+            cameraCoroutine = null;
+            StopCoroutine(zoomCoroutine);
+            zoomCoroutine = StartCoroutine(Camera.ZoomTo(8.25f, 0.1f));
+            zoomCoroutine = null;
+        }
     }
 }
