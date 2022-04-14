@@ -323,6 +323,7 @@ public class Globin : MonoBehaviour
 
     private float lowestHP = Mathf.Infinity;
     private float tempHP = 0;
+    private float tempmaxHP = 0;
     private Globin TempGlobin;
     public bool ShowDebugShootRadius = false;
     private void OnDrawGizmos()
@@ -466,6 +467,7 @@ public class Globin : MonoBehaviour
 
                     //float closestDistanceSqr = Mathf.Infinity;
                     tempHP = 0;
+                    tempmaxHP = 0;
                     //lowestHP = Mathf.Infinity;
                     Collider2D[] ColliderArray = Physics2D.OverlapCircleAll(transform.position, shootdistance);
                     foreach (Collider2D collider2D in ColliderArray)
@@ -490,11 +492,13 @@ public class Globin : MonoBehaviour
                                     if (hit2.collider.gameObject.CompareTag("Player"))
                                     {
                                         tempHP = playerScript.Stats.Health;
+                                        tempmaxHP = playerScript.Stats.MaxHealth;
                                         //globinScript.playerStash.
                                     }
                                     else if (hit2.collider.gameObject.CompareTag("Globin"))
                                     {
                                         tempHP = TempGlobin.HP;
+                                        tempmaxHP = TempGlobin.maxHP;
                                     }
 
                                     //Debug.Log("HP FOR HEAL CIRCLE " + tempHP + " LOWEST HP IS " + lowestHP);
@@ -529,7 +533,7 @@ public class Globin : MonoBehaviour
                         RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
                         if (hit3.collider != null)
                         {
-                            if (hit3.collider.transform == EnemyTarget) //hit3.collider.gameObject.CompareTag("Player") || hit3.collider.gameObject.CompareTag("Globin")
+                            if (hit3.collider.transform == EnemyTarget && tempHP < tempmaxHP) //hit3.collider.gameObject.CompareTag("Player") || hit3.collider.gameObject.CompareTag("Globin")
                             {
                                 canSeeEnemy = true;
                                 Debug.DrawRay(transform.position, EnemyTarget.transform.position - transform.position, Color.white);
