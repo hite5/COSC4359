@@ -239,6 +239,11 @@ public class EMC1Addition1
     }
 
 
+    public void spawnWithTank()
+    {
+        GameObject enemy2SpawnTank = alliesToSummonTanks[Random.Range(0, alliesToSummonTanks.Count)];
+        EnemyManager.instance.spawnMistObjectAtRandomPoint(mists[1], EMC.transform, enemy2SpawnTank, 3f, 5f);
+    }
 
     
     public void summonComrades()
@@ -253,11 +258,14 @@ public class EMC1Addition1
             //spawn mist object
         }
 
-
+        //spawn tank object
+        GameObject enemy2SpawnTank = alliesToSummonTanks[Random.Range(0, alliesToSummonTanks.Count)];
+        EnemyManager.instance.spawnMistObjectAtRandomPoint(mists[1], EMC.transform, enemy2SpawnTank, 3f, 5f);
 
         //summon x amount (pick from player army?)
 
     }
+
 
     void flagPlacementManager()
     {

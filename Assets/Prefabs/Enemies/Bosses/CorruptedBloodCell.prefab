@@ -420,9 +420,11 @@ MonoBehaviour:
     time2chase: 0
     alliesToSummonGroundUnits:
     - {fileID: 2806173593672008090, guid: e3d484d3cf7ee394db53e9a5edd44094, type: 3}
-    alliesToSummonTanks: []
+    alliesToSummonTanks:
+    - {fileID: 1673701182820490576, guid: 160c4725ba07fe1459a1d19a47b440c6, type: 3}
     mists:
     - {fileID: 2839376281009668174, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
+    - {fileID: 875014661110720363, guid: 8b9a5794d9e2dac45b87c3f11a855425, type: 3}
     player: {fileID: 0}
     playerStash: {fileID: 0}
     flag: {fileID: 8117428273530365415}

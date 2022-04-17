@@ -147,6 +147,16 @@ public class EnemyManager : MonoBehaviour
         go.GetComponent<InfectedMist>().commander = pos2Spawn.GetComponent<EnemyColony>();
 
     }
+
+    public void spawnMistObjectAtRandomPoint(GameObject obj2Spawn, Transform BossLink, GameObject selectedUnit, float startRange2Spawn, float endRange2Spawn)
+    {
+        int randomSpawn = Random.Range(0, spawnPoints.Count);
+        var go = Instantiate(obj2Spawn, spawnPoints[randomSpawn].transform.position, Quaternion.identity);
+        go.GetComponent<InfectedMist>().EnemyToSpawn = selectedUnit;
+        go.GetComponent<InfectedMist>().transformTimer = Random.Range(startRange2Spawn, endRange2Spawn);
+        go.GetComponent<InfectedMist>().commander = BossLink.GetComponent<EnemyColony>();
+
+    }
     public void spawnAntiAirMissle(GameObject obj2Spawn, Transform pos2Spawn, GameObject target)
     {
 

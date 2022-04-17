@@ -116,6 +116,7 @@ public class Enemy3 : MonoBehaviour
 
 
     [Header("Enemy3 Stats")]
+    public bool isVehicle = false;
     public Image HPbar;
     public float HP = 100;
     public float maxHP = 100;
@@ -253,8 +254,8 @@ public class Enemy3 : MonoBehaviour
         EnemyTarget = player;
         //GlobalPlayerVariables.GlobinsAndPlayerAlive += 1;
         InvokeRepeating("UpdatePath", 0f, 0.5f);
-
-        currSprite = spriteLibrary.spriteLibraryAsset.GetCategoryLabelNames(targetCategory).ToArray();
+        if (!isVehicle)
+            currSprite = spriteLibrary.spriteLibraryAsset.GetCategoryLabelNames(targetCategory).ToArray();
 
         //if (GameObject.Find("EnemyColony") != null)
         enemyManager = EnemyManager.instance;
@@ -326,7 +327,7 @@ public class Enemy3 : MonoBehaviour
             if (retreatToBoss == true && distancefromplayer <= retreatDist || hasCommander == true && distancefromplayer >= stoppingDistance)
             {
                 //need logic to make it where target system doesn't conflict
-                if(!hasCommander)
+                if (!hasCommander)
                 {
                     if (BossObject != null)
                         target = BossObject;
@@ -355,9 +356,11 @@ public class Enemy3 : MonoBehaviour
                     reachedDestination = true;
                 }
             }
-
-            facing = transform.Find("EnemyAim").GetComponent<Enemy3AIM>().AimDir;
-            Animate(facing);
+            if (!isVehicle)
+            {
+                facing = transform.Find("EnemyAim").GetComponent<Enemy3AIM>().AimDir;
+                Animate(facing);
+            }
         }
     }
 
