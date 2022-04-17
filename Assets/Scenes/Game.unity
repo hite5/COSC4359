@@ -141757,7 +141757,7 @@ GameObject:
   - component: {fileID: 1173387004}
   - component: {fileID: 1173387003}
   - component: {fileID: 1173387002}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: ActivateButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142998,7 +142998,7 @@ GameObject:
   - component: {fileID: 6035292282993791959}
   - component: {fileID: 6035292282993791958}
   - component: {fileID: 6035292282993791960}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PityMoneyChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}

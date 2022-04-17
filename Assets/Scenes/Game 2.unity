@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 29793569}
   - component: {fileID: 29793568}
   - component: {fileID: 29793567}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PityMoneyChest (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65035,7 +65035,7 @@ GameObject:
   - component: {fileID: 2004488606}
   - component: {fileID: 2004488605}
   - component: {fileID: 2004488611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PityMoneyChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}

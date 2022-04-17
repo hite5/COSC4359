@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6035292282239370255}
   - component: {fileID: 6035292282239370254}
   - component: {fileID: 3989059425152763083}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BigHairyChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
