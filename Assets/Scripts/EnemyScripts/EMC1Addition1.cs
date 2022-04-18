@@ -239,10 +239,23 @@ public class EMC1Addition1
     }
 
 
-    public void spawnWithTank()
+    public void spawnWithAllies()
     {
-        GameObject enemy2SpawnTank = alliesToSummonTanks[Random.Range(0, alliesToSummonTanks.Count)];
-        EnemyManager.instance.spawnMistObjectAtRandomPoint(mists[1], EMC.transform, enemy2SpawnTank, 3f, 5f);
+        int rand = Random.Range(1, 3);
+        if (rand > 1)
+        {
+            GameObject enemy2SpawnTank = alliesToSummonTanks[Random.Range(0, alliesToSummonTanks.Count)];
+            EnemyManager.instance.spawnMistObjectAtRandomPoint(mists[1], EMC.transform, enemy2SpawnTank, 3f, 5f);
+        }
+        else
+        {
+            for (int i = 0; i < AmountToSummonAtATime; i++)
+            {
+                GameObject enemy2Spawn = alliesToSummonGroundUnits[Random.Range(0, alliesToSummonGroundUnits.Count)];
+                EnemyManager.instance.spawnMistObject(mists[0], EMC.transform, enemy2Spawn, 5f, 8f);
+                //spawn mist object
+            }
+        }
     }
 
     

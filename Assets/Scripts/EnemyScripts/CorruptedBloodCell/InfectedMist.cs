@@ -8,6 +8,8 @@ public class InfectedMist : MonoBehaviour
     public GameObject EnemyToSpawn;
     public EnemyColony commander;
     bool done = false;
+    public bool isSurvivalMode = false;
+    public float newHP = 200f;
 
 
     // Update is called once per frame
@@ -18,6 +20,11 @@ public class InfectedMist : MonoBehaviour
         {
             done = true;
             var go = Instantiate(EnemyToSpawn, this.transform.position, Quaternion.identity);
+            if (isSurvivalMode)
+            {
+                go.GetComponent<Enemy3>().HP = newHP;
+                go.GetComponent<Enemy3>().maxHP = newHP;
+            }
             go.GetComponent<Enemy3AddOn>().Commander = commander;
             go.GetComponent<Enemy3>().hasCommander = true;
             this.gameObject.GetComponent<Enemy3>().Die();

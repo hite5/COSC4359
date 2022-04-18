@@ -140,11 +140,15 @@ public class EnemyManager : MonoBehaviour
 
     public void spawnMistObject(GameObject obj2Spawn, Transform pos2Spawn, GameObject selectedUnit, float startRange2Spawn, float endRange2Spawn)
     {
-
         var go = Instantiate(obj2Spawn, pos2Spawn.position, Quaternion.identity);
         go.GetComponent<InfectedMist>().EnemyToSpawn = selectedUnit;
         go.GetComponent<InfectedMist>().transformTimer = Random.Range(startRange2Spawn, endRange2Spawn);
         go.GetComponent<InfectedMist>().commander = pos2Spawn.GetComponent<EnemyColony>();
+        if (survivalMode)
+        {
+            go.GetComponent<InfectedMist>().isSurvivalMode = true;
+            go.GetComponent<InfectedMist>().newHP = SurvivalManager.instance.GuardianSpawnlist[0].GuardianHP;
+        }
 
     }
 
@@ -155,6 +159,11 @@ public class EnemyManager : MonoBehaviour
         go.GetComponent<InfectedMist>().EnemyToSpawn = selectedUnit;
         go.GetComponent<InfectedMist>().transformTimer = Random.Range(startRange2Spawn, endRange2Spawn);
         go.GetComponent<InfectedMist>().commander = BossLink.GetComponent<EnemyColony>();
+        if (survivalMode)
+        {
+            go.GetComponent<InfectedMist>().isSurvivalMode = true;
+            go.GetComponent<InfectedMist>().newHP = SurvivalManager.instance.GuardianSpawnlist[0].GuardianHP;
+        }
 
     }
     public void spawnAntiAirMissle(GameObject obj2Spawn, Transform pos2Spawn, GameObject target)

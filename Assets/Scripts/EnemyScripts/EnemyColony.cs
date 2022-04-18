@@ -207,7 +207,7 @@ public class EnemyColony : MonoBehaviour
                 addOn1.setPlayerStash(player);
                 addOn1.EMC = this;
                 InvokeRepeating("UpdatePath", 0f, 0.5f);
-                addOn1.spawnWithTank();
+                addOn1.spawnWithAllies();
                 //invoke doesn't work on subscripts have to make own timer
             }
         }
