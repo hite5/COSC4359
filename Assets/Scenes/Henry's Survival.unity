@@ -141511,6 +141511,16 @@ MonoBehaviour:
     changeName: 1
     newBossName: CORRUPTED BLOOD CELL
     dontNormalizeLocalScale: 1
+  - Boss: {fileID: 4054260681276426224, guid: 6c3d3bccb69c8514da1db939fb1cc532, type: 3}
+    BossHP: 1500
+    changeName: 1
+    newBossName: CORRUPTED BLOOD CELL
+    dontNormalizeLocalScale: 1
+  - Boss: {fileID: 4054260681276426224, guid: 6c3d3bccb69c8514da1db939fb1cc532, type: 3}
+    BossHP: 1500
+    changeName: 1
+    newBossName: CORRUPTED BLOOD CELL
+    dontNormalizeLocalScale: 1
   GuardianSpawnlist:
   - Guardian: {fileID: 2666951384714126294, guid: 0456d0b67387f0c45b18fa2ee21fc077, type: 3}
     keepDefaultHP: 0
