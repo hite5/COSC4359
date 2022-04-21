@@ -422,7 +422,7 @@ public class EnemyColony2 : MonoBehaviour
         else if (goForPlayer == true && lineofsight == true)
         {
             //newpos = new Vector3(randPos.x, randPos.y, 0);
-            if (playerStash != null)
+            if (playerStash != null && target != null)
                 direction = (target.position - transform.position).normalized;
             else
                 direction = transform.position.normalized;
