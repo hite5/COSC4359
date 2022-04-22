@@ -5581,7 +5581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CampaignLoadingScreenName: GameLoadingScreen
   SurvivalLoadingScreenName: Survival1LoadingScreen
-  CampaignChapter2LoadingScreenName: Chapter2HeartLoadingScreen
+  CampaignChapter2LoadingScreenName: Chapter2StomachLoadingScreen
 --- !u!1 &1035084171
 GameObject:
   m_ObjectHideFlags: 0
