@@ -15,6 +15,7 @@ public class SurvivalManager : MonoBehaviour
 
     public List<BossSettings> BossesInRotation;
     public List<GuardianSetup> GuardianSpawnlist;
+    public int guardianBaseHP;
     public List<DebugCircle> RandomSpawnPosForEvents;
     public GameObject MiniBossReinforcements;
     public GameObject NapalmStrike;
@@ -167,14 +168,18 @@ public class SurvivalManager : MonoBehaviour
         timerStart = timeBeforeNextWave;
     }
 
+
+    //use base hp float to set guardian health consistently
     public void updateGuardianList()
     {
         for (int i = 0; i < GuardianSpawnlist.Count; i++)
         {
             var go = GuardianSpawnlist[i];
-            go.GuardianHP = (int)(baseGrowth * go.GuardianHP);
+            go.GuardianHP = (int)(baseGrowth * guardianBaseHP);
+            /*
             if (go.GuardianHP > 2000)
                 go.GuardianHP = 2000;
+            */
             /*
             Debug.Log("****Guardian HP = " + go.GuardianHP);
             Debug.Log("****Guardian Base Growth = " + baseGrowth);

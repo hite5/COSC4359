@@ -141534,6 +141534,7 @@ MonoBehaviour:
   - Guardian: {fileID: 257568515384690895, guid: 6e782294ef35e414085517be255452fa, type: 3}
     keepDefaultHP: 0
     GuardianHP: 10
+  guardianBaseHP: 400
   RandomSpawnPosForEvents:
   - {fileID: 1135487420}
   - {fileID: 941962775}
@@ -141556,7 +141557,7 @@ MonoBehaviour:
   spawnCapGrowth: 5
   totalSpawned: 0
   baseEnemiesToSpawnEachRound: 50
-  enemyGrowth: 0.1
+  enemyGrowth: 0.2
   surviveTimeLimit: 15
   survivalTimer: 0
   roundOver: 0
