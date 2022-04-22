@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Pathfinding;
+using UnityEngine.Experimental.U2D.Animation;
+using System.Linq;
 
 public class EnemyColony : MonoBehaviour
 {
@@ -56,7 +58,7 @@ public class EnemyColony : MonoBehaviour
     }
 
     public GameObject DamageText;
-    private SpriteRenderer sprite;
+    public SpriteRenderer sprite;
     public Text BossName;
     public Image HealthBar;
     public string NameOfEnemy;
@@ -166,6 +168,23 @@ public class EnemyColony : MonoBehaviour
   
     public EMC1Addition1 addOn1;
 
+    //ANIMATION VARIABLES
+    [Header("SkinModule")]
+    [SerializeField]
+    private SpriteLibrary spriteLibrary = default;
+    [SerializeField]
+    private SpriteResolver targetResolver = default;
+    [SerializeField]
+    private string targetCategory = default;
+
+    private string[] currSprite;
+
+    private float relaMouseAngle;
+
+    [HideInInspector]
+    public BossAiming facing;
+
+    public bool useSprites = false;
 
     public void getReferences()
     {
@@ -184,15 +203,18 @@ public class EnemyColony : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
-
+        sprite = transform.Find("BossSprite").GetComponent<SpriteRenderer>();
+        if (useSprites)
+        {
+            currSprite = spriteLibrary.spriteLibraryAsset.GetCategoryLabelNames(targetCategory).ToArray();
+            facing = transform.Find("EnemyAim").GetComponent<BossAiming>();
+        }
 
         //Debug.Log(enemyColony.colonyHealth);
         //MaxHP = enemyColony.colonyHealth;
         //HealthBar = GameObject.Find("EnemyHP").GetComponent<Image>();
         //BossName = GameObject.Find("BossName").GetComponent<Text>();
-        sprite = transform.Find("BossSprite").GetComponent<SpriteRenderer>();
+        
         //HealthBar.fillAmount = enemyColony.colonyHealth / MaxHP;
 
         rb = GetComponent<Rigidbody2D>();
@@ -306,10 +328,16 @@ public class EnemyColony : MonoBehaviour
                     }
 
                 }
+
             }
             else
             {
                 addOn1.fixUpdateMovementAStar();
+            }
+            if (useSprites)
+            {
+                Animate(facing.AimDir);
+                //Debug.Log(facing.AimDir);
             }
         }
     }
@@ -784,6 +812,60 @@ public class EnemyColony : MonoBehaviour
         Destroy(transform.gameObject);
     }
 
+
+    public void Animate(float angle)
+    {
+        //transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(player.Stats.Direction.y, player.Stats.Direction.x) * Mathf.Rad2Deg - 180));
+        //relaMouseAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        relaMouseAngle = angle;
+        if (relaMouseAngle < 0)
+            relaMouseAngle = relaMouseAngle + 360;
+        Debug.Log(relaMouseAngle);
+        //Debug.Log(relaMouseAngle);
+        //Debug.Log(relaMouseAngle);
+        //New 8 directions system
+        /*[0]Down
+         *[1]Up
+         *[2]Left
+         *[3]Right
+         *[4]TopLeft
+         *[5]TopRight
+         *[6]BotLeft
+         *[7]BotRight
+         */
+        if (relaMouseAngle <= 22.5 || relaMouseAngle > 337.5) //Right
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[3]);
+        }
+        else if (relaMouseAngle > 22.5 && relaMouseAngle <= 67.5) //TopRight
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[5]);
+        }
+        else if (relaMouseAngle > 67.5 && relaMouseAngle <= 112.5) //Up
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[1]);
+        }
+        else if (relaMouseAngle > 112.5 && relaMouseAngle <= 157.5) //TopLeft
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[4]);
+        }
+        else if (relaMouseAngle > 157.5 && relaMouseAngle <= 202.5) //Left
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[2]);
+        }
+        else if (relaMouseAngle > 202.5 && relaMouseAngle <= 247.5) //BotLeft
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[6]);
+        }
+        else if (relaMouseAngle > 247.5 && relaMouseAngle <= 292.5) //Down
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[0]);
+        }
+        else if (relaMouseAngle > 292.5 && relaMouseAngle <= 337.5) //BotRight
+        {
+            targetResolver.SetCategoryAndLabel(targetCategory, currSprite[7]);
+        }
+    }
 
 
 

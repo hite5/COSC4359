@@ -40,3 +40,30 @@ MonoBehaviour:
     - m_Name: BotRight
       m_Hash: 1358873647
       m_Sprite: {fileID: 2268299993848996506, guid: d77f1b9841a34da4285e77b0791636e4, type: 3}
+  - m_Name: GlobinCorrupted
+    m_Hash: -1590305513
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 7240842720280739457, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 1815048588666903401, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 4590799225085793375, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: -3928694207844952684, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: TopLeft
+      m_Hash: -1315448624
+      m_Sprite: {fileID: -4223088337453714002, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: TopRight
+      m_Hash: 1908129429
+      m_Sprite: {fileID: -2979484816704169871, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: BotLeft
+      m_Hash: 1075435492
+      m_Sprite: {fileID: -1425972648179709842, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
+    - m_Name: BotRight
+      m_Hash: 1358873647
+      m_Sprite: {fileID: 5226441504653259043, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}

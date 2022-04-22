@@ -237,6 +237,7 @@ MonoBehaviour:
   shootdistance: 0
   distancefromplayer: 0
   canSeeEnemy: 0
+  isVehicle: 0
   HPbar: {fileID: 2839376281830358107}
   HP: 4000
   maxHP: 4000
@@ -384,6 +385,8 @@ MonoBehaviour:
   transformTimer: 5
   EnemyToSpawn: {fileID: 0}
   commander: {fileID: 0}
+  isSurvivalMode: 0
+  newHP: 200
 --- !u!1 &2839376281820586520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,7 +1080,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.71241915, g: 0.03123886, b: 0.735849, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

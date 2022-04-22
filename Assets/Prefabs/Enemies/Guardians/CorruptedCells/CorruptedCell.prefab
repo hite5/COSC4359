@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: -1272439681
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1541246924289911970, guid: 52cfe349ef0323947bf116bcf942edf8, type: 3}
+  m_Sprite: {fileID: 7240842720280739457, guid: 916a103b6297e69428f0af89b4fce91b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   timesToShoot: 0
   spriteLibrary: {fileID: 8024877107455346724}
   targetResolver: {fileID: 1842829791994404871}
-  targetCategory: Hanzr Sprite Library Asset
+  targetCategory: GlobinCorrupted
   facing: 0
   hasCommander: 0
 --- !u!114 &2806173593672008091
@@ -377,18 +377,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0017318726, y: 0.00086688995}
+  m_Offset: {x: -0.0028934479, y: -0.0014576912}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.72002876, y: 0.8400336}
+    oldSize: {x: 0.9603842, y: 0.9603842}
     newSize: {x: 4.8, y: 4.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7247925, y: 0.7784977}
+  m_Size: {x: 0.83870316, y: 0.84823895}
   m_EdgeRadius: 0
 --- !u!114 &6841563218356022767
 MonoBehaviour:
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpriteLibraryAsset: {fileID: 11400000, guid: fff37d40dc4fbe34ca519a7f3b24d121, type: 2}
+  m_SpriteLibraryAsset: {fileID: 11400000, guid: 634c2fadac842bc47b03caed030c4a1b, type: 2}
 --- !u!114 &1842829791994404871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CategoryHash: 1.9497446e+9
+  m_CategoryHash: -6.1617795e-19
   m_labelHash: -0.025054464
 --- !u!1 &2806173595002430412
 GameObject:

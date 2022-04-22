@@ -41,7 +41,7 @@ public class BossAiming : MonoBehaviour
             Vector2 direction = player.position - transform.position;
             angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.eulerAngles = new Vector3(0, 0, angle);
-            //AimDir = angle;
+            AimDir = angle;
             Vector3 aimLocalScale = Vector3.one;
             if (angle > 90 || angle < -90)
             {

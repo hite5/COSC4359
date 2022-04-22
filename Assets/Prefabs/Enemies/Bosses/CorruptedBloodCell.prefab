@@ -97,6 +97,8 @@ GameObject:
   - component: {fileID: 709700461090132769}
   - component: {fileID: 8158356795320720201}
   - component: {fileID: 6166452736672689125}
+  - component: {fileID: 3287072018843179024}
+  - component: {fileID: 4867230701396472321}
   m_Layer: 7
   m_Name: BossSprite
   m_TagString: Colony
@@ -158,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: -1272439681
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6353777485397086779, guid: af026aeb232b2fa448fb2b448e3504d4, type: 3}
+  m_Sprite: {fileID: 8394733924532905396, guid: eaddd8c491cfbc04eb182d4e53926ff4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -188,6 +190,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3287072018843179024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655897030661308505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SpriteLibraryAsset: {fileID: 11400000, guid: eafcc93a36333ee478158230a3208941, type: 2}
+--- !u!114 &4867230701396472321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655897030661308505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 6.0122256e-16
+  m_labelHash: -0.025054464
 --- !u!1 &4054260681276426224
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageText: {fileID: 1138736699864978853, guid: 7340a996cc5e41d49941f7248c03f3ff, type: 3}
+  sprite: {fileID: 0}
   BossName: {fileID: 0}
   HealthBar: {fileID: 0}
   NameOfEnemy: COLONY
@@ -434,6 +464,11 @@ MonoBehaviour:
     callBackUnitsHPThreshold: 0.3
     antiAirMissle: {fileID: 6716920740742235087, guid: bd9826a7a8ce8f248b01e2328a8b76f0, type: 3}
     timeToFireMissle: 5
+  spriteLibrary: {fileID: 3287072018843179024}
+  targetResolver: {fileID: 4867230701396472321}
+  targetCategory: CorruptedHemo
+  facing: {fileID: 0}
+  useSprites: 1
 --- !u!114 &1630797228733802224
 MonoBehaviour:
   m_ObjectHideFlags: 0

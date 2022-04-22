@@ -180,15 +180,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1602688
   unstuckTime: 0
-  shootdistance: 23
+  shootdistance: 15
   distancefromplayer: 0
   circleRadius: 11
   timeTillNextMove: 1
   knockForcePlayerContact: 0.7
   knockbackstartrange: 0.2
   knockbackendrange: 0.2
-  beginningrangetoshoot: 1
-  endingrangetoshoot: 2
+  beginningrangetoshoot: 0.2
+  endingrangetoshoot: 1
   AmountOfBullets: 1
   bulletSpread: 4
   projectile: {fileID: 3812985790077842512, guid: b8a4215f89377b140b6b3b8efc37eeff, type: 3}
