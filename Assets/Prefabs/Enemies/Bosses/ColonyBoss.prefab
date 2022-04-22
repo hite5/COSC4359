@@ -566,7 +566,7 @@ Rigidbody2D:
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 426d0829d1b5abd448188304585fd873, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -610,6 +610,9 @@ MonoBehaviour:
   shootdistance: 20
   circleRadius: 5
   timeTillNextMove: 2
+  NextMoveCoolDown: 0
+  reachedDestination: 0
+  randPos: {x: 0, y: 0}
   knockForcePlayerContact: 0
   knockbackstartrange: 0.4
   knockbackendrange: 1
@@ -686,6 +689,40 @@ MonoBehaviour:
     DropPercentage: 100
     NumOfDrop: 1
   recalcshortestDist: 3
+  timer2reset: 0
+  bossAddition1: 0
+  addOn1:
+    EMC: {fileID: 0}
+    AmountToSummonAtATime: 5
+    startRangeToSummon: 5
+    endRangeToSummon: 15
+    SummonTimer: 15
+    target: {fileID: 0}
+    EnemyTarget: {fileID: 0}
+    spinRing: {fileID: 0}
+    nextWaypointDistance: 3
+    seeker: {fileID: 0}
+    canDash: 0
+    randomDash: 0
+    dashForce: 0
+    dashBackOnHit: 0
+    beginningRangeToDash: 0
+    endingRangeToDash: 0
+    timebetweenmultiDash: 0
+    dashAroundPlayerRadius: 0
+    time2chase: 0
+    alliesToSummonGroundUnits: []
+    alliesToSummonTanks: []
+    mists: []
+    player: {fileID: 0}
+    playerStash: {fileID: 0}
+    flag: {fileID: 0}
+    followFlag: 0
+    placeFlagEveryXAmount: 5
+    flagCoolDown: 0
+    callBackUnitsHPThreshold: 0.3
+    antiAirMissle: {fileID: 0}
+    timeToFireMissle: 5
 --- !u!114 &8426641610741879606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,7 +759,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 6490549138286293558}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 426d0829d1b5abd448188304585fd873, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
