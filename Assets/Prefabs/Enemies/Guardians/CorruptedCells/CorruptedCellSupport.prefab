@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8024877107455346724}
   - component: {fileID: 1842829791994404871}
   m_Layer: 7
-  m_Name: CorruptedCell
+  m_Name: CorruptedCellSupport
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,15 +322,15 @@ MonoBehaviour:
   knockbackstartrange: 0.125
   knockbackendrange: 0.125
   canUseGun: 1
-  beginningrangetoshoot: 0.5
-  endingrangetoshoot: 1
-  AmountOfBullets: 5
-  bulletSpread: 18
+  beginningrangetoshoot: 0.8
+  endingrangetoshoot: 1.8
+  AmountOfBullets: 1
+  bulletSpread: 12
   projectile: {fileID: 3812985790077842512, guid: b8a4215f89377b140b6b3b8efc37eeff, type: 3}
   firePoint: {fileID: 2806173595296233420}
-  burstFire: 0
-  timeBtwBurst: 0
-  timesToShoot: 0
+  burstFire: 1
+  timeBtwBurst: 0.055
+  timesToShoot: 20
   spriteLibrary: {fileID: 8024877107455346724}
   targetResolver: {fileID: 1842829791994404871}
   targetCategory: GlobinCorrupted
