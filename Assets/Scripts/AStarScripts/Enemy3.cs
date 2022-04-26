@@ -797,8 +797,11 @@ public class Enemy3 : MonoBehaviour
             critDMG = collision.gameObject.GetComponent<Bullet>().critDMG;
             knockbackForce = collision.gameObject.GetComponent<Bullet>().knockbackForce;
             */
+            if(collision.isExplosiveBullet && isVehicle)
+                takeDamage(damage * 2, collision.transform, speed);
+            else
+                takeDamage(damage, collision.transform, speed);
 
-            takeDamage(damage, collision.transform, speed);
 
             reachedDestination = true;
 

@@ -679,7 +679,7 @@ public class Globin : MonoBehaviour
                 takeDamage(damage, collision.transform, speed);
             }
         }
-        if (collision.CompareTag("EnemyBullet2"))
+        if (collision.CompareTag("EnemyBullet2")) //Explosions
         {
             if (collision.gameObject.GetComponent<EnemyProj2>().isDeflected == false)
             {
@@ -687,7 +687,10 @@ public class Globin : MonoBehaviour
                 float speed = collision.gameObject.GetComponent<EnemyProj2>().speed;
 
                 //collision.gameObject.GetComponent<EnemyProj>().hit = true;
-                takeDamage(damage, collision.transform, speed);
+                if(!isVehicle)
+                    takeDamage(damage, collision.transform, speed);
+                else
+                    takeDamage(damage * 2.5f, collision.transform, speed);
             }
         }
 
