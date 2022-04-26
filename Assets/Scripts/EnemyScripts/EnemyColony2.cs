@@ -721,6 +721,9 @@ public class EnemyColony2 : MonoBehaviour
 
     [Header("SpinAttackRange")]
     public float spinattackrange;
+    public float TimerToDoDamage = 0.2f;
+    private float spinRingCounter = 0f;
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
@@ -985,14 +988,14 @@ public class EnemyColony2 : MonoBehaviour
     }
 
 
-
-    void hurtCircle()
+    void overlapCircleRing()
     {
         Collider2D[] objectsToBurn = Physics2D.OverlapCircleAll(transform.position, spinattackrange);
         foreach (var objectToBurn in objectsToBurn)
         {
-            
-            if (objectToBurn.tag == "EnemyMelee") { 
+
+            if (objectToBurn.tag == "EnemyMelee")
+            {
                 objectToBurn.GetComponent<Enemy2>().takeDamage(spinDamage, objectToBurn.transform, 10);
                 LifeSteal(spinDamage);
             }
@@ -1004,17 +1007,34 @@ public class EnemyColony2 : MonoBehaviour
                     objectToBurn.GetComponent<Enemy3>().takeDamage(spinDamage, objectToBurn.transform, 10);
                 LifeSteal(spinDamage);
             }
-            
+
             //if (objectToBurn.tag == "Colony") { objectToBurn.GetComponent<EnemyColony>().takeDamage(contactDamage, objectToBurn.transform, 10); }
-            if (objectToBurn.tag == "Player") { 
+            if (objectToBurn.tag == "Player")
+            {
                 objectToBurn.GetComponent<TakeDamage>().takeDamage(spinDamage, objectToBurn.transform, 10);
                 LifeSteal(spinDamage);
             }
-            if (objectToBurn.tag == "Globin") { 
+            if (objectToBurn.tag == "Globin")
+            {
                 objectToBurn.GetComponent<Globin>().takeDamage(spinDamage, objectToBurn.transform, 10);
                 LifeSteal(spinDamage);
             }
         }
+    }
+
+
+
+    //SPINRING
+    void hurtCircle()
+    {
+        if (spinRingCounter <= 0)
+        {
+            overlapCircleRing();
+            spinRingCounter = TimerToDoDamage;
+        }
+        else
+            spinRingCounter -= Time.deltaTime;
+
         //yield return new WaitForSecondsRealtime(0.3f);
     }
 

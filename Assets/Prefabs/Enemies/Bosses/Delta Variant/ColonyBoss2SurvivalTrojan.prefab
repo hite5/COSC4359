@@ -348,7 +348,7 @@ MonoBehaviour:
   isDead: 0
   contactDamage: 30
   meleeDamage: 50
-  spinDamage: 15
+  spinDamage: 100
   speed: 650
   EXPWorth: 50
   individualHP: 1
@@ -470,6 +470,7 @@ MonoBehaviour:
   weapon: {fileID: 5285427524425375329}
   weaponHurtBox: {fileID: 7114189407450526548}
   spinattackrange: 2.5
+  TimerToDoDamage: 0.2
 --- !u!114 &6479319357304675586
 MonoBehaviour:
   m_ObjectHideFlags: 0
