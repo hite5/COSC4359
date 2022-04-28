@@ -35,7 +35,7 @@ public class SurvivalManager : MonoBehaviour
 
     public int totalSpawned = 0;
     public int baseEnemiesToSpawnEachRound = 50;
-    public float enemyGrowth = 0.1f;
+    //public float enemyGrowth = 0.1f;
 
     public float surviveTimeLimit = 60f;
     [HideInInspector]

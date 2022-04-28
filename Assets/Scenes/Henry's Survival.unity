@@ -141547,7 +141547,7 @@ MonoBehaviour:
   MiniBossReinforcements: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
   NapalmStrike: {fileID: 6222267082814159789, guid: ef5d4c63ab80195448a80feb79a960e1, type: 3}
   bossRound: 0
-  healthGrowthRate: 0.1
+  healthGrowthRate: 0.2
   currentWave: 0
   baseAmountOfBosses: 1
   bossIncrease: 1
@@ -141557,7 +141557,6 @@ MonoBehaviour:
   spawnCapGrowth: 5
   totalSpawned: 0
   baseEnemiesToSpawnEachRound: 50
-  enemyGrowth: 0.2
   surviveTimeLimit: 15
   survivalTimer: 0
   roundOver: 0
