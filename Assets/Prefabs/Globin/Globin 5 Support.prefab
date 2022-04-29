@@ -117,6 +117,9 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 3765248
+  IgnoreMeTargeting:
+    serializedVersion: 2
+    m_Bits: 3765760
   shootdistance: 15
   distancefromplayer: 0
   canSeeEnemy: 0

@@ -54,6 +54,7 @@ public class Globin : MonoBehaviour
     [Header("Line Of Sight")]
     public bool lineofsight;
     public LayerMask IgnoreMe;
+    public LayerMask IgnoreMeTargeting;
     //private bool unstuck;
     //public float unstuckTime;
     public float shootdistance;
@@ -415,7 +416,7 @@ public class Globin : MonoBehaviour
                         {
                             if (collider2D.TryGetComponent<Transform>(out Transform enemy))
                             {
-                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMeTargeting);
                                 if (hit2)
                                 {
                                     if (hit2.collider.gameObject.CompareTag("EnemyMelee") || hit2.collider.gameObject.CompareTag("Enemy") || hit2.collider.gameObject.CompareTag("Colony"))
@@ -441,7 +442,7 @@ public class Globin : MonoBehaviour
                     */
                     if (EnemyTarget != null)
                     {
-                        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMeTargeting);
                         if (hit3)
                         {
                             if (hit3.collider.gameObject.CompareTag("EnemyMelee") || hit3.collider.gameObject.CompareTag("Enemy") || hit3.collider.gameObject.CompareTag("Colony"))
