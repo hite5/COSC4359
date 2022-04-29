@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2666951383089911171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.601, y: 0.015, z: 0}
+  m_LocalPosition: {x: 0.651, y: 0.015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2666951383383179649}
@@ -460,7 +460,7 @@ SpriteRenderer:
   m_SortingLayerID: -1272439681
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 6094968338453082562, guid: c44c425560294504d83e804a28197a7a, type: 3}
+  m_Sprite: {fileID: -6852942174436562580, guid: b06114645fc86874bbcfb744d442088b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -765,7 +765,9 @@ MonoBehaviour:
     m_Bits: 1602688
   shootdistance: 16
   distancefromplayer: 0
+  distfromEnemyTarget: 0
   canSeeEnemy: 0
+  isVehicle: 0
   HPbar: {fileID: 2666951383327285187}
   HP: 3000
   maxHP: 3000
@@ -804,6 +806,7 @@ MonoBehaviour:
   targetResolver: {fileID: 1060911050768797008}
   targetCategory: Canzr Sprite Library Asset
   facing: 0
+  hasCommander: 0
 --- !u!114 &2666951384714126295
 MonoBehaviour:
   m_ObjectHideFlags: 0

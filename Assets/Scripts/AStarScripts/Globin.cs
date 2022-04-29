@@ -54,6 +54,7 @@ public class Globin : MonoBehaviour
     [Header("Line Of Sight")]
     public bool lineofsight;
     public LayerMask IgnoreMe;
+    public LayerMask IgnoreMeTargeting;
     //private bool unstuck;
     //public float unstuckTime;
     public float shootdistance;
@@ -222,6 +223,7 @@ public class Globin : MonoBehaviour
     }
 
     private float disttofollow = 0;
+    private float distToRandPos = 0;
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -264,10 +266,11 @@ public class Globin : MonoBehaviour
                         rb.AddForce(force);
                         //transform.position = Vector2.MoveTowards(transform.position, randPos, speed * Time.deltaTime); //need to make it where it walks in that direction
                     }
-                    if (transform.position.x == randPos.x && transform.position.y == randPos.y || timeTillNextMove <= 0)
+                    if (distToRandPos <= 0.5 || timeTillNextMove <= 0)
                     {
                         reachedDestination = true;
                     }
+                    distToRandPos = Vector2.Distance(rb.position, randPos);
                 }
             }
             if (!isVehicle)
@@ -415,7 +418,7 @@ public class Globin : MonoBehaviour
                         {
                             if (collider2D.TryGetComponent<Transform>(out Transform enemy))
                             {
-                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                                RaycastHit2D hit2 = Physics2D.Raycast(transform.position, enemy.transform.position - transform.position, Mathf.Infinity, ~IgnoreMeTargeting);
                                 if (hit2)
                                 {
                                     if (hit2.collider.gameObject.CompareTag("EnemyMelee") || hit2.collider.gameObject.CompareTag("Enemy") || hit2.collider.gameObject.CompareTag("Colony"))
@@ -441,7 +444,7 @@ public class Globin : MonoBehaviour
                     */
                     if (EnemyTarget != null)
                     {
-                        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMe);
+                        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, EnemyTarget.transform.position - transform.position, Mathf.Infinity, ~IgnoreMeTargeting);
                         if (hit3)
                         {
                             if (hit3.collider.gameObject.CompareTag("EnemyMelee") || hit3.collider.gameObject.CompareTag("Enemy") || hit3.collider.gameObject.CompareTag("Colony"))

@@ -132,7 +132,8 @@ public class EnemyColony : MonoBehaviour
     public Transform player;
     [HideInInspector]
     public Transform playerStash;
-    private Rigidbody2D rb;
+    [HideInInspector]
+    public Rigidbody2D rb;
 
     [Header("Burst Settings")]
     public bool burstFire;

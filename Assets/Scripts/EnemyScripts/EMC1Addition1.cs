@@ -160,7 +160,7 @@ public class EMC1Addition1
 
 
 
-        if ((distancefromtarget >= EMC.stoppingDistance || EMC.lineofsight == false) && EMC.isDead == false)
+        if ((distancefromtarget >= EMC.stoppingDistance && EMC.lineofsight == true) && EMC.isDead == false)
         {
             Astar();
             //Debug.Log("Astar");
@@ -407,7 +407,7 @@ public class EMC1Addition1
 
         }
 
-        Collider2D[] ColliderArray2 = Physics2D.OverlapCircleAll(EMC.transform.position, EMC.shootdistance);
+        Collider2D[] ColliderArray2 = Physics2D.OverlapCircleAll(EMC.transform.position, EMC.shootdistance * 3);
         foreach (Collider2D collider2D in ColliderArray2)
         {
             //Debug.Log("getting somewhere hahahz");

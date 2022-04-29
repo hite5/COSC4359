@@ -620,18 +620,21 @@ MonoBehaviour:
   maxHP: 1200
   AR: 105
   speed: 14000
-  stoppingDistance: 10
+  stoppingDistance: 6
   lineofsight: 0
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 3765248
+  IgnoreMeTargeting:
+    serializedVersion: 2
+    m_Bits: 3765760
   shootdistance: 15
   distancefromplayer: 0
   canSeeEnemy: 0
   canSeeGlobinOrAlly: 0
   closest: 0
-  circleRadius: 6
-  timeTillNextMove: 13
+  circleRadius: 2
+  timeTillNextMove: 1
   beginningrangetoshoot: 2
   endingrangetoshoot: 3
   AmountOfBullets: 1
@@ -882,6 +885,9 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 95232
+  IgnoreMeTargeting:
+    serializedVersion: 2
+    m_Bits: 0
   shootdistance: 50
   distancefromplayer: 0
   canSeeEnemy: 0
@@ -1131,6 +1137,9 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 95232
+  IgnoreMeTargeting:
+    serializedVersion: 2
+    m_Bits: 0
   shootdistance: 30
   distancefromplayer: 0
   canSeeEnemy: 0

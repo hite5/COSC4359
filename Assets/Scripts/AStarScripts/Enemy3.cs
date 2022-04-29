@@ -109,6 +109,7 @@ public class Enemy3 : MonoBehaviour
     //public float unstuckTime;
     public float shootdistance;
     public float distancefromplayer;
+    public float distfromEnemyTarget = 0;
     //public float distancefromTarget;
     [HideInInspector]
     public bool canSeeEnemy = false;
@@ -319,10 +320,10 @@ public class Enemy3 : MonoBehaviour
     {
         if (GlobalPlayerVariables.EnableAI)
         {
-            if (player != null && hasCommander == false)
+            if (player != null)
                 distancefromplayer = Vector2.Distance(rb.position, player.position);
-            else if (player != null && hasCommander && target != null)
-                distancefromplayer = Vector2.Distance(rb.position, target.position);
+            if(EnemyTarget != null)
+                distfromEnemyTarget = Vector2.Distance(rb.position, EnemyTarget.position);
 
             if (retreatToBoss == true && distancefromplayer <= retreatDist || hasCommander == true && distancefromplayer >= stoppingDistance)
             {
@@ -619,7 +620,7 @@ public class Enemy3 : MonoBehaviour
                                     {
                                         closestDistanceSqr = dSqrToTarget;
                                         EnemyTarget = enemy;
-                                        if (retreatToBoss == false)
+                                        if (retreatToBoss == false && !hasCommander)
                                             target = enemy;
                                         closest = true;
                                         //Debug.Log("Found target");
@@ -675,7 +676,7 @@ public class Enemy3 : MonoBehaviour
                     Debug.DrawRay(transform.position, enemy.transform.position - transform.position, Color.black);
                 */
                 
-                if (canSeeEnemy == true && GlobalPlayerVariables.GameOver == false && canUseGun == true)
+                if (canSeeEnemy == true && GlobalPlayerVariables.GameOver == false && canUseGun == true && distfromEnemyTarget <= shootdistance)
                 {
 
                     if (timeBtwShots <= 0)

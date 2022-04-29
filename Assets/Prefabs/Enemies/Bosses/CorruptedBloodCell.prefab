@@ -335,7 +335,7 @@ MonoBehaviour:
   EXPWorth: 10000
   individualHP: 1
   indivMaxHP: 0
-  stoppingDistance: 500
+  stoppingDistance: 20
   retreatDistance: 0
   followPlayer: 0
   retreat: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 1733760
-  shootdistance: 38
+  shootdistance: 15
   circleRadius: 5
   timeTillNextMove: 2
   NextMoveCoolDown: 0
@@ -361,6 +361,7 @@ MonoBehaviour:
   firePoint: {fileID: 2646760139165196105}
   player: {fileID: 0}
   playerStash: {fileID: 0}
+  rb: {fileID: 0}
   burstFire: 1
   timeBtwBurst: 0.02
   timesToShoot: 35
@@ -430,7 +431,7 @@ MonoBehaviour:
   bossAddition1: 1
   addOn1:
     EMC: {fileID: 0}
-    AmountToSummonAtATime: 3
+    AmountToSummonAtATime: 5
     startRangeToSummon: 10
     endRangeToSummon: 15
     SummonTimer: 15
@@ -459,11 +460,11 @@ MonoBehaviour:
     playerStash: {fileID: 0}
     flag: {fileID: 8117428273530365415}
     followFlag: 0
-    placeFlagEveryXAmount: 5
+    placeFlagEveryXAmount: 3
     flagCoolDown: 0
     callBackUnitsHPThreshold: 0.3
     antiAirMissle: {fileID: 6716920740742235087, guid: bd9826a7a8ce8f248b01e2328a8b76f0, type: 3}
-    timeToFireMissle: 5
+    timeToFireMissle: 3
   spriteLibrary: {fileID: 3287072018843179024}
   targetResolver: {fileID: 4867230701396472321}
   targetCategory: CorruptedHemo

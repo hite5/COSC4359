@@ -258,18 +258,21 @@ MonoBehaviour:
   maxHP: 800
   AR: 85
   speed: 10000
-  stoppingDistance: 11
+  stoppingDistance: 6
   lineofsight: 0
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 3765248
+  IgnoreMeTargeting:
+    serializedVersion: 2
+    m_Bits: 3765760
   shootdistance: 15
   distancefromplayer: 0
   canSeeEnemy: 0
   canSeeGlobinOrAlly: 0
   closest: 0
-  circleRadius: 6
-  timeTillNextMove: 0.5
+  circleRadius: 2
+  timeTillNextMove: 1
   beginningrangetoshoot: 0.8
   endingrangetoshoot: 1.8
   AmountOfBullets: 1

@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1660722909958698745}
   - component: {fileID: 6160102020093457167}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ MonoBehaviour:
   traversableTags: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
-    value: -7
+    value: -6
 --- !u!114 &2543917681424351839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5489,7 +5489,7 @@ GameObject:
   - component: {fileID: 4736396696059189884}
   - component: {fileID: 4609596237748487035}
   - component: {fileID: 6822721413749866816}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: EnemyAim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5605,7 +5605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3586774572883981805}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
