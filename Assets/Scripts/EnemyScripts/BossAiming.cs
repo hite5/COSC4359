@@ -39,7 +39,16 @@ public class BossAiming : MonoBehaviour
         if (GlobalPlayerVariables.GameOver == false && player != null)
         {
             Vector2 direction = player.position - transform.position;
-            angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            if (Colony.lineofsight == true)
+                angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            else 
+            {
+                Vector2 dir = Colony.rb.velocity;
+                angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            }
+
+            
             transform.eulerAngles = new Vector3(0, 0, angle);
             AimDir = angle;
             Vector3 aimLocalScale = Vector3.one;

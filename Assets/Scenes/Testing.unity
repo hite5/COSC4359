@@ -317,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].Boss
@@ -551,7 +551,6 @@ MonoBehaviour:
   spawnCapGrowth: 0
   totalSpawned: 0
   baseEnemiesToSpawnEachRound: 50
-  enemyGrowth: 0.1
   surviveTimeLimit: 15
   survivalTimer: 0
   roundOver: 0

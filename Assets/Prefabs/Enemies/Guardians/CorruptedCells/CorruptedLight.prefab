@@ -374,7 +374,7 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 1602688
-  shootdistance: 10
+  shootdistance: 15
   distancefromplayer: 0
   canSeeEnemy: 0
   isVehicle: 1
