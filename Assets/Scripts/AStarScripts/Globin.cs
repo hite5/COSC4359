@@ -223,6 +223,7 @@ public class Globin : MonoBehaviour
     }
 
     private float disttofollow = 0;
+    private float distToRandPos = 0;
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -265,10 +266,11 @@ public class Globin : MonoBehaviour
                         rb.AddForce(force);
                         //transform.position = Vector2.MoveTowards(transform.position, randPos, speed * Time.deltaTime); //need to make it where it walks in that direction
                     }
-                    if (transform.position.x == randPos.x && transform.position.y == randPos.y || timeTillNextMove <= 0)
+                    if (distToRandPos <= 0.5 || timeTillNextMove <= 0)
                     {
                         reachedDestination = true;
                     }
+                    distToRandPos = Vector2.Distance(rb.position, randPos);
                 }
             }
             if (!isVehicle)
