@@ -72015,6 +72015,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: xPos
+      value: -57.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
+      propertyPath: yPos
+      value: 20.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: indexOfSpawnPoint
       value: 1
       objectReference: {fileID: 0}
@@ -72040,7 +72048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145008713338, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: BossSettingList.Array.data[0].newBossName
-      value: Grafted Colony
+      value: GRAFTED COLONY
       objectReference: {fileID: 0}
     - target: {fileID: 3837925145041897061, guid: 482629f0e44943e41815f0a18076bd65, type: 3}
       propertyPath: m_LocalPosition.x

@@ -211,7 +211,7 @@ MonoBehaviour:
   DamageText: {fileID: 1138736699864978853, guid: 7340a996cc5e41d49941f7248c03f3ff, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
-  stoppingDistance: 5
+  stoppingDistance: 8
   circleRadius: 30
   timeTillNextMove: 0.5
   lineofsight: 0
@@ -220,6 +220,7 @@ MonoBehaviour:
     m_Bits: 1602688
   shootdistance: 16
   distancefromplayer: 0
+  distfromEnemyTarget: 0
   canSeeEnemy: 0
   isVehicle: 0
   HPbar: {fileID: 1443997740472228683}
