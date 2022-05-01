@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stomach.unity
     guid: 32dd64be0412bf548b08f66107d09347
+  - enabled: 1
+    path: Assets/Scenes/Intestines.unity
+    guid: a6a8fc8aa93ca254ba6a6433c52f2017
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen/Chapter 2 loading screens/Chapter2IntestinesLoadingScreen.unity
+    guid: 576cb24ccdcafcb4ab6e875bc774153d
   m_configObjects: {}

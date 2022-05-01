@@ -110,6 +110,7 @@ public class Enemy3 : MonoBehaviour
     public float shootdistance;
     public float distancefromplayer;
     public float distfromEnemyTarget = 0;
+    public float distFromTarget = 0;
     //public float distancefromTarget;
     [HideInInspector]
     public bool canSeeEnemy = false;
@@ -324,8 +325,10 @@ public class Enemy3 : MonoBehaviour
                 distancefromplayer = Vector2.Distance(rb.position, player.position);
             if(EnemyTarget != null)
                 distfromEnemyTarget = Vector2.Distance(rb.position, EnemyTarget.position);
+            if(hasCommander && target != null)
+                distFromTarget = Vector2.Distance(rb.position, target.position);
 
-            if (retreatToBoss == true && distancefromplayer <= retreatDist || hasCommander == true && distancefromplayer >= stoppingDistance)
+            if (retreatToBoss == true && distancefromplayer <= retreatDist || hasCommander == true && distFromTarget >= stoppingDistance)
             {
                 //need logic to make it where target system doesn't conflict
                 if (!hasCommander)
