@@ -450,9 +450,15 @@ MonoBehaviour:
     dashAroundPlayerRadius: 0
     time2chase: 0
     alliesToSummonGroundUnits:
+    - {fileID: 6111900528461088060, guid: f6c848c778e68d940921f3ed80180342, type: 3}
+    - {fileID: 6828188665741772943, guid: 65e7fff2c0cb60a42915535d2819f8b4, type: 3}
+    - {fileID: 7406304530714858858, guid: 9ab5d632687145442bb347ad78a85960, type: 3}
+    - {fileID: 1443997739145422686, guid: 1d08228846f269546ad2c9a4d81a7607, type: 3}
     - {fileID: 2806173593672008090, guid: e3d484d3cf7ee394db53e9a5edd44094, type: 3}
     alliesToSummonTanks:
     - {fileID: 1673701182820490576, guid: 160c4725ba07fe1459a1d19a47b440c6, type: 3}
+    - {fileID: 6101886005229548818, guid: b39e87f1900be9f4094898ac4ebe2295, type: 3}
+    - {fileID: 3372601695262059746, guid: 11ce82cf3c143e74da628c95a571b722, type: 3}
     mists:
     - {fileID: 2839376281009668174, guid: 2844b8825d38c21418c4fefe8c0f197f, type: 3}
     - {fileID: 875014661110720363, guid: 8b9a5794d9e2dac45b87c3f11a855425, type: 3}

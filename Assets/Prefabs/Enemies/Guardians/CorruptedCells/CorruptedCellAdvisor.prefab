@@ -249,7 +249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ROCKETEER
+  m_text: ADVISOR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aeccce163255184cbc90b2de5c5d7ae, type: 2}
   m_sharedMaterial: {fileID: 146823775245102549, guid: 7aeccce163255184cbc90b2de5c5d7ae, type: 2}
@@ -849,6 +849,7 @@ MonoBehaviour:
   shootdistance: 16
   distancefromplayer: 0
   distfromEnemyTarget: 0
+  distFromTarget: 0
   canSeeEnemy: 0
   isVehicle: 0
   HPbar: {fileID: 6111900527129835817}

@@ -303,6 +303,7 @@ MonoBehaviour:
   shootdistance: 16
   distancefromplayer: 0
   distfromEnemyTarget: 0
+  distFromTarget: 0
   canSeeEnemy: 0
   isVehicle: 0
   HPbar: {fileID: 6828188667128427674}
@@ -334,7 +335,7 @@ MonoBehaviour:
   endingrangetoshoot: 1.8
   AmountOfBullets: 1
   bulletSpread: 12
-  projectile: {fileID: 3812985790077842512, guid: b8a4215f89377b140b6b3b8efc37eeff, type: 3}
+  projectile: {fileID: 7738925325800699999, guid: 47d335fd8e3c2204c928145b4d0b89bb, type: 3}
   firePoint: {fileID: 6828188667366063833}
   burstFire: 1
   timeBtwBurst: 0.19
@@ -598,7 +599,7 @@ SpriteRenderer:
   m_SortingLayerID: -1272439681
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 6094968338453082562, guid: c44c425560294504d83e804a28197a7a, type: 3}
+  m_Sprite: {fileID: -4643012814537539292, guid: 0584bade51131cc49a5b1fc48f2cd6ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -826,7 +827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ROCKETEER
+  m_text: GRENADIER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aeccce163255184cbc90b2de5c5d7ae, type: 2}
   m_sharedMaterial: {fileID: 146823775245102549, guid: 7aeccce163255184cbc90b2de5c5d7ae, type: 2}

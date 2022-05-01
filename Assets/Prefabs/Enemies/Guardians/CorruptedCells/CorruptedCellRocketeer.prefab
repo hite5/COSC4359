@@ -221,6 +221,7 @@ MonoBehaviour:
   shootdistance: 16
   distancefromplayer: 0
   distfromEnemyTarget: 0
+  distFromTarget: 0
   canSeeEnemy: 0
   isVehicle: 0
   HPbar: {fileID: 1443997740472228683}
@@ -252,7 +253,7 @@ MonoBehaviour:
   endingrangetoshoot: 1.8
   AmountOfBullets: 1
   bulletSpread: 16
-  projectile: {fileID: 3812985790077842512, guid: b8a4215f89377b140b6b3b8efc37eeff, type: 3}
+  projectile: {fileID: 7738925325800699999, guid: 47d335fd8e3c2204c928145b4d0b89bb, type: 3}
   firePoint: {fileID: 1443997740775919880}
   burstFire: 1
   timeBtwBurst: 2.5
@@ -638,7 +639,7 @@ SpriteRenderer:
   m_SortingLayerID: -1272439681
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 6094968338453082562, guid: c44c425560294504d83e804a28197a7a, type: 3}
+  m_Sprite: {fileID: -3400122992227002935, guid: d1f128bbd6f5a4a44a48f85c641a978e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -673,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443997740775919883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.601, y: 0.015, z: 0}
+  m_LocalPosition: {x: 0.601, y: -0.042, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1443997740499420425}
