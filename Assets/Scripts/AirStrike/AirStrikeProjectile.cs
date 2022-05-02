@@ -26,6 +26,7 @@ public class AirStrikeProjectile : MonoBehaviour
 
     [Header("Survival Mode")]
     public bool forSurvivalMode = false;
+    public bool CorruptedCells = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,10 @@ public class AirStrikeProjectile : MonoBehaviour
         startPosition = target = transform.position;
         if(forSurvivalMode)
         {
-            Spawnlist = SurvivalManager.instance.GuardianSpawnlist;
+            if(!CorruptedCells)
+                Spawnlist = SurvivalManager.instance.GuardianSpawnlist;
+            else
+                Spawnlist = SurvivalManager.instance.CorruptedBloodcellsSpawnlist;
         }
 
 

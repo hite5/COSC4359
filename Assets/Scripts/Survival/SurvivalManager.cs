@@ -15,9 +15,12 @@ public class SurvivalManager : MonoBehaviour
 
     public List<BossSettings> BossesInRotation;
     public List<GuardianSetup> GuardianSpawnlist;
+    public List<GuardianSetup> CorruptedBloodcellsSpawnlist;
+    public List<GuardianSetup> CorruptedVehiclesSpawnlist;
     public int guardianBaseHP;
     public List<DebugCircle> RandomSpawnPosForEvents;
     public GameObject MiniBossReinforcements;
+    public GameObject CorruptedCellsReinforcements;
     public GameObject NapalmStrike;
     public bool bossRound = false;
 
@@ -94,8 +97,31 @@ public class SurvivalManager : MonoBehaviour
                 }
 
                 break;
-            case 3: //
-                
+            case 3: //corrupted cells
+                for (int i = 0; i < baseAmountOfBosses; i++)
+                {
+                    int temp = Random.Range(0, RandomSpawnPosForEvents.Count);
+                    Vector2 SpawnOffSet = Vector2.zero;
+                    SpawnOffSet = RandomSpawnPosForEvents[temp].transform.position;
+                    SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
+                    //Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
+                    Instantiate(CorruptedCellsReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+                    //spawn a randomtank
+                    if (i % 2 == 0)
+                    {
+                        int randVehicle = Random.Range(0, CorruptedVehiclesSpawnlist.Count);
+                        int randomSpawn = Random.Range(0, EManager.spawnPoints.Count);
+                        var go = Instantiate(CorruptedVehiclesSpawnlist[randVehicle].Guardian, EManager.spawnPoints[randomSpawn].transform.position, Quaternion.identity);
+                    }
+
+                }
+
+
+
+
+                break;
+            case 4: //
+
                 break;
             default:
                 Debug.Log("Unknown type");
@@ -186,6 +212,38 @@ public class SurvivalManager : MonoBehaviour
             */
             GuardianSpawnlist[i] = go;
         }
+
+        for (int i = 0; i < CorruptedBloodcellsSpawnlist.Count; i++)
+        {
+            var go = CorruptedBloodcellsSpawnlist[i];
+            go.GuardianHP = (int)(baseGrowth * guardianBaseHP);
+            /*
+            if (go.GuardianHP > 2000)
+                go.GuardianHP = 2000;
+            */
+            /*
+            Debug.Log("****Guardian HP = " + go.GuardianHP);
+            Debug.Log("****Guardian Base Growth = " + baseGrowth);
+            */
+            CorruptedBloodcellsSpawnlist[i] = go;
+        }
+
+        for (int i = 0; i < CorruptedVehiclesSpawnlist.Count; i++)
+        {
+            var go = CorruptedVehiclesSpawnlist[i];
+            go.GuardianHP = (int)(baseGrowth * guardianBaseHP);
+            /*
+            if (go.GuardianHP > 2000)
+                go.GuardianHP = 2000;
+            */
+            /*
+            Debug.Log("****Guardian HP = " + go.GuardianHP);
+            Debug.Log("****Guardian Base Growth = " + baseGrowth);
+            */
+            CorruptedVehiclesSpawnlist[i] = go;
+        }
+
+
     }
 
 
@@ -229,7 +287,7 @@ public class SurvivalManager : MonoBehaviour
 
         if (currentWave >= roundToStartEvents)
         {
-            int temp = Random.Range(1, 3);
+            int temp = Random.Range(1, 4);
             survivalEvents(temp);
         }
     }

@@ -141534,6 +141534,32 @@ MonoBehaviour:
   - Guardian: {fileID: 257568515384690895, guid: 6e782294ef35e414085517be255452fa, type: 3}
     keepDefaultHP: 0
     GuardianHP: 10
+  CorruptedBloodcellsSpawnlist:
+  - Guardian: {fileID: 6111900528461088060, guid: f6c848c778e68d940921f3ed80180342, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  - Guardian: {fileID: 6828188665741772943, guid: 65e7fff2c0cb60a42915535d2819f8b4, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  - Guardian: {fileID: 7406304530714858858, guid: 9ab5d632687145442bb347ad78a85960, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  - Guardian: {fileID: 1443997739145422686, guid: 1d08228846f269546ad2c9a4d81a7607, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  - Guardian: {fileID: 2806173593672008090, guid: e3d484d3cf7ee394db53e9a5edd44094, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  CorruptedVehiclesSpawnlist:
+  - Guardian: {fileID: 1673701182820490576, guid: 160c4725ba07fe1459a1d19a47b440c6, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  - Guardian: {fileID: 6101886005229548818, guid: b39e87f1900be9f4094898ac4ebe2295, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
+  - Guardian: {fileID: 3372601695262059746, guid: 11ce82cf3c143e74da628c95a571b722, type: 3}
+    keepDefaultHP: 0
+    GuardianHP: 10
   guardianBaseHP: 400
   RandomSpawnPosForEvents:
   - {fileID: 1135487420}
@@ -141545,6 +141571,7 @@ MonoBehaviour:
   - {fileID: 1240220415}
   - {fileID: 638167179}
   MiniBossReinforcements: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
+  CorruptedCellsReinforcements: {fileID: 7758847599321890227, guid: c90ab32206707d14faf0d840aa87269c, type: 3}
   NapalmStrike: {fileID: 6222267082814159789, guid: ef5d4c63ab80195448a80feb79a960e1, type: 3}
   bossRound: 0
   healthGrowthRate: 0.2
