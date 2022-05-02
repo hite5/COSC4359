@@ -50,12 +50,14 @@ public class WheelLogic : MonoBehaviour
             {
                 previouslySelected = selectedPart;
                 selectedPart.selected = true;
+                AudioManager.instance.PlayEffect("Button");
             }
             else if (selectedPart != previouslySelected)
             {
                 previouslySelected.selected = false;
                 selectedPart.selected = true;
                 previouslySelected = selectedPart;
+                AudioManager.instance.PlayEffect("Button");
                 //selectedPart.selected = true;
             }
             //selectedPart.selected = true;
