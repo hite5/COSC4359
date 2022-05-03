@@ -408,7 +408,11 @@ public class EnemyColony : MonoBehaviour
                 }
             }
             else
+            {
+                if (player == null)
+                    player = playerStash;
                 addOn1.normalUpdate();
+            }
 
             //might have to move up else to after the lineofsight stuff
 
