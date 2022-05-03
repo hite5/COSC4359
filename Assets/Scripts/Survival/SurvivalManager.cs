@@ -91,9 +91,22 @@ public class SurvivalManager : MonoBehaviour
                         SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
                         //Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
                         Instantiate(MiniBossReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+
+
+                        temp = Random.Range(0, RandomSpawnPosForEvents.Count);
+                        SpawnOffSet = Vector2.zero;
+                        SpawnOffSet = RandomSpawnPosForEvents[temp].transform.position;
+                        SpawnOffSet += Random.insideUnitCircle * RandomSpawnPosForEvents[temp].radius;
+                        //Debug.Log("OFFSET " + RandomSpawnPosForEvents[temp].radius);
+                        Instantiate(CorruptedCellsReinforcements, SpawnOffSet, Quaternion.Euler(0, 0, 0));
+                        //spawn a randomtank
+                        if (i % 2 == 0)
+                        {
+                            int randVehicle = Random.Range(0, CorruptedVehiclesSpawnlist.Count);
+                            int randomSpawn = Random.Range(0, EManager.spawnPoints.Count);
+                            var go = Instantiate(CorruptedVehiclesSpawnlist[randVehicle].Guardian, EManager.spawnPoints[randomSpawn].transform.position, Quaternion.identity);
+                        }
                     }
-
-
                 }
 
                 break;
@@ -122,6 +135,7 @@ public class SurvivalManager : MonoBehaviour
                 break;
             case 4: //
 
+                
                 break;
             default:
                 Debug.Log("Unknown type");

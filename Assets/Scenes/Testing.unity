@@ -540,9 +540,12 @@ MonoBehaviour:
     newBossName: 
     dontNormalizeLocalScale: 0
   GuardianSpawnlist: []
+  CorruptedBloodcellsSpawnlist: []
+  CorruptedVehiclesSpawnlist: []
   guardianBaseHP: 0
   RandomSpawnPosForEvents: []
   MiniBossReinforcements: {fileID: 4582331102365157239, guid: f00fb6354c6820a4e8d74803db25322d, type: 3}
+  CorruptedCellsReinforcements: {fileID: 0}
   NapalmStrike: {fileID: 0}
   bossRound: 0
   healthGrowthRate: 0.1
@@ -2637,7 +2640,7 @@ Transform:
   - {fileID: 436395008}
   - {fileID: 653581353}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168687967
 GameObject:
@@ -15507,7 +15510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4651131086350033950, guid: f64ed1a4e76136840b4961460d40674a, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4651131086350033950, guid: f64ed1a4e76136840b4961460d40674a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15564,7 +15567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4651131086350033950, guid: f64ed1a4e76136840b4961460d40674a, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4651131086350033950, guid: f64ed1a4e76136840b4961460d40674a, type: 3}
       propertyPath: m_LocalPosition.x

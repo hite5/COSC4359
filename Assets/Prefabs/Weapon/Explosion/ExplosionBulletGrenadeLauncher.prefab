@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 303280335961262456}
   - component: {fileID: 6031941584366948049}
   - component: {fileID: 4448844939402393824}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Smoke Particles Light Traveling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4813,7 +4813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9197410358607413208}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: HighGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,7 +4848,7 @@ GameObject:
   - component: {fileID: 3610505946997960220}
   - component: {fileID: 3945912123080146066}
   - component: {fileID: 119498043775290289}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Smoke Particles Dark Traveling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9655,7 +9655,7 @@ GameObject:
   - component: {fileID: 4387602535829319212}
   - component: {fileID: 4625873113430690309}
   - component: {fileID: 4603599523508717907}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: ExplosionBulletGrenadeLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9806,7 +9806,7 @@ GameObject:
   - component: {fileID: 8923220304386125373}
   - component: {fileID: 7113120831091836864}
   - component: {fileID: 3100417139291712173}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Shrapnel Sparkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

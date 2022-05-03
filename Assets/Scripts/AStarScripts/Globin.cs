@@ -693,7 +693,7 @@ public class Globin : MonoBehaviour
                 if(!isVehicle)
                     takeDamage(damage, collision.transform, speed);
                 else
-                    takeDamage(damage * 2.5f, collision.transform, speed);
+                    takeDamage(damage * 2f, collision.transform, speed);
             }
         }
 
