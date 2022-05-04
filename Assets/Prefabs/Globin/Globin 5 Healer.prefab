@@ -5140,8 +5140,8 @@ MonoBehaviour:
   DamageText: {fileID: 5578586631025405740, guid: 9f7757d3160d49940b41a53ce5fcba10, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
-  HP: 450
-  maxHP: 450
+  HP: 650
+  maxHP: 650
   AR: 18
   speed: 250
   stoppingDistance: 4
@@ -5149,6 +5149,9 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 3699840
+  IgnoreMeTargeting:
+    serializedVersion: 2
+    m_Bits: 0
   shootdistance: 10
   distancefromplayer: 0
   canSeeEnemy: 0

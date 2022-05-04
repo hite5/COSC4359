@@ -254,8 +254,8 @@ MonoBehaviour:
   DamageText: {fileID: 5578586631025405740, guid: 9f7757d3160d49940b41a53ce5fcba10, type: 3}
   player: {fileID: 0}
   playerStash: {fileID: 0}
-  HP: 800
-  maxHP: 800
+  HP: 900
+  maxHP: 900
   AR: 85
   speed: 10000
   stoppingDistance: 6
