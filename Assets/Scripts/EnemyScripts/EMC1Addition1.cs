@@ -444,6 +444,11 @@ public class EMC1Addition1
             }
 
         }
+        else
+        {
+            EMC.lineofsight = false;
+            unplaceFlag();
+        }
 
         //call Summon function
         if (SummonTimer <= 0 && GlobalPlayerVariables.TotalEnemiesAlive <= GlobalPlayerVariables.GlobinsAndPlayerAlive && EMC.isDead == false)
