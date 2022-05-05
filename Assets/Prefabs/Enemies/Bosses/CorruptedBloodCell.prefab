@@ -432,9 +432,9 @@ MonoBehaviour:
   addOn1:
     EMC: {fileID: 0}
     AmountToSummonAtATime: 5
-    startRangeToSummon: 10
-    endRangeToSummon: 15
-    SummonTimer: 15
+    startRangeToSummon: 9
+    endRangeToSummon: 12
+    SummonTimer: 10
     target: {fileID: 0}
     EnemyTarget: {fileID: 0}
     spinRing: {fileID: 0}
